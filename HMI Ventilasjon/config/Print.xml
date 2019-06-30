@@ -1,0 +1,5 @@
+<printdetails ramquota="16000000" maxpixmapsize="16000000" spoolMediaType="0" spoolFolder="C:/SA CoDeSys/Prosjekter/Ringstad Transport/HMI/reportspool" diskquota="-1">
+ <printerPorts>
+  <port>File</port>
+ </printerPorts>
+</printdetails>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   height="77"
+   width="5"
+   viewBox="0 0 5 77"
+   id="Layer_1"
+   xml:space="preserve"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="barseg_vert_flat.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"><metadata
+   id="metadata16"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+   inkscape:window-height="667"
+   inkscape:window-width="640"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   guidetolerance="10.0"
+   gridtolerance="10.0"
+   objecttolerance="10.0"
+   borderopacity="1.0"
+   bordercolor="#666666"
+   pagecolor="#ffffff"
+   id="base"
+   showgrid="false"
+   inkscape:zoom="6"
+   inkscape:cx="2.5"
+   inkscape:cy="38.5"
+   inkscape:window-x="66"
+   inkscape:window-y="67"
+   inkscape:current-layer="Layer_1" /><defs
+   id="defs2963"><inkscape:perspective
+     sodipodi:type="inkscape:persp3d"
+     inkscape:vp_x="0 : 38.5 : 1"
+     inkscape:vp_y="0 : 1000 : 0"
+     inkscape:vp_z="5 : 38.5 : 1"
+     inkscape:persp3d-origin="2.5 : 25.666667 : 1"
+     id="perspective18" /></defs>
+<g
+   id="g2939"
+   transform="matrix(0,-1,1,0,0,77.166667)">
+	<rect
+   width="5"
+   height="5"
+   x="0"
+   y="0"
+   id="bar1"
+   style="fill:#1d1d1b" />
+	<rect
+   width="5"
+   height="5"
+   x="8"
+   y="0"
+   id="bar2"
+   style="fill:#1d1d1b" />
+	<rect
+   width="5"
+   height="5"
+   x="16"
+   y="0"
+   id="bar3"
+   style="fill:#1d1d1b" />
+	<rect
+   width="5"
+   height="5"
+   x="24"
+   y="0"
+   id="bar4"
+   style="fill:#1d1d1b" />
+	<rect
+   width="5"
+   height="5"
+   x="32"
+   y="0"
+   id="bar5"
+   style="fill:#1d1d1b" />
+	<rect
+   width="5"
+   height="5"
+   x="40"
+   y="0"
+   id="bar6"
+   style="fill:#1d1d1b" />
+	<rect
+   width="5"
+   height="5"
+   x="48"
+   y="0"
+   id="bar7"
+   style="fill:#1d1d1b" />
+	<rect
+   width="5"
+   height="5"
+   x="56"
+   y="0"
+   id="bar8"
+   style="fill:#1d1d1b" />
+	<rect
+   width="5"
+   height="5"
+   x="64"
+   y="0"
+   id="bar9"
+   style="fill:#1d1d1b" />
+	<rect
+   width="5"
+   height="5"
+   x="72"
+   y="0"
+   id="bar10"
+   style="fill:#1d1d1b" />
+</g>
+</svg>

@@ -1,0 +1,47 @@
+<customWgt>
+ <object class="CustomWgtMLTextMgrWgt" id="Temp1_1_0:1_0_CustomWgtMLMgrWgt" mgrType="CustomWgt" mlFileName="">
+  <wgtStyle width="0" x="0" y="0" height="0"/>
+  <langs defLangId="L1" curLangId="L1">
+   <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+   <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
+  </langs>
+  <MLTexts>
+   <MLText L1="°C" L2="°C" id="0"/>
+   <MLText L1="-QT501" L2="-RT55" id="1"/>
+   <MLText L1="T" L2="T" id="2"/>
+  </MLTexts>
+ </object>
+ <object class="GroupWgt" id="*.GroupWgt24">
+  <wgtStyle width="52" x="0" forcePaint="16" y="0" cx="26" cy="10.25" wgtStaticOpt="dynamic" height="20.50"/>
+  <object class="NumericWgt" id="field3">
+   <wgtStyle forcePaint="16" font-family="Arial" cx="12.38" cy="9.33" step="1" timeSpec="local" alignment="right" x="0" y="0" wgtStaticOpt="dynamic" vert-align="top" text="10.1" max="3.40282e+038" usingFormat="#.#" value="10.1" keypad-type="None" min="-3.40282e+038" width="25.50" numberFormat="6" readWrite="true" height="19.50" form="Numeric" font-size="10"/>
+  </object>
+  <object class="LabelWgt" id="label5">
+   <wgtStyle width="26" x="26" forcePaint="16" y="0.50" font-family="Tahoma" cx="13" cy="10" wgtStaticOpt="dynamic" height="20" vert-align="top" marker="true" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+ </object>
+ <object class="LabelWgt" id="*.Tag*">
+  <wgtStyle width="37" x="8" forcePaint="16" y="35" font-family="Tahoma" cx="18.33" cy="6.67" wgtStaticOpt="dynamic" height="13" vert-align="top" marker="true" keypad-type="None" font-size="8"/>
+  <links>
+   <lang class="MLTextLink" textid="1"/>
+  </links>
+ </object>
+ <object class="GroupWgt" id="*.TempRetur">
+  <wgtStyle width="29" x="27" forcePaint="16" y="20" cx="14.50" cy="7.50" wgtStaticOpt="dynamic" height="15"/>
+  <object class="ShapeWgt" id="*.TempRetur.circle">
+   <wgtStyle width="15" x="0" forcePaint="16" y="0" fill="rgb(255,255,224)" cx="7.50" cy="7.50" wgtStaticOpt="dynamic" rx="22" height="15" nodeName="ellipse" ry="19"/>
+  </object>
+  <object class="LabelWgt" id="*.TempRetur.label">
+   <wgtStyle width="6" x="4" forcePaint="16" y="1" font-family="Tahoma" cx="3" cy="7" wgtStaticOpt="dynamic" height="14" vert-align="top" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="2"/>
+   </links>
+  </object>
+  <object class="LineWgt" id="*.TempRetur.line">
+   <wgtStyle width="14" x="15" forcePaint="16" y="7" cx="7" cy="0" wgtStaticOpt="dynamic" height="0"/>
+  </object>
+ </object>
+</customWgt>

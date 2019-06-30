@@ -1,0 +1,145 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Ventil" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="maintemplate.jmx" usedFonts="Tahoma,Arial" staticFile="opt/ventil.png" id="Ventil" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020800363" v="02.08.00.363"/>
+  <object class="ShapeWgt" id="roundrect4" static="true">
+   <wgtStyle width="294" x="276.57" y="120.66" fill="rgb(192,192,192)" cx="147.01" cy="126" rx="20" height="252" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+    <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="SB40" L2="SB40" id="0"/>
+    <MLText L1="%" L2="%" id="9"/>
+    <MLText L1="Reguleringsventil batteri" L2="Reguleringsventil batteri" id="11"/>
+    <MLText L1="Posisjon varme:" L2="Posisjon varme:" id="12"/>
+    <MLText L1="Posisjon kjøling:" L2="Posisjon kjøling:" id="13"/>
+    <MLText L1="=360.01" L2="=360.01" id="33"/>
+    <MLText L1="Tilbake" L2="Tilbake" id="67"/>
+    <MLText L1="Hovedside" L2="Hovedside" id="68"/>
+   </MLTexts>
+  </object>
+  <object class="LabelWgt" id="label15">
+   <wgtStyle width="320" x="263.22" forcePaint="2" font-sizepx="24" y="12.50" font-family="Tahoma" cx="95.01" cy="15.49" height="29" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="11"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label11">
+   <wgtStyle width="153" x="346.72" forcePaint="2" y="77.95" font-family="Tahoma" cx="55.17" cy="14" height="25" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="Ventil@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="GroupWgt" id="BtnStd16" customType="Button">
+   <wgtStyle width="93" x="100.62" y="442.61" cx="46" cy="17" height="34"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image31" static="true">
+    <wgtStyle width="93" imagePath="images/frame_rect45bar_chrome.svg" x="0" y="0" cx="46.50" cy="17.30" height="34"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd16">
+    <wgtStyle width="85" x="4" y="4" fill="rgb(192,192,192)" dx="1" cx="42.54" form="standard" cy="12.91" height="25" releasePath="images/btn_plastic_rect45bar_1.svg" needlePath="images/btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="manspjeld.jmx" class="LoadPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label24">
+    <wgtStyle width="74" font-color="rgb(40,40,40)" x="7" forcePaint="3" y="5" font-family="Tahoma" font-bold="true" wrapping="true" cx="37.10" cy="12.64" height="25" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="67"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image32" static="true">
+    <wgtStyle width="27" x="31" y="8" cx="13.82" cy="8.75" height="17"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd8" customType="Button">
+   <wgtStyle width="93" x="4" y="442" cx="46" cy="17" height="34"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image16" static="true">
+    <wgtStyle width="93" imagePath="images/frame_rect45bar_chrome.svg" x="0" y="0" cx="46.50" cy="17.30" height="34"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd8">
+    <wgtStyle width="85" x="4" y="4" fill="rgb(192,192,192)" dx="1" cx="42.54" form="standard" cy="12.91" height="25" releasePath="images/btn_plastic_rect45bar_1.svg" needlePath="images/btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="service.jmx" class="LoadPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label37">
+    <wgtStyle width="74" font-color="rgb(40,40,40)" x="7" forcePaint="3" y="5" font-family="Tahoma" font-bold="true" wrapping="true" cx="37.10" cy="12.64" height="25" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="68"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image17" static="true">
+    <wgtStyle width="27" x="31" y="8" cx="13.82" cy="8.75" height="17"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label28">
+   <wgtStyle width="270" x="288.22" forcePaint="10" font-sizepx="24" y="42" font-family="Tahoma" cx="100.01" cy="15.99" height="29" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="18"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="text" tag="IndexedTagSet_Globale.Anlegg" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="33"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1">
+   <wgtStyle width="240" x="311.57" forcePaint="8" y="141.66" cx="120" cy="14.34" height="28.67"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="visibility" tag="IndexedTagSet_Globale.xHeating_Active" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+   <object class="LabelWgt" id="GroupWgt1.label6">
+    <wgtStyle width="114" x="0" forcePaint="3" y="3" font-family="Tahoma" cx="61.50" cy="11.49" height="19" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="12"/>
+    </links>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.roundrect1">
+    <wgtStyle width="112" x="128" forcePaint="1" y="0" fill="rgb(255,255,255)" cx="56" cy="14.33" rx="20" height="28.67" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
+   </object>
+   <object class="NumericWgt" id="GroupWgt1.field1">
+    <wgtStyle forcePaint="9" font-family="Arial" cx="25.74" cy="11" step="1" timeSpec="local" alignment="right" x="131" y="3" vert-align="top" text="80" max="3.40282e+038" usingFormat="#" value="80" keypad-type="None" min="-3.40282e+038" width="53" numberFormat="6" height="23" form="Numeric" font-size="16"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.rVentilVarme_OP" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="GroupWgt1.label5">
+    <wgtStyle width="44" x="185" forcePaint="3" y="1" font-family="Tahoma" cx="22" cy="12" height="24" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+    <links>
+     <lang class="MLTextLink" textid="9"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt2">
+   <wgtStyle width="240" x="311.57" forcePaint="8" y="178.66" cx="120" cy="14.34" height="28.67"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="visibility" tag="IndexedTagSet_Globale.xCooling_Active" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+   <object class="LabelWgt" id="GroupWgt2.label3">
+    <wgtStyle width="119" x="0" forcePaint="3" y="3" font-family="Tahoma" cx="61.50" cy="11.49" height="19" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="13"/>
+    </links>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.roundrect2">
+    <wgtStyle width="112" x="128" forcePaint="1" y="0" fill="rgb(255,255,255)" cx="56" cy="14.33" rx="20" height="28.67" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
+   </object>
+   <object class="NumericWgt" id="GroupWgt2.field2">
+    <wgtStyle forcePaint="9" font-family="Arial" cx="25.74" cy="11" step="1" timeSpec="local" alignment="right" x="131" y="3" vert-align="top" text="80" max="3.40282e+038" usingFormat="#" value="80" keypad-type="None" min="-3.40282e+038" width="53" numberFormat="6" height="23" form="Numeric" font-size="16"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.rVentilKjoling_OP" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="GroupWgt2.label4">
+    <wgtStyle width="44" x="185" forcePaint="3" y="1" font-family="Tahoma" cx="22" cy="12" height="24" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+    <links>
+     <lang class="MLTextLink" textid="9"/>
+    </links>
+   </object>
+  </object>
+ </object>
+</wgtPage>

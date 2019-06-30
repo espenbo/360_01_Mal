@@ -1,0 +1,109 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="CommStatus" singleInstance="true" pageType="modal" pageSize="500,400" class="DialogWgt" dataWndSize="0,70" downloadPrepDone="true" px="0" usedFonts="Tahoma" py="0" titlebar="true" staticFile="opt/commstatus.png" dynPosition="false" id="CommStatus" titleName="" staticOptEnable="true">
+  <wgtStyle width="500" x="0" y="0" height="400" ver="020800363" v="02.08.00.363"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+    <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="Protocol Error Count" L2="Protocol Error Count" id="0"/>
+    <MLText L1="Protocol Error Count" L2="Protocol Error Count" id="1"/>
+    <MLText L1="Protocol Error" L2="Protocol Error" id="2"/>
+    <MLText L1="Protocol Error" L2="Protocol Error" id="3"/>
+    <MLText L1="Comm. Status" L2="Comm. Status" id="4"/>
+    <MLText L1="Comm. Status" L2="Comm. Status" id="5"/>
+    <MLText L1="Protocol Error Message" L2="Protocol Error Message" id="8"/>
+    <MLText L1="Protocol Error Message" L2="Protocol Error Message" id="9"/>
+   </MLTexts>
+  </object>
+  <object class="ShapeWgt" id="rect1" static="true">
+   <wgtStyle width="352" x="0" y="256" fill="rgb(127,127,127)" cx="176" cy="0.50" height="1" nodeName="rect" stroke="rgb(102,102,102)"/>
+  </object>
+  <object class="GroupWgt" id="GroupWgt2" customType="Button">
+   <wgtStyle width="65" x="422.20" y="371" cx="32" cy="14" height="29"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="WinBtn1-pushbutton2">
+    <wgtStyle width="65" x="1" y="0" fill="rgb(160,160,164)" dx="1" form="standard" dy="-1" height="28" releasePath="images\win-like.svg" needlePath="images\win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+    <links>
+     <action pageName="" class="CloseDialogAction" attribute="onMouseRelease" event="onMouseUp" actionID="0" closeParam="Selected" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="WinBtn1-text2">
+    <wgtStyle width="36.12" font-color="rgb(255,255,255)" x="15" forcePaint="1" y="7" font-family="Tahoma" cx="14" cy="8" height="13.92" alignment="center" vert-align="middle" text="Close" keypad-type="None" font-size="10"/>
+   </object>
+  </object>
+  <object class="ShapeWgt" id="rect2" static="true">
+   <wgtStyle width="352" x="0" y="256" fill="rgb(127,127,127)" cx="176" cy="0.50" height="1" nodeName="rect" stroke="rgb(102,102,102)"/>
+  </object>
+  <object class="ShapeWgt" id="rect3" static="true">
+   <wgtStyle width="500" x="0" y="0" fill="rgb(127,127,127)" cx="250" cy="177.56" height="366" nodeName="rect" stroke="rgb(192,192,192)"/>
+  </object>
+  <object class="LabelWgt" id="label1">
+   <wgtStyle width="162.20" font-color="rgb(40,40,40)" x="326" forcePaint="2" font-sizepx="13" y="19.62" font-family="Tahoma" cx="79.83" cy="29.43" height="58.86" vert-align="top" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="5"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label2">
+   <wgtStyle width="162.20" font-color="rgb(40,40,40)" x="326" forcePaint="2" font-sizepx="13" y="98.11" font-family="Tahoma" cx="79.92" cy="28.02" height="58.86" vert-align="top" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="3"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label3">
+   <wgtStyle width="162.20" font-color="rgb(40,40,40)" x="326" forcePaint="2" font-sizepx="13" y="176.59" font-family="Tahoma" cx="80.59" cy="29.43" height="58.86" vert-align="top" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="1"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label12">
+   <wgtStyle width="300.50" font-color="rgb(255,255,255)" x="8.54" forcePaint="10" font-sizepx="13" y="19.62" font-family="Tahoma" cx="149.13" cy="27.78" height="58" alignment="center" vert-align="middle" frame="true" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="int" attribute="text" tag="Protocol Communication Status" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="4"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label13">
+   <wgtStyle width="300.04" font-color="rgb(255,255,255)" x="8.54" forcePaint="10" font-sizepx="13" y="98.11" font-family="Tahoma" cx="148.91" cy="27.78" height="58" alignment="center" vert-align="middle" frame="true" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="string" attribute="text" tag="Protocol Error Message" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="2"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label14">
+   <wgtStyle width="299.58" font-color="rgb(255,255,255)" x="8.54" forcePaint="10" font-sizepx="13" y="176.59" font-family="Tahoma" cx="148.68" cy="27.78" height="58" alignment="center" vert-align="middle" frame="true" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="int" attribute="text" tag="Protocol Error Count" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label4">
+   <wgtStyle width="162.20" font-color="rgb(40,40,40)" x="325" forcePaint="2" font-sizepx="13" y="261" font-family="Tahoma" cx="80.59" cy="29.43" height="58.86" vert-align="top" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="8"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label5">
+   <wgtStyle width="301.50" font-color="rgb(255,255,255)" x="8.39" forcePaint="10" font-sizepx="13" y="261" font-family="Tahoma" cx="149.63" cy="27.78" height="58" alignment="center" vert-align="middle" frame="true" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="string" attribute="text" tag="Protocol Error Message" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="9"/>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="CommStatus@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+ </object>
+</wgtPage>

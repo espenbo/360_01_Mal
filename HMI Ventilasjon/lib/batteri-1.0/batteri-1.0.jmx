@@ -1,0 +1,36 @@
+<customWgt>
+ <object class="CustomWgtMLTextMgrWgt" id="batteri_1_0:1_0_CustomWgtMLMgrWgt" mgrType="CustomWgt" mlFileName="">
+  <wgtStyle width="0" x="0" y="0" height="0"/>
+  <langs defLangId="L1" curLangId="L1">
+   <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+   <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
+  </langs>
+ </object>
+ <object class="ShapeWgt" id="*.rect8">
+  <wgtStyle width="25" x="11" forcePaint="16" y="158.17" fill="rgb(192,192,192)" cx="12.50" cy="4" wgtStaticOpt="dynamic" height="8" nodeName="rect" stroke="rgb(127,127,127)" mtx="-1,0,0,0,-1,0,25,8,1"/>
+ </object>
+ <object class="ShapeWgt" id="*.rect9">
+  <wgtStyle width="138.38" x="5" forcePaint="16" y="59" fill="rgb(192,192,192)" cx="4" cy="69.19" wgtStaticOpt="dynamic" height="8" nodeName="rect" stroke="rgb(127,127,127)" mtx="0,-1,0,1,0,0,0,138.38,1"/>
+ </object>
+ <object class="ShapeWgt" id="*.rect1">
+  <wgtStyle width="100" x="34" forcePaint="16" y="52" fill="rgb(192,192,192)" cx="4" cy="50" wgtStaticOpt="dynamic" height="8" nodeName="rect" stroke="rgb(127,127,127)" mtx="0,-1,0,1,0,0,0,100,1"/>
+ </object>
+ <object class="ShapeWgt" id="*.rect4">
+  <wgtStyle width="25.38" x="34" forcePaint="16" y="172" fill="rgb(192,192,192)" cx="4" cy="12.69" wgtStaticOpt="dynamic" height="8" nodeName="rect" stroke="rgb(127,127,127)" mtx="0,-1,0,1,0,0,0,25.38,1"/>
+ </object>
+ <object class="ShapeWgt" id="*.rect5">
+  <wgtStyle width="44" x="0" forcePaint="16" y="0" fill="rgb(192,192,192)" cx="22" cy="30.50" wgtStaticOpt="dynamic" height="61" nodeName="rect" stroke="rgb(127,127,127)"/>
+ </object>
+ <object class="ShapeWgt" id="*.Kjoling">
+  <wgtStyle width="44" x="0" forcePaint="16" y="0" fill="rgb(0,170,255)" cx="22" cy="30.50" wgtStaticOpt="dynamic" height="61" nodeName="rect" stroke="rgb(127,127,127)"/>
+ </object>
+ <object class="ShapeWgt" id="*.Varme">
+  <wgtStyle width="44" x="0" forcePaint="16" y="0" fill="rgb(238,51,34)" cx="22" cy="30.50" wgtStaticOpt="dynamic" height="61" nodeName="rect" stroke="rgb(127,127,127)"/>
+ </object>
+ <object class="LineWgt" id="*.line1">
+  <wgtStyle width="42" x="1" forcePaint="16" y="0" cx="21" cy="30" wgtStaticOpt="dynamic" height="60" anchorIdx="1"/>
+ </object>
+ <object class="LineWgt" id="*.line2">
+  <wgtStyle width="41" x="2" forcePaint="16" y="1" cx="20.50" cy="29.50" wgtStaticOpt="dynamic" height="59"/>
+ </object>
+</customWgt>

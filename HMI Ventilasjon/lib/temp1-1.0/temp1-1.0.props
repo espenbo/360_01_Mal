@@ -1,0 +1,7 @@
+<defs>
+ <g id="custom_properties" showChildNodes="0" inherit="basicgroup_properties" attributeName="Temp1-1.0:1.0">
+  <info></info>
+  <text display="Temp_Value" default="true" attributeType="float" editChild="true" attachTag="true" attributeName="*..value"/>
+  <text display="Tag_Text" default="true" attributeType="mltext" editChild="true" attachTag="true" attributeName="*.TagReturTemp.text">Text</text>
+ </g>
+</defs>

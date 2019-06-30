@@ -1,0 +1,17 @@
+<defs>
+ <g id="custom_properties" showChildNodes="0" inherit="basicgroup_properties" attributeName="RoterendeGjennvinner-1.0:1.0">
+  <info></info>
+  <text display="Tag Text" default="true" attributeType="mltext" editChild="true" attachTag="true" attributeName="*.Tag.text" isCompound="true">Text</text>
+  <text display="Status Text" default="true" attributeType="mltext" editChild="true" attachTag="true" attributeName="*.Status.text">Text</text>
+  <text display="Status Visible" attributeType="bool" editChild="true" attachTag="true" adv="true" attributeName="*.Status.visibility" isCompound="true"/>
+  <text display="Paadrag Value" default="true" attributeType="float" editChild="true" attachTag="true" attributeName="*.Prosent.value" isCompound="true"/>
+  <text display="Bar Visible" attributeType="bool" attachTag="true" adv="true" attributeName="*.Bar.visibility"/>
+  <text display="Bar Max" attributeType="float" editChild="true" attachTag="true" attributeName="*.Bar.max" isCompound="true">Max value for the bar</text>
+  <text display="Bar Min" attributeType="float" attachTag="true" attributeName="*.Bar.min">Min value for the bar</text>
+  <text display="Bar Value" default="true" attributeType="float" attachTag="true" attributeName="*.Bar.value">Widget value</text>
+  <text display="DriftLampe Color" attributeType="colorList" attributeName="*..bkgColor">List of colors for each state</text>
+  <text display="DriftLampe Value" default="true" attributeType="integer" attachTag="true" attributeName="*..frame">Determines what image path from the list of paths is actual one</text>
+  <text display="FeilLampe Value" default="true" attributeType="integer" attachTag="true" attributeName="*..frame">Determines what image path from the list of paths is actual one</text>
+  <text display="FeilLampe Color" attributeType="colorList" attributeName="*..bkgColor">List of colors for each state</text>
+ </g>
+</defs>

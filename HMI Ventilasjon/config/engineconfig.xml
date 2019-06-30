@@ -1,0 +1,5 @@
+<EngineConfig>
+ <disableWritesOnInvalidTime/>
+ <disablePopupNotificationsOnInvalidTime/>
+ <disablePopupNotificationsOnTimeJumpingBack/>
+</EngineConfig>

@@ -1,0 +1,225 @@
+<trends>
+ <trend type="1">
+  <name>360_01_GjenvinnerOP</name>
+  <source></source>
+  <samplingTime attachTo="">60000</samplingTime>
+  <active>true</active>
+  <compressed>false</compressed>
+  <size>86400</size>
+  <trigger></trigger>
+  <deviation>
+   <lowLimit>0</lowLimit>
+   <highLimit>0</highLimit>
+  </deviation>
+  <autodumptrend>false</autodumptrend>
+  <autodumpFileNameFormat>Data/</autodumpFileNameFormat>
+  <dataStorageLoc></dataStorageLoc>
+  <storageDevice>0</storageDevice>
+  <sources>
+   <dl comment="GjennvinnerOP" name="GjennvinnerOP">10239/"/BY2209_360_20_LX400_OP"</dl>
+  </sources>
+  <sourceTs>false</sourceTs>
+  <autoDumpFormat>0</autoDumpFormat>
+  <autoDumpTimeSpec>0</autoDumpTimeSpec>
+  <autoDumpStorageDevice>0</autoDumpStorageDevice>
+ </trend>
+ <trend type="1">
+  <name>360_01_Padrag_Kjoling</name>
+  <source></source>
+  <samplingTime attachTo="">120000</samplingTime>
+  <active>false</active>
+  <compressed>false</compressed>
+  <size>86400</size>
+  <trigger></trigger>
+  <deviation>
+   <lowLimit>-1</lowLimit>
+   <highLimit>1</highLimit>
+  </deviation>
+  <autodumptrend>false</autodumptrend>
+  <autodumpFileNameFormat>Data/</autodumpFileNameFormat>
+  <dataStorageLoc></dataStorageLoc>
+  <storageDevice>0</storageDevice>
+  <sources>
+   <dl comment="KjolingOP" name="KjolingOP">10239/"/BY2209_360_20_SB400_K_OP"</dl>
+  </sources>
+  <sourceTs>false</sourceTs>
+  <autoDumpFormat>0</autoDumpFormat>
+  <autoDumpTimeSpec>0</autoDumpTimeSpec>
+  <autoDumpStorageDevice>0</autoDumpStorageDevice>
+ </trend>
+ <trend type="1">
+  <name>360_01_TempInntak</name>
+  <source></source>
+  <samplingTime attachTo="">120000</samplingTime>
+  <active>true</active>
+  <compressed>false</compressed>
+  <size>86400</size>
+  <trigger></trigger>
+  <deviation>
+   <lowLimit>-0.5</lowLimit>
+   <highLimit>0.5</highLimit>
+  </deviation>
+  <autodumptrend>false</autodumptrend>
+  <autodumpFileNameFormat>Data/</autodumpFileNameFormat>
+  <dataStorageLoc></dataStorageLoc>
+  <storageDevice>0</storageDevice>
+  <sources>
+   <dl comment="TempInntak" name="TempInntak">10239/"/BY2209_360_20_RT400_PV"</dl>
+   <dl comment="" name="Turvann">10239/"/BY2209_360_20_QT500_PV"</dl>
+   <dl comment="" name="Returvann">10239/"/BY2209_360_20_QT501_PV"</dl>
+  </sources>
+  <sourceTs>false</sourceTs>
+  <autoDumpFormat>0</autoDumpFormat>
+  <autoDumpTimeSpec>0</autoDumpTimeSpec>
+  <autoDumpStorageDevice>0</autoDumpStorageDevice>
+ </trend>
+ <trend type="1">
+  <name>360_01_Utetemp</name>
+  <source></source>
+  <samplingTime attachTo="">120000</samplingTime>
+  <active>true</active>
+  <compressed>false</compressed>
+  <size>86400</size>
+  <trigger></trigger>
+  <deviation>
+   <lowLimit>-0.5</lowLimit>
+   <highLimit>0.5</highLimit>
+  </deviation>
+  <autodumptrend>false</autodumptrend>
+  <autodumpFileNameFormat>Data/</autodumpFileNameFormat>
+  <dataStorageLoc></dataStorageLoc>
+  <storageDevice>0</storageDevice>
+  <sources>
+   <dl comment="Utetemp" name="Utetemp">10239/"/BY2209_360_20_RT901_PV"</dl>
+  </sources>
+  <sourceTs>false</sourceTs>
+  <autoDumpFormat>0</autoDumpFormat>
+  <autoDumpTimeSpec>0</autoDumpTimeSpec>
+  <autoDumpStorageDevice>0</autoDumpStorageDevice>
+ </trend>
+ <trend type="1">
+  <name>360_01_Tilluft</name>
+  <source></source>
+  <samplingTime attachTo="">120000</samplingTime>
+  <active>true</active>
+  <compressed>false</compressed>
+  <size>86400</size>
+  <trigger></trigger>
+  <deviation>
+   <lowLimit>-0.5</lowLimit>
+   <highLimit>0.5</highLimit>
+  </deviation>
+  <autodumptrend>false</autodumptrend>
+  <autodumpFileNameFormat>Data/</autodumpFileNameFormat>
+  <dataStorageLoc></dataStorageLoc>
+  <storageDevice>0</storageDevice>
+  <sources>
+   <dl comment="Tilluft" name="Tilluft">10239/"/BY2209_360_20_RT500_PV"</dl>
+  </sources>
+  <sourceTs>false</sourceTs>
+  <autoDumpFormat>0</autoDumpFormat>
+  <autoDumpTimeSpec>0</autoDumpTimeSpec>
+  <autoDumpStorageDevice>0</autoDumpStorageDevice>
+ </trend>
+ <trend type="1">
+  <name>360_01_Avtrekk</name>
+  <source></source>
+  <samplingTime attachTo="">120000</samplingTime>
+  <active>true</active>
+  <compressed>false</compressed>
+  <size>86400</size>
+  <trigger></trigger>
+  <deviation>
+   <lowLimit>-0.5</lowLimit>
+   <highLimit>0.5</highLimit>
+  </deviation>
+  <autodumptrend>false</autodumptrend>
+  <autodumpFileNameFormat>Data/</autodumpFileNameFormat>
+  <dataStorageLoc></dataStorageLoc>
+  <storageDevice>0</storageDevice>
+  <sources>
+   <dl comment="Avtrekk" name="Avtrekk">10239/"/BY2209_360_20_RT501_PV"</dl>
+  </sources>
+  <sourceTs>false</sourceTs>
+  <autoDumpFormat>0</autoDumpFormat>
+  <autoDumpTimeSpec>0</autoDumpTimeSpec>
+  <autoDumpStorageDevice>0</autoDumpStorageDevice>
+ </trend>
+ <trend type="1">
+  <name>360_01_Avkast</name>
+  <source></source>
+  <samplingTime attachTo="">120000</samplingTime>
+  <active>true</active>
+  <compressed>false</compressed>
+  <size>86400</size>
+  <trigger></trigger>
+  <deviation>
+   <lowLimit>-0.5</lowLimit>
+   <highLimit>0.5</highLimit>
+  </deviation>
+  <autodumptrend>false</autodumptrend>
+  <autodumpFileNameFormat>Data/</autodumpFileNameFormat>
+  <dataStorageLoc></dataStorageLoc>
+  <storageDevice>0</storageDevice>
+  <sources>
+   <dl comment="Avkast" name="Avkast">10239/"/BY2209_360_20_RT401_PV"</dl>
+  </sources>
+  <sourceTs>false</sourceTs>
+  <autoDumpFormat>0</autoDumpFormat>
+  <autoDumpTimeSpec>0</autoDumpTimeSpec>
+  <autoDumpStorageDevice>0</autoDumpStorageDevice>
+ </trend>
+ <trend type="1">
+  <name>360_01_PadragVarme</name>
+  <source></source>
+  <samplingTime attachTo="">120000</samplingTime>
+  <active>true</active>
+  <compressed>false</compressed>
+  <size>86400</size>
+  <trigger></trigger>
+  <deviation>
+   <lowLimit>-1</lowLimit>
+   <highLimit>1</highLimit>
+  </deviation>
+  <autodumptrend>false</autodumptrend>
+  <autodumpFileNameFormat>Data/</autodumpFileNameFormat>
+  <dataStorageLoc></dataStorageLoc>
+  <storageDevice>0</storageDevice>
+  <sources>
+   <dl comment="" name="PadragVarme"></dl>
+  </sources>
+  <sourceTs>false</sourceTs>
+  <autoDumpFormat>0</autoDumpFormat>
+  <autoDumpTimeSpec>0</autoDumpTimeSpec>
+  <autoDumpStorageDevice>0</autoDumpStorageDevice>
+ </trend>
+ <trend type="1">
+  <name>360_02</name>
+  <source></source>
+  <samplingTime attachTo="">60000</samplingTime>
+  <active>true</active>
+  <compressed>false</compressed>
+  <size>61500</size>
+  <trigger></trigger>
+  <deviation>
+   <lowLimit>0</lowLimit>
+   <highLimit>0</highLimit>
+  </deviation>
+  <autodumptrend>false</autodumptrend>
+  <autodumpFileNameFormat>Data/%n/%y%M%d/%h%m%s</autodumpFileNameFormat>
+  <dataStorageLoc></dataStorageLoc>
+  <storageDevice>0</storageDevice>
+  <sources>
+   <dl comment="" name="GjenvinnerOP"></dl>
+   <dl comment="" name="VentilVarmeOP"></dl>
+   <dl comment="" name="TempInntak"></dl>
+   <dl comment="" name="TempTilluft"></dl>
+   <dl comment="" name="TempAvkast"></dl>
+   <dl comment="" name="TempAvtrekk"></dl>
+  </sources>
+  <sourceTs>false</sourceTs>
+  <autoDumpFormat>0</autoDumpFormat>
+  <autoDumpTimeSpec>0</autoDumpTimeSpec>
+  <autoDumpStorageDevice>0</autoDumpStorageDevice>
+ </trend>
+</trends>

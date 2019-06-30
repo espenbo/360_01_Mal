@@ -1,0 +1,86 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="signaturedialog" singleInstance="true" pageType="modal" pageSize="400,390" class="DialogWgt" dataWndSize="0,70" downloadPrepDone="false" px="0" usedFonts="Tahoma" py="0" titlebar="false" staticFile="opt/signaturedialog.png" dynPosition="false" id="signaturedialog" titleName="" staticOptEnable="false">
+  <wgtStyle width="400" x="0" forcePaint="512" y="0" height="390" ver="0299002784" color="rgb(224,224,224)" v="02.99.00.2784"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts/>
+  </object>
+  <object class="GroupSubscribeWgt" id="signaturedialog@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="LabelWgt" id="id_title_lbl">
+   <wgtStyle font-bold="true" forcePaint="16" font-family="Tahoma" font-sizepx="24" cx="198.32" cy="14.68" alignment="center" x="2" y="2" wgtStaticOpt="dynamic" vert-align="middle" frameFill="rgb(0,0,255)" keypad-type="None" font-color="rgb(255,255,255)" width="395" wrapping="false" text="Confirm your password" height="30" frame="true" font-size="18" frameColor="rgb(0,0,255)"/>
+  </object>
+  <object class="GroupWgt" id="GroupWgt5" customType="Button">
+   <wgtStyle width="102" x="136" forcePaint="16" y="337" cx="51" cy="20" wgtStaticOpt="dynamic" height="40"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" id="image8">
+    <wgtStyle width="102" imagePath="images/ButtonFrame.svg" x="0" forcePaint="1" y="0" cx="46" cy="18" height="40"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="btnStd3">
+    <wgtStyle width="96" x="3.90" forcePaint="1" y="3" fill="rgb(211,211,211)" dx="1" cx="47.21" form="standard" dy="-1" cy="15" height="33" releasePath="images\Button.svg" needlePath="images\ButtonPressed.svg" type="momentary" value="0"/>
+    <links>
+     <action class="ApplySignatureAction" attribute="onMouseRelease" event="onMouseUp" actionID="0" actionWgt="_SignatureMgr"/>
+     <action pageName="" class="CloseDialogAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" closeParam="Selected" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="label3">
+    <wgtStyle width="41.94" font-color="rgb(40,40,40)" x="31.40" forcePaint="1" font-sizepx="16" y="9.48" font-family="Tahoma" cx="20.13" cy="9.63" height="21.19" alignment="center" vert-align="middle" text="Ok" keypad-type="None" font-size="12"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt3" customType="Button">
+   <wgtStyle width="102" x="259" forcePaint="16" y="337" cx="51" cy="20" wgtStaticOpt="dynamic" height="40"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" id="image4">
+    <wgtStyle width="102" imagePath="images/ButtonFrame.svg" x="0" forcePaint="1" y="0" cx="46" cy="18" height="40"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="btnStd4">
+    <wgtStyle width="96" x="3.18" forcePaint="1" y="4" fill="rgb(211,211,211)" dx="1" cx="47.34" form="standard" dy="-1" cy="15.12" height="33" releasePath="images\Button.svg" needlePath="images\ButtonPressed.svg" type="momentary" value="0"/>
+    <links>
+     <action class="CancelSignatureAction" attribute="onMouseRelease" event="onMouseUp" actionID="0" actionWgt="_SignatureMgr"/>
+     <action pageName="" class="CloseDialogAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" closeParam="Selected" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="label14">
+    <wgtStyle width="50" font-color="rgb(40,40,40)" x="27.09" forcePaint="1" font-sizepx="16" y="8.48" font-family="Tahoma" cx="24" cy="10" height="22" alignment="center" vert-align="middle" text="Cancel" keypad-type="None" font-size="12"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="id_erromsg_lbl">
+   <wgtStyle width="326.98" font-color="rgb(255,0,0)" x="34" forcePaint="24" font-sizepx="16" y="296" font-family="Tahoma" wrapping="false" cx="163.49" cy="14.68" wgtStaticOpt="dynamic" text="" height="31" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="text" tag="errormsg" widgetType="Project" sourceType="Widget" tagIndex="-1" dataSource="_SignatureMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="id_password_lbl">
+   <wgtStyle width="325.98" font-color="rgb(23,30,40)" x="38" forcePaint="16" font-sizepx="16" y="61" font-family="Tahoma" wrapping="false" cx="162.99" cy="12.01" wgtStaticOpt="dynamic" text="Password:" height="25.36" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+  </object>
+  <object class="NumericWgt" id="id_password">
+   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="16" cx="149.95" cy="15.75" step="1" timeSpec="local" x="38" y="87" masked="true" vert-align="middle" frameFill="rgb(255,255,255)" text="" max="32767" usingFormat="none" value="" keypad-type="Alphabet" font-color="rgb(23,30,40)" min="-32768" width="324.98" readWrite="true" height="34" frame="true" font-size="12" form="Numeric"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" attribute="value" tag="password" widgetType="Project" sourceType="Widget" tagIndex="-1" dataSource="_SignatureMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="id_comment_lbl">
+   <wgtStyle width="325.98" font-color="rgb(23,30,40)" x="35" forcePaint="16" font-sizepx="16" y="147" font-family="Tahoma" wrapping="false" cx="162.99" cy="12.01" wgtStaticOpt="dynamic" text="Comment:" height="25.36" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+  </object>
+  <object class="NumericWgt" id="id_comment">
+   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="16" cx="149.95" cy="53.10" step="1" timeSpec="local" x="35" y="173" vert-align="top" frameFill="rgb(255,255,255)" text="" max="32767" usingFormat="none" value="" keypad-type="Alphabet" font-color="rgb(23,30,40)" min="-32768" width="324.98" wrapping="true" readWrite="true" height="117" frame="true" font-size="12" form="Numeric"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" attribute="value" tag="comment" widgetType="Project" sourceType="Widget" tagIndex="-1" dataSource="_SignatureMgr"/>
+    <dataLink readWrite="R/W" attribute="disabled" tag="disablecomment" widgetType="Project" sourceType="Widget" tagIndex="-1" dataSource="_SignatureMgr"/>
+    <dataLink readWrite="R/W" attribute="frameFill" tag="disablecomment" widgetType="Project" sourceType="Widget" tagIndex="-1" dataSource="_SignatureMgr">
+     <xForms>
+      <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ffffff;#efefef" name="ColorPaletteCustom"/>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+ </object>
+</wgtPage>

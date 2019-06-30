@@ -1,0 +1,124 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="NettworkINFO" singleInstance="true" pageType="modal" pageSize="350,300" class="DialogWgt" dataWndSize="0,70" downloadPrepDone="true" px="0" usedFonts="Tahoma" py="0" titlebar="true" staticFile="opt/nettworkinfo.png" dynPosition="false" id="NettworkINFO" titleName="" staticOptEnable="true">
+  <wgtStyle width="350" x="0" y="0" height="300" ver="020800363" v="02.08.00.363"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+    <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="Mac ID" L2="Mac ID" id="0"/>
+    <MLText L1="Mac ID" L2="Mac ID" id="1"/>
+    <MLText L1="Gateway" L2="Gateway" id="2"/>
+    <MLText L1="Gateway" L2="Gateway" id="3"/>
+    <MLText L1="Subnet Mask" L2="Subnet Mask" id="4"/>
+    <MLText L1="Subnet Mask" L2="Subnet Mask" id="5"/>
+    <MLText L1="IP" L2="IP" id="6"/>
+    <MLText L1="IP" L2="IP" id="7"/>
+   </MLTexts>
+  </object>
+  <object class="ShapeWgt" id="rect1" static="true">
+   <wgtStyle width="352" x="0" y="256" fill="rgb(127,127,127)" cx="176" cy="0.50" height="1" nodeName="rect" stroke="rgb(102,102,102)"/>
+  </object>
+  <object class="GroupWgt" id="GroupWgt2" customType="Button">
+   <wgtStyle width="65" x="278" y="266" cx="32" cy="14" height="29"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="WinBtn1-pushbutton2">
+    <wgtStyle width="65" x="1" y="0" fill="rgb(160,160,164)" dx="1" form="standard" dy="-1" height="28" releasePath="images\win-like.svg" needlePath="images\win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+    <links>
+     <action pageName="" class="CloseDialogAction" attribute="onMouseRelease" event="onMouseUp" actionID="0" closeParam="Selected" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="WinBtn1-text2">
+    <wgtStyle width="36.12" font-color="rgb(255,255,255)" x="15" forcePaint="1" y="7" font-family="Tahoma" cx="14" cy="8" height="13.92" alignment="center" vert-align="middle" text="Close" keypad-type="None" font-size="10"/>
+   </object>
+  </object>
+  <object class="ShapeWgt" id="rect2" static="true">
+   <wgtStyle width="352" x="0" y="256" fill="rgb(127,127,127)" cx="176" cy="0.50" height="1" nodeName="rect" stroke="rgb(102,102,102)"/>
+  </object>
+  <object class="GroupWgt" id="GroupWgt4" customType="Button">
+   <wgtStyle width="65" x="278" forcePaint="1" y="266" cx="32" cy="14" height="29"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="WinBtn1-pushbutton4">
+    <wgtStyle width="65" x="1" forcePaint="1" y="0" fill="rgb(160,160,164)" dx="1" form="standard" dy="-1" height="28" releasePath="images\win-like.svg" needlePath="images\win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+    <links>
+     <action pageName="" class="CloseDialogAction" attribute="onMouseRelease" event="onMouseUp" actionID="0" closeParam="Selected" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="WinBtn1-text4">
+    <wgtStyle width="36.12" font-color="rgb(255,255,255)" x="15" forcePaint="1" y="7" font-family="Tahoma" cx="14" cy="8" height="13.92" alignment="center" vert-align="middle" text="Close" keypad-type="None" font-size="10"/>
+   </object>
+  </object>
+  <object class="ShapeWgt" id="rect3" static="true">
+   <wgtStyle width="349" x="0" y="1.54" fill="rgb(127,127,127)" cx="174.50" cy="124.16" height="257" nodeName="rect" stroke="rgb(192,192,192)"/>
+  </object>
+  <object class="LabelWgt" id="label2">
+   <wgtStyle width="205.55" font-color="rgb(255,255,255)" x="7.12" forcePaint="10" font-sizepx="13" y="28.43" font-family="Tahoma" cx="99.56" cy="16.23" height="39.58" alignment="center" vert-align="middle" frame="true" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="string" attribute="text" tag="IP Address" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="6"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label3">
+   <wgtStyle width="205.55" font-color="rgb(255,255,255)" x="7.12" forcePaint="10" font-sizepx="13" y="82.53" font-family="Tahoma" cx="99.56" cy="15.39" height="39.58" alignment="center" vert-align="middle" frame="true" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="string" attribute="text" tag="Subnet Mask" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="4"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label5">
+   <wgtStyle width="205.55" font-color="rgb(255,255,255)" x="7.12" forcePaint="10" font-sizepx="13" y="190.74" font-family="Tahoma" cx="104.32" cy="15.99" height="39.58" alignment="center" vert-align="middle" frame="true" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="string" attribute="text" tag="Mac ID" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label6">
+   <wgtStyle width="106.84" font-color="rgb(40,40,40)" x="227.92" forcePaint="2" font-sizepx="13" y="28.43" font-family="Tahoma" cx="52.59" cy="20.29" height="40.58" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="7"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label7">
+   <wgtStyle width="106.84" font-color="rgb(40,40,40)" x="227.92" forcePaint="2" font-sizepx="13" y="82.53" font-family="Tahoma" cx="52.93" cy="19.41" height="40.58" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="5"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label8">
+   <wgtStyle width="106.84" font-color="rgb(40,40,40)" x="227.92" forcePaint="2" font-sizepx="13" y="136.64" font-family="Tahoma" cx="52.31" cy="20.29" height="40.58" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="3"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label9">
+   <wgtStyle width="106.84" font-color="rgb(40,40,40)" x="227.92" forcePaint="2" font-sizepx="13" y="190.74" font-family="Tahoma" cx="52.66" cy="19.33" height="40.58" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="1"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label4">
+   <wgtStyle width="205.55" font-color="rgb(255,255,255)" x="7.12" forcePaint="10" font-sizepx="13" y="136.64" font-family="Tahoma" cx="99.56" cy="15.39" height="39.58" alignment="center" vert-align="middle" frame="true" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="string" attribute="text" tag="Gateway" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="2"/>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="NettworkINFO@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+ </object>
+</wgtPage>

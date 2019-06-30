@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="40.131001"
+   height="44.111"
+   viewBox="0 0 40.131 44.111"
+   id="Livello_1"
+   xml:space="preserve"
+   style="overflow:visible"><defs
+   id="defs11509"><linearGradient
+     id="linearGradient12047"><stop
+       id="stop12049"
+       style="stop-color:#000000;stop-opacity:1"
+       offset="0" /><stop
+       id="stop12051"
+       style="stop-color:#000000;stop-opacity:0"
+       offset="1" /></linearGradient><linearGradient
+     x1="20.0655"
+     y1="44.111"
+     x2="20.0655"
+     y2="19.251835"
+     id="linearGradient12053"
+     xlink:href="#linearGradient12047"
+     gradientUnits="userSpaceOnUse" /></defs>
+<polygon
+   points="27.039,0 13.089,0 13.089,19.797 0,19.797 20.064,44.111 40.131,19.797 27.039,19.797 "
+   id="bgColor00"
+   style="fill:#ff0000" />
+<polygon
+   points="13.089,19.797 0,19.797 20.064,44.111 40.131,19.797 27.039,19.797 27.039,0 13.089,0 "
+   id="polygon11505-1"
+   style="opacity:0.45;fill:url(#linearGradient12053);fill-opacity:1" /></svg>

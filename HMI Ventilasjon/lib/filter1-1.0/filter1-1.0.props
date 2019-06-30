@@ -1,0 +1,7 @@
+<defs>
+ <g id="custom_properties" showChildNodes="0" inherit="basicgroup_properties" attributeName="Filter1-1.0:1.0">
+  <info></info>
+  <text display="Tag_Text" default="true" attributeType="mltext" editChild="true" attachTag="true" attributeName="*.Tag.text">Text</text>
+  <text display="Lampe_Value" default="true" attributeType="integer" editChild="true" attachTag="true" attributeName="*.d1.frame">Determines what image path from the list of paths is actual one</text>
+ </g>
+</defs>

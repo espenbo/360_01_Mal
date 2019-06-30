@@ -1,0 +1,459 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Alarmer" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="maintemplate.jmx" usedFonts="Tahoma,Arial" staticFile="opt/alarmer.png" id="Alarmer" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020800363" v="02.08.00.363"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+    <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" L2="" id="21"/>
+    <MLText L1="Enable" L2="Enable" id="1"/>
+    <MLText L1="Historiske Alarmer" L2="Historiske Alarmer" id="2"/>
+    <MLText L1="Tilbake" L2="Tilbake" id="18"/>
+    <MLText L1="Time" L2="Time" id="19"/>
+    <MLText L1="Select" L2="Select" id="20"/>
+    <MLText L1="Label" L2="Label" id="22"/>
+    <MLText L1="Label" L2="Label" id="23"/>
+    <MLText L1="Label" L2="Label" id="24"/>
+    <MLText L1="Label" L2="Label" id="25"/>
+    <MLText L1="Label" L2="Label" id="26"/>
+    <MLText L1="Priority" L2="Priority" id="29"/>
+    <MLText L1="Description" L2="Description" id="30"/>
+    <MLText L1="Value" L2="Value" id="31"/>
+    <MLText L1="State" L2="State" id="32"/>
+    <MLText L1="Name" L2="Name" id="33"/>
+    <MLText L1="Save" L2="Save" id="34"/>
+    <MLText L1="Ack" L2="Ack" id="35"/>
+    <MLText L1="Toggle selection" L2="Toggle selection" id="36"/>
+    <MLText L1="Reset" L2="Reset" id="37"/>
+    <MLText L1="Name" L2="Name" id="38"/>
+    <MLText L1="Custom Field 2" L2="Custom Field 2" id="39"/>
+    <MLText L1="Custom Field 1" L2="Custom Field 1" id="40"/>
+    <MLText L1="FG Color" L2="FG Color" id="41"/>
+    <MLText L1="BG Color" L2="BG Color" id="42"/>
+    <MLText L1="Comment" L2="Comment" id="43"/>
+    <MLText L1="User Action" L2="User Action" id="44"/>
+    <MLText L1="Date-Time" L2="Date-Time" id="45"/>
+    <MLText L1="Severity" L2="Severity" id="46"/>
+    <MLText L1="Time" L2="Time" id="47"/>
+    <MLText L1="Date" L2="Date" id="48"/>
+    <MLText L1="Description" L2="Description" id="49"/>
+    <MLText L1="State" L2="State" id="50"/>
+    <MLText L1="Value" L2="Value" id="51"/>
+    <MLText L1="Enable" L2="Enable" id="52"/>
+    <MLText L1="Select" L2="Select" id="53"/>
+    <MLText L1="Groups" L2="Groups" id="54"/>
+    <MLText L1="Hide Not Triggered" L2="Hide Not Triggered" id="55"/>
+    <MLText L1="Show All" L2="Show All" id="56"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" id="BtnStd16" customType="Button">
+   <wgtStyle width="93" x="6" y="444" cx="46" cy="17" height="34"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image31" static="true">
+    <wgtStyle width="93" imagePath="images/frame_rect45bar_chrome.svg" x="0" y="0" cx="46.50" cy="17.30" height="34"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd16">
+    <wgtStyle width="85" x="4" y="4" fill="rgb(192,192,192)" dx="1" cx="42.54" form="standard" cy="12.91" height="25" releasePath="images/btn_plastic_rect45bar_1.svg" needlePath="images/btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="main.jmx" class="LoadPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label16">
+    <wgtStyle width="74" font-color="rgb(40,40,40)" x="7" forcePaint="3" y="5" font-family="Tahoma" font-bold="true" wrapping="true" cx="37.10" cy="12.64" height="25" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="18"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image32" static="true">
+    <wgtStyle width="27" x="31" y="8" cx="13.82" cy="8.75" height="17"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd5" customType="Button">
+   <wgtStyle width="93" x="701" y="442.61" cx="46" cy="17" height="34"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image2" static="true">
+    <wgtStyle width="93" imagePath="images/frame_rect45bar_chrome.svg" x="0" y="0" cx="46.50" cy="17.30" height="34"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd1">
+    <wgtStyle width="85" x="4" y="4" fill="rgb(192,192,192)" dx="1" cx="42.54" form="standard" cy="12.91" height="25" releasePath="images/btn_plastic_rect45bar_1.svg" needlePath="images/btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="histalarm.jmx" class="LoadPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label7">
+    <wgtStyle width="74" font-color="rgb(40,40,40)" x="7" forcePaint="3" y="5" font-family="Tahoma" font-bold="true" wrapping="true" cx="37.10" cy="12.64" height="25" alignment="center" vert-align="middle" keypad-type="None" font-size="8"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image3" static="true">
+    <wgtStyle width="27" x="31" y="8" cx="13.82" cy="8.75" height="17"/>
+   </object>
+  </object>
+  <object class="GroupSubscribeWgt" id="Alarmer@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="GroupWgt" id="ActiveAlarmsTable" customType="ActiveAlarmsTable">
+   <wgtStyle width="785" x="5" y="28.51" cx="392.50" cy="202" height="404"/>
+   <object class="ComboBoxWgt" id="ActiveAlarmsTable.Filter">
+    <wgtStyle width="246.88" listData="^((Not Triggered Acked|Not Triggered Not Acked|Triggered).*$)," x="1.55" forcePaint="2" font-sizepx="10" y="363.78" font-family="Tahoma" cx="29.72" cy="17.62" height="37.95" alignment="center" vert-align="top" index="0" text="" keypad-type="None" list="Hide Not Triggered,Show All" font-size="12"/>
+    <links>
+     <lang class="MLComboBoxLink:list:">
+      <MLFontFamily L1="Tahoma" L2="Tahoma"/>
+      <textid idx="0" val="55"/>
+      <textid idx="1" val="56"/>
+     </lang>
+    </links>
+   </object>
+   <object class="TableAlarmSrcWgt" id="ActiveAlarmsTable.AlarmsSrcWgt">
+    <wgtStyle width="79.85" x="694.09" forcePaint="26" y="285.93" filterCol1="5" filterCol2="17" hasStaticHeader="1" wgtStaticOpt="dynamic" height="62.35" filterExp1="^((Not Triggered Acked|Not Triggered Not Acked|Triggered).*$)" filterExp2="">
+     <header>
+      <col index="0"/>
+      <col index="1"/>
+      <col index="2"/>
+      <col index="3"/>
+      <col index="4"/>
+      <col index="5"/>
+      <col index="6"/>
+      <col index="7"/>
+      <col index="8"/>
+      <col index="9"/>
+      <col index="10"/>
+      <col index="11"/>
+      <col index="12"/>
+      <col index="13"/>
+      <col index="14"/>
+      <col index="1000"/>
+      <col index="1001"/>
+     </header>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="filterExp1" tag="itemData" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.Filter"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:col:">
+      <MLFontFamily L1="Tahoma" L2="Tahoma"/>
+      <textid idx="0" val="38"/>
+      <textid idx="1" val="54"/>
+      <textid idx="2" val="53"/>
+      <textid idx="3" val="52"/>
+      <textid idx="4" val="51"/>
+      <textid idx="5" val="50"/>
+      <textid idx="6" val="49"/>
+      <textid idx="7" val="48"/>
+      <textid idx="8" val="47"/>
+      <textid idx="9" val="46"/>
+      <textid idx="10" val="45"/>
+      <textid idx="11" val="44"/>
+      <textid idx="12" val="43"/>
+      <textid idx="13" val="42"/>
+      <textid idx="14" val="41"/>
+      <textid idx="1000" val="40"/>
+      <textid idx="1001" val="39"/>
+     </lang>
+    </links>
+   </object>
+   <object class="LabelWgt" id="ActiveAlarmsTable.Title" static="true">
+    <wgtStyle width="773.95" font-color="rgb(23,30,40)" x="5.79" font-sizepx="16" y="0" font-family="Tahoma" wrapping="true" cx="386.97" cy="12.39" height="26.17" alignment="center" vert-align="top" text="Aktive Alarmer" keypad-type="None" font-size="12"/>
+   </object>
+   <object class="GroupWgt" id="ActiveAlarmsTable.Buttons">
+    <wgtStyle width="536.53" x="248.47" forcePaint="16" y="364.75" cx="268.26" cy="19.63" wgtStaticOpt="dynamic" height="39.25">
+     <gridGroupLayout gridVerUnderFlow="2" gridGlobalStrokeMode="1" gridScrollAutohide="0" gridGlobalStrokeCollapsed="1" gridNRows="1" gridScrollBgColor="none" gridGlobalStrokeWidth="0" gridScrollImage="" gridVerOverFlow="2" gridNCols="4" gridHorOverFlow="2" gridGlobalStrokeColor="rgb(0,0,0)" gridScrollColor="rgb(153,153,153)" gridScrollSize="5" gridScrollOffset="2" gridHorUnderFlow="2">
+      <colProperties>
+       <colProperty rightStrokeColor="rgb(0,0,0)" leftMargin="3" rightMargin="0" minWidth="80" stretch="2" leftStroke="0" maxWidth="10000" rightStroke="0" leftStrokeColor="rgb(0,0,0)"/>
+       <colProperty rightStrokeColor="rgb(0,0,0)" leftMargin="3" rightMargin="0" minWidth="50" stretch="1" leftStroke="0" maxWidth="10000" rightStroke="0" leftStrokeColor="rgb(0,0,0)"/>
+       <colProperty rightStrokeColor="rgb(0,0,0)" leftMargin="3" rightMargin="0" minWidth="50" stretch="1" leftStroke="0" maxWidth="10000" rightStroke="0" leftStrokeColor="rgb(0,0,0)"/>
+       <colProperty rightStrokeColor="rgb(0,0,0)" leftMargin="3" rightMargin="0" minWidth="50" stretch="1" leftStroke="0" maxWidth="10000" rightStroke="0" leftStrokeColor="rgb(0,0,0)"/>
+      </colProperties>
+      <rowProperties>
+       <rowProperty selBackColor="none" selForColor="none" selStrokeColor="none" stretch="1" maxHeight="10000" backColor="none" topMargin="0" bottonMargin="0" topStrokeColor="rgb(0,0,0)" minHeight="0" bottonStrokeColor="rgb(0,0,0)" bottonStroke="0" topStroke="0"/>
+      </rowProperties>
+     </gridGroupLayout>
+    </wgtStyle>
+    <object class="GroupWgt" id="ActiveAlarmsTable.Buttons.Reset" customType="Button">
+     <wgtStyle forcePaint="17" preserveAspectRatio="0" cx="52.50" minWidth="0" cy="19.50" bottonMargin="0" x="325" colOcc="3" y="0" wgtStaticOpt="dynamic" rowOcc="1" horItemUnderflow="0" leftMargin="0" maxWidth="100000" rowSpan="1" horItemOverflow="0" rightMargin="0" width="105" minHeight="0" aspectRatio="2:1" verItemOverflow="0" topMargin="0" verItemUnderflow="0" height="39" maxHeight="100000" colSpan="1"/>
+     <links>
+      <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+     </links>
+     <object class="ButtonWgt" hmiStyle="type:btn" id="ActiveAlarmsTable.Buttons.Reset.btn">
+      <wgtStyle width="105" x="0" forcePaint="17" y="0" fill="rgb(255,255,255)" dx="1" cx="42.95" form="standard" cy="15.89" wgtStaticOpt="dynamic" height="39" releasePath="images\btn_kbdwht_long_1_rev1.svg" needlePath="images\btn_kbdwht_long_2_rev1.svg" type="momentary" value="0"/>
+      <links>
+       <action class="ResetAlarmAction" attribute="onMousePress" event="onMouseDown" actionID="0" alarmID="" actionWgt="_AlarmsMgr"/>
+      </links>
+     </object>
+     <object class="LabelWgt" id="ActiveAlarmsTable.Buttons.Reset.lbl">
+      <wgtStyle width="73.72" x="13.41" forcePaint="19" font-sizepx="10" y="6.10" font-family="Tahoma" cx="39.50" cy="10.06" wgtStaticOpt="dynamic" height="15.84" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+      <links>
+       <lang class="MLTextLink" textid="37"/>
+      </links>
+     </object>
+    </object>
+    <object class="GroupWgt" id="ActiveAlarmsTable.Buttons.Selection" customType="Button">
+     <wgtStyle forcePaint="17" preserveAspectRatio="0" cx="106" minWidth="0" cy="19.50" bottonMargin="0" x="3" colOcc="1" y="0" wgtStaticOpt="dynamic" rowOcc="1" horItemUnderflow="0" leftMargin="0" maxWidth="100000" rowSpan="1" horItemOverflow="0" rightMargin="0" width="212" minHeight="0" aspectRatio="145:32" verItemOverflow="0" topMargin="0" verItemUnderflow="0" height="39" maxHeight="100000" colSpan="1"/>
+     <links>
+      <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+     </links>
+     <object class="ButtonWgt" hmiStyle="type:btn" id="ActiveAlarmsTable.Buttons.Selection.btn">
+      <wgtStyle width="212" x="0" forcePaint="17" y="0" fill="rgb(255,255,255)" dx="1" cx="53.60" form="standard" cy="14.79" wgtStaticOpt="dynamic" height="39" releasePath="images\btn_kbdwht_long_1_rev1.svg" needlePath="images\btn_kbdwht_long_2_rev1.svg" type="momentary" value="0"/>
+      <links>
+       <action class="SelectAllAlarmsOnSrcAction" attribute="onMouseClick" mode="0" event="onMouseClick" actionID="1" alarmSrcId="ActiveAlarmsTable.AlarmsSrcWgt" actionWgt="_WgtMgr"/>
+      </links>
+     </object>
+     <object class="LabelWgt" id="ActiveAlarmsTable.Buttons.Selection.lbl">
+      <wgtStyle width="189.66" x="11.12" forcePaint="19" font-sizepx="10" y="2.60" font-family="Tahoma" cx="37.71" cy="10.92" wgtStaticOpt="dynamic" height="19.50" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+      <links>
+       <lang class="MLTextLink" textid="36"/>
+      </links>
+     </object>
+    </object>
+    <object class="GroupWgt" id="ActiveAlarmsTable.Buttons.Ack" customType="Button">
+     <wgtStyle forcePaint="17" preserveAspectRatio="0" cx="52" minWidth="0" cy="19.50" bottonMargin="0" x="218" colOcc="2" y="0" wgtStaticOpt="dynamic" rowOcc="1" horItemUnderflow="0" leftMargin="0" maxWidth="100000" rowSpan="1" horItemOverflow="0" rightMargin="0" width="104" minHeight="0" aspectRatio="65:32" verItemOverflow="0" topMargin="0" verItemUnderflow="0" height="39" maxHeight="100000" colSpan="1"/>
+     <links>
+      <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+     </links>
+     <object class="ButtonWgt" hmiStyle="type:btn" id="ActiveAlarmsTable.Buttons.Ack.btn">
+      <wgtStyle width="104" x="0" forcePaint="17" y="0" fill="rgb(255,255,255)" dx="1" cx="42.54" form="standard" cy="14.30" wgtStaticOpt="dynamic" height="39" releasePath="images\btn_kbdwht_long_1_rev1.svg" needlePath="images\btn_kbdwht_long_2_rev1.svg" type="momentary" value="0"/>
+      <links>
+       <action class="AckAlarmAction" attribute="onMousePress" event="onMouseDown" actionID="0" alarmID="" actionWgt="_AlarmsMgr"/>
+      </links>
+     </object>
+     <object class="LabelWgt" id="ActiveAlarmsTable.Buttons.Ack.lbl">
+      <wgtStyle width="58.98" x="17.07" forcePaint="19" font-sizepx="10" y="4.86" font-family="Tahoma" cx="45.41" cy="11.65" wgtStaticOpt="dynamic" height="18.28" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+      <links>
+       <lang class="MLTextLink" textid="35"/>
+      </links>
+     </object>
+    </object>
+    <object class="GroupWgt" id="ActiveAlarmsTable.Buttons.Save" customType="Button">
+     <wgtStyle forcePaint="17" preserveAspectRatio="0" cx="52" minWidth="0" cy="19.50" bottonMargin="0" x="433" colOcc="4" y="0" wgtStaticOpt="dynamic" rowOcc="1" horItemUnderflow="0" leftMargin="0" maxWidth="100000" rowSpan="1" horItemOverflow="0" rightMargin="0" width="104" minHeight="0" aspectRatio="65:32" verItemOverflow="0" topMargin="0" verItemUnderflow="0" height="39" maxHeight="100000" colSpan="1"/>
+     <links>
+      <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+     </links>
+     <object class="ButtonWgt" hmiStyle="type:btn" id="ActiveAlarmsTable.Buttons.Save.btn">
+      <wgtStyle width="104" x="0" forcePaint="17" y="0" fill="rgb(255,255,255)" dx="1" cx="43.51" form="standard" cy="15.89" wgtStaticOpt="dynamic" height="39" releasePath="images\btn_kbdwht_long_1_rev1.svg" needlePath="images\btn_kbdwht_long_2_rev1.svg" type="momentary" value="0"/>
+      <links>
+       <action class="EnableAlarmsAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" alarmID="" enableFlag="false" actionWgt="_AlarmsMgr"/>
+       <action class="SaveConfigurationAction" attribute="onMouseRelease" event="onMouseUp" actionID="2" actionWgt="_IdalMgr"/>
+      </links>
+     </object>
+     <object class="LabelWgt" id="ActiveAlarmsTable.Buttons.Save.lbl">
+      <wgtStyle width="73.67" x="15.18" forcePaint="19" font-sizepx="10" y="6.50" font-family="Tahoma" cx="40.32" cy="9.28" wgtStaticOpt="dynamic" height="14.64" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+      <links>
+       <lang class="MLTextLink" textid="34"/>
+      </links>
+     </object>
+    </object>
+   </object>
+   <object class="TableGroupWgt" id="ActiveAlarmsTable.Table.Data">
+    <wgtStyle forcePaint="25" preserveAspectRatio="0" cx="675.03" minWidth="0" cy="162.25" bottonMargin="0" x="0" colOcc="1" y="31.27" wgtStaticOpt="dynamic" rowOcc="2" horItemUnderflow="0" precachedPages="1" leftMargin="0" maxWidth="100000" rowSpan="1" horItemOverflow="0" rightMargin="0" width="784.92" minHeight="0" aspectRatio="399:101" verItemOverflow="0" topMargin="0" verItemUnderflow="0" height="324.50" maxHeight="100000" colSpan="1">
+     <gridGroupLayout gridVerUnderFlow="1" gridGlobalStrokeMode="1" gridScrollAutohide="0" gridGlobalStrokeCollapsed="1" gridNRows="2" gridScrollBgColor="none" gridGlobalStrokeWidth="1" gridScrollImage="" gridVerOverFlow="1" gridNCols="8" gridHorOverFlow="2" gridGlobalStrokeColor="rgb(0,0,0)" gridScrollColor="rgb(255,0,0)" gridScrollSize="5" gridScrollOffset="0" gridHorUnderFlow="2">
+      <colProperties>
+       <colProperty rightStrokeColor="rgb(0,0,0)" leftMargin="2" rightMargin="2" minWidth="50" stretch="1" leftStroke="0" maxWidth="100000" rightStroke="1" leftStrokeColor="rgb(0,0,0)"/>
+       <colProperty rightStrokeColor="rgb(0,0,0)" leftMargin="2" rightMargin="2" minWidth="100" stretch="2" leftStroke="1" maxWidth="100000" rightStroke="1" leftStrokeColor="rgb(0,0,0)"/>
+       <colProperty rightStrokeColor="rgb(0,0,0)" leftMargin="2" rightMargin="2" minWidth="150" stretch="3" leftStroke="1" maxWidth="100000" rightStroke="1" leftStrokeColor="rgb(0,0,0)"/>
+       <colProperty rightStrokeColor="rgb(0,0,0)" leftMargin="2" rightMargin="2" minWidth="50" stretch="1" leftStroke="1" maxWidth="100000" rightStroke="1" leftStrokeColor="rgb(0,0,0)"/>
+       <colProperty rightStrokeColor="rgb(0,0,0)" leftMargin="2" rightMargin="2" minWidth="160" stretch="2" leftStroke="1" maxWidth="100000" rightStroke="1" leftStrokeColor="rgb(0,0,0)"/>
+       <colProperty rightStrokeColor="rgb(0,0,0)" leftMargin="2" rightMargin="2" minWidth="200" stretch="4" leftStroke="1" maxWidth="100000" rightStroke="1" leftStrokeColor="rgb(0,0,0)"/>
+       <colProperty rightStrokeColor="rgb(0,0,0)" leftMargin="2" rightMargin="2" minWidth="100" stretch="2" leftStroke="1" maxWidth="100000" rightStroke="1" leftStrokeColor="rgb(0,0,0)"/>
+       <colProperty rightStrokeColor="rgb(0,0,0)" leftMargin="2" rightMargin="2" minWidth="50" stretch="1" leftStroke="1" maxWidth="100000" rightStroke="0" leftStrokeColor="rgb(0,0,0)"/>
+      </colProperties>
+      <rowProperties>
+       <rowProperty selBackColor="none" selForColor="none" selStrokeColor="none" stretch="2" maxHeight="25" backColor="none" topMargin="2" bottonMargin="2" topStrokeColor="rgb(0,0,0)" minHeight="25" bottonStrokeColor="rgb(0,0,0)" bottonStroke="1" topStroke="0"/>
+       <rowProperty selBackColor="none" selForColor="none" selStrokeColor="none" stretch="2" maxHeight="25" backColor="none" topMargin="2" bottonMargin="2" topStrokeColor="rgb(0,0,0)" minHeight="25" bottonStrokeColor="rgb(0,0,0)" bottonStroke="1" topStroke="0"/>
+      </rowProperties>
+     </gridGroupLayout>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="tableModel" tag="model" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+     <dataLink readWrite="R" attribute="rowsBg" tag="BGColor" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+    </dataLinks>
+    <object class="LabelWgt" id="ActiveAlarmsTable.Table.Data.namelbl">
+     <wgtStyle font-bold="true" forcePaint="155" preserveAspectRatio="0" font-family="Tahoma" cx="47.50" minWidth="0" font-sizepx="12" cy="9.48" alignment="center" bottonMargin="0" x="52" colOcc="2" y="2" wgtStaticOpt="dynamic" vert-align="middle" rowOcc="1" horItemUnderflow="0" leftMargin="0" maxWidth="100000" keypad-type="None" rowSpan="1" horItemOverflow="0" rightMargin="0" width="95" minHeight="0" aspectRatio="2:1" wrapping="true" verItemOverflow="0" topMargin="0" verItemUnderflow="0" height="20" maxHeight="100000" font-size="9" colSpan="1"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="text" tag="alName" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+      <dataLink readWrite="R" attribute="fill" tag="FGColor" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="33"/>
+     </links>
+    </object>
+    <object class="LabelWgt" id="ActiveAlarmsTable.Table.Data.statelbl">
+     <wgtStyle font-bold="true" forcePaint="155" preserveAspectRatio="0" font-family="Tahoma" cx="72.50" minWidth="0" font-sizepx="12" cy="9.48" alignment="center" bottonMargin="0" x="152" colOcc="3" y="2" wgtStaticOpt="dynamic" vert-align="middle" rowOcc="1" horItemUnderflow="0" leftMargin="0" maxWidth="100000" keypad-type="None" rowSpan="1" horItemOverflow="0" rightMargin="0" width="145" minHeight="0" aspectRatio="2:1" wrapping="true" verItemOverflow="0" topMargin="0" verItemUnderflow="0" height="20" maxHeight="100000" font-size="9" colSpan="1"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="text" tag="alState" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+      <dataLink readWrite="R" attribute="fill" tag="FGColor" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="32"/>
+     </links>
+    </object>
+    <object class="LabelWgt" id="ActiveAlarmsTable.Table.Data.valuelbl">
+     <wgtStyle font-bold="true" forcePaint="155" preserveAspectRatio="0" font-family="Tahoma" cx="22.50" minWidth="0" font-sizepx="12" cy="9.48" alignment="center" bottonMargin="0" x="302" colOcc="4" y="2" wgtStaticOpt="dynamic" vert-align="middle" rowOcc="1" horItemUnderflow="0" leftMargin="0" maxWidth="100000" keypad-type="None" rowSpan="1" horItemOverflow="0" rightMargin="0" width="45" minHeight="0" aspectRatio="2:1" wrapping="true" verItemOverflow="0" topMargin="0" verItemUnderflow="0" height="20" maxHeight="100000" font-size="9" colSpan="1"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="text" tag="alValue" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+      <dataLink readWrite="R" attribute="fill" tag="FGColor" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="31"/>
+     </links>
+    </object>
+    <object class="LabelWgt" id="ActiveAlarmsTable.Table.Data.desclbl">
+     <wgtStyle font-bold="true" forcePaint="155" preserveAspectRatio="0" font-family="Tahoma" cx="97.50" minWidth="0" font-sizepx="12" cy="9.48" alignment="center" bottonMargin="0" x="512" colOcc="6" y="2" wgtStaticOpt="dynamic" vert-align="middle" rowOcc="1" horItemUnderflow="0" leftMargin="0" maxWidth="100000" keypad-type="None" rowSpan="1" horItemOverflow="0" font-color="rgb(23,30,40)" rightMargin="0" width="195" minHeight="0" aspectRatio="2:1" wrapping="true" verItemOverflow="0" topMargin="0" verItemUnderflow="0" height="20" maxHeight="100000" font-size="9" colSpan="1"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="text" tag="alDescription" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+      <dataLink readWrite="R" attribute="fill" tag="FGColor" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="30"/>
+     </links>
+    </object>
+    <object class="LabelWgt" id="ActiveAlarmsTable.Table.Data.priolbl">
+     <wgtStyle font-bold="true" forcePaint="155" preserveAspectRatio="0" font-family="Tahoma" cx="47.50" minWidth="0" font-sizepx="12" cy="9.48" alignment="center" bottonMargin="0" x="712" colOcc="7" y="2" wgtStaticOpt="dynamic" vert-align="middle" rowOcc="1" horItemUnderflow="0" leftMargin="0" maxWidth="100000" keypad-type="None" rowSpan="1" horItemOverflow="0" font-color="rgb(23,30,40)" rightMargin="0" width="95" minHeight="0" aspectRatio="2:1" wrapping="true" verItemOverflow="0" topMargin="0" verItemUnderflow="0" height="20" maxHeight="100000" font-size="9" colSpan="1"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="text" tag="alSeverity" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+      <dataLink readWrite="R" attribute="fill" tag="FGColor" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="29"/>
+     </links>
+    </object>
+    <object class="GroupWgt" id="ActiveAlarmsTable.Table.Data.selbtn1" customType="Button">
+     <wgtStyle forcePaint="17" preserveAspectRatio="1" cx="10" minWidth="0" cy="10" bottonMargin="0" x="14.50" colOcc="1" y="27" wgtStaticOpt="dynamic" rowOcc="2" horItemUnderflow="0" leftMargin="0" maxWidth="100000" rowSpan="1" horItemOverflow="0" mtx="1,1.82849e-13,0,-5.903e-09,1,0,1.1806e-07,0,1" rightMargin="0" width="20" minHeight="0" aspectRatio="1:1" verItemOverflow="0" topMargin="0" verItemUnderflow="0" height="20" maxHeight="100000" colSpan="1"/>
+     <links>
+      <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+     </links>
+     <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="ActiveAlarmsTable.Table.Data.selbtn1.frmImg">
+      <wgtStyle width="20" x="0" forcePaint="16" y="0" bdrImageSize="57.00,52.00" fill="rgb(127,127,127)" cx="9.83" cy="10" wgtStaticOpt="dynamic" bdrSize="0.45,0.43,0.40,0.42" height="20" mtx="1,0,0,0,1,0,0,0,1" bdrEdges="0.13,0.13,0.13,0.13"/>
+     </object>
+     <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:btn; type:btn" id="ActiveAlarmsTable.Table.Data.selbtn1.btn">
+      <wgtStyle forcePaint="25" cx="6.53" cy="6.97" x="2.22" y="2.22" bdrImage="true" wgtStaticOpt="dynamic" releasePath="images\not_checked.png" value="0" needlePath="images\checked.png" mtx="1,0,0,0,1,0,0,0,1" width="14.44" bdrImageSize="43.00,43.00" fill="rgb(120,120,120)" height="14.44" type="maintained" form="standard" bdrSize="0.40,0.43,0.38,0.35"/>
+      <dataLinks>
+       <dataLink readWrite="R/W" attribute="value" tag="alSelect" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+      </dataLinks>
+     </object>
+     <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="ActiveAlarmsTable.Table.Data.selbtn1.lbl">
+      <wgtStyle width="12.22" font-color="rgb(40,40,40)" x="3.33" forcePaint="16" font-sizepx="13" y="4.44" font-family="Tahoma" wrapping="true" cx="8.14" cy="7.03" wgtStaticOpt="dynamic" height="11.11" alignment="center" vert-align="middle" mtx="1,0,0,0,1,0,0,0,1" keypad-type="None" font-size="12"/>
+      <links>
+       <lang class="MLTextLink" textid="21"/>
+      </links>
+     </object>
+     <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="ActiveAlarmsTable.Table.Data.selbtn1.icoImg">
+      <wgtStyle width="6.67" x="6.67" forcePaint="16" y="6.67" cx="3.32" cy="2.92" wgtStaticOpt="dynamic" height="6.67" mtx="1,0,0,0,1,0,0,0,1"/>
+     </object>
+    </object>
+    <object class="LabelWgt" id="ActiveAlarmsTable.Table.Data.namelbl1">
+     <wgtStyle forcePaint="155" preserveAspectRatio="0" font-family="Tahoma" cx="47.50" minWidth="0" font-sizepx="12" cy="9.48" alignment="center" bottonMargin="0" x="52" colOcc="2" y="27" wgtStaticOpt="dynamic" vert-align="middle" rowOcc="2" horItemUnderflow="0" leftMargin="0" maxWidth="100000" keypad-type="None" rowSpan="1" horItemOverflow="0" rightMargin="0" width="95" minHeight="0" aspectRatio="47:9" wrapping="true" verItemOverflow="0" topMargin="0" verItemUnderflow="0" height="20" maxHeight="100000" font-size="9" colSpan="1"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="text" tag="alName" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+      <dataLink readWrite="R" attribute="fill" tag="FGColor" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="26"/>
+     </links>
+    </object>
+    <object class="LabelWgt" id="ActiveAlarmsTable.Table.Data.statelbl1">
+     <wgtStyle forcePaint="155" preserveAspectRatio="0" font-family="Tahoma" cx="72.50" minWidth="0" font-sizepx="12" cy="9.48" alignment="center" bottonMargin="0" x="152" colOcc="3" y="27" wgtStaticOpt="dynamic" vert-align="middle" rowOcc="2" horItemUnderflow="0" leftMargin="0" maxWidth="100000" keypad-type="None" rowSpan="1" horItemOverflow="0" rightMargin="0" width="145" minHeight="0" aspectRatio="8:1" wrapping="true" verItemOverflow="0" topMargin="0" verItemUnderflow="0" height="20" maxHeight="100000" font-size="9" colSpan="1"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="text" tag="alState" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+      <dataLink readWrite="R" attribute="fill" tag="FGColor" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="25"/>
+     </links>
+    </object>
+    <object class="LabelWgt" id="ActiveAlarmsTable.Table.Data.valuelbl1">
+     <wgtStyle forcePaint="155" preserveAspectRatio="0" font-family="Tahoma" cx="22.50" minWidth="0" font-sizepx="12" cy="9.48" alignment="center" bottonMargin="0" x="302" colOcc="4" y="27" wgtStaticOpt="dynamic" vert-align="middle" rowOcc="2" horItemUnderflow="0" leftMargin="0" maxWidth="100000" keypad-type="None" rowSpan="1" horItemOverflow="0" rightMargin="0" width="45" minHeight="0" aspectRatio="22:9" wrapping="true" verItemOverflow="0" topMargin="0" verItemUnderflow="0" height="20" maxHeight="100000" font-size="9" colSpan="1"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="text" tag="alValue" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+      <dataLink readWrite="R" attribute="fill" tag="FGColor" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="24"/>
+     </links>
+    </object>
+    <object class="NumericWgt" id="ActiveAlarmsTable.Table.Data.timedate1">
+     <wgtStyle font-sizepx="12" bottonMargin="0" horItemUnderflow="0" rightMargin="0" min="0" width="155" font-size="9" font-family="Tahoma" leftMargin="0" verItemOverflow="0" topMargin="0" wgtStaticOpt="dynamic" alignment="center" minHeight="0" cx="72.40" max="4096" cy="10" step="1" colOcc="5" vert-align="middle" forcePaint="153" timeSpec="local" maxHeight="100000" usingFormat="MM/DD/YY - hh:mm:ss" rowSpan="1" height="20" preserveAspectRatio="0" form="date-time" colSpan="1" numberFormat="0" aspectRatio="17:2" verItemUnderflow="0" keypad-type="None" value="-1" rowOcc="2" maxWidth="100000" x="352" y="27" minWidth="0" horItemOverflow="0" text="-1"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="fill" tag="FGColor" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+      <dataLink readWrite="R" attribute="value" tag="alDateTime" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="ActiveAlarmsTable.Table.Data.desclbl1">
+     <wgtStyle forcePaint="155" preserveAspectRatio="0" font-family="Tahoma" cx="97.50" minWidth="0" font-sizepx="12" cy="9.48" alignment="center" bottonMargin="0" x="512" colOcc="6" y="27" wgtStaticOpt="dynamic" vert-align="middle" rowOcc="2" horItemUnderflow="0" leftMargin="0" maxWidth="100000" keypad-type="None" rowSpan="1" horItemOverflow="0" font-color="rgb(23,30,40)" rightMargin="0" width="195" minHeight="0" aspectRatio="97:9" wrapping="true" verItemOverflow="0" topMargin="0" verItemUnderflow="0" height="20" maxHeight="100000" font-size="9" colSpan="1"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="text" tag="alDescription" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+      <dataLink readWrite="R" attribute="fill" tag="FGColor" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="23"/>
+     </links>
+    </object>
+    <object class="LabelWgt" id="ActiveAlarmsTable.Table.Data.priolbl1">
+     <wgtStyle forcePaint="155" preserveAspectRatio="0" font-family="Tahoma" cx="47.50" minWidth="0" font-sizepx="12" cy="9.48" alignment="center" bottonMargin="0" x="712" colOcc="7" y="27" wgtStaticOpt="dynamic" vert-align="middle" rowOcc="2" horItemUnderflow="0" leftMargin="0" maxWidth="100000" keypad-type="None" rowSpan="1" horItemOverflow="0" font-color="rgb(23,30,40)" rightMargin="0" width="95" minHeight="0" aspectRatio="47:9" wrapping="true" verItemOverflow="0" topMargin="0" verItemUnderflow="0" height="20" maxHeight="100000" font-size="9" colSpan="1"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="text" tag="alSeverity" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+      <dataLink readWrite="R" attribute="fill" tag="FGColor" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="22"/>
+     </links>
+    </object>
+    <object class="GroupWgt" id="ActiveAlarmsTable.Table.Data.enbbtn1" customType="Button">
+     <wgtStyle forcePaint="16" preserveAspectRatio="1" cx="10" minWidth="0" cy="10" bottonMargin="0" x="825" colOcc="8" y="27" wgtStaticOpt="dynamic" rowOcc="2" horItemUnderflow="0" leftMargin="0" maxWidth="100000" rowSpan="1" horItemOverflow="0" mtx="1,1.83007e-13,0,-5.89785e-09,1,0,1.17957e-07,0,1" rightMargin="0" width="20" minHeight="0" aspectRatio="1:1" verItemOverflow="0" topMargin="0" verItemUnderflow="0" height="20" maxHeight="100000" colSpan="1"/>
+     <links>
+      <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+     </links>
+     <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="ActiveAlarmsTable.Table.Data.enbbtn1.frmImg">
+      <wgtStyle width="20" x="0" forcePaint="16" y="0" bdrImageSize="57.00,52.00" fill="rgb(127,127,127)" cx="9.83" cy="10" wgtStaticOpt="dynamic" bdrSize="0.45,0.43,0.40,0.42" height="20" mtx="1,0,0,0,1,0,0,0,1" bdrEdges="0.13,0.13,0.13,0.13"/>
+     </object>
+     <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:btn; type:btn" id="ActiveAlarmsTable.Table.Data.enbbtn1.btn">
+      <wgtStyle forcePaint="24" cx="6.53" cy="6.97" x="2.22" y="2.22" bdrImage="true" wgtStaticOpt="dynamic" releasePath="images\not_checked.png" value="0" needlePath="images\checked.png" mtx="1,0,0,0,1,0,0,0,1" width="14.44" bdrImageSize="43.00,43.00" fill="rgb(120,120,120)" height="14.44" type="maintained" form="standard" bdrSize="0.40,0.43,0.38,0.35"/>
+      <dataLinks>
+       <dataLink readWrite="R/W" attribute="value" tag="alEnable" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+      </dataLinks>
+     </object>
+     <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="ActiveAlarmsTable.Table.Data.enbbtn1.lbl">
+      <wgtStyle width="12.22" font-color="rgb(40,40,40)" x="3.33" forcePaint="16" font-sizepx="13" y="4.44" font-family="Tahoma" wrapping="true" cx="8.14" cy="7.03" wgtStaticOpt="dynamic" height="11.11" alignment="center" vert-align="middle" mtx="1,0,0,0,1,0,0,0,1" keypad-type="None" font-size="12"/>
+      <links>
+       <lang class="MLTextLink" textid="21"/>
+      </links>
+     </object>
+     <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="ActiveAlarmsTable.Table.Data.enbbtn1.icoImg">
+      <wgtStyle width="6.67" x="6.67" forcePaint="16" y="6.67" cx="3.32" cy="2.91" wgtStaticOpt="dynamic" height="6.67" mtx="1,0,0,0,1,0,0,0,1"/>
+     </object>
+    </object>
+    <object class="LabelWgt" id="ActiveAlarmsTable.Table.Data.sellbl">
+     <wgtStyle font-bold="true" forcePaint="155" preserveAspectRatio="0" font-family="Tahoma" cx="22.50" minWidth="0" font-sizepx="12" cy="9.48" alignment="center" bottonMargin="0" x="2" colOcc="1" y="2" wgtStaticOpt="dynamic" vert-align="middle" rowOcc="1" horItemUnderflow="0" leftMargin="0" maxWidth="100000" keypad-type="None" rowSpan="1" horItemOverflow="0" rightMargin="0" width="45" minHeight="0" aspectRatio="47:9" wrapping="true" verItemOverflow="0" topMargin="0" verItemUnderflow="0" height="20" maxHeight="100000" font-size="9" colSpan="1"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="text" tag="alSelect" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+      <dataLink readWrite="R" attribute="fill" tag="FGColor" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="20"/>
+     </links>
+    </object>
+    <object class="LabelWgt" id="ActiveAlarmsTable.Table.Data.timedatelbl">
+     <wgtStyle font-bold="true" forcePaint="155" preserveAspectRatio="0" font-family="Tahoma" cx="77.50" minWidth="0" font-sizepx="12" cy="9.48" alignment="center" bottonMargin="0" x="352" colOcc="5" y="2" wgtStaticOpt="dynamic" vert-align="middle" rowOcc="1" horItemUnderflow="0" leftMargin="0" maxWidth="100000" keypad-type="None" rowSpan="1" horItemOverflow="0" rightMargin="0" width="155" minHeight="0" aspectRatio="47:9" wrapping="true" verItemOverflow="0" topMargin="0" verItemUnderflow="0" height="20" maxHeight="100000" font-size="9" colSpan="1"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="text" tag="alTime" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+      <dataLink readWrite="R" attribute="fill" tag="FGColor" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="19"/>
+     </links>
+    </object>
+    <object class="LabelWgt" id="ActiveAlarmsTable.Table.Data.enbbtnlbl">
+     <wgtStyle font-bold="true" forcePaint="154" preserveAspectRatio="0" font-family="Tahoma" cx="23" minWidth="0" font-sizepx="12" cy="9.48" alignment="center" bottonMargin="0" x="812" colOcc="8" y="2" wgtStaticOpt="dynamic" vert-align="middle" rowOcc="1" horItemUnderflow="0" leftMargin="0" maxWidth="100000" keypad-type="None" rowSpan="1" horItemOverflow="0" rightMargin="0" width="46" minHeight="0" aspectRatio="47:9" wrapping="true" verItemOverflow="0" topMargin="0" verItemUnderflow="0" height="20" maxHeight="100000" font-size="9" colSpan="1"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="text" tag="alEnable" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+      <dataLink readWrite="R" attribute="fill" tag="FGColor" sourceType="Widget" tagIndex="-1" dataSource="ActiveAlarmsTable.AlarmsSrcWgt"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="1"/>
+     </links>
+    </object>
+   </object>
+  </object>
+ </object>
+</wgtPage>

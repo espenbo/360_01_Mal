@@ -1,0 +1,33 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="MainTemplate" pageType="template" pageSize="800,480" class="TemplatePageWgt" dataWndSize="0,70" downloadPrepDone="true" usedFonts="Tahoma,Arial" id="MainTemplate" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020800363" color="none" v="02.08.00.363"/>
+  <object class="PageMLTextMgrWgt" id="_TemplatePageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+    <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="Storm Elektro AS  TLF:69360040  www.stormelektro.no" L2="Storm Elektro AS  TLF:69360040  www.stormelektro.no" id="2"/>
+   </MLTexts>
+  </object>
+  <object class="ImageWgt" id="image1" static="true">
+   <wgtStyle width="81" imagePath="images/storm elektro avd automasjon logo liten.jpg" x="5" y="5" cx="30" cy="18" height="66"/>
+  </object>
+  <object class="LabelWgt" id="label1">
+   <wgtStyle width="398" font-color="rgb(0,0,127)" x="201" forcePaint="2" y="450.11" font-family="Tahoma" cx="199" cy="9.50" height="19" vert-align="top" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="2"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="timedate1">
+   <wgtStyle forcePaint="8" font-family="Arial" cx="32" cy="9" step="1" timeSpec="local" x="726" y="9" vert-align="top" text="-1" max="4096" usingFormat="hh:mm:ss" value="-1" keypad-type="None" min="0" width="64" numberFormat="0" height="18" form="date-time" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="value" tag="System Time" class="SysPropMgrWgt" widgetType="Project" sourceType="System" dataSource="_SysPropMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupSubscribeWgt" id="MainTemplate@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+ </object>
+</wgtPage>

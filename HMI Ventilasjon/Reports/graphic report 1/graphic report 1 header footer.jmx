@@ -1,0 +1,21 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="graphic report 1 header footer" pageType="report-template" pageSize="744,1052" class="ReportTemplatePageWgt" dataWndSize="0,70" downloadPrepDone="false" report-header-height="90" id="graphic report 1 header footer" report-footer-height="90" staticOptEnable="false">
+  <wgtStyle width="744" x="0" forcePaint="512" y="0" height="1052" ver="020800363" v="02.08.00.363"/>
+  <object class="PageMLTextMgrWgt" id="_TemplatePageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+    <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts/>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+    <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts/>
+  </object>
+ </object>
+</wgtPage>

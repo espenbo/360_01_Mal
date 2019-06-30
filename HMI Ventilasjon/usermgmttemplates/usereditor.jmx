@@ -1,0 +1,193 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="UserEditor" pageSize="480,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="false" usedFonts="Tahoma" staticFile="opt/usereditor.png" id="UserEditor" staticOptEnable="false">
+  <wgtStyle width="480" x="0" y="0" height="480" ver="020800363" v="02.08.00.363"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+    <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" L2="" id="1"/>
+    <MLText L1="Error : Connection lost with the Runtime. Please verify the Runtime status" L2="Error : Connection lost with the Runtime. Please verify the Runtime status" id="2"/>
+    <MLText L1="Error : The username or password you entered is incorrect" L2="Error : The username or password you entered is incorrect" id="3"/>
+    <MLText L1="Error : The password entered is incorrect" L2="Error : The password entered is incorrect" id="4"/>
+    <MLText L1="Error : Action cannot be executed" L2="Error : Action cannot be executed" id="5"/>
+    <MLText L1="Error : Passwords do not match" L2="Error : Passwords do not match" id="6"/>
+    <MLText L1="Error: Password length too short" L2="Error: Password length too short" id="7"/>
+    <MLText L1="Error: Password must contain numbers" L2="Error: Password must contain numbers" id="8"/>
+    <MLText L1="Error: Password must contain special characters" L2="Error: Password must contain special characters" id="9"/>
+    <MLText L1="Error: Password must be different than previous passwords" L2="Error: Password must be different than previous passwords" id="10"/>
+    <MLText L1="Error : User already exist" L2="Error : User already exist" id="11"/>
+    <MLText L1="Error:Password cannot be empty" L2="Error:Password cannot be empty" id="12"/>
+    <MLText L1="Error: Your password has expired" L2="Error: Your password has expired" id="13"/>
+    <MLText L1="Warning: Your password will expire soon" L2="Warning: Your password will expire soon" id="14"/>
+    <MLText L1="Error : You are not authorized. Please contact administrator" L2="Error : You are not authorized. Please contact administrator" id="15"/>
+   </MLTexts>
+  </object>
+  <object class="ImageWgt" id="image2">
+   <wgtStyle width="480" imagePath="images/bgUserEditor.svg" x="0" y="0" cx="246.57" cy="232.32" height="480"/>
+  </object>
+  <object class="LabelWgt" id="label10">
+   <wgtStyle width="80" font-color="rgb(40,40,40)" x="28" font-sizepx="16" y="201" font-family="Tahoma" cx="35" cy="10" height="19" vert-align="top" marker="true" text="Comments:" keypad-type="None" font-size="12"/>
+  </object>
+  <object class="LabelWgt" id="label9">
+   <wgtStyle width="145" font-color="rgb(40,40,40)" x="158" font-sizepx="16" y="328" font-family="Tahoma" cx="67" cy="9" height="19" vert-align="top" marker="true" text="Inactivity logoff time" keypad-type="None" font-size="12"/>
+  </object>
+  <object class="LabelWgt" id="label2">
+   <wgtStyle width="73" font-color="rgb(40,40,40)" x="34" font-sizepx="16" y="89" font-family="Tahoma" cx="42" cy="9" height="19" vert-align="top" marker="true" text="Password:" keypad-type="None" font-size="12"/>
+  </object>
+  <object class="LabelWgt" id="label5">
+   <wgtStyle width="267" font-color="rgb(40,40,40)" x="159" font-sizepx="16" y="281" font-family="Tahoma" cx="784.02" cy="2.98" height="19" vert-align="top" marker="true" text="User must change his initial password" keypad-type="None" font-size="12"/>
+  </object>
+  <object class="GroupWgt" id="GroupWgt5" customType="Button">
+   <wgtStyle width="102" x="226" y="372" cx="51" cy="20" height="40"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" id="image8">
+    <wgtStyle width="102" imagePath="images/ButtonFrame.svg" x="0" y="0" cx="46" cy="18" height="40"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="btnStd3">
+    <wgtStyle width="96" x="3.90" y="3" fill="rgb(211,211,211)" dx="1" cx="47.21" form="standard" dy="-1" cy="15" height="33" releasePath="images/Button.svg" needlePath="images/ButtonPressed.svg" type="momentary" value="0"/>
+    <links>
+     <action class="ApplyEditAction" attribute="onMouseRelease" event="onMouseUp" applyType="0" actionID="0" actionWgt="_UserMgr"/>
+     <action class="LastVisitedPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="label3">
+    <wgtStyle width="41.94" font-color="rgb(40,40,40)" x="31.40" forcePaint="1" y="9.48" font-family="Tahoma" cx="20.13" cy="9.63" height="21.19" alignment="center" vert-align="middle" text="Apply" keypad-type="None" font-size="12"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt3" customType="Button">
+   <wgtStyle width="102" x="356" y="372" cx="51" cy="20" height="40"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" id="image4">
+    <wgtStyle width="102" imagePath="images/ButtonFrame.svg" x="0" y="0" cx="46" cy="18" height="40"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="btnStd4">
+    <wgtStyle width="96" x="3.18" y="4" fill="rgb(211,211,211)" dx="1" cx="47.34" form="standard" dy="-1" cy="15.12" height="33" releasePath="images/Button.svg" needlePath="images/ButtonPressed.svg" type="momentary" value="0"/>
+    <links>
+     <action class="LastVisitedPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="0" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="label14">
+    <wgtStyle width="50" font-color="rgb(40,40,40)" x="27.09" forcePaint="1" y="8.48" font-family="Tahoma" cx="24" cy="10" height="22" alignment="center" vert-align="middle" text="Cancel" keypad-type="None" font-size="12"/>
+   </object>
+  </object>
+  <object class="EditBoxWgt" id="comment_edit">
+   <wgtStyle width="342" font-color="rgb(40,40,40)" x="120" forcePaint="8" y="194" font-family="Tahoma" cx="55.13" cy="13.07" height="28" vert-align="top" text="" keypad-type="Alphabet" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" attribute="text" tag="editUsercomment" widgetType="Project" sourceType="Data" dataSource="_UserMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ComboBoxWgt" id="group_cmb">
+   <wgtStyle width="130" x="120" forcePaint="8" y="139" font-family="Tahoma" cx="15" cy="12" height="28" vert-align="top" index="0" text="" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="list" tag="groupNameList" widgetType="Project" sourceType="Data" dataSource="_UserGroupMgr"/>
+    <dataLink readWrite="R/W" attribute="index" tag="editUserGroup" widgetType="Project" sourceType="Data" dataSource="_UserMgr"/>
+   </dataLinks>
+  </object>
+  <object class="EditBoxWgt" id="password_edit">
+   <wgtStyle width="131" font-color="rgb(40,40,40)" x="120" forcePaint="8" y="83" font-family="Tahoma" cx="23" cy="18" height="28" vert-align="middle" editType="2" text="" keypad-type="Alphabet" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" attribute="text" tag="editUserPwd" widgetType="Project" sourceType="Data" dataSource="_UserMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ComboBoxWgt" id="users_cmb">
+   <wgtStyle width="131" x="120" forcePaint="8" y="26" font-family="Tahoma" cx="17" cy="13" height="28" vert-align="top" index="0" text="" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="list" tag="editUserList" widgetType="Project" sourceType="Data" dataSource="_UserMgr"/>
+    <dataLink readWrite="R/W" attribute="index" tag="editCurUser" widgetType="Project" sourceType="Data" dataSource="_UserMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LineWgt" id="line">
+   <wgtStyle width="480" x="0" y="252" cx="0" cy="1.35" height="1.66" mtx="0.999999,-0.00138545,0,0.0014,0.999999,0,0,0.665016,1"/>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="checkbox3">
+   <wgtStyle width="32" x="278" forcePaint="8" y="80" dx="1" cx="16" form="standard" dy="-1" cy="16" height="32" releasePath="images\checkboxON.svg" needlePath="images\checkboxOFF.svg" type="maintained" value="1" pushColor="rgb(128,128,0)"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" attribute="value" tag="editType" sourceType="Widget" dataSource="password_edit">
+     <xForms>
+      <xForm BitIndex="1" class="BitIndexXForm" name="BitIndex"/>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label15">
+   <wgtStyle width="111" font-color="rgb(23,30,40)" x="312" font-sizepx="16" y="90" font-family="Tahoma" cx="681.96" cy="3.90" height="19" vert-align="top" marker="true" text="Show password" keypad-type="None" font-size="12"/>
+  </object>
+  <object class="LineWgt" id="line2">
+   <wgtStyle width="480" x="0" y="0" cx="0" cy="1.35" height="1.66" mtx="0.999999,-0.00137881,0,0.00139336,0.999999,0,0,0.661829,1"/>
+  </object>
+  <object class="LineWgt" id="line3">
+   <wgtStyle width="479.99" x="0" y="475" cx="0" cy="1.35" height="1.66" mtx="0.999999,-0.00138545,0,0.0014,0.999999,0,0,0.665002,1"/>
+  </object>
+  <object class="LabelWgt" id="label4">
+   <wgtStyle width="81" font-color="rgb(40,40,40)" x="26" font-sizepx="16" y="32" font-family="Tahoma" cx="34" cy="9" height="19" vert-align="top" marker="true" text="User name:" keypad-type="None" font-size="12"/>
+  </object>
+  <object class="LabelWgt" id="label13">
+   <wgtStyle width="50" font-color="rgb(40,40,40)" x="54" font-sizepx="16" y="145" font-family="Tahoma" cx="25" cy="10" height="19" vert-align="top" marker="true" text="Group:" keypad-type="None" font-size="12"/>
+  </object>
+  <object class="LabelWgt" id="label1">
+   <wgtStyle width="37" font-color="rgb(40,40,40)" x="312" font-sizepx="16" y="329" font-family="Tahoma" cx="13" cy="9" height="19" vert-align="top" marker="true" text="(Min)" keypad-type="None" font-size="12"/>
+  </object>
+  <object class="NumericWgt" id="field1">
+   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="16" cx="18.86" cy="12.60" step="1" timeSpec="local" alignment="center" x="361" y="325" vert-align="middle" text="0" max="60" usingFormat="#" value="0" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="40" numberFormat="6" readWrite="true" height="27" form="Numeric" frame="true" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" attribute="value" tag="editUserlogoff" widgetType="Project" sourceType="Data" dataSource="_UserMgr"/>
+    <dataLink readWrite="R" attribute="disabled" tag="enableEditUserLogOff" widgetType="Project" sourceType="Data" dataSource="_UserMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="changepassword_btn">
+   <wgtStyle width="32" x="120" forcePaint="8" y="272" dx="1" cx="16" form="standard" dy="-1" cy="16" height="32" releasePath="images\checkboxOFF.svg" needlePath="images\checkboxON.svg" type="maintained" value="0" pushColor="rgb(128,128,0)"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" attribute="value" tag="editUserchangepwd" widgetType="Project" sourceType="Data" dataSource="_UserMgr"/>
+    <dataLink readWrite="R" attribute="disabled" tag="enableEditUserChangePwd" widgetType="Project" sourceType="Data" dataSource="_UserMgr"/>
+   </dataLinks>
+  </object>
+  <object class="MsgTextWgt" id="error_msg">
+   <wgtStyle marker="true" forcePaint="2" font-family="Tahoma" font-sizepx="16" cx="105.19" cy="54" x="4" y="362" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(255,0,0)" min="0" width="214" wrapping="true" continous="false" height="114" font-size="12">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+     <msg index="4"/>
+     <msg index="5"/>
+     <msg index="6"/>
+     <msg index="7"/>
+     <msg index="8"/>
+     <msg index="9"/>
+     <msg index="10"/>
+     <msg index="11"/>
+     <msg index="12"/>
+     <msg index="13"/>
+     <msg index="14"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L1="Tahoma" L2="Tahoma"/>
+     <textid idx="0" val="1"/>
+     <textid idx="1" val="15"/>
+     <textid idx="2" val="2"/>
+     <textid idx="3" val="3"/>
+     <textid idx="4" val="4"/>
+     <textid idx="5" val="5"/>
+     <textid idx="6" val="6"/>
+     <textid idx="7" val="7"/>
+     <textid idx="8" val="8"/>
+     <textid idx="9" val="9"/>
+     <textid idx="10" val="10"/>
+     <textid idx="11" val="11"/>
+     <textid idx="12" val="12"/>
+     <textid idx="13" val="13"/>
+     <textid idx="14" val="14"/>
+    </lang>
+   </links>
+  </object>
+ </object>
+</wgtPage>

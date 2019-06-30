@@ -1,0 +1,10 @@
+<defs>
+ <g id="custom_properties" showChildNodes="0" inherit="basicgroup_properties" attributeName="Filter-1.0:1.0">
+  <info></info>
+  <text display="Tag Text" default="true" attributeType="mltext" editChild="true" attachTag="true" attributeName="*.Tag.text">Text</text>
+  <text display="DriftFei lLampe Value" default="true" attributeType="integer" editChild="true" attachTag="true" attributeName="*.nd6.frame">Determines what image path from the list of paths is actual one</text>
+  <text display="DriftFei lLampe Color" attributeType="colorList" editChild="true" attributeName="*.nd6.bkgColor">List of colors for each state</text>
+  <text display="Lukket Visible" attributeType="bool" editChild="true" attachTag="true" adv="true" attributeName="*.Stengt.visibility" isCompound="true"/>
+  <text display="Aapen Visible" attributeType="bool" editChild="true" attachTag="true" adv="true" attributeName="*.AApen.visibility" isCompound="true"/>
+ </g>
+</defs>

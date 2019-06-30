@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" height="44.111" width="40.131" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40.131 44.111"><defs><linearGradient id="linearGradient12053" y2="19.252" gradientUnits="userSpaceOnUse" x2="20.066" y1="44.111" x1="20.066"><stop offset="0"/><stop stop-opacity="0" offset="1"/></linearGradient></defs>
+<polygon id="bgColor00" points="27.039 0 13.089 0 13.089 19.797 0 19.797 20.064 44.111 40.131 19.797 27.039 19.797" fill="#f00"/>
+<polygon opacity=".45" points="13.089 19.797 0 19.797 20.064 44.111 40.131 19.797 27.039 19.797 27.039 0 13.089 0" fill="url(#linearGradient12053)"/></svg>

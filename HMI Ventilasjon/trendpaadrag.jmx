@@ -1,0 +1,626 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="TrendPaadrag" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" usedFonts="Tahoma" staticFile="opt/trendpaadrag.png" id="TrendPaadrag" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020800363" v="02.08.00.363"/>
+  <object class="GroupWgt" id="HistoricTrend1" customType="Trend">
+   <wgtStyle width="704" x="96" y="0" cx="352" cy="227" height="454"/>
+   <links>
+    <attr attrName="gridX" alias="GridWgt.gridX;LabelsWgt2.labelFreq"/>
+    <attr attrName="gridY" alias="GridWgt.gridY;LabelsWgt1.labelFreq;TicksWgt1.labelFreq"/>
+    <attr attrName="labelFreq" alias="LabelsWgt1.labelFreq;TicksWgt1.labelFreq"/>
+   </links>
+   <object class="LabelWgt" id="HistoricTrend1.title">
+    <wgtStyle width="512.22" font-color="rgb(40,40,40)" x="152.94" forcePaint="2" font-sizepx="16" y="0" font-family="Tahoma" cx="252.48" cy="19.65" height="41.48" alignment="center" vert-align="top" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="4"/>
+    </links>
+   </object>
+   <object class="TicksWgt" id="HistoricTrend1.yticks" static="true">
+    <wgtStyle width="46.12" reverseScale="true" x="109.24" y="45.84" cx="38.84" form="vertical" labelFreq="10" cy="174.62" height="351.41" tickSize2="10" tickFreq="5" frame="1" stroke="rgb(40,40,40)" tickSize="5" stroke-linecap="butt" max="100" stroke-width="2"/>
+   </object>
+   <object class="LabelsWgt" id="HistoricTrend1.vlbl" static="true">
+    <wgtStyle font-family="Tahoma" font-sizepx="13" cx="48.54" startAngle="-20" cy="192.08" timeSpec="local" reverseScale="true" dataFormat="#" endAngle="185" x="0" useTextAlign="true" y="30.56" rotated="true" vert-align="top" max="100" align="1" font-color="rgb(40,40,40)" width="101.96" labelNames="" tickFreq="5" height="386.34" labelFreq="6" form="vertical" font-size="10"/>
+   </object>
+   <object class="LabelsWgt" id="HistoricTrend1.hlbl">
+    <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="13" cx="296.17" startAngle="-20" cy="21.83" timeSpec="local" dataFormat="hh:mm:ss" endAngle="185" x="109.24" y="410.34" rotated="true" vert-align="top" max="100" font-color="rgb(40,40,40)" width="594.76" labelNames="" tickFreq="5" height="43.66" labelFreq="4" form="horizontal" dataType="Time" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="HistoricTrend1.wnd"/>
+     <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="HistoricTrend1.wnd"/>
+    </dataLinks>
+   </object>
+   <object class="TrendWindowWgt" id="HistoricTrend1.wnd">
+    <wgtStyle width="514.66" x="155.37" yPageSize="100" stopTime="1000" y="48.02" numCurves="3" fill="rgb(192,192,192)" startPoint="1" height="349.23" frame="300" stroke="rgb(40,40,40)" pageDuration="7200" y1="100" updateInterval="1000"/>
+   </object>
+   <object class="ImageWgt" id="HistoricTrend1.bg" static="true">
+    <wgtStyle width="512.22" imagePath="images/glass.svg" x="155.37" y="48.02" cx="274.75" cy="95.75" height="174.62"/>
+   </object>
+   <object class="GridWgt" id="HistoricTrend1.grid">
+    <wgtStyle width="517.08" x="152.94" forcePaint="8" y="45.84" grid="4" colorX="rgb(40,40,40)" height="351.41" colorY="rgb(40,40,40)" max="40" gridY="6" cursor-width="2"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="HistoricTrend1.wnd"/>
+     <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="HistoricTrend1.wnd"/>
+     <dataLink readWrite="R" attribute="y0" tag="y0" sourceType="Data" dataSource="HistoricTrend1.wnd"/>
+     <dataLink readWrite="R" attribute="y1" tag="y1" sourceType="Data" dataSource="HistoricTrend1.wnd"/>
+    </dataLinks>
+   </object>
+   <object class="TrendCurveWgt" id="HistoricTrend1.curve1">
+    <wgtStyle width="514.66" x="155.37" forcePaint="9" drawType="0" y="48.02" cx="254.90" cy="173.52" height="349.23" frame="300" stroke="rgb(255,0,0)" type="line" max="40" y1="100" stroke-width="2"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="Value" sourceType="Data" dataSource="HistoricTrend1.buffer1"/>
+     <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="HistoricTrend1.wnd"/>
+     <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="HistoricTrend1.wnd"/>
+    </dataLinks>
+   </object>
+   <object PageDuration="300" StartTime="1249895711000" BufferType="0" class="TrendBufferWgt" StopTime="1249896011000" ReqSamples="1000" UpdateInterval="1000" samplingtime="1" UpdateType="0" id="HistoricTrend1.buffer1">
+    <wgtStyle width="75" x="581" forcePaint="9" y="324" cx="37" cy="33" height="68"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="Value" tag="360_01_GjenvinnerOP.GjennvinnerOP" sourceType="Widget" tagIndex="-1" dataSource="HistoricTrend1.trend"/>
+    </dataLinks>
+   </object>
+   <object class="IdalTrendWgt" maxPoints="2000" id="HistoricTrend1.trend">
+    <wgtStyle width="75" x="491" forcePaint="1" y="322" height="68"/>
+   </object>
+   <object PageDuration="300" StartTime="0" BufferType="0" class="TrendBufferWgt" StopTime="0" ReqSamples="1000" UpdateInterval="1000" samplingtime="1" UpdateType="0" id="HistoricTrend1.buffer2">
+    <wgtStyle width="75" x="581" forcePaint="9" y="324" cx="37" cy="33" height="68"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="Value" tag="360_01_Padrag_Kjoling.KjolingOP" sourceType="Widget" tagIndex="-1" dataSource="HistoricTrend1.trend"/>
+    </dataLinks>
+   </object>
+   <object class="TrendCurveWgt" id="HistoricTrend1.curve2">
+    <wgtStyle width="514.66" x="155.37" forcePaint="9" drawType="0" y="48.02" cx="254.90" cy="173.52" height="349.23" frame="300" stroke="rgb(0,0,255)" type="line" max="40" y1="100" stroke-width="2"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="Value" sourceType="Data" dataSource="HistoricTrend1.buffer2"/>
+     <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="HistoricTrend1.wnd"/>
+     <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="HistoricTrend1.wnd"/>
+    </dataLinks>
+   </object>
+   <object PageDuration="300" StartTime="0" BufferType="0" class="TrendBufferWgt" StopTime="0" ReqSamples="1000" UpdateInterval="1000" samplingtime="1" UpdateType="0" id="HistoricTrend1.buffer3">
+    <wgtStyle width="75" x="581" forcePaint="9" y="324" cx="37" cy="33" height="68"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="Value" tag="360_01_PadragVarme.PadragVarme" sourceType="Widget" tagIndex="-1" dataSource="HistoricTrend1.trend"/>
+    </dataLinks>
+   </object>
+   <object class="TrendCurveWgt" id="HistoricTrend1.curve3">
+    <wgtStyle width="514.66" x="155.37" forcePaint="9" drawType="0" y="48.02" cx="254.90" cy="173.52" height="349.23" frame="300" stroke="rgb(255,215,0)" type="line" max="40" y1="100" stroke-width="2"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="Value" sourceType="Data" dataSource="HistoricTrend1.buffer3"/>
+     <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="HistoricTrend1.wnd"/>
+     <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="HistoricTrend1.wnd"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+    <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" L2="" id="19"/>
+    <MLText L1="I" L2="" id="0"/>
+    <MLText L1="Tag&#xa;Value" L2="" id="1"/>
+    <MLText L1="Tilbake" L2="" id="2"/>
+    <MLText L1="Gjevnvinner" L2="" id="3"/>
+    <MLText L1="Trend temperaturer VP" L2="" id="4"/>
+    <MLText L1="1 uke" L2="" id="5"/>
+    <MLText L1="1 time" L2="" id="6"/>
+    <MLText L1="1 dag" L2="" id="7"/>
+    <MLText L1="1 måned" L2="" id="8"/>
+    <MLText L1="Kjøling" L2="" id="11"/>
+    <MLText L1="Varme" L2="" id="12"/>
+   </MLTexts>
+  </object>
+  <object class="ShapeWgt" id="rect5" static="true">
+   <wgtStyle width="163" x="5" y="29" fill="none" cx="78.87" cy="70" height="140" nodeName="rect"/>
+  </object>
+  <object class="GroupWgt" id="pause" customType="Button">
+   <wgtStyle width="30" x="636" forcePaint="1" y="437" cx="15" cy="15" height="30"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect; hmi-type:bkgd" id="image85" static="true">
+    <wgtStyle width="34.90" x="-2.45" y="-2.05" visibility="false" bdrImageSize="58.00,55.00" fill="rgb(255,255,255)" cx="16.85" cy="17.41" bdrSize="0.24,0.22,0.24,0.19" height="35.45" bdrEdges="0.14,0.14,0.14,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rrect; hmi-type:btn; type:btn" id="buttonStd5">
+    <wgtStyle width="30" x="0" forcePaint="1" y="0" bdrImageSize="42.00,40.00" fill="rgb(0,115,170)" dx="1" cx="12.75" form="standard" dy="-1" cy="12.01" bdrSize="0.17,0.15,0.15,0.14" height="30" releasePath="images\btn_shiney_rrect_1.svg" needlePath="images\btn_shiney_rrect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="PauseTrendAction" attribute="onMouseClick" event="onMouseClick" actionID="1" trendName="HistoricTrend1.wnd" actionWgt="_TrendMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label29" static="true">
+    <wgtStyle width="23.49" font-color="rgb(255,255,255)" x="2.92" font-sizepx="13" y="4.09" font-family="Tahoma" wrapping="true" cx="15.81" cy="14.76" height="23.18" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="19"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image86">
+    <wgtStyle width="14.77" imagePath="images/ic_pl1_022.svg" x="7.62" forcePaint="1" y="9.55" fill="rgb(255,255,255)" cx="7.38" cy="5.45" height="12.27"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="play" customType="Button">
+   <wgtStyle width="30" x="674" forcePaint="1" y="437" cx="15" cy="15" height="30"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect; hmi-type:bkgd" id="image3" static="true">
+    <wgtStyle width="34.90" x="-2.45" y="-2.05" visibility="false" bdrImageSize="58.00,55.00" fill="rgb(255,255,255)" cx="16.85" cy="17.41" bdrSize="0.24,0.22,0.24,0.19" height="35.45" bdrEdges="0.14,0.14,0.14,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rrect; hmi-type:btn; type:btn" id="buttonStd3">
+    <wgtStyle width="30" x="0" forcePaint="1" y="0" bdrImageSize="42.00,40.00" fill="rgb(0,115,170)" dx="1" cx="12.75" form="standard" dy="-1" cy="12.01" bdrSize="0.17,0.15,0.15,0.14" height="30" releasePath="images\btn_shiney_rrect_1.svg" needlePath="images\btn_shiney_rrect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="ResumeTrendAction" attribute="onMouseClick" event="onMouseClick" actionID="1" trendName="HistoricTrend1.wnd" actionWgt="_TrendMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label4" static="true">
+    <wgtStyle width="23.49" font-color="rgb(255,255,255)" x="2.92" font-sizepx="13" y="4.09" font-family="Tahoma" wrapping="true" cx="15.81" cy="14.76" height="23.18" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="19"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image4">
+    <wgtStyle width="14.77" imagePath="images/ic_pl1_019.svg" x="7.62" forcePaint="1" y="9.55" fill="rgb(255,255,255)" cx="7.38" cy="5.45" height="12.27"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="pause1" customType="Button">
+   <wgtStyle width="30" x="597" forcePaint="1" y="437" cx="20.13" cy="15" height="30"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect; hmi-type:bkgd" id="image10" static="true">
+    <wgtStyle width="34.90" x="-2.45" y="-2.05" visibility="false" bdrImageSize="58.00,55.00" fill="rgb(255,255,255)" cx="16.85" cy="17.41" bdrSize="0.24,0.22,0.24,0.19" height="35.45" bdrEdges="0.14,0.14,0.14,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rrect; hmi-type:btn; type:btn" id="buttonStd11">
+    <wgtStyle width="30" x="0" forcePaint="1" y="0" bdrImageSize="42.00,40.00" fill="rgb(0,115,170)" dx="1" cx="12.75" form="standard" dy="-1" cy="12.01" bdrSize="0.17,0.15,0.15,0.14" height="30" releasePath="images\btn_shiney_rrect_1.svg" needlePath="images\btn_shiney_rrect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="ScrollLeftTrendAction" attribute="onMouseClick" event="onMouseClick" actionID="1" trendName="HistoricTrend1.wnd" actionWgt="_TrendMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label6" static="true">
+    <wgtStyle width="23.49" font-color="rgb(255,255,255)" x="2.92" font-sizepx="13" y="4.09" font-family="Tahoma" wrapping="true" cx="15.81" cy="14.76" height="23.18" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="19"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image11">
+    <wgtStyle width="14.77" imagePath="images/ic_pl1_039.svg" x="7.62" forcePaint="1" y="9.55" fill="rgb(255,255,255)" cx="7.38" cy="5.45" height="12.27"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="pause2" customType="Button">
+   <wgtStyle width="30" x="561" forcePaint="1" y="437" cx="15" cy="15" height="30"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect; hmi-type:bkgd" id="image12" static="true">
+    <wgtStyle width="34.90" x="-2.45" y="-2.05" visibility="false" bdrImageSize="58.00,55.00" fill="rgb(255,255,255)" cx="16.85" cy="17.41" bdrSize="0.24,0.22,0.24,0.19" height="35.45" bdrEdges="0.14,0.14,0.14,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rrect; hmi-type:btn; type:btn" id="buttonStd12">
+    <wgtStyle width="30" x="0" forcePaint="1" y="0" bdrImageSize="42.00,40.00" fill="rgb(0,115,170)" dx="1" cx="12.75" form="standard" dy="-1" cy="12.01" bdrSize="0.17,0.15,0.15,0.14" height="30" releasePath="images\btn_shiney_rrect_1.svg" needlePath="images\btn_shiney_rrect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="PageLeftTrendAction" attribute="onMouseClick" event="onMouseClick" actionID="1" trendName="HistoricTrend1.wnd" actionWgt="_TrendMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label7" static="true">
+    <wgtStyle width="23.49" font-color="rgb(255,255,255)" x="2.92" font-sizepx="13" y="4.09" font-family="Tahoma" wrapping="true" cx="15.81" cy="14.76" height="23.18" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="19"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image13">
+    <wgtStyle width="14.77" imagePath="images/ic_pl1_032.svg" x="7.62" forcePaint="1" y="9.55" fill="rgb(255,255,255)" cx="7.38" cy="5.45" height="12.27"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="pause3" customType="Button">
+   <wgtStyle width="30" x="749" forcePaint="1" y="437" cx="15" cy="15" height="30"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect; hmi-type:bkgd" id="image14" static="true">
+    <wgtStyle width="34.90" x="-2.45" y="-2.05" visibility="false" bdrImageSize="58.00,55.00" fill="rgb(255,255,255)" cx="16.85" cy="17.41" bdrSize="0.24,0.22,0.24,0.19" height="35.45" bdrEdges="0.14,0.14,0.14,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rrect; hmi-type:btn; type:btn" id="buttonStd13">
+    <wgtStyle width="30" x="0" forcePaint="1" y="0" bdrImageSize="42.00,40.00" fill="rgb(0,115,170)" dx="1" cx="12.75" form="standard" dy="-1" cy="12.01" bdrSize="0.17,0.15,0.15,0.14" height="30" releasePath="images\btn_shiney_rrect_1.svg" needlePath="images\btn_shiney_rrect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="PageRightTrendAction" attribute="onMouseClick" event="onMouseClick" actionID="1" trendName="HistoricTrend1.wnd" actionWgt="_TrendMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label8" static="true">
+    <wgtStyle width="23.49" font-color="rgb(255,255,255)" x="2.92" font-sizepx="13" y="4.09" font-family="Tahoma" wrapping="true" cx="15.81" cy="14.76" height="23.18" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="19"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image15">
+    <wgtStyle width="14.77" imagePath="images/ic_pl1_033.svg" x="7.62" forcePaint="1" y="9.55" fill="rgb(255,255,255)" cx="7.38" cy="5.45" height="12.27"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="pause4" customType="Button">
+   <wgtStyle width="30" x="712" forcePaint="1" y="437" cx="15" cy="15" height="30"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect; hmi-type:bkgd" id="image18" static="true">
+    <wgtStyle width="34.90" x="-2.45" y="-2.05" visibility="false" bdrImageSize="58.00,55.00" fill="rgb(255,255,255)" cx="16.85" cy="17.41" bdrSize="0.24,0.22,0.24,0.19" height="35.45" bdrEdges="0.14,0.14,0.14,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rrect; hmi-type:btn; type:btn" id="buttonStd14">
+    <wgtStyle width="30" x="0" forcePaint="1" y="0" bdrImageSize="42.00,40.00" fill="rgb(0,115,170)" dx="1" cx="12.75" form="standard" dy="-1" cy="12.01" bdrSize="0.17,0.15,0.15,0.14" height="30" releasePath="images\btn_shiney_rrect_1.svg" needlePath="images\btn_shiney_rrect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="ScrollRightTrendAction" attribute="onMouseClick" event="onMouseClick" actionID="1" trendName="HistoricTrend1.wnd" actionWgt="_TrendMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label17" static="true">
+    <wgtStyle width="23.49" font-color="rgb(255,255,255)" x="2.92" font-sizepx="13" y="4.09" font-family="Tahoma" wrapping="true" cx="15.81" cy="14.76" height="23.18" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="19"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image29">
+    <wgtStyle width="14.77" imagePath="images/ic_pl1_038.svg" x="7.62" forcePaint="1" y="9.55" fill="rgb(255,255,255)" cx="7.38" cy="5.45" height="12.27"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="pause5" customType="Button">
+   <wgtStyle width="30" x="5" y="171" cx="15" cy="15" height="30"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect; hmi-type:bkgd" id="image56" static="true">
+    <wgtStyle width="34.90" x="-2.45" y="-2.05" visibility="false" bdrImageSize="58.00,55.00" fill="rgb(255,255,255)" cx="16.85" cy="17.41" bdrSize="0.24,0.22,0.24,0.19" height="35.45" bdrEdges="0.14,0.14,0.14,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rrect; hmi-type:btn; type:btn" id="buttonStd15">
+    <wgtStyle width="30" x="0" y="0" bdrImageSize="42.00,40.00" fill="rgb(0,115,170)" dx="1" cx="12.75" form="standard" dy="-1" cy="12.01" bdrSize="0.17,0.15,0.15,0.14" height="30" releasePath="images\btn_shiney_rrect_1.svg" needlePath="images\btn_shiney_rrect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="ZoomInTrendAction" attribute="onMouseClick" event="onMouseClick" actionID="1" trendName="HistoricTrend1.wnd" actionWgt="_TrendMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label18" static="true">
+    <wgtStyle width="23.49" font-color="rgb(255,255,255)" x="2.92" font-sizepx="13" y="4.09" font-family="Tahoma" wrapping="true" cx="15.81" cy="14.76" height="23.18" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="19"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image57">
+    <wgtStyle width="14.77" imagePath="images/ic_di1_104.svg" x="7.62" forcePaint="1" y="9.55" fill="rgb(255,255,255)" cx="7.38" cy="5.45" height="12.27"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="pause6" customType="Button">
+   <wgtStyle width="30" x="59.85" y="171" cx="15" cy="15" height="30"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect; hmi-type:bkgd" id="image58" static="true">
+    <wgtStyle width="34.90" x="-2.45" y="-2.05" visibility="false" bdrImageSize="58.00,55.00" fill="rgb(255,255,255)" cx="16.85" cy="17.41" bdrSize="0.24,0.22,0.24,0.19" height="35.45" bdrEdges="0.14,0.14,0.14,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rrect; hmi-type:btn; type:btn" id="buttonStd16">
+    <wgtStyle width="30" x="0" y="0" bdrImageSize="42.00,40.00" fill="rgb(0,115,170)" dx="1" cx="12.75" form="standard" dy="-1" cy="12.01" bdrSize="0.17,0.15,0.15,0.14" height="30" releasePath="images\btn_shiney_rrect_1.svg" needlePath="images\btn_shiney_rrect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="ZoomResetTrendAction" attribute="onMouseClick" event="onMouseClick" actionID="1" trendName="HistoricTrend1.wnd" actionWgt="_TrendMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label54" static="true">
+    <wgtStyle width="23.49" font-color="rgb(255,255,255)" x="2.92" font-sizepx="13" y="4.09" font-family="Tahoma" wrapping="true" cx="15.81" cy="14.76" height="23.18" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="19"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image61">
+    <wgtStyle width="14.77" imagePath="images/ic_di1_106.svg" x="7.62" forcePaint="1" y="9.55" fill="rgb(255,255,255)" cx="7.38" cy="5.45" height="12.27"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="pause7" customType="Button">
+   <wgtStyle width="30" x="113.15" y="171" cx="15" cy="15" height="30"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect; hmi-type:bkgd" id="image83" static="true">
+    <wgtStyle width="34.90" x="-2.45" y="-2.05" visibility="false" bdrImageSize="58.00,55.00" fill="rgb(255,255,255)" cx="16.85" cy="17.41" bdrSize="0.24,0.22,0.24,0.19" height="35.45" bdrEdges="0.14,0.14,0.14,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rrect; hmi-type:btn; type:btn" id="buttonStd17">
+    <wgtStyle width="30" x="0" y="0" bdrImageSize="42.00,40.00" fill="rgb(0,115,170)" dx="1" cx="12.75" form="standard" dy="-1" cy="12.01" bdrSize="0.17,0.15,0.15,0.14" height="30" releasePath="images\btn_shiney_rrect_1.svg" needlePath="images\btn_shiney_rrect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="ZoomOutTrendAction" attribute="onMouseClick" event="onMouseClick" actionID="1" trendName="HistoricTrend1.wnd" actionWgt="_TrendMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label55" static="true">
+    <wgtStyle width="23.49" font-color="rgb(255,255,255)" x="2.92" font-sizepx="13" y="4.09" font-family="Tahoma" wrapping="true" cx="15.81" cy="14.76" height="23.18" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="19"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image84">
+    <wgtStyle width="14.77" imagePath="images/ic_di1_105.svg" x="7.62" forcePaint="1" y="9.55" fill="rgb(255,255,255)" cx="7.38" cy="5.45" height="12.27"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label28">
+   <wgtStyle width="68" font-color="rgb(255,0,0)" x="14.85" forcePaint="2" font-sizepx="10" y="59" font-family="Tahoma" height="12" vert-align="middle" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="3"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label30">
+   <wgtStyle width="72" font-color="rgb(0,0,255)" x="15.75" forcePaint="2" font-sizepx="10" y="79" font-family="Tahoma" height="12" vert-align="middle" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="11"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label31">
+   <wgtStyle width="100" font-color="rgb(255,215,0)" x="14.85" forcePaint="2" font-sizepx="10" y="99" font-family="Tahoma" height="12" vert-align="middle" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field1">
+   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="10" cx="17.76" cy="10" step="1" timeSpec="local" alignment="center" x="118.74" y="59" vert-align="middle" text="" max="65535" usingFormat="#" value="" keypad-type="Numeric" font-color="rgb(40,40,40)" min="0" width="17.02" numberFormat="6" height="14" form="Numeric" font-size="8"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="value" tag="TrendCurveWgt1.cursor-value" sourceType="Widget" tagIndex="-1" dataSource="HistoricTrend1"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field3">
+   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="10" cx="17.76" cy="10" step="1" timeSpec="local" alignment="center" x="118.74" y="79" vert-align="middle" text="" max="65535" usingFormat="#" value="" keypad-type="Numeric" font-color="rgb(40,40,40)" min="0" width="16.12" numberFormat="6" height="13" form="Numeric" font-size="8"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="value" tag="TrendCurveWgt2.cursor-value" sourceType="Widget" tagIndex="-1" dataSource="HistoricTrend1"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field4">
+   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="10" cx="17.76" cy="10" step="1" timeSpec="local" alignment="center" x="118.74" y="99" vert-align="middle" text="" max="65535" usingFormat="#" value="" keypad-type="Numeric" font-color="rgb(40,40,40)" min="0" width="16.12" numberFormat="6" height="13" form="Numeric" font-size="8"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="value" tag="TrendCurveWgt3.cursor-value" sourceType="Widget" tagIndex="-1" dataSource="HistoricTrend1"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label39">
+   <wgtStyle width="25" font-color="rgb(40,40,40)" x="116.95" forcePaint="2" font-sizepx="10" y="29" font-family="Tahoma" wrapping="true" height="25" alignment="center" vert-align="middle" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="1"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="cursor_off" customType="Button">
+   <wgtStyle width="30" x="491" forcePaint="1" y="437" cx="15" cy="15" height="30"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect; hmi-type:bkgd" id="image9" static="true">
+    <wgtStyle width="34.90" x="-2.45" y="-2.05" visibility="false" bdrImageSize="58.00,55.00" fill="rgb(255,255,255)" cx="16.85" cy="17.41" bdrSize="0.24,0.22,0.24,0.19" height="35.45" bdrEdges="0.14,0.14,0.14,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rrect; hmi-type:btn; type:btn" id="buttonStd7">
+    <wgtStyle width="30" x="0" forcePaint="1" y="0" bdrImageSize="42.00,40.00" fill="rgb(0,115,170)" dx="1" cx="12.75" form="standard" dy="-1" cy="12.01" bdrSize="0.17,0.15,0.15,0.14" height="30" releasePath="images\btn_shiney_rrect_1.svg" needlePath="images\btn_shiney_rrect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="ShowTrendCursorAction" attribute="onMouseClick" event="onMouseClick" actionID="1" trendName="HistoricTrend1.wnd" showCursor="false" actionWgt="_TrendMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label38">
+    <wgtStyle width="23.49" font-color="rgb(255,255,255)" x="2.92" forcePaint="3" font-sizepx="26" y="6.82" font-family="Tahoma" wrapping="true" cx="15.81" cy="13.02" height="20.45" alignment="center" vert-align="middle" keypad-type="None" font-size="20"/>
+    <links>
+     <lang class="MLTextLink" textid="0"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image54">
+    <wgtStyle width="16.78" imagePath="images/ic_pl1_053.svg" x="6.04" forcePaint="1" y="6.82" fill="rgb(255,0,0)" cx="8.39" cy="7.57" height="17.05"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="cursor_on" customType="Button">
+   <wgtStyle width="30" x="454" forcePaint="1" y="437" cx="15" cy="15" height="30"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect; hmi-type:bkgd" id="image8" static="true">
+    <wgtStyle width="34.90" x="-2.45" y="-2.05" visibility="false" bdrImageSize="58.00,55.00" fill="rgb(255,255,255)" cx="16.85" cy="17.41" bdrSize="0.24,0.22,0.24,0.19" height="35.45" bdrEdges="0.14,0.14,0.14,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rrect; hmi-type:btn; type:btn" id="buttonStd8">
+    <wgtStyle width="30" x="0" forcePaint="1" y="0" bdrImageSize="42.00,40.00" fill="rgb(0,115,170)" dx="1" cx="12.75" form="standard" dy="-1" cy="12.01" bdrSize="0.17,0.15,0.15,0.14" height="30" releasePath="images\btn_shiney_rrect_1.svg" needlePath="images\btn_shiney_rrect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="ShowTrendCursorAction" attribute="onMouseClick" event="onMouseClick" actionID="1" trendName="HistoricTrend1.wnd" showCursor="true" actionWgt="_TrendMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label37">
+    <wgtStyle width="23.49" font-color="rgb(255,255,255)" x="2.92" forcePaint="3" font-sizepx="26" y="6.82" font-family="Tahoma" wrapping="true" cx="15.81" cy="13.02" height="20.45" alignment="center" vert-align="middle" keypad-type="None" font-size="20"/>
+    <links>
+     <lang class="MLTextLink" textid="0"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image55" static="true">
+    <wgtStyle width="16.78" x="6.04" y="6.82" fill="rgb(255,255,255)" cx="8.39" cy="7.57" height="17.05"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="pause8" customType="Button">
+   <wgtStyle width="30" x="414" forcePaint="1" y="437" cx="15" cy="15" height="30"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect; hmi-type:bkgd" id="image89" static="true">
+    <wgtStyle width="34.90" x="-2.45" y="-2.05" visibility="false" bdrImageSize="58.00,55.00" fill="rgb(255,255,255)" cx="16.85" cy="17.41" bdrSize="0.24,0.22,0.24,0.19" height="35.45" bdrEdges="0.14,0.14,0.14,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rrect; hmi-type:btn; type:btn" id="buttonStd18">
+    <wgtStyle width="30" x="0" forcePaint="1" y="0" bdrImageSize="42.00,40.00" fill="rgb(0,115,170)" dx="1" cx="12.75" form="standard" dy="-1" cy="12.01" bdrSize="0.17,0.15,0.15,0.14" height="30" releasePath="images\btn_shiney_rrect_1.svg" needlePath="images\btn_shiney_rrect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="ScrollTrendCursorAction" attribute="onMouseClick" event="onMouseClick" actionID="1" scrollUnit="1" scrollDirection="1" scrollTimesample="60" trendName="HistoricTrend1.wnd" actionWgt="_TrendMgr" scrollPercentage="5"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label56" static="true">
+    <wgtStyle width="23.49" font-color="rgb(255,255,255)" x="2.92" font-sizepx="13" y="4.09" font-family="Tahoma" wrapping="true" cx="15.81" cy="14.76" height="23.18" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="19"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image90">
+    <wgtStyle width="14.77" imagePath="images/ic_pl1_039.svg" x="7.62" forcePaint="1" y="9.55" fill="rgb(255,255,255)" cx="7.38" cy="5.45" height="12.27"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="pause9" customType="Button">
+   <wgtStyle width="30" x="526" forcePaint="1" y="437" cx="15" cy="15" height="30"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect; hmi-type:bkgd" id="image91" static="true">
+    <wgtStyle width="34.90" x="-2.45" y="-2.05" visibility="false" bdrImageSize="58.00,55.00" fill="rgb(255,255,255)" cx="16.85" cy="17.41" bdrSize="0.24,0.22,0.24,0.19" height="35.45" bdrEdges="0.14,0.14,0.14,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rrect; hmi-type:btn; type:btn" id="buttonStd19">
+    <wgtStyle width="30" x="0" forcePaint="1" y="0" bdrImageSize="42.00,40.00" fill="rgb(0,115,170)" dx="1" cx="12.75" form="standard" dy="-1" cy="12.01" bdrSize="0.17,0.15,0.15,0.14" height="30" releasePath="images\btn_shiney_rrect_1.svg" needlePath="images\btn_shiney_rrect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="ScrollTrendCursorAction" attribute="onMouseClick" event="onMouseClick" actionID="1" scrollUnit="1" scrollDirection="0" scrollTimesample="60" trendName="HistoricTrend1.wnd" actionWgt="_TrendMgr" scrollPercentage="5"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label57" static="true">
+    <wgtStyle width="23.49" font-color="rgb(255,255,255)" x="2.92" font-sizepx="13" y="4.09" font-family="Tahoma" wrapping="true" cx="15.81" cy="14.76" height="23.18" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="19"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image92">
+    <wgtStyle width="14.77" imagePath="images/ic_pl1_038.svg" x="7.62" forcePaint="1" y="9.55" fill="rgb(255,255,255)" cx="7.38" cy="5.45" height="12.27"/>
+   </object>
+  </object>
+  <object class="DateTimeWgt" id="dateTime1">
+   <wgtStyle width="206" readWrite="true" x="154" forcePaint="9" usingFormat="MM/dd/yy - hh:mm:ss" y="437" font-family="Tahoma" cx="96.06" cy="17.50" height="35" vert-align="top" value="1488637743" timeSpec="local" text="1488637743" keypad-type="None" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="my_time" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="pause10" customType="Button">
+   <wgtStyle width="30" x="374" forcePaint="1" y="437" cx="15" cy="15" height="30"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect; hmi-type:bkgd" id="image16" static="true">
+    <wgtStyle width="34.90" x="-2.45" y="-2.05" visibility="false" bdrImageSize="58.00,55.00" fill="rgb(255,255,255)" cx="16.85" cy="17.41" bdrSize="0.24,0.22,0.24,0.19" height="35.45" bdrEdges="0.14,0.14,0.14,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rrect; hmi-type:btn; type:btn" id="buttonStd20">
+    <wgtStyle width="30" x="0" forcePaint="1" y="0" bdrImageSize="42.00,40.00" fill="rgb(0,115,170)" dx="1" cx="12.75" form="standard" dy="-1" cy="12.01" bdrSize="0.17,0.15,0.15,0.14" height="30" releasePath="images\btn_shiney_rrect_1.svg" needlePath="images\btn_shiney_rrect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="ScrollTrendToTimeAction" attribute="onMouseClick" ScrollPosition="Center" event="onMouseClick" TimeDataSource="Project:_TagMgr" TimeTagType="Tag" actionID="1" TimeTagName="my_time" trendName="HistoricTrend1.wnd" actionWgt="_TrendMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label5" static="true">
+    <wgtStyle width="23.49" font-color="rgb(255,255,255)" x="2.92" font-sizepx="13" y="4.09" font-family="Tahoma" wrapping="true" cx="15.81" cy="14.76" height="23.18" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="19"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image17">
+    <wgtStyle width="14.77" imagePath="images/ic_pl1_069.svg" x="7.62" forcePaint="1" y="9.55" fill="rgb(255,255,255)" cx="7.38" cy="5.45" height="12.27"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd16" customType="Button">
+   <wgtStyle width="93" x="9.85" y="439" cx="46" cy="17" height="34"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image31" static="true">
+    <wgtStyle width="93" imagePath="images/frame_rect45bar_chrome.svg" x="0" y="0" cx="46.50" cy="17.30" height="34"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd1">
+    <wgtStyle width="85" x="4" y="4" fill="rgb(192,192,192)" dx="1" cx="42.54" form="standard" cy="12.91" height="25" releasePath="images\btn_plastic_rect45bar_1.svg" needlePath="images\btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="LastVisitedPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label3">
+    <wgtStyle width="74" font-color="rgb(40,40,40)" x="7" forcePaint="3" font-sizepx="13" y="5" font-family="Tahoma" font-bold="true" wrapping="true" cx="37.10" cy="12.64" height="25" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image32" static="true">
+    <wgtStyle width="27" x="31" y="8" cx="13.82" cy="8.75" height="17"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd1" customType="Button">
+   <wgtStyle width="70" x="42.50" y="304" cx="34.62" cy="15" height="30"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image1" static="true">
+    <wgtStyle width="70" imagePath="images/frame_rect45bar_chrome.svg" x="0" y="0" cx="35" cy="15.26" height="30"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd2">
+    <wgtStyle width="63.98" x="3.01" y="3.53" fill="rgb(192,192,192)" dx="1" cx="32.02" form="standard" cy="11.39" height="22.06" releasePath="images\btn_plastic_rect45bar_1.svg" needlePath="images\btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="PageDurationTrendAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" trendName="HistoricTrend1.wnd" pageDuration="13" actionWgt="_TrendMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label19">
+    <wgtStyle width="55.70" font-color="rgb(40,40,40)" x="5.27" forcePaint="3" font-sizepx="13" y="4.41" font-family="Tahoma" font-bold="true" wrapping="true" cx="27.92" cy="11.15" height="22.06" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="5"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image2" static="true">
+    <wgtStyle width="20.32" x="23.33" y="7.06" cx="10.40" cy="7.72" height="15"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd3" customType="Button">
+   <wgtStyle width="70" x="42.50" y="211" cx="34.62" cy="15" height="30"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image6" static="true">
+    <wgtStyle width="70" imagePath="images/frame_rect45bar_chrome.svg" x="0" y="0" cx="35" cy="15.26" height="30"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd4">
+    <wgtStyle width="63.98" x="3.01" y="3.53" fill="rgb(192,192,192)" dx="1" cx="32.02" form="standard" cy="11.39" height="22.06" releasePath="images\btn_plastic_rect45bar_1.svg" needlePath="images\btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="PageDurationTrendAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" trendName="HistoricTrend1.wnd" pageDuration="5" actionWgt="_TrendMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label20">
+    <wgtStyle width="55.70" font-color="rgb(40,40,40)" x="5.27" forcePaint="3" font-sizepx="13" y="4.41" font-family="Tahoma" font-bold="true" wrapping="true" cx="27.92" cy="11.15" height="22.06" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="6"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image7" static="true">
+    <wgtStyle width="20.32" x="23.33" y="7.06" cx="10.40" cy="7.72" height="15"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd5" customType="Button">
+   <wgtStyle width="70" x="42.50" y="259" cx="34.62" cy="15" height="30"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image5" static="true">
+    <wgtStyle width="70" imagePath="images/frame_rect45bar_chrome.svg" x="0" y="0" cx="35" cy="15.26" height="30"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd6">
+    <wgtStyle width="63.98" x="3.01" y="3.53" fill="rgb(192,192,192)" dx="1" cx="32.02" form="standard" cy="11.39" height="22.06" releasePath="images\btn_plastic_rect45bar_1.svg" needlePath="images\btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="PageDurationTrendAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" trendName="HistoricTrend1.wnd" pageDuration="10" actionWgt="_TrendMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label21">
+    <wgtStyle width="55.70" font-color="rgb(40,40,40)" x="5.27" forcePaint="3" font-sizepx="13" y="4.41" font-family="Tahoma" font-bold="true" wrapping="true" cx="27.92" cy="11.15" height="22.06" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="7"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image19" static="true">
+    <wgtStyle width="20.32" x="23.33" y="7.06" cx="10.40" cy="7.72" height="15"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd6" customType="Button">
+   <wgtStyle width="70" x="42.50" y="354.50" cx="34.62" cy="15" height="30"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image20" static="true">
+    <wgtStyle width="70" imagePath="images/frame_rect45bar_chrome.svg" x="0" y="0" cx="35" cy="15.26" height="30"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd9">
+    <wgtStyle width="63.98" x="3.01" y="3.53" fill="rgb(192,192,192)" dx="1" cx="32.02" form="standard" cy="11.39" height="22.06" releasePath="images\btn_plastic_rect45bar_1.svg" needlePath="images\btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="PageDurationTrendAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" trendName="HistoricTrend1.wnd" pageDuration="15" actionWgt="_TrendMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label22">
+    <wgtStyle width="55.70" font-color="rgb(40,40,40)" x="5.27" forcePaint="3" font-sizepx="8" y="4.41" font-family="Tahoma" font-bold="true" wrapping="true" cx="27.92" cy="11.15" height="22.06" alignment="center" vert-align="middle" keypad-type="None" font-size="6"/>
+    <links>
+     <lang class="MLTextLink" textid="8"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image21" static="true">
+    <wgtStyle width="20.32" x="23.33" y="7.06" cx="10.40" cy="7.72" height="15"/>
+   </object>
+  </object>
+  <object class="NumericWgt" id="field6">
+   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="10" cx="23" cy="9" step="1" timeSpec="local" alignment="right" x="89.85" y="59" vert-align="top" text="888" max="32767" usingFormat="" value="888" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-32768" width="19" numberFormat="1" height="13" form="Numeric" font-size="8"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.rGjennvinner_OP" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field7">
+   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="10" cx="23" cy="9" step="1" timeSpec="local" alignment="right" x="89.85" y="78.50" vert-align="top" text="888" max="32767" usingFormat="" value="888" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-32768" width="19" numberFormat="1" height="13" form="Numeric" font-size="8"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.rVentilKjoling_OP" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field8">
+   <wgtStyle forcePaint="9" font-family="Tahoma" font-sizepx="10" cx="23" cy="9" step="1" timeSpec="local" alignment="right" x="89.85" y="98.50" vert-align="top" text="888" max="32767" usingFormat="" value="888" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-32768" width="19" numberFormat="1" height="13" form="Numeric" font-size="8"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.rVentilVarme_OP" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupSubscribeWgt" id="TrendPaadrag@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+ </object>
+</wgtPage>

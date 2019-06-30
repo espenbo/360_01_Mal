@@ -1,0 +1,132 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="SystemInfo" singleInstance="true" pageType="modal" pageSize="350,300" class="DialogWgt" dataWndSize="0,70" downloadPrepDone="true" px="0" usedFonts="Tahoma" py="0" titlebar="true" staticFile="opt/systeminfo.png" dynPosition="false" id="SystemInfo" titleName="" staticOptEnable="true">
+  <wgtStyle width="350" x="0" y="0" height="300" ver="020800363" v="02.08.00.363"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+    <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="OS System" L2="OS System" id="0"/>
+    <MLText L1="OS System" L2="OS System" id="1"/>
+    <MLText L1="System Backlight Time" L2="System Backlight Time" id="6"/>
+    <MLText L1="System Backlight Time" L2="System Backlight Time" id="7"/>
+    <MLText L1="System Up Time" L2="System Up Time" id="8"/>
+    <MLText L1="System Up Time" L2="System Up Time" id="9"/>
+    <MLText L1="System Time" L2="System Time" id="10"/>
+    <MLText L1="System Time" L2="System Time" id="11"/>
+    <MLText L1="Available Memory" L2="Available Memory" id="13"/>
+    <MLText L1="Available Memory" L2="Available Memory" id="14"/>
+   </MLTexts>
+  </object>
+  <object class="ShapeWgt" id="rect1" static="true">
+   <wgtStyle width="352" x="0" y="256" fill="rgb(127,127,127)" cx="176" cy="0.50" height="1" nodeName="rect" stroke="rgb(102,102,102)"/>
+  </object>
+  <object class="GroupWgt" id="GroupWgt2" customType="Button">
+   <wgtStyle width="65" x="278" y="266" cx="32" cy="14" height="29"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="WinBtn1-pushbutton2">
+    <wgtStyle width="65" x="1" y="0" fill="rgb(160,160,164)" dx="1" form="standard" dy="-1" height="28" releasePath="images\win-like.svg" needlePath="images\win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+    <links>
+     <action pageName="" class="CloseDialogAction" attribute="onMouseRelease" event="onMouseUp" actionID="0" closeParam="Selected" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="WinBtn1-text2">
+    <wgtStyle width="36.12" font-color="rgb(255,255,255)" x="15" forcePaint="1" y="7" font-family="Tahoma" cx="14" cy="8" height="13.92" alignment="center" vert-align="middle" text="Close" keypad-type="None" font-size="10"/>
+   </object>
+  </object>
+  <object class="ShapeWgt" id="rect2" static="true">
+   <wgtStyle width="352" x="0" y="256" fill="rgb(127,127,127)" cx="176" cy="0.50" height="1" nodeName="rect" stroke="rgb(102,102,102)"/>
+  </object>
+  <object class="ShapeWgt" id="rect3" static="true">
+   <wgtStyle width="351" x="0.77" y="219.38" fill="rgb(127,127,127)" cx="175.50" cy="21.07" height="45.86" nodeName="rect" stroke="rgb(192,192,192)"/>
+  </object>
+  <object class="ShapeWgt" id="rect4" static="true">
+   <wgtStyle width="351" x="0.77" y="127.65" fill="rgb(127,127,127)" cx="174.90" cy="39.43" height="82.55" nodeName="rect" stroke="rgb(192,192,192)"/>
+  </object>
+  <object class="ShapeWgt" id="rect5" static="true">
+   <wgtStyle width="351" x="0.77" y="-0.76" fill="rgb(127,127,127)" cx="175.50" cy="57.61" height="119.24" nodeName="rect" stroke="rgb(192,192,192)"/>
+  </object>
+  <object class="LabelWgt" id="label7">
+   <wgtStyle width="154.09" font-color="rgb(255,255,255)" x="8.97" forcePaint="10" font-sizepx="13" y="228.55" font-family="Tahoma" cx="71.71" cy="8.09" height="26.52" alignment="center" vert-align="middle" frame="true" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="string" attribute="text" tag="Main OS Version" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label11">
+   <wgtStyle width="154.09" font-color="rgb(255,255,255)" x="8.97" forcePaint="10" font-sizepx="13" y="136.83" font-family="Tahoma" cx="76.71" cy="12.95" height="26.52" alignment="center" vert-align="middle" frame="true" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="long" attribute="text" tag="Available System Memory" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="14"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label2">
+   <wgtStyle width="163.26" font-color="rgb(40,40,40)" x="172.23" forcePaint="2" font-sizepx="13" y="45.10" font-family="Tahoma" cx="81.12" cy="13.76" height="27.52" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="9"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label3">
+   <wgtStyle width="163.26" font-color="rgb(40,40,40)" x="172.23" forcePaint="2" font-sizepx="13" y="81.79" font-family="Tahoma" cx="81.12" cy="13.76" height="27.52" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="6"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label4">
+   <wgtStyle width="163.26" font-color="rgb(40,40,40)" x="172.23" forcePaint="2" font-sizepx="13" y="228.55" font-family="Tahoma" cx="81.12" cy="13.76" height="27.52" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="1"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label12">
+   <wgtStyle width="163.26" font-color="rgb(40,40,40)" x="172.23" forcePaint="2" font-sizepx="13" y="136.83" font-family="Tahoma" cx="81.18" cy="13.76" height="27.52" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="13"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label1">
+   <wgtStyle width="163.26" font-color="rgb(40,40,40)" x="172.23" forcePaint="2" font-sizepx="13" y="8.41" font-family="Tahoma" cx="81.12" cy="13.76" height="27.52" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="11"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label6">
+   <wgtStyle width="154.09" font-color="rgb(255,255,255)" x="8.97" forcePaint="10" font-sizepx="13" y="8.41" font-family="Tahoma" cx="71.71" cy="8.09" height="26.52" alignment="center" vert-align="middle" frame="true" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="long" attribute="text" tag="System Time" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="10"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label8">
+   <wgtStyle width="154.09" font-color="rgb(255,255,255)" x="8.97" forcePaint="10" font-sizepx="13" y="45.10" font-family="Tahoma" cx="71.71" cy="8.09" height="26.52" alignment="center" vert-align="middle" frame="true" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="long" attribute="text" tag="System UpTime" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="8"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label9">
+   <wgtStyle width="154.09" font-color="rgb(255,255,255)" x="8.97" forcePaint="10" font-sizepx="13" y="81.79" font-family="Tahoma" cx="71.71" cy="8.09" height="26.52" alignment="center" vert-align="middle" frame="true" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="long" attribute="text" tag="Backlight Time" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="7"/>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="SystemInfo@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+ </object>
+</wgtPage>

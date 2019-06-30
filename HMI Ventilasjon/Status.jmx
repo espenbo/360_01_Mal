@@ -1,0 +1,905 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Status" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="maintemplate.jmx" usedFonts="Tahoma,Arial" staticFile="opt/status.png" id="Status" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020800363" v="02.08.00.363"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+    <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" L2="" id="119"/>
+    <MLText L1="OK" L2="OK" id="0"/>
+    <MLText L1="NA" L2="NA" id="1"/>
+    <MLText L1="NA" L2="NA" id="2"/>
+    <MLText L1="NA" L2="NA" id="3"/>
+    <MLText L1="NA" L2="NA" id="4"/>
+    <MLText L1="NA" L2="NA" id="5"/>
+    <MLText L1="NA" L2="NA" id="6"/>
+    <MLText L1="NA" L2="NA" id="7"/>
+    <MLText L1="NA" L2="NA" id="8"/>
+    <MLText L1="NA" L2="NA" id="9"/>
+    <MLText L1="Feil på pumpe" L2="Feil på pumpe" id="10"/>
+    <MLText L1="NA" L2="NA" id="11"/>
+    <MLText L1="NA" L2="NA" id="12"/>
+    <MLText L1="Røyk varsler aktiv" L2="Røyk varsler aktiv" id="13"/>
+    <MLText L1="Frost alarm vann" L2="Frost alarm vann" id="14"/>
+    <MLText L1="Frost alarm luft" L2="Frost alarm luft" id="15"/>
+    <MLText L1="NA" L2="NA" id="16"/>
+    <MLText L1="NA" L2="NA" id="17"/>
+    <MLText L1="NA" L2="NA" id="18"/>
+    <MLText L1="NA" L2="NA" id="19"/>
+    <MLText L1="Feil tilluftsvifte" L2="Feil tilluftsvifte" id="20"/>
+    <MLText L1="Status" L2="Status" id="21"/>
+    <MLText L1="Feil avtrekksvifte" L2="Feil avtrekksvifte" id="22"/>
+    <MLText L1="Anti freeze water" L2="Anti freeze water" id="23"/>
+    <MLText L1="System status" L2="System status" id="24"/>
+    <MLText L1="NA" L2="NA" id="25"/>
+    <MLText L1="NA" L2="NA" id="26"/>
+    <MLText L1="-JV400 Tilluftsvifte" L2="-JV400 Tilluftsvifte" id="27"/>
+    <MLText L1="-JV500 Tilluftsvifte" L2="-JV500 Tilluftsvifte" id="28"/>
+    <MLText L1="NA" L2="NA" id="29"/>
+    <MLText L1="-LR402 Varmegjen." L2="-LR402 Varmegjen." id="30"/>
+    <MLText L1="=360.20" L2="=360.01" id="31"/>
+    <MLText L1="sStatus_AntifreezeWater" L2="sStatus_AntifreezeWater" id="33"/>
+    <MLText L1="NA" L2="NA" id="34"/>
+    <MLText L1="NA" L2="NA" id="35"/>
+    <MLText L1="Feil inntaksspjeld" L2="Feil inntaksspjeld" id="36"/>
+    <MLText L1="Feil forrvarming" L2="Feil forrvarming" id="37"/>
+    <MLText L1="NA" L2="NA" id="38"/>
+    <MLText L1="sStatus_Malfunction" L2="sStatus_Malfunction" id="39"/>
+    <MLText L1="sTilluftsvifte_Status" L2="sTilluftsvifte_Status" id="40"/>
+    <MLText L1="sAvtrekksvifte_Status" L2="sAvtrekksvifte_Status" id="41"/>
+    <MLText L1="sGjennvinner_Status" L2="sGjennvinner_Status" id="42"/>
+    <MLText L1="Inntakspjeld" L2="Inntakspjeld" id="43"/>
+    <MLText L1="sSpjeld_Status" L2="sSpjeld_Status" id="44"/>
+    <MLText L1="Tilbake" L2="Tilbake" id="46"/>
+    <MLText L1="Hovedside" L2="Hovedside" id="47"/>
+    <MLText L1="Feil avkastspjeld" L2="Feil avkastspjeld" id="52"/>
+    <MLText L1="OK" L2="OK" id="58"/>
+    <MLText L1="NA" L2="NA" id="59"/>
+    <MLText L1="NA" L2="NA" id="60"/>
+    <MLText L1="NA" L2="NA" id="61"/>
+    <MLText L1="NA" L2="NA" id="62"/>
+    <MLText L1="NA" L2="NA" id="63"/>
+    <MLText L1="NA" L2="NA" id="64"/>
+    <MLText L1="NA" L2="NA" id="65"/>
+    <MLText L1="NA" L2="NA" id="66"/>
+    <MLText L1="NA" L2="NA" id="67"/>
+    <MLText L1="NA" L2="NA" id="68"/>
+    <MLText L1="NA" L2="NA" id="69"/>
+    <MLText L1="NA" L2="NA" id="70"/>
+    <MLText L1="NA" L2="NA" id="71"/>
+    <MLText L1="NA" L2="NA" id="72"/>
+    <MLText L1="Frost alarm vann" L2="Frost alarm vann" id="73"/>
+    <MLText L1="NA" L2="NA" id="74"/>
+    <MLText L1="NA" L2="NA" id="75"/>
+    <MLText L1="Mangel på varmt vann" L2="Mangel på varmt vann" id="76"/>
+    <MLText L1="NA" L2="NA" id="77"/>
+    <MLText L1="Feil tilluftsvifte" L2="Feil tilluftsvifte" id="78"/>
+    <MLText L1="Feil avtrekksvifte" L2="Feil avtrekksvifte" id="79"/>
+    <MLText L1="NA" L2="NA" id="80"/>
+    <MLText L1="NA" L2="NA" id="81"/>
+    <MLText L1="Forvarming fullført" L2="Forvarming fullført" id="82"/>
+    <MLText L1="Forvarming pågår" L2="Forvarming pågår" id="83"/>
+    <MLText L1="OK" L2="OK" id="86"/>
+    <MLText L1="NA" L2="NA" id="87"/>
+    <MLText L1="NA" L2="NA" id="88"/>
+    <MLText L1="Åpen" L2="Åpen" id="89"/>
+    <MLText L1="Lukket" L2="Lukket" id="90"/>
+    <MLText L1="NA" L2="NA" id="91"/>
+    <MLText L1="NA" L2="NA" id="92"/>
+    <MLText L1="NA" L2="NA" id="93"/>
+    <MLText L1="NA" L2="NA" id="94"/>
+    <MLText L1="NA" L2="NA" id="95"/>
+    <MLText L1="NA" L2="NA" id="96"/>
+    <MLText L1="NA" L2="NA" id="97"/>
+    <MLText L1="NA" L2="NA" id="98"/>
+    <MLText L1="NA" L2="NA" id="99"/>
+    <MLText L1="NA" L2="NA" id="100"/>
+    <MLText L1="NA" L2="NA" id="101"/>
+    <MLText L1="NA" L2="NA" id="102"/>
+    <MLText L1="NA" L2="NA" id="103"/>
+    <MLText L1="NA" L2="NA" id="104"/>
+    <MLText L1="NA" L2="NA" id="105"/>
+    <MLText L1="NA" L2="NA" id="106"/>
+    <MLText L1="NA" L2="NA" id="107"/>
+    <MLText L1="NA" L2="NA" id="108"/>
+    <MLText L1="NA" L2="NA" id="109"/>
+    <MLText L1="NA" L2="NA" id="110"/>
+    <MLText L1="NA" L2="NA" id="111"/>
+    <MLText L1="I bevegelse" L2="I bevegelse" id="122"/>
+    <MLText L1="Feil" L2="Feil" id="128"/>
+    <MLText L1="OK" L2="OK" id="129"/>
+    <MLText L1="NA" L2="NA" id="130"/>
+    <MLText L1="NA" L2="NA" id="131"/>
+    <MLText L1="NA" L2="NA" id="132"/>
+    <MLText L1="NA" L2="NA" id="133"/>
+    <MLText L1="NA" L2="NA" id="134"/>
+    <MLText L1="NA" L2="NA" id="135"/>
+    <MLText L1="NA" L2="NA" id="136"/>
+    <MLText L1="NA" L2="NA" id="137"/>
+    <MLText L1="NA" L2="NA" id="138"/>
+    <MLText L1="NA" L2="NA" id="139"/>
+    <MLText L1="NA" L2="NA" id="140"/>
+    <MLText L1="NA" L2="NA" id="141"/>
+    <MLText L1="NA" L2="NA" id="142"/>
+    <MLText L1="NA" L2="NA" id="143"/>
+    <MLText L1="NA" L2="NA" id="144"/>
+    <MLText L1="Sikkerhetsbryter" L2="Sikkerhetsbryter" id="145"/>
+    <MLText L1="Overstrøm" L2="Overstrøm" id="146"/>
+    <MLText L1="NA" L2="NA" id="147"/>
+    <MLText L1="Mangler drift signal" L2="Mangler drift signal" id="148"/>
+    <MLText L1="NA" L2="NA" id="149"/>
+    <MLText L1="NA" L2="NA" id="150"/>
+    <MLText L1="NA" L2="NA" id="151"/>
+    <MLText L1="NA" L2="NA" id="152"/>
+    <MLText L1="NA" L2="NA" id="153"/>
+    <MLText L1="NA" L2="NA" id="154"/>
+    <MLText L1="Feil på omformer" L2="Feil på omformer" id="167"/>
+    <MLText L1="OK" L2="OK" id="168"/>
+    <MLText L1="På" L2="På" id="169"/>
+    <MLText L1="Av" L2="Av" id="170"/>
+    <MLText L1="NA" L2="NA" id="171"/>
+    <MLText L1="NA" L2="NA" id="172"/>
+    <MLText L1="NA" L2="NA" id="173"/>
+    <MLText L1="NA" L2="NA" id="174"/>
+    <MLText L1="NA" L2="NA" id="175"/>
+    <MLText L1="NA" L2="NA" id="176"/>
+    <MLText L1="NA" L2="NA" id="177"/>
+    <MLText L1="NA" L2="NA" id="178"/>
+    <MLText L1="NA" L2="NA" id="179"/>
+    <MLText L1="NA" L2="NA" id="180"/>
+    <MLText L1="NA" L2="NA" id="181"/>
+    <MLText L1="NA" L2="NA" id="182"/>
+    <MLText L1="NA" L2="NA" id="183"/>
+    <MLText L1="NA" L2="NA" id="184"/>
+    <MLText L1="NA" L2="NA" id="185"/>
+    <MLText L1="NA" L2="NA" id="186"/>
+    <MLText L1="NA" L2="NA" id="187"/>
+    <MLText L1="NA" L2="NA" id="188"/>
+    <MLText L1="NA" L2="NA" id="189"/>
+    <MLText L1="NA" L2="NA" id="190"/>
+    <MLText L1="NA" L2="NA" id="191"/>
+    <MLText L1="NA" L2="NA" id="192"/>
+    <MLText L1="NA" L2="NA" id="193"/>
+    <MLText L1="Feil på gjenvinner" L2="Feil på gjenvinner" id="211"/>
+   </MLTexts>
+  </object>
+  <object class="LabelWgt" id="label4">
+   <wgtStyle width="142" x="329" forcePaint="2" y="7.50" font-family="Tahoma" cx="54.33" cy="21" height="39" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="24"/>
+   <links>
+    <lang class="MLTextLink" textid="21"/>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="Status@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="GroupWgt" id="BtnStd1" customType="Button">
+   <wgtStyle width="93" x="106.87" y="442.61" cx="46" cy="17" height="34"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image2" static="true">
+    <wgtStyle width="93" imagePath="images/frame_rect45bar_chrome.svg" x="0" y="0" cx="46.50" cy="17.30" height="34"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd1">
+    <wgtStyle width="85" x="4" y="4" fill="rgb(192,192,192)" dx="1" cx="42.54" form="standard" cy="12.91" height="25" releasePath="images\btn_plastic_rect45bar_1.svg" needlePath="images\btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="service.jmx" class="LoadPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label28">
+    <wgtStyle width="74" font-color="rgb(40,40,40)" x="7" forcePaint="3" y="5" font-family="Tahoma" font-bold="true" wrapping="true" cx="37.10" cy="12.64" height="25" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="46"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image3" static="true">
+    <wgtStyle width="27" x="31" y="8" cx="13.82" cy="8.75" height="17"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd8" customType="Button">
+   <wgtStyle width="93" x="4" y="442.61" cx="46" cy="17" height="34"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image16" static="true">
+    <wgtStyle width="93" imagePath="images/frame_rect45bar_chrome.svg" x="0" y="0" cx="46.50" cy="17.30" height="34"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd8">
+    <wgtStyle width="85" x="4" y="4" fill="rgb(192,192,192)" dx="1" cx="42.54" form="standard" cy="12.91" height="25" releasePath="images\btn_plastic_rect45bar_1.svg" needlePath="images\btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="main.jmx" class="LoadPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label37">
+    <wgtStyle width="74" font-color="rgb(40,40,40)" x="7" forcePaint="3" y="5" font-family="Tahoma" font-bold="true" wrapping="true" cx="37.10" cy="12.64" height="25" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="47"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image17" static="true">
+    <wgtStyle width="27" x="31" y="8" cx="13.82" cy="8.75" height="17"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label3">
+   <wgtStyle width="163" x="105" forcePaint="2" y="126.33" font-family="Tahoma" cx="81.50" cy="11.33" height="22.67" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="24"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="GroupWgt3">
+   <wgtStyle width="175" x="269" y="126" cx="87.50" cy="12" height="24"/>
+   <object class="ShapeWgt" id="roundrect3" static="true">
+    <wgtStyle width="175" x="0" y="0" fill="rgb(255,255,255)" cx="87.50" cy="11.50" rx="20" height="23" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
+   </object>
+   <object class="MsgTextWgt" id="msgtext1">
+    <wgtStyle font-bold="true" marker="true" forcePaint="10" font-family="Tahoma" cx="82.08" cy="11.37" x="5.33" y="0" viewindex="false" vert-align="top" text="" max="41" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="167" continous="true" height="24" font-size="12">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+      <msg index="2"/>
+      <msg index="3"/>
+      <msg index="4"/>
+      <msg index="5"/>
+      <msg index="6"/>
+      <msg index="7"/>
+      <msg index="8"/>
+      <msg index="9"/>
+      <msg index="10"/>
+      <msg index="11"/>
+      <msg index="12"/>
+      <msg index="13"/>
+      <msg index="14"/>
+      <msg index="15"/>
+      <msg index="16"/>
+      <msg index="17"/>
+      <msg index="18"/>
+      <msg index="19"/>
+      <msg index="20"/>
+      <msg index="21"/>
+      <msg index="22"/>
+      <msg index="23"/>
+      <msg index="24"/>
+      <msg index="25"/>
+      <msg index="26"/>
+      <msg index="27"/>
+      <msg index="28"/>
+      <msg index="29"/>
+      <msg index="30"/>
+      <msg index="31"/>
+      <msg index="32"/>
+      <msg index="33"/>
+      <msg index="34"/>
+      <msg index="35"/>
+      <msg index="36"/>
+      <msg index="37"/>
+      <msg index="38"/>
+      <msg index="39"/>
+      <msg index="40"/>
+      <msg index="41"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.xSpjeld_avkast_US" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Tahoma" L2="Tahoma"/>
+      <textid idx="0" val="0"/>
+      <textid idx="1" val="1"/>
+      <textid idx="2" val="2"/>
+      <textid idx="3" val="3"/>
+      <textid idx="4" val="4"/>
+      <textid idx="5" val="5"/>
+      <textid idx="6" val="6"/>
+      <textid idx="7" val="7"/>
+      <textid idx="8" val="8"/>
+      <textid idx="9" val="9"/>
+      <textid idx="10" val="10"/>
+      <textid idx="11" val="11"/>
+      <textid idx="12" val="12"/>
+      <textid idx="13" val="13"/>
+      <textid idx="14" val="14"/>
+      <textid idx="15" val="15"/>
+      <textid idx="16" val="16"/>
+      <textid idx="17" val="17"/>
+      <textid idx="18" val="18"/>
+      <textid idx="19" val="19"/>
+      <textid idx="20" val="20"/>
+      <textid idx="21" val="22"/>
+      <textid idx="22" val="25"/>
+      <textid idx="23" val="26"/>
+      <textid idx="24" val="29"/>
+      <textid idx="25" val="34"/>
+      <textid idx="26" val="35"/>
+      <textid idx="27" val="36"/>
+      <textid idx="28" val="37"/>
+      <textid idx="29" val="38"/>
+      <textid idx="30" val="119"/>
+      <textid idx="31" val="119"/>
+      <textid idx="32" val="119"/>
+      <textid idx="33" val="119"/>
+      <textid idx="34" val="119"/>
+      <textid idx="35" val="119"/>
+      <textid idx="36" val="119"/>
+      <textid idx="37" val="119"/>
+      <textid idx="38" val="119"/>
+      <textid idx="39" val="119"/>
+      <textid idx="40" val="52"/>
+      <textid idx="41" val="119"/>
+     </lang>
+    </links>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label6">
+   <wgtStyle width="163" x="105" forcePaint="2" y="157.33" font-family="Tahoma" cx="81.50" cy="11.33" height="22.67" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="23"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label2">
+   <wgtStyle width="163" x="105" forcePaint="2" y="189.33" font-family="Tahoma" cx="81.50" cy="11.33" height="22.67" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="27"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label5">
+   <wgtStyle width="163" x="105" forcePaint="2" y="220.33" font-family="Tahoma" cx="81.50" cy="11.33" height="22.67" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="28"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label7">
+   <wgtStyle width="163" x="105" forcePaint="2" y="251.33" font-family="Tahoma" cx="81.50" cy="11.33" height="22.67" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="30"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label8">
+   <wgtStyle width="163" x="105" forcePaint="2" y="282.33" font-family="Tahoma" cx="81.50" cy="11.33" height="22.67" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="43"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1">
+   <wgtStyle width="175" x="269" y="157" cx="87.50" cy="12" height="24"/>
+   <object class="ShapeWgt" id="roundrect1" static="true">
+    <wgtStyle width="175" x="0" y="0" fill="rgb(255,255,255)" cx="87.50" cy="11.50" rx="20" height="23" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
+   </object>
+   <object class="MsgTextWgt" id="msgtext2">
+    <wgtStyle font-bold="true" marker="true" forcePaint="10" font-family="Tahoma" cx="82.08" cy="11.37" x="5.33" y="0" viewindex="false" vert-align="top" text="" max="25" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="167" continous="true" height="24" font-size="12">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+      <msg index="2"/>
+      <msg index="3"/>
+      <msg index="4"/>
+      <msg index="5"/>
+      <msg index="6"/>
+      <msg index="7"/>
+      <msg index="8"/>
+      <msg index="9"/>
+      <msg index="10"/>
+      <msg index="11"/>
+      <msg index="12"/>
+      <msg index="13"/>
+      <msg index="14"/>
+      <msg index="15"/>
+      <msg index="16"/>
+      <msg index="17"/>
+      <msg index="18"/>
+      <msg index="19"/>
+      <msg index="20"/>
+      <msg index="21"/>
+      <msg index="22"/>
+      <msg index="23"/>
+      <msg index="24"/>
+      <msg index="25"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.xFlush_OK" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Tahoma" L2="Tahoma"/>
+      <textid idx="0" val="58"/>
+      <textid idx="1" val="59"/>
+      <textid idx="2" val="60"/>
+      <textid idx="3" val="61"/>
+      <textid idx="4" val="62"/>
+      <textid idx="5" val="63"/>
+      <textid idx="6" val="64"/>
+      <textid idx="7" val="65"/>
+      <textid idx="8" val="66"/>
+      <textid idx="9" val="67"/>
+      <textid idx="10" val="68"/>
+      <textid idx="11" val="69"/>
+      <textid idx="12" val="70"/>
+      <textid idx="13" val="71"/>
+      <textid idx="14" val="72"/>
+      <textid idx="15" val="73"/>
+      <textid idx="16" val="74"/>
+      <textid idx="17" val="75"/>
+      <textid idx="18" val="76"/>
+      <textid idx="19" val="77"/>
+      <textid idx="20" val="78"/>
+      <textid idx="21" val="79"/>
+      <textid idx="22" val="80"/>
+      <textid idx="23" val="81"/>
+      <textid idx="24" val="82"/>
+      <textid idx="25" val="83"/>
+     </lang>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt2">
+   <wgtStyle width="175" x="269" y="189" cx="87.50" cy="12" height="24"/>
+   <object class="ShapeWgt" id="roundrect2" static="true">
+    <wgtStyle width="175" x="0" y="0" fill="rgb(255,255,255)" cx="87.50" cy="11.50" rx="20" height="23" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
+   </object>
+   <object class="MsgTextWgt" id="msgtext3">
+    <wgtStyle font-bold="true" marker="true" forcePaint="10" font-family="Tahoma" cx="82.08" cy="11.37" x="5.33" y="0" viewindex="false" vert-align="top" text="" max="38" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="167" continous="true" height="24" font-size="12">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+      <msg index="2"/>
+      <msg index="3"/>
+      <msg index="4"/>
+      <msg index="5"/>
+      <msg index="6"/>
+      <msg index="7"/>
+      <msg index="8"/>
+      <msg index="9"/>
+      <msg index="10"/>
+      <msg index="11"/>
+      <msg index="12"/>
+      <msg index="13"/>
+      <msg index="14"/>
+      <msg index="15"/>
+      <msg index="16"/>
+      <msg index="17"/>
+      <msg index="18"/>
+      <msg index="19"/>
+      <msg index="20"/>
+      <msg index="21"/>
+      <msg index="22"/>
+      <msg index="23"/>
+      <msg index="24"/>
+      <msg index="25"/>
+      <msg index="26"/>
+      <msg index="27"/>
+      <msg index="28"/>
+      <msg index="29"/>
+      <msg index="30"/>
+      <msg index="31"/>
+      <msg index="32"/>
+      <msg index="33"/>
+      <msg index="34"/>
+      <msg index="35"/>
+      <msg index="36"/>
+      <msg index="37"/>
+      <msg index="38"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.xTilluftsvifte_Drift" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Tahoma" L2="Tahoma"/>
+      <textid idx="0" val="129"/>
+      <textid idx="1" val="130"/>
+      <textid idx="2" val="131"/>
+      <textid idx="3" val="132"/>
+      <textid idx="4" val="133"/>
+      <textid idx="5" val="134"/>
+      <textid idx="6" val="135"/>
+      <textid idx="7" val="136"/>
+      <textid idx="8" val="137"/>
+      <textid idx="9" val="138"/>
+      <textid idx="10" val="139"/>
+      <textid idx="11" val="140"/>
+      <textid idx="12" val="141"/>
+      <textid idx="13" val="142"/>
+      <textid idx="14" val="143"/>
+      <textid idx="15" val="144"/>
+      <textid idx="16" val="145"/>
+      <textid idx="17" val="146"/>
+      <textid idx="18" val="147"/>
+      <textid idx="19" val="148"/>
+      <textid idx="20" val="149"/>
+      <textid idx="21" val="150"/>
+      <textid idx="22" val="151"/>
+      <textid idx="23" val="152"/>
+      <textid idx="24" val="153"/>
+      <textid idx="25" val="154"/>
+      <textid idx="26" val="119"/>
+      <textid idx="27" val="119"/>
+      <textid idx="28" val="119"/>
+      <textid idx="29" val="119"/>
+      <textid idx="30" val="119"/>
+      <textid idx="31" val="119"/>
+      <textid idx="32" val="119"/>
+      <textid idx="33" val="119"/>
+      <textid idx="34" val="119"/>
+      <textid idx="35" val="119"/>
+      <textid idx="36" val="119"/>
+      <textid idx="37" val="119"/>
+      <textid idx="38" val="167"/>
+     </lang>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt5">
+   <wgtStyle width="175" x="269" y="250" cx="87.50" cy="12" height="24"/>
+   <object class="ShapeWgt" id="roundrect5" static="true">
+    <wgtStyle width="175" x="0" y="0" fill="rgb(255,255,255)" cx="87.50" cy="11.50" rx="20" height="23" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
+   </object>
+   <object class="MsgTextWgt" id="msgtext5">
+    <wgtStyle font-bold="true" marker="true" forcePaint="10" font-family="Tahoma" cx="82.08" cy="11.37" x="5.33" y="0" viewindex="false" vert-align="top" text="" max="44" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="167" continous="true" height="24" font-size="12">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+      <msg index="2"/>
+      <msg index="3"/>
+      <msg index="4"/>
+      <msg index="5"/>
+      <msg index="6"/>
+      <msg index="7"/>
+      <msg index="8"/>
+      <msg index="9"/>
+      <msg index="10"/>
+      <msg index="11"/>
+      <msg index="12"/>
+      <msg index="13"/>
+      <msg index="14"/>
+      <msg index="15"/>
+      <msg index="16"/>
+      <msg index="17"/>
+      <msg index="18"/>
+      <msg index="19"/>
+      <msg index="20"/>
+      <msg index="21"/>
+      <msg index="22"/>
+      <msg index="23"/>
+      <msg index="24"/>
+      <msg index="25"/>
+      <msg index="26"/>
+      <msg index="27"/>
+      <msg index="28"/>
+      <msg index="29"/>
+      <msg index="30"/>
+      <msg index="31"/>
+      <msg index="32"/>
+      <msg index="33"/>
+      <msg index="34"/>
+      <msg index="35"/>
+      <msg index="36"/>
+      <msg index="37"/>
+      <msg index="38"/>
+      <msg index="39"/>
+      <msg index="40"/>
+      <msg index="41"/>
+      <msg index="42"/>
+      <msg index="43"/>
+      <msg index="44"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.xStartRele_US" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Tahoma" L2="Tahoma"/>
+      <textid idx="0" val="168"/>
+      <textid idx="1" val="169"/>
+      <textid idx="2" val="170"/>
+      <textid idx="3" val="171"/>
+      <textid idx="4" val="172"/>
+      <textid idx="5" val="173"/>
+      <textid idx="6" val="174"/>
+      <textid idx="7" val="175"/>
+      <textid idx="8" val="176"/>
+      <textid idx="9" val="177"/>
+      <textid idx="10" val="178"/>
+      <textid idx="11" val="179"/>
+      <textid idx="12" val="180"/>
+      <textid idx="13" val="181"/>
+      <textid idx="14" val="182"/>
+      <textid idx="15" val="183"/>
+      <textid idx="16" val="184"/>
+      <textid idx="17" val="185"/>
+      <textid idx="18" val="186"/>
+      <textid idx="19" val="187"/>
+      <textid idx="20" val="188"/>
+      <textid idx="21" val="189"/>
+      <textid idx="22" val="190"/>
+      <textid idx="23" val="191"/>
+      <textid idx="24" val="192"/>
+      <textid idx="25" val="193"/>
+      <textid idx="26" val="119"/>
+      <textid idx="27" val="119"/>
+      <textid idx="28" val="119"/>
+      <textid idx="29" val="119"/>
+      <textid idx="30" val="119"/>
+      <textid idx="31" val="119"/>
+      <textid idx="32" val="119"/>
+      <textid idx="33" val="119"/>
+      <textid idx="34" val="119"/>
+      <textid idx="35" val="119"/>
+      <textid idx="36" val="119"/>
+      <textid idx="37" val="119"/>
+      <textid idx="38" val="119"/>
+      <textid idx="39" val="119"/>
+      <textid idx="40" val="119"/>
+      <textid idx="41" val="119"/>
+      <textid idx="42" val="119"/>
+      <textid idx="43" val="211"/>
+      <textid idx="44" val="119"/>
+     </lang>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt6">
+   <wgtStyle width="175" x="269" y="282" cx="87.50" cy="12" height="24"/>
+   <object class="ShapeWgt" id="roundrect6" static="true">
+    <wgtStyle width="175" x="0" y="0" fill="rgb(255,255,255)" cx="87.50" cy="11.50" rx="20" height="23" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
+   </object>
+   <object class="MsgTextWgt" id="msgtext6">
+    <wgtStyle font-bold="true" marker="true" forcePaint="10" font-family="Tahoma" cx="82.08" cy="11.37" x="5.33" y="0" viewindex="false" vert-align="top" text="" max="42" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="167" continous="true" height="24" font-size="12">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+      <msg index="2"/>
+      <msg index="3"/>
+      <msg index="4"/>
+      <msg index="5"/>
+      <msg index="6"/>
+      <msg index="7"/>
+      <msg index="8"/>
+      <msg index="9"/>
+      <msg index="10"/>
+      <msg index="11"/>
+      <msg index="12"/>
+      <msg index="13"/>
+      <msg index="14"/>
+      <msg index="15"/>
+      <msg index="16"/>
+      <msg index="17"/>
+      <msg index="18"/>
+      <msg index="19"/>
+      <msg index="20"/>
+      <msg index="21"/>
+      <msg index="22"/>
+      <msg index="23"/>
+      <msg index="24"/>
+      <msg index="25"/>
+      <msg index="26"/>
+      <msg index="27"/>
+      <msg index="28"/>
+      <msg index="29"/>
+      <msg index="30"/>
+      <msg index="31"/>
+      <msg index="32"/>
+      <msg index="33"/>
+      <msg index="34"/>
+      <msg index="35"/>
+      <msg index="36"/>
+      <msg index="37"/>
+      <msg index="38"/>
+      <msg index="39"/>
+      <msg index="40"/>
+      <msg index="41"/>
+      <msg index="42"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.rTilluftsvifte_MAN_SP" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Tahoma" L2="Tahoma"/>
+      <textid idx="0" val="86"/>
+      <textid idx="1" val="87"/>
+      <textid idx="2" val="88"/>
+      <textid idx="3" val="89"/>
+      <textid idx="4" val="90"/>
+      <textid idx="5" val="91"/>
+      <textid idx="6" val="92"/>
+      <textid idx="7" val="93"/>
+      <textid idx="8" val="94"/>
+      <textid idx="9" val="95"/>
+      <textid idx="10" val="96"/>
+      <textid idx="11" val="97"/>
+      <textid idx="12" val="98"/>
+      <textid idx="13" val="99"/>
+      <textid idx="14" val="100"/>
+      <textid idx="15" val="101"/>
+      <textid idx="16" val="102"/>
+      <textid idx="17" val="103"/>
+      <textid idx="18" val="104"/>
+      <textid idx="19" val="105"/>
+      <textid idx="20" val="106"/>
+      <textid idx="21" val="107"/>
+      <textid idx="22" val="108"/>
+      <textid idx="23" val="109"/>
+      <textid idx="24" val="110"/>
+      <textid idx="25" val="111"/>
+      <textid idx="26" val="119"/>
+      <textid idx="27" val="119"/>
+      <textid idx="28" val="119"/>
+      <textid idx="29" val="119"/>
+      <textid idx="30" val="119"/>
+      <textid idx="31" val="119"/>
+      <textid idx="32" val="119"/>
+      <textid idx="33" val="119"/>
+      <textid idx="34" val="119"/>
+      <textid idx="35" val="119"/>
+      <textid idx="36" val="122"/>
+      <textid idx="37" val="119"/>
+      <textid idx="38" val="119"/>
+      <textid idx="39" val="119"/>
+      <textid idx="40" val="119"/>
+      <textid idx="41" val="119"/>
+      <textid idx="42" val="128"/>
+     </lang>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt4">
+   <wgtStyle width="175" x="269" y="220" cx="87.50" cy="12" height="24"/>
+   <object class="ShapeWgt" id="roundrect4" static="true">
+    <wgtStyle width="175" x="0" y="0" fill="rgb(255,255,255)" cx="87.50" cy="11.50" rx="20" height="23" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
+   </object>
+   <object class="MsgTextWgt" id="msgtext4">
+    <wgtStyle font-bold="true" marker="true" forcePaint="10" font-family="Tahoma" cx="82.08" cy="11.37" x="5.33" y="0" viewindex="false" vert-align="top" text="" max="38" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="167" continous="true" height="24" font-size="12">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+      <msg index="2"/>
+      <msg index="3"/>
+      <msg index="4"/>
+      <msg index="5"/>
+      <msg index="6"/>
+      <msg index="7"/>
+      <msg index="8"/>
+      <msg index="9"/>
+      <msg index="10"/>
+      <msg index="11"/>
+      <msg index="12"/>
+      <msg index="13"/>
+      <msg index="14"/>
+      <msg index="15"/>
+      <msg index="16"/>
+      <msg index="17"/>
+      <msg index="18"/>
+      <msg index="19"/>
+      <msg index="20"/>
+      <msg index="21"/>
+      <msg index="22"/>
+      <msg index="23"/>
+      <msg index="24"/>
+      <msg index="25"/>
+      <msg index="26"/>
+      <msg index="27"/>
+      <msg index="28"/>
+      <msg index="29"/>
+      <msg index="30"/>
+      <msg index="31"/>
+      <msg index="32"/>
+      <msg index="33"/>
+      <msg index="34"/>
+      <msg index="35"/>
+      <msg index="36"/>
+      <msg index="37"/>
+      <msg index="38"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.xAvtrekksvifte_Drift" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Tahoma" L2="Tahoma"/>
+      <textid idx="0" val="129"/>
+      <textid idx="1" val="130"/>
+      <textid idx="2" val="131"/>
+      <textid idx="3" val="132"/>
+      <textid idx="4" val="133"/>
+      <textid idx="5" val="134"/>
+      <textid idx="6" val="135"/>
+      <textid idx="7" val="136"/>
+      <textid idx="8" val="137"/>
+      <textid idx="9" val="138"/>
+      <textid idx="10" val="139"/>
+      <textid idx="11" val="140"/>
+      <textid idx="12" val="141"/>
+      <textid idx="13" val="142"/>
+      <textid idx="14" val="143"/>
+      <textid idx="15" val="144"/>
+      <textid idx="16" val="145"/>
+      <textid idx="17" val="146"/>
+      <textid idx="18" val="147"/>
+      <textid idx="19" val="148"/>
+      <textid idx="20" val="149"/>
+      <textid idx="21" val="150"/>
+      <textid idx="22" val="151"/>
+      <textid idx="23" val="152"/>
+      <textid idx="24" val="153"/>
+      <textid idx="25" val="154"/>
+      <textid idx="26" val="119"/>
+      <textid idx="27" val="119"/>
+      <textid idx="28" val="119"/>
+      <textid idx="29" val="119"/>
+      <textid idx="30" val="119"/>
+      <textid idx="31" val="119"/>
+      <textid idx="32" val="119"/>
+      <textid idx="33" val="119"/>
+      <textid idx="34" val="119"/>
+      <textid idx="35" val="119"/>
+      <textid idx="36" val="119"/>
+      <textid idx="37" val="119"/>
+      <textid idx="38" val="167"/>
+     </lang>
+    </links>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label9">
+   <wgtStyle width="400" x="480" forcePaint="10" y="126.67" font-family="Tahoma" cx="200" cy="11.33" height="22.67" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="text" tag="IndexedTagSet_Globale.wStatus_Malfunction" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="39"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label10">
+   <wgtStyle width="400" x="480" forcePaint="10" y="157.33" font-family="Tahoma" cx="200" cy="11.33" height="22.67" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="text" tag="IndexedTagSet_Globale.wStatus_AntifreezeWater" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="33"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label11">
+   <wgtStyle width="400" x="480" forcePaint="10" y="189.66" font-family="Tahoma" cx="200" cy="11.33" height="22.67" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="text" tag="IndexedTagSet_Globale.wTilluftsvifte_Status" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="40"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label12">
+   <wgtStyle width="400" x="480" forcePaint="10" y="220" font-family="Tahoma" cx="200" cy="11.33" height="22.67" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="text" tag="IndexedTagSet_Globale.wAvtrekksvifte_Status" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="41"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label13">
+   <wgtStyle width="400" x="480" forcePaint="10" y="251.33" font-family="Tahoma" cx="200" cy="11.33" height="22.67" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="text" tag="IndexedTagSet_Globale.rAvtrekksvifte_rY" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="42"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label14">
+   <wgtStyle width="400" x="480" forcePaint="2" y="282.67" font-family="Tahoma" cx="200" cy="11.33" height="22.67" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="44"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label15">
+   <wgtStyle width="270" x="265" forcePaint="10" font-sizepx="24" y="56.50" font-family="Tahoma" cx="100.01" cy="15.99" height="29" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="18"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="text" tag="IndexedTagSet_Globale.Anlegg" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="31"/>
+   </links>
+  </object>
+ </object>
+</wgtPage>

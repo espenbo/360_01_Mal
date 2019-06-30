@@ -1,0 +1,575 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="ManSpjeld" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="maintemplate.jmx" usedFonts="Tahoma,Arial" staticFile="opt/manspjeld.png" id="ManSpjeld" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020800363" v="02.08.00.363"/>
+  <object class="LabelWgt" id="label11">
+   <wgtStyle width="158" x="565" forcePaint="10" y="227" font-family="Tahoma" cx="79" cy="10" height="20" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="visibility" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.xSpjeld_avkast_Closed_V" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="84"/>
+   </links>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+    <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" L2="" id="69"/>
+    <MLText L1="-KA400" L2="-KA40" id="1"/>
+    <MLText L1="OK" L2="OK" id="4"/>
+    <MLText L1="On " L2="On " id="6"/>
+    <MLText L1="Off " L2="Off " id="8"/>
+    <MLText L1="Message" L2="Message" id="9"/>
+    <MLText L1="Tilbake" L2="Tilbake" id="10"/>
+    <MLText L1="Hovedside" L2="Hovedside" id="11"/>
+    <MLText L1="Error Pump" L2="Error Pump" id="12"/>
+    <MLText L1="Main voltage off " L2="Main voltage off " id="14"/>
+    <MLText L1="Neste" L2="Neste" id="16"/>
+    <MLText L1="Emergency off" L2="Emergency off" id="17"/>
+    <MLText L1="Manuell styring" L2="Manuell styring" id="18"/>
+    <MLText L1="Fire alarm " L2="Fire alarm " id="19"/>
+    <MLText L1="Frost monitor" L2="Frost monitor" id="20"/>
+    <MLText L1="Frost alarm " L2="Frost alarm " id="21"/>
+    <MLText L1="Repair switch " L2="Repair switch " id="22"/>
+    <MLText L1="Motor protection switch " L2="Motor protection switch " id="23"/>
+    <MLText L1="No hot water" L2="No hot water" id="24"/>
+    <MLText L1="V-belt " L2="V-belt " id="25"/>
+    <MLText L1="Error fan Supply air" L2="Error fan Supply air" id="27"/>
+    <MLText L1="Error fan Exhaust air " L2="Error fan Exhaust air " id="32"/>
+    <MLText L1="Malfunction 1" L2="Malfunction 1" id="34"/>
+    <MLText L1="Malfunction 2 " L2="Malfunction 2 " id="35"/>
+    <MLText L1="Preflushing completed " L2="Preflushing completed " id="36"/>
+    <MLText L1="Preflushing of heating elements " L2="Preflushing of heating elements " id="37"/>
+    <MLText L1="Error Contactor contact " L2="Error Contactor contact " id="38"/>
+    <MLText L1="Error Supply air damper " L2="Error Supply air damper " id="39"/>
+    <MLText L1="Error Preflush " L2="Error Preflush " id="40"/>
+    <MLText L1="Error Safety chain " L2="Error Safety chain " id="43"/>
+    <MLText L1="Condensation protection " L2="Condensation protection " id="44"/>
+    <MLText L1="Chimney sweep function " L2="Chimney sweep function " id="45"/>
+    <MLText L1="Overheating protection " L2="Overheating protection " id="50"/>
+    <MLText L1="Inntakspjeld" L2="Inntakspjeld" id="51"/>
+    <MLText L1="Error Valve " L2="Error Valve " id="52"/>
+    <MLText L1="Follow up time " L2="Follow up time " id="53"/>
+    <MLText L1="Manual operation " L2="Manual operation " id="54"/>
+    <MLText L1="Åpne/Steng" L2="Åpne/Steng" id="55"/>
+    <MLText L1="In motion " L2="In motion " id="56"/>
+    <MLText L1="Error " L2="Error " id="57"/>
+    <MLText L1="Manuell styring" L2="Manuell styring" id="58"/>
+    <MLText L1="Error FC " L2="Error FC " id="59"/>
+    <MLText L1="Reference value exceeded " L2="Reference value exceeded " id="60"/>
+    <MLText L1="Startup behaviour " L2="Startup behaviour " id="61"/>
+    <MLText L1="Error Exhaust air damper" L2="Error Exhaust air damper" id="62"/>
+    <MLText L1="Error Damper position " L2="Error Damper position " id="63"/>
+    <MLText L1="Error RHE " L2="Error RHE " id="64"/>
+    <MLText L1="Differential pressure monitor " L2="Differential pressure monitor " id="65"/>
+    <MLText L1="Error Humidifier " L2="Error Humidifier " id="66"/>
+    <MLText L1="Error limit switch" L2="Error limit switch" id="67"/>
+    <MLText L1="Synchronisation " L2="Synchronisation " id="68"/>
+    <MLText L1="Inntakspjeld åpent" L2="Inntakspjeld" id="80"/>
+    <MLText L1="Inntakspjeld lukket" L2="Inntakspjeld" id="81"/>
+    <MLText L1="-KA500" L2="-KA40" id="82"/>
+    <MLText L1="Avkastspjeld" L2="Inntakspjeld" id="83"/>
+    <MLText L1="Avkastspjeld lukket" L2="Inntakspjeld" id="84"/>
+    <MLText L1="Avkastspjeld åpent" L2="Inntakspjeld" id="85"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" id="BtnStd4" customType="Button">
+   <wgtStyle width="93" x="113.59" forcePaint="1" y="442.61" cx="46" cy="17" height="34"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image9">
+    <wgtStyle width="93" imagePath="images/frame_rect45bar_chrome.svg" x="0" forcePaint="1" y="0" cx="46.50" cy="17.30" height="34"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd4">
+    <wgtStyle width="85" x="4" forcePaint="1" y="4" fill="rgb(192,192,192)" dx="1" cx="42.54" form="standard" cy="12.91" height="25" releasePath="images\btn_plastic_rect45bar_1.svg" needlePath="images\btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="manstyring.jmx" class="LoadPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label20">
+    <wgtStyle width="74" font-color="rgb(40,40,40)" x="7" forcePaint="3" y="5" font-family="Tahoma" font-bold="true" wrapping="true" cx="37.10" cy="12.64" height="25" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="10"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image10" static="true">
+    <wgtStyle width="27" x="31" y="8" cx="13.82" cy="8.75" height="17"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd8" customType="Button">
+   <wgtStyle width="93" x="15.11" y="442.61" cx="46" cy="17" height="34"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image16" static="true">
+    <wgtStyle width="93" imagePath="images/frame_rect45bar_chrome.svg" x="0" y="0" cx="46.50" cy="17.30" height="34"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd8">
+    <wgtStyle width="85" x="4" y="4" fill="rgb(192,192,192)" dx="1" cx="42.54" form="standard" cy="12.91" height="25" releasePath="images\btn_plastic_rect45bar_1.svg" needlePath="images\btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="main.jmx" class="LoadPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label37">
+    <wgtStyle width="74" font-color="rgb(40,40,40)" x="7" forcePaint="3" y="5" font-family="Tahoma" font-bold="true" wrapping="true" cx="37.10" cy="12.64" height="25" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="11"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image17" static="true">
+    <wgtStyle width="27" x="31" y="8" cx="13.82" cy="8.75" height="17"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label18">
+   <wgtStyle width="292" x="230.51" forcePaint="2" y="-1.50" font-family="Tahoma" cx="54.33" cy="21" height="39" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="24"/>
+   <links>
+    <lang class="MLTextLink" textid="18"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label10">
+   <wgtStyle width="158" x="100" forcePaint="2" y="135" font-family="Tahoma" cx="79" cy="10" height="20" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="51"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label13">
+   <wgtStyle width="270" x="44" forcePaint="2" font-sizepx="24" y="106" font-family="Tahoma" cx="100.01" cy="15.99" height="29" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="1"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="BtnStd2" customType="Button">
+   <wgtStyle width="116" x="50" y="177" cx="57.37" cy="16.51" height="34"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrectbar; hmi-type:bkgd" id="image6" static="true">
+    <wgtStyle width="117.24" imagePath="images/frame_rrectbar_chrome.svg" x="0" y="-0.97" cx="58.89" cy="18" height="35.94"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rrectbar; hmi-type:btn; type:btn" id="buttonStd2">
+    <wgtStyle width="107.27" x="4.99" forcePaint="136" y="3.89" fill="rgb(192,192,192)" dx="1" cx="53.85" form="standard" dy="-1" cy="13.17" height="26.23" releasePath="images\btn_plastic_rrectbar_1.svg" needlePath="images\btn_plastic_rrectbar_2.svg" type="maintained" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" attribute="value" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.xSpjeld_inntak_MAN" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+     <dataLink readWrite="R/W" attribute="fill" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.xSpjeld_inntak_MAN" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#c0c0c0;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label15">
+    <wgtStyle width="101.03" font-color="rgb(40,40,40)" x="6.24" forcePaint="3" y="1.94" font-family="Tahoma" wrapping="true" cx="50.97" cy="13.50" height="26.23" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="58"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image7" static="true">
+    <wgtStyle width="36.18" x="37.42" y="7.77" cx="18.46" cy="7.99" height="15.54"/>
+   </object>
+  </object>
+  <object class="GroupSubscribeWgt" id="ManSpjeld@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="GroupWgt" id="BtnStd3" customType="Button">
+   <wgtStyle width="116" x="50" y="223" cx="57.37" cy="16.51" height="34"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrectbar; hmi-type:bkgd" id="image5" static="true">
+    <wgtStyle width="117.24" imagePath="images/frame_rrectbar_chrome.svg" x="0" y="-0.97" cx="58.89" cy="18" height="35.94"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rrectbar; hmi-type:btn; type:btn" id="buttonStd3">
+    <wgtStyle width="107.27" x="4.99" forcePaint="136" y="3.89" fill="rgb(192,192,192)" dx="1" cx="53.85" form="standard" dy="-1" cy="13.17" height="26.23" releasePath="images\btn_plastic_rrectbar_1.svg" needlePath="images\btn_plastic_rrectbar_2.svg" type="maintained" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" attribute="value" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.xSpjeld_inntak_MAN_CMD" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+     <dataLink readWrite="R" attribute="fill" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.xSpjeld_inntak_MAN_CMD" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#c0c0c0;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label6">
+    <wgtStyle width="101.03" font-color="rgb(40,40,40)" x="6.24" forcePaint="3" y="1.94" font-family="Tahoma" wrapping="true" cx="50.97" cy="13.50" height="26.23" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="55"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image8" static="true">
+    <wgtStyle width="36.18" x="37.42" y="7.77" cx="18.46" cy="7.99" height="15.54"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd6" customType="Button">
+   <wgtStyle width="93" x="697" y="442.61" cx="46" cy="17" height="34"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image13" static="true">
+    <wgtStyle width="93" imagePath="images/frame_rect45bar_chrome.svg" x="0" y="0" cx="46.50" cy="17.30" height="34"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd6">
+    <wgtStyle width="85" x="4" y="4" fill="rgb(192,192,192)" dx="1" cx="42.54" form="standard" cy="12.91" height="25" releasePath="images\btn_plastic_rect45bar_1.svg" needlePath="images\btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="ventil.jmx" class="LoadPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label23">
+    <wgtStyle width="74" font-color="rgb(40,40,40)" x="7" forcePaint="3" y="5" font-family="Tahoma" font-bold="true" wrapping="true" cx="37.10" cy="12.64" height="25" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="16"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image14" static="true">
+    <wgtStyle width="27" x="31" y="8" cx="13.82" cy="8.75" height="17"/>
+   </object>
+  </object>
+  <object class="MsgTextWgt" id="msgtext4">
+   <wgtStyle marker="true" forcePaint="10" font-family="Tahoma" font-sizepx="10" cx="56.53" cy="7.70" x="108" y="157" viewindex="false" vert-align="top" text="" max="47" value="42" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="142" continous="true" height="12" font-size="8">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+     <msg index="4"/>
+     <msg index="5"/>
+     <msg index="6"/>
+     <msg index="7"/>
+     <msg index="8"/>
+     <msg index="9"/>
+     <msg index="10"/>
+     <msg index="11"/>
+     <msg index="12"/>
+     <msg index="13"/>
+     <msg index="14"/>
+     <msg index="15"/>
+     <msg index="16"/>
+     <msg index="17"/>
+     <msg index="18"/>
+     <msg index="19"/>
+     <msg index="20"/>
+     <msg index="21"/>
+     <msg index="22"/>
+     <msg index="23"/>
+     <msg index="24"/>
+     <msg index="25"/>
+     <msg index="26"/>
+     <msg index="27"/>
+     <msg index="28"/>
+     <msg index="29"/>
+     <msg index="30"/>
+     <msg index="31"/>
+     <msg index="32"/>
+     <msg index="33"/>
+     <msg index="34"/>
+     <msg index="35"/>
+     <msg index="36"/>
+     <msg index="37"/>
+     <msg index="38"/>
+     <msg index="39"/>
+     <msg index="40"/>
+     <msg index="41"/>
+     <msg index="42"/>
+     <msg index="43"/>
+     <msg index="44"/>
+     <msg index="45"/>
+     <msg index="46"/>
+     <msg index="47"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.wSpjeld_inntak_Status" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L1="Tahoma" L2="Tahoma"/>
+     <textid idx="0" val="4"/>
+     <textid idx="1" val="6"/>
+     <textid idx="2" val="8"/>
+     <textid idx="3" val="9"/>
+     <textid idx="4" val="69"/>
+     <textid idx="5" val="69"/>
+     <textid idx="6" val="69"/>
+     <textid idx="7" val="69"/>
+     <textid idx="8" val="69"/>
+     <textid idx="9" val="69"/>
+     <textid idx="10" val="12"/>
+     <textid idx="11" val="14"/>
+     <textid idx="12" val="17"/>
+     <textid idx="13" val="19"/>
+     <textid idx="14" val="20"/>
+     <textid idx="15" val="21"/>
+     <textid idx="16" val="22"/>
+     <textid idx="17" val="23"/>
+     <textid idx="18" val="24"/>
+     <textid idx="19" val="25"/>
+     <textid idx="20" val="27"/>
+     <textid idx="21" val="32"/>
+     <textid idx="22" val="34"/>
+     <textid idx="23" val="35"/>
+     <textid idx="24" val="36"/>
+     <textid idx="25" val="37"/>
+     <textid idx="26" val="38"/>
+     <textid idx="27" val="39"/>
+     <textid idx="28" val="40"/>
+     <textid idx="29" val="43"/>
+     <textid idx="30" val="44"/>
+     <textid idx="31" val="45"/>
+     <textid idx="32" val="50"/>
+     <textid idx="33" val="52"/>
+     <textid idx="34" val="53"/>
+     <textid idx="35" val="54"/>
+     <textid idx="36" val="56"/>
+     <textid idx="37" val="57"/>
+     <textid idx="38" val="59"/>
+     <textid idx="39" val="60"/>
+     <textid idx="40" val="61"/>
+     <textid idx="41" val="62"/>
+     <textid idx="42" val="63"/>
+     <textid idx="43" val="64"/>
+     <textid idx="44" val="65"/>
+     <textid idx="45" val="66"/>
+     <textid idx="46" val="67"/>
+     <textid idx="47" val="68"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupWgt" id="LgtStd1" customType="Light">
+   <wgtStyle width="25" x="176" y="182" cx="12.50" cy="12.50" height="25"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtStd1.img" static="true">
+    <wgtStyle width="25" imagePath="images/frame_round_chrome.svg" x="0" y="0" cx="12.27" cy="12.25" height="25"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="LgtStd1.ind">
+    <wgtStyle width="18.27" imagePath="images/li_round_shiney1_rev2.svg" x="3.37" forcePaint="8" y="2.88" cx="11.82" cy="7.65" bkgColor="rgb(120,120,120);rgb(255,0,0)" height="18.75" frame="1" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.xSpjeld_inntak_ERROR" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtStd1.lbl" static="true">
+    <wgtStyle width="16.35" x="4.33" y="4.33" font-family="Tahoma" cx="8.18" cy="8.16" height="16.83" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="69"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtStd1.img1" static="true">
+    <wgtStyle width="7.21" enableCache="true" x="8.65" y="9.13" cx="3.63" cy="3.57" height="7.21"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label2">
+   <wgtStyle width="158" x="180" forcePaint="10" y="227" font-family="Tahoma" cx="79" cy="10" height="20" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="visibility" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.xSpjeld_inntak_Open_V" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="80"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label3">
+   <wgtStyle width="158" x="180" forcePaint="11" y="227" font-family="Tahoma" cx="79" cy="10" height="20" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="visibility" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.xSpjeld_inntak_Closed_V" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="81"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label4">
+   <wgtStyle width="158" x="485" forcePaint="2" y="135" font-family="Tahoma" cx="79" cy="10" height="20" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="83"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label5">
+   <wgtStyle width="270" x="429" forcePaint="2" font-sizepx="24" y="106" font-family="Tahoma" cx="100.01" cy="15.99" height="29" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="82"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="BtnStd1" customType="Button">
+   <wgtStyle width="116" x="435" y="177" cx="57.37" cy="16.51" height="34"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrectbar; hmi-type:bkgd" id="image2" static="true">
+    <wgtStyle width="117.24" imagePath="images/frame_rrectbar_chrome.svg" x="0" y="-0.97" cx="58.89" cy="18" height="35.94"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rrectbar; hmi-type:btn; type:btn" id="buttonStd1">
+    <wgtStyle width="107.27" x="4.99" forcePaint="136" y="3.89" fill="rgb(192,192,192)" dx="1" cx="53.85" form="standard" dy="-1" cy="13.17" height="26.23" releasePath="images\btn_plastic_rrectbar_1.svg" needlePath="images\btn_plastic_rrectbar_2.svg" type="maintained" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" attribute="value" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.xSpjeld_avkast_MAN" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+     <dataLink readWrite="R/W" attribute="fill" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.xSpjeld_avkast_MAN" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#c0c0c0;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label7">
+    <wgtStyle width="101.03" font-color="rgb(40,40,40)" x="6.24" forcePaint="3" y="1.94" font-family="Tahoma" wrapping="true" cx="50.97" cy="13.50" height="26.23" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="58"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image3" static="true">
+    <wgtStyle width="36.18" x="37.42" y="7.77" cx="18.46" cy="7.99" height="15.54"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd5" customType="Button">
+   <wgtStyle width="116" x="435" y="223" cx="57.37" cy="16.51" height="34"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrectbar; hmi-type:bkgd" id="image4" static="true">
+    <wgtStyle width="117.24" imagePath="images/frame_rrectbar_chrome.svg" x="0" y="-0.97" cx="58.89" cy="18" height="35.94"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rrectbar; hmi-type:btn; type:btn" id="buttonStd5">
+    <wgtStyle width="107.27" x="4.99" forcePaint="136" y="3.89" fill="rgb(192,192,192)" dx="1" cx="53.85" form="standard" dy="-1" cy="13.17" height="26.23" releasePath="images\btn_plastic_rrectbar_1.svg" needlePath="images\btn_plastic_rrectbar_2.svg" type="maintained" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" attribute="value" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.xSpjeld_avkast_MAN_CMD" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+     <dataLink readWrite="R" attribute="fill" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.xSpjeld_avkast_MAN_CMD" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#c0c0c0;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label8">
+    <wgtStyle width="101.03" font-color="rgb(40,40,40)" x="6.24" forcePaint="3" y="1.94" font-family="Tahoma" wrapping="true" cx="50.97" cy="13.50" height="26.23" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="55"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image11" static="true">
+    <wgtStyle width="36.18" x="37.42" y="7.77" cx="18.46" cy="7.99" height="15.54"/>
+   </object>
+  </object>
+  <object class="MsgTextWgt" id="msgtext1">
+   <wgtStyle marker="true" forcePaint="10" font-family="Tahoma" font-sizepx="10" cx="56.53" cy="7.70" x="493" y="157" viewindex="false" vert-align="top" text="" max="47" value="42" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="142" continous="true" height="12" font-size="8">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+     <msg index="4"/>
+     <msg index="5"/>
+     <msg index="6"/>
+     <msg index="7"/>
+     <msg index="8"/>
+     <msg index="9"/>
+     <msg index="10"/>
+     <msg index="11"/>
+     <msg index="12"/>
+     <msg index="13"/>
+     <msg index="14"/>
+     <msg index="15"/>
+     <msg index="16"/>
+     <msg index="17"/>
+     <msg index="18"/>
+     <msg index="19"/>
+     <msg index="20"/>
+     <msg index="21"/>
+     <msg index="22"/>
+     <msg index="23"/>
+     <msg index="24"/>
+     <msg index="25"/>
+     <msg index="26"/>
+     <msg index="27"/>
+     <msg index="28"/>
+     <msg index="29"/>
+     <msg index="30"/>
+     <msg index="31"/>
+     <msg index="32"/>
+     <msg index="33"/>
+     <msg index="34"/>
+     <msg index="35"/>
+     <msg index="36"/>
+     <msg index="37"/>
+     <msg index="38"/>
+     <msg index="39"/>
+     <msg index="40"/>
+     <msg index="41"/>
+     <msg index="42"/>
+     <msg index="43"/>
+     <msg index="44"/>
+     <msg index="45"/>
+     <msg index="46"/>
+     <msg index="47"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.wSpjeld_avkast_Status" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L1="Tahoma" L2="Tahoma"/>
+     <textid idx="0" val="4"/>
+     <textid idx="1" val="6"/>
+     <textid idx="2" val="8"/>
+     <textid idx="3" val="9"/>
+     <textid idx="4" val="69"/>
+     <textid idx="5" val="69"/>
+     <textid idx="6" val="69"/>
+     <textid idx="7" val="69"/>
+     <textid idx="8" val="69"/>
+     <textid idx="9" val="69"/>
+     <textid idx="10" val="12"/>
+     <textid idx="11" val="14"/>
+     <textid idx="12" val="17"/>
+     <textid idx="13" val="19"/>
+     <textid idx="14" val="20"/>
+     <textid idx="15" val="21"/>
+     <textid idx="16" val="22"/>
+     <textid idx="17" val="23"/>
+     <textid idx="18" val="24"/>
+     <textid idx="19" val="25"/>
+     <textid idx="20" val="27"/>
+     <textid idx="21" val="32"/>
+     <textid idx="22" val="34"/>
+     <textid idx="23" val="35"/>
+     <textid idx="24" val="36"/>
+     <textid idx="25" val="37"/>
+     <textid idx="26" val="38"/>
+     <textid idx="27" val="39"/>
+     <textid idx="28" val="40"/>
+     <textid idx="29" val="43"/>
+     <textid idx="30" val="44"/>
+     <textid idx="31" val="45"/>
+     <textid idx="32" val="50"/>
+     <textid idx="33" val="52"/>
+     <textid idx="34" val="53"/>
+     <textid idx="35" val="54"/>
+     <textid idx="36" val="56"/>
+     <textid idx="37" val="57"/>
+     <textid idx="38" val="59"/>
+     <textid idx="39" val="60"/>
+     <textid idx="40" val="61"/>
+     <textid idx="41" val="62"/>
+     <textid idx="42" val="63"/>
+     <textid idx="43" val="64"/>
+     <textid idx="44" val="65"/>
+     <textid idx="45" val="66"/>
+     <textid idx="46" val="67"/>
+     <textid idx="47" val="68"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupWgt" id="LgtStd2" customType="Light">
+   <wgtStyle width="25" x="561" y="182" cx="12.50" cy="12.50" height="25"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtStd2.img" static="true">
+    <wgtStyle width="25" imagePath="images/frame_round_chrome.svg" x="0" y="0" cx="12.27" cy="12.25" height="25"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="LgtStd2.ind">
+    <wgtStyle width="18.27" imagePath="images/li_round_shiney1_rev2.svg" x="3.37" forcePaint="8" y="2.88" cx="11.82" cy="7.65" bkgColor="rgb(120,120,120);rgb(255,0,0)" height="18.75" frame="1" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.xSpjeld_avkast_ERROR" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtStd2.lbl" static="true">
+    <wgtStyle width="16.35" x="4.33" y="4.33" font-family="Tahoma" cx="8.18" cy="8.16" height="16.83" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="69"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtStd2.img1" static="true">
+    <wgtStyle width="7.21" enableCache="true" x="8.65" y="9.13" cx="3.63" cy="3.57" height="7.21"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label9">
+   <wgtStyle width="158" x="565" forcePaint="11" y="227" font-family="Tahoma" cx="79" cy="10" height="20" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="visibility" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.xSpjeld_avkast_Closed_V" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="85"/>
+   </links>
+  </object>
+ </object>
+</wgtPage>

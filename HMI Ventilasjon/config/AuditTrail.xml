@@ -1,0 +1,9 @@
+<audit_trail enable="false">
+ <misc>
+  <userdetails auditBuff="AuditTrail" subT="1" eventT="18">true</userdetails>
+  <usermanagementactions auditBuff="AuditTrail" subT="1" eventT="18">false</usermanagementactions>
+  <systemactions auditBuff="AuditTrail" subT="1" eventT="18">false</systemactions>
+  <ftpactions auditBuff="AuditTrail" subT="1" eventT="18">false</ftpactions>
+  <bufferactions auditBuff="AuditTrail" subT="1" eventT="18">false</bufferactions>
+ </misc>
+</audit_trail>

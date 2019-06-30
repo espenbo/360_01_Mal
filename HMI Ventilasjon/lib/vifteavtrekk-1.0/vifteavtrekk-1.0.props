@@ -1,0 +1,11 @@
+<defs>
+ <g id="custom_properties" showChildNodes="0" inherit="basicgroup_properties" attributeName="VifteAvtrekk-1.0:1.0">
+  <info></info>
+  <text display="Tag Text" default="true" attributeType="mltext" attachTag="true" attributeName="*.Tag.text">Text</text>
+  <text display="Status Text" default="true" attributeType="mltext" attachTag="true" attributeName="*.TagStatus.text">Text</text>
+  <text display="Status Visible" attributeType="bool" attachTag="true" adv="true" attributeName="*.TagStatus.visibility"/>
+  <text display="Rod Visible" attributeType="bool" editChild="true" attachTag="true" adv="true" attributeName="*.RodTriangel.visibility"/>
+  <text display="Gul Visible" attributeType="bool" attachTag="true" adv="true" attributeName="*.GulTriangel.visibility"/>
+  <text display="Gronn Visible" attributeType="bool" attachTag="true" adv="true" attributeName="*.GronnTriangel.visibility"/>
+ </g>
+</defs>

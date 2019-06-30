@@ -1,0 +1,8 @@
+<defs>
+ <g id="custom_properties" showChildNodes="0" inherit="basicgroup_properties" attributeName="Pumpe-1.0:1.0">
+  <info></info>
+  <text display="Grønn_Visible" attributeType="bool" editChild="true" attachTag="true" adv="true" attributeName="*.GronnTriangel.visibility"/>
+  <text display="Gul_Visible" attributeType="bool" editChild="true" attachTag="true" adv="true" attributeName="*.GulTriangel.visibility"/>
+  <text display="Rød_Visible" attributeType="bool" attachTag="true" adv="true" attributeName="*.RodTriangel.visibility"/>
+ </g>
+</defs>

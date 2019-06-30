@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events>
+    <event id="1" name="BY2209_360_20_BRANN_AL" group="BY2209_360_20_BRANN_AL" trigger="bitMaskAlarm" description="[1@Alarm]"/>
+    <event id="2" name="BY2209_360_20_Frost_AL_Air" group="BY2209_360_20_Frost_AL_Air" trigger="bitMaskAlarm" description="[1@Alarm]"/>
+    <event id="3" name="BY2209_360_20_Frost_Water_AL" group="BY2209_360_20_Frost_Water_AL" trigger="bitMaskAlarm" description="[1@Alarm]"/>
+    <event id="4" name="BY2209_360_20_JP400_AL" group="BY2209_360_20_JP400_AL" trigger="bitMaskAlarm" description="[1@Alarm]"/>
+    <event id="5" name="BY2209_360_20_LX400_AL" group="BY2209_360_20_LX400_AL" trigger="bitMaskAlarm" description="[1@Alarm]"/>
+    <event id="6" name="BY2209_360_20_RP400_AL" group="BY2209_360_20_RP400_AL" trigger="bitMaskAlarm" description="[1@Alarm]"/>
+    <event id="7" name="BY2209_360_20_RP500_AL" group="BY2209_360_20_RP500_AL" trigger="bitMaskAlarm" description="[1@Alarm]"/>
+    <event id="8" name="BY2209_360_20_StartUp_AL" group="BY2209_360_20_StartUp_AL" trigger="bitMaskAlarm" description="[1@Alarm]"/>
+    <event id="9" name="BY2209_360_20_SYS_AL" group="BY2209_360_20_SYS_AL" trigger="bitMaskAlarm" description="[1@Alarm]"/>
+    <event id="10" name="BY2209_360_20_TEMP_AL" group="BY2209_360_20_TEMP_AL" trigger="bitMaskAlarm" description="[1@Alarm]"/>
+</events>

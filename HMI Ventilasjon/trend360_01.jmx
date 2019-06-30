@@ -1,0 +1,307 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Trend360_01" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="maintemplate.jmx" usedFonts="Tahoma,Arial" staticFile="opt/trend360_01.png" id="Trend360_01" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020800363" v="02.08.00.363"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+    <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="-RT41" L2="-RT41" id="4"/>
+    <MLText L1="Neste" L2="Neste" id="7"/>
+    <MLText L1="Temperatur" L2="Temperatur" id="8"/>
+    <MLText L1="-Ute" L2="-Ute" id="14"/>
+    <MLText L1="-RT50" L2="-RT50" id="15"/>
+    <MLText L1="-RT51" L2="-RT51" id="16"/>
+    <MLText L1="-RT40" L2="-RT40" id="17"/>
+    <MLText L1="Tilbake" L2="Tilbake" id="20"/>
+    <MLText L1="Hovedside" L2="Hovedside" id="21"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" id="BtnStd1" customType="Button">
+   <wgtStyle width="93" x="690.59" y="442.61" cx="46" cy="17" height="34"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image2" static="true">
+    <wgtStyle width="93" imagePath="images/frame_rect45bar_chrome.svg" x="0" y="0" cx="46.50" cy="17.30" height="34"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd1">
+    <wgtStyle width="85" x="4" y="4" fill="rgb(192,192,192)" dx="1" cx="42.54" form="standard" cy="12.91" height="25" releasePath="images/btn_plastic_rect45bar_1.svg" needlePath="images/btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="trendpadrag360_01.jmx" class="LoadPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label3">
+    <wgtStyle width="74" font-color="rgb(40,40,40)" x="7" forcePaint="3" y="5" font-family="Tahoma" font-bold="true" wrapping="true" cx="37.10" cy="12.64" height="25" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="7"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image3" static="true">
+    <wgtStyle width="27" x="31" y="8" cx="13.82" cy="8.75" height="17"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1">
+   <wgtStyle width="806" x="-15.83" forcePaint="97" y="2.84" cx="403" cy="215.50" height="431" staticFile="opt/Trend360_01GroupWgt1.png"/>
+   <object class="GroupWgt" id="TrendWgt2" customType="Trend">
+    <wgtStyle width="806" x="0" y="0" cx="401.59" cy="191.30" height="382.62"/>
+    <links>
+     <attr attrName="gridX" alias="GridWgt.gridX;LabelsWgt2.labelFreq"/>
+     <attr attrName="gridY" alias="GridWgt.gridY;LabelsWgt1.labelFreq;TicksWgt1.labelFreq"/>
+     <attr attrName="labelFreq" alias="LabelsWgt1.labelFreq;TicksWgt1.labelFreq"/>
+    </links>
+    <object class="LabelWgt" id="label2">
+     <wgtStyle width="588.47" font-color="rgb(255,0,0)" x="172.91" forcePaint="2" y="0" font-family="Tahoma" cx="290.05" cy="16.56" height="34.94" alignment="center" vert-align="top" keypad-type="None" font-size="12"/>
+     <links>
+      <lang class="MLTextLink" textid="8"/>
+     </links>
+    </object>
+    <object class="TicksWgt" id="YTicks2" static="true">
+     <wgtStyle cx="45.13" startAngle="-10" cy="148.34" endAngle="200" reverseScale="true" tickSize2="15" x="119.92" y="38.63" max="100" stroke-width="2" width="52.99" stroke-linecap="butt" tickSize="7" tickFreq="4" height="296.16" labelFreq="7" stroke="rgb(0,85,0)" form="vertical"/>
+    </object>
+    <object class="LabelsWgt" id="labels3" static="true">
+     <wgtStyle font-family="Arial" cx="55.77" startAngle="-20" cy="161.27" timeSpec="local" reverseScale="true" dataFormat="#.#" endAngle="185" x="0" useTextAlign="true" y="22.08" rotated="true" vert-align="top" max="45" align="1" font-color="rgb(139,0,0)" min="-30" width="117.14" labelNames="" tickFreq="5" height="323.76" labelFreq="7" form="vertical" font-size="10"/>
+    </object>
+    <object class="LabelsWgt" id="labels4">
+     <wgtStyle forcePaint="8" font-family="Arial" cx="340.25" startAngle="-20" cy="18.40" timeSpec="local" dataFormat="dd/MM-hh:mm" endAngle="185" x="122.72" y="345.82" rotated="true" vert-align="top" max="100" font-color="rgb(139,0,0)" width="683.28" labelNames="" tickFreq="5" height="36.79" labelFreq="4" form="horizontal" dataType="Time" font-size="10"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="TrendWindow2"/>
+      <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="TrendWindow2"/>
+     </dataLinks>
+    </object>
+    <object class="TrendWindowWgt" id="TrendWindow2">
+     <wgtStyle width="591.26" x="175.70" yPageSize="0" stopTime="1.25025e+12" y="40.46" numCurves="5" fill="rgb(166,202,240)" startPoint="1" cx="295.62" cy="147.16" height="294.32" frame="300" stroke="rgb(0,128,128)" pageDuration="7200" startTime="1.25024e+12" updateInterval="1000"/>
+    </object>
+    <object class="GridWgt" id="Grid2">
+     <wgtStyle width="591.26" x="175.70" forcePaint="8" y="40.46" cx="295.63" cy="147.16" grid="4" colorX="rgb(160,160,164)" height="294.32" colorY="rgb(128,128,128)" max="40" gridY="7"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="TrendWindow2"/>
+      <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="TrendWindow2"/>
+     </dataLinks>
+    </object>
+    <object class="TrendCurveWgt" id="TrendCurve2">
+     <wgtStyle width="588.47" x="175.70" forcePaint="8" drawType="0" y="40.46" cx="295.97" cy="147.95" height="294.32" frame="300" stroke="rgb(0,0,255)" type="line" y0="-20" max="40" y1="40" stroke-width="2"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="Value" sourceType="Data" dataSource="TrendBufferWgt2"/>
+      <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="TrendWindow2"/>
+      <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="TrendWindow2"/>
+     </dataLinks>
+    </object>
+    <object PageDuration="3600" StartTime="1250241607000" BufferType="0" class="TrendBufferWgt" StopTime="1250245207000" ReqSamples="1000" UpdateInterval="1000" samplingtime="1" UpdateType="2" id="TrendBufferWgt2">
+     <wgtStyle width="88" x="665" forcePaint="9" y="271" cx="43" cy="27" height="56"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="Value" tag="360_01_TempInntak.TempInntak" sourceType="Widget" tagIndex="-1" dataSource="PanelTrend1"/>
+     </dataLinks>
+    </object>
+    <object class="IdalTrendWgt" maxPoints="2000" id="PanelTrend1">
+     <wgtStyle width="88" x="561" forcePaint="1" y="270" cx="43" cy="27" height="56"/>
+    </object>
+    <object PageDuration="300" StartTime="0" BufferType="0" class="TrendBufferWgt" StopTime="0" ReqSamples="1000" UpdateInterval="1000" samplingtime="1" UpdateType="0" id="TrendBufferWgt1">
+     <wgtStyle width="88" x="665" forcePaint="9" y="271" cx="43" cy="27" height="56"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="Value" tag="360_01_Tilluft.Tilluft" sourceType="Widget" tagIndex="-1" dataSource="PanelTrend1"/>
+     </dataLinks>
+    </object>
+    <object class="TrendCurveWgt" id="TrendCurveWgt1">
+     <wgtStyle width="588.47" x="175.70" forcePaint="8" drawType="0" y="40.46" cx="295.97" cy="147.95" height="294.32" frame="300" stroke="rgb(255,0,0)" type="line" y0="-20" max="40" y1="40" stroke-width="2"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="Value" sourceType="Data" dataSource="TrendBufferWgt1"/>
+      <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="TrendWindow2"/>
+      <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="TrendWindow2"/>
+     </dataLinks>
+    </object>
+    <object PageDuration="300" StartTime="0" BufferType="0" class="TrendBufferWgt" StopTime="0" ReqSamples="1000" UpdateInterval="1000" samplingtime="1" UpdateType="0" id="TrendBufferWgt3">
+     <wgtStyle width="88" x="665" forcePaint="9" y="271" cx="43" cy="27" height="56"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="Value" tag="360_01_Utetemp.Utetemp" sourceType="Widget" tagIndex="-1" dataSource="PanelTrend1"/>
+     </dataLinks>
+    </object>
+    <object class="TrendCurveWgt" id="TrendCurveWgt2">
+     <wgtStyle width="588.47" x="175.70" forcePaint="8" drawType="0" y="40.46" cx="295.97" cy="147.95" height="294.32" frame="300" stroke="rgb(190,95,0)" type="line" y0="-20" max="40" y1="40" stroke-width="2"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="Value" sourceType="Data" dataSource="TrendBufferWgt3"/>
+      <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="TrendWindow2"/>
+      <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="TrendWindow2"/>
+     </dataLinks>
+    </object>
+    <object PageDuration="300" StartTime="0" BufferType="0" class="TrendBufferWgt" StopTime="0" ReqSamples="1000" UpdateInterval="1000" samplingtime="1" UpdateType="0" id="TrendBufferWgt4">
+     <wgtStyle width="88" x="665" forcePaint="9" y="271" cx="43" cy="27" height="56"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="Value" tag="360_01_Avtrekk.Avtrekk" sourceType="Widget" tagIndex="-1" dataSource="PanelTrend1"/>
+     </dataLinks>
+    </object>
+    <object class="TrendCurveWgt" id="TrendCurveWgt3">
+     <wgtStyle width="588.47" x="175.70" forcePaint="8" drawType="0" y="40.46" cx="295.97" cy="147.95" height="294.32" frame="300" stroke="rgb(255,104,32)" type="line" y0="-20" max="40" y1="40" stroke-width="2"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="Value" sourceType="Data" dataSource="TrendBufferWgt4"/>
+      <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="TrendWindow2"/>
+      <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="TrendWindow2"/>
+     </dataLinks>
+    </object>
+    <object PageDuration="300" StartTime="0" BufferType="0" class="TrendBufferWgt" StopTime="0" ReqSamples="1000" UpdateInterval="1000" samplingtime="1" UpdateType="0" id="TrendBufferWgt5">
+     <wgtStyle width="88" x="665" forcePaint="9" y="271" cx="43" cy="27" height="56"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="Value" tag="360_01_Avkast.Avkast" sourceType="Widget" tagIndex="-1" dataSource="PanelTrend1"/>
+     </dataLinks>
+    </object>
+    <object class="TrendCurveWgt" id="TrendCurveWgt4">
+     <wgtStyle width="588.47" x="175.70" forcePaint="8" drawType="0" y="40.46" cx="295.97" cy="147.95" height="294.32" frame="300" stroke="rgb(128,0,128)" type="line" y0="-20" max="40" y1="40" stroke-width="2"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="Value" sourceType="Data" dataSource="TrendBufferWgt5"/>
+      <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="TrendWindow2"/>
+      <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="TrendWindow2"/>
+     </dataLinks>
+    </object>
+   </object>
+   <object class="GroupWgt" id="BtnComp12" customType="Button Computer">
+    <wgtStyle width="42.90" x="386.13" y="391.56" cx="20.90" cy="19.51" height="39.04"/>
+    <object class="ButtonWgt" hmiStyle="type:btn" id="btngray6">
+     <wgtStyle width="42.90" x="1.10" y="1.22" fill="rgb(0,0,255)" dx="1" form="standard" dy="-1" height="39.04" releasePath="images/btn_gray_up.svg" needlePath="images/btn_gray_down.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+     <links>
+      <action class="ScrollLeftTrendAction" attribute="onMousePress" event="onMouseDown" actionID="1" trendName="TrendWindow2" actionWgt="_TrendMgr"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="btngray-image6">
+     <wgtStyle width="22" imagePath="images/leftarrow_symbol.svg" x="12.10" forcePaint="1" y="10.98" cx="11" cy="8.54" height="18.30"/>
+    </object>
+   </object>
+   <object class="GroupWgt" id="BtnComp16" customType="Button Computer">
+    <wgtStyle width="42.90" x="503.48" y="391.96" cx="20.90" cy="19.51" height="39.04"/>
+    <object class="ButtonWgt" hmiStyle="type:btn" id="btngray7">
+     <wgtStyle width="42.90" x="2.20" y="1.22" fill="rgb(0,0,255)" dx="1" form="standard" dy="-1" height="39.04" releasePath="images/btn_gray_up.svg" needlePath="images/btn_gray_down.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+     <links>
+      <action class="ScrollRightTrendAction" attribute="onMousePress" event="onMouseDown" actionID="1" trendName="TrendWindow2" actionWgt="_TrendMgr"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="btngray-image7">
+     <wgtStyle width="22" imagePath="images/rightarrow_symbol.svg" x="13.20" forcePaint="1" y="10.98" cx="11" cy="8.54" height="18.30"/>
+    </object>
+   </object>
+   <object class="GroupWgt" id="BtnComp6" customType="Button Computer">
+    <wgtStyle width="42.90" x="330.02" y="391.96" cx="20.90" cy="19.51" height="39.04"/>
+    <object class="ButtonWgt" hmiStyle="type:btn" id="btnorange6">
+     <wgtStyle width="42.90" x="0" y="0" fill="rgb(0,0,255)" dx="1" form="standard" dy="-1" height="39.04" releasePath="images/btn_orange_up.svg" needlePath="images/btn_orange_down.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+     <links>
+      <action class="PageLeftTrendAction" attribute="onMousePress" event="onMouseDown" actionID="1" trendName="TrendWindow2" actionWgt="_TrendMgr"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="btnorange-image6">
+     <wgtStyle width="22" imagePath="images/leftarrow_symbol.svg" x="11" forcePaint="1" y="10.98" cx="11" cy="8.54" height="18.30"/>
+    </object>
+   </object>
+   <object class="GroupWgt" id="BtnComp7" customType="Button Computer">
+    <wgtStyle width="42.90" x="562.15" y="391.96" cx="20.90" cy="19.51" height="39.04"/>
+    <object class="ButtonWgt" hmiStyle="type:btn" id="btnorange7">
+     <wgtStyle width="42.90" x="0" y="0" fill="rgb(0,0,255)" dx="1" form="standard" dy="-1" height="39.04" releasePath="images/btn_orange_up.svg" needlePath="images/btn_orange_down.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+     <links>
+      <action class="PageRightTrendAction" attribute="onMousePress" event="onMouseDown" actionID="1" trendName="TrendWindow2" actionWgt="_TrendMgr"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="btnorange-image7">
+     <wgtStyle width="22" imagePath="images/rightarrow_symbol.svg" x="11" forcePaint="1" y="10.98" cx="11" cy="8.54" height="18.30"/>
+    </object>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt2">
+   <wgtStyle width="67.66" x="12.67" forcePaint="1" y="104.33" cx="33.83" cy="10" height="20"/>
+   <object class="LabelWgt" id="label4">
+    <wgtStyle width="44" x="0" forcePaint="3" y="0" font-family="Tahoma" cx="22" cy="10" height="20" vert-align="top" marker="true" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="17"/>
+    </links>
+   </object>
+   <object class="ShapeWgt" id="roundrect1">
+    <wgtStyle width="17.33" x="50.33" forcePaint="1" y="1.67" fill="rgb(0,0,255)" cx="8.67" cy="7.33" rx="20" height="14.67" nodeName="rect" ry="20" stroke="rgb(0,0,255)"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt3">
+   <wgtStyle width="67.66" x="12.67" forcePaint="1" y="130.33" cx="33.83" cy="10" height="20"/>
+   <object class="LabelWgt" id="label5">
+    <wgtStyle width="44" x="0" forcePaint="3" y="0" font-family="Tahoma" cx="22" cy="10" height="20" vert-align="top" marker="true" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="4"/>
+    </links>
+   </object>
+   <object class="ShapeWgt" id="roundrect2">
+    <wgtStyle width="17.33" x="50.33" forcePaint="1" y="1.67" fill="rgb(255,0,0)" cx="8.67" cy="7.33" rx="20" height="14.67" nodeName="rect" ry="20" stroke="rgb(255,0,0)"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt4">
+   <wgtStyle width="67.67" x="12.67" forcePaint="1" y="155.33" cx="33.83" cy="10" height="20"/>
+   <object class="LabelWgt" id="label6">
+    <wgtStyle width="44" x="0" forcePaint="3" y="0" font-family="Tahoma" cx="22" cy="10" height="20" vert-align="top" marker="true" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="14"/>
+    </links>
+   </object>
+   <object class="ShapeWgt" id="roundrect3">
+    <wgtStyle width="17.33" x="50.33" forcePaint="1" y="1.67" fill="rgb(190,95,0)" cx="8.67" cy="7.33" rx="20" height="14.67" nodeName="rect" ry="20" stroke="rgb(190,95,0)"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt5">
+   <wgtStyle width="67.66" x="12.67" forcePaint="1" y="181.33" cx="33.83" cy="10" height="20"/>
+   <object class="LabelWgt" id="label7">
+    <wgtStyle width="44" x="0" forcePaint="3" y="0" font-family="Tahoma" cx="22" cy="10" height="20" vert-align="top" marker="true" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="15"/>
+    </links>
+   </object>
+   <object class="ShapeWgt" id="roundrect4">
+    <wgtStyle width="17.33" x="50.33" forcePaint="1" y="1.67" fill="rgb(255,104,32)" cx="8.67" cy="7.33" rx="20" height="14.67" nodeName="rect" ry="20" stroke="rgb(255,104,32)"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt6">
+   <wgtStyle width="67.66" x="12.67" forcePaint="1" y="208.33" cx="33.83" cy="10" height="20"/>
+   <object class="LabelWgt" id="label8">
+    <wgtStyle width="44" x="0" forcePaint="3" y="0" font-family="Tahoma" cx="22" cy="10" height="20" vert-align="top" marker="true" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="16"/>
+    </links>
+   </object>
+   <object class="ShapeWgt" id="roundrect5">
+    <wgtStyle width="17.33" x="50.33" forcePaint="1" y="1.67" fill="rgb(128,0,128)" cx="8.67" cy="7.33" rx="20" height="14.67" nodeName="rect" ry="20" stroke="rgb(128,0,128)"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd2" customType="Button">
+   <wgtStyle width="93" x="103.37" y="442.61" cx="46" cy="17" height="34"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image4" static="true">
+    <wgtStyle width="93" imagePath="images/frame_rect45bar_chrome.svg" x="0" y="0" cx="46.50" cy="17.30" height="34"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd2">
+    <wgtStyle width="85" x="4" y="4" fill="rgb(192,192,192)" dx="1" cx="42.54" form="standard" cy="12.91" height="25" releasePath="images/btn_plastic_rect45bar_1.svg" needlePath="images/btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="main.jmx" class="LoadPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label20">
+    <wgtStyle width="74" font-color="rgb(40,40,40)" x="7" forcePaint="3" y="5" font-family="Tahoma" font-bold="true" wrapping="true" cx="37.10" cy="12.64" height="25" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="20"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image5" static="true">
+    <wgtStyle width="27" x="31" y="8" cx="13.82" cy="8.75" height="17"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd8" customType="Button">
+   <wgtStyle width="93" x="4" y="442.61" cx="46" cy="17" height="34"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image16" static="true">
+    <wgtStyle width="93" imagePath="images/frame_rect45bar_chrome.svg" x="0" y="0" cx="46.50" cy="17.30" height="34"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd8">
+    <wgtStyle width="85" x="4" y="4" fill="rgb(192,192,192)" dx="1" cx="42.54" form="standard" cy="12.91" height="25" releasePath="images/btn_plastic_rect45bar_1.svg" needlePath="images/btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="main.jmx" class="LoadPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label37">
+    <wgtStyle width="74" font-color="rgb(40,40,40)" x="7" forcePaint="3" y="5" font-family="Tahoma" font-bold="true" wrapping="true" cx="37.10" cy="12.64" height="25" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="21"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image17" static="true">
+    <wgtStyle width="27" x="31" y="8" cx="13.82" cy="8.75" height="17"/>
+   </object>
+  </object>
+ </object>
+</wgtPage>

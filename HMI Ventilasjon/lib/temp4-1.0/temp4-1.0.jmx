@@ -1,0 +1,41 @@
+<customWgt>
+ <object class="CustomWgtMLTextMgrWgt" id="Temp4_1_0:1_0_CustomWgtMLMgrWgt" mgrType="CustomWgt" mlFileName="">
+  <wgtStyle width="0" x="0" y="0" height="0"/>
+  <langs defLangId="L1" curLangId="L1">
+   <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+   <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
+  </langs>
+  <MLTexts>
+   <MLText L1="T" L2="" id="14"/>
+   <MLText L1="-RT510" L2="" id="15"/>
+   <MLText L1="°C" L2="" id="16"/>
+  </MLTexts>
+ </object>
+ <object class="ShapeWgt" id="*.circle">
+  <wgtStyle width="18.64" x="5.28" forcePaint="16" y="25.36" fill="rgb(255,255,224)" cx="9.32" cy="9.63" wgtStaticOpt="dynamic" rx="22" height="19.27" nodeName="ellipse" ry="19"/>
+ </object>
+ <object class="NumericWgt" id="*.Temp">
+  <wgtStyle forcePaint="16" font-family="Arial" font-sizepx="13" cx="15.38" cy="11.98" step="1" timeSpec="local" alignment="right" x="21.97" y="24.19" wgtStaticOpt="dynamic" vert-align="top" text="999.1" max="3.40282e+038" usingFormat="#.#" value="999.1" keypad-type="None" min="-3.40282e+038" width="37" numberFormat="6" readWrite="true" height="16" form="Numeric" font-size="10"/>
+ </object>
+ <object class="LabelWgt" id="*.T">
+  <wgtStyle width="7.46" x="10.25" forcePaint="16" font-sizepx="10" y="26.64" font-family="Tahoma" cx="3.73" cy="8.99" wgtStaticOpt="dynamic" height="17.98" vert-align="top" keypad-type="None" font-size="8"/>
+  <links>
+   <lang class="MLTextLink" textid="14"/>
+  </links>
+ </object>
+ <object class="LabelWgt" id="*.Tag">
+  <wgtStyle width="53.47" x="0" forcePaint="16" y="43" font-family="Tahoma" cx="27.23" cy="9.75" wgtStaticOpt="dynamic" height="19" vert-align="top" marker="true" keypad-type="None" font-size="8"/>
+  <links>
+   <lang class="MLTextLink" textid="15"/>
+  </links>
+ </object>
+ <object class="LabelWgt" id="*.Grader">
+  <wgtStyle width="21.47" x="58.97" forcePaint="16" font-sizepx="13" y="23.51" font-family="Tahoma" cx="23.12" cy="15.25" wgtStaticOpt="dynamic" height="19" vert-align="top" marker="true" keypad-type="None" font-size="10"/>
+  <links>
+   <lang class="MLTextLink" textid="16"/>
+  </links>
+ </object>
+ <object class="LineWgt" id="*.line">
+  <wgtStyle width="25.69" x="13.50" forcePaint="16" y="0" cx="0" cy="12.84" wgtStaticOpt="dynamic" height="0" anchorIdx="1" mtx="0,1,0,-1,0,0,0,0,1"/>
+ </object>
+</customWgt>

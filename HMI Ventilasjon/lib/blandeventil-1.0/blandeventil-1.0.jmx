@@ -1,0 +1,75 @@
+<customWgt>
+ <object class="CustomWgtMLTextMgrWgt" id="BlandeVentil_1_0:1_0_CustomWgtMLMgrWgt" mgrType="CustomWgt" mlFileName="">
+  <wgtStyle width="0" x="0" y="0" height="0"/>
+  <langs defLangId="L1" curLangId="L1">
+   <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+   <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
+  </langs>
+  <MLTexts>
+   <MLText L1="%" L2="%" id="7"/>
+   <MLText L1="M" L2="M" id="8"/>
+   <MLText L1="-SB40" L2="-SB40" id="9"/>
+   <MLText L1="%" L2="%" id="10"/>
+  </MLTexts>
+ </object>
+ <object class="ShapeWgt" id="*.righttriangle8">
+  <wgtStyle width="20.31" x="0" forcePaint="16" y="34" fill="rgb(255,255,255)" cx="9.49" cy="22.72" wgtStaticOpt="dynamic" height="20.33" nodeName="path" mtx="-0.500136,0.865947,0,-0.496282,-0.868161,0,20.2472,17.6497,1" stroke-width="1.00006" d="M19.0933 137.952l40.9595 37.7014 -40.9595 0 0 -37.7014zm20.4797 18.8507m0 18.8507m-20.4797 -18.8507"/>
+ </object>
+ <object class="ShapeWgt" id="*.righttriangle9">
+  <wgtStyle width="20.31" x="0" forcePaint="16" y="0" fill="rgb(255,255,255)" cx="10.76" cy="12.52" wgtStaticOpt="dynamic" height="20.33" nodeName="path" mtx="0.500136,-0.865947,0,0.496281,0.868162,0,0,17.5874,1" stroke-width="1.00006" d="M19.0933 137.952l40.9595 37.7014 -40.9595 0 0 -37.7014zm20.4797 18.8507m0 18.8507m-20.4797 -18.8507"/>
+ </object>
+ <object class="GroupWgt" id="*.PaadragVarme">
+  <wgtStyle width="52" x="60" forcePaint="16" y="30" cx="26" cy="10.25" wgtStaticOpt="dynamic" height="20.50" mtx="1,0,0,0,1,0,0,0,1"/>
+  <object class="NumericWgt" id="*.PaadragVarme.PaadragValue">
+   <wgtStyle forcePaint="16" font-family="Arial" cx="12.38" cy="9.33" step="1" timeSpec="local" alignment="right" x="0" y="0" wgtStaticOpt="dynamic" vert-align="top" text="100" max="3.40282e+038" usingFormat="#" value="100" keypad-type="None" min="-3.40282e+038" mtx="1,0,0,0,1,0,0,0,1" width="25.50" numberFormat="6" readWrite="true" height="19.50" form="Numeric" font-size="10"/>
+  </object>
+  <object class="LabelWgt" id="*.PaadragVarme.label">
+   <wgtStyle width="26" x="26" forcePaint="16" y="0.50" font-family="Tahoma" cx="13" cy="10" wgtStaticOpt="dynamic" height="20" vert-align="top" mtx="1,0,0,0,1,0,0,0,1" marker="true" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="visibility" tag="IndexedTagSet_Globale.xHeating_Active" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="7"/>
+   </links>
+  </object>
+ </object>
+ <object class="ShapeWgt" id="*.circle12">
+  <wgtStyle width="19.87" x="39.24" forcePaint="16" y="25" fill="rgb(255,255,255)" cx="11.20" cy="9.96" wgtStaticOpt="dynamic" rx="22" height="22.35" nodeName="ellipse" ry="19" mtx="0.00287047,-0.999996,0,0.999998,0.00205714,0,0,19.8699,1"/>
+ </object>
+ <object class="LabelWgt" id="*.label27">
+  <wgtStyle marker="true" forcePaint="16" font-family="Tahoma" font-sizepx="13" cx="12.50" cy="7.58" alignment="center" x="38.24" y="27" wgtStaticOpt="dynamic" vert-align="top" keypad-type="None" font-color="rgb(23,30,40)" mtx="1,0,0,0,1,0,0,0,1" width="25" wrapping="true" height="16" font-size="10"/>
+  <links>
+   <lang class="MLTextLink" textid="8"/>
+  </links>
+ </object>
+ <object class="LineWgt" id="*.line8">
+  <wgtStyle width="12.80" x="27.24" forcePaint="16" y="36" cx="6.40" cy="0" wgtStaticOpt="dynamic" height="0"/>
+ </object>
+ <object class="LabelWgt" id="*.Tag">
+  <wgtStyle width="36.67" x="36.24" forcePaint="16" y="46" font-family="Tahoma" cx="18.33" cy="6.67" wgtStaticOpt="dynamic" height="13.33" vert-align="top" mtx="1,0,0,0,1,0,0,0,1" marker="true" keypad-type="None" font-size="8"/>
+  <links>
+   <lang class="MLTextLink" textid="9"/>
+  </links>
+ </object>
+ <object class="ShapeWgt" id="*.righttriangle10">
+  <wgtStyle width="20.31" x="11" forcePaint="16" y="25" fill="rgb(255,255,255)" cx="22.72" cy="10.76" wgtStaticOpt="dynamic" height="20.33" nodeName="path" mtx="0.865947,0.500136,0,-0.868162,0.496281,0,17.6497,0,1" stroke-width="1.00006" d="M19.0933 137.952l40.9595 37.7014 -40.9595 0 0 -37.7014zm20.4797 18.8507m0 18.8507m-20.4797 -18.8507"/>
+ </object>
+ <object class="GroupWgt" id="*.PaadragKjoling">
+  <wgtStyle width="52" x="60" forcePaint="16" y="30" cx="26" cy="10.25" wgtStaticOpt="dynamic" height="20.50" mtx="1,0,0,0,1,0,0,0,1"/>
+  <object class="NumericWgt" id="*.PaadragKjoling.PaadragValue">
+   <wgtStyle forcePaint="16" font-family="Arial" cx="12.38" cy="9.33" step="1" timeSpec="local" alignment="right" x="0" y="0" wgtStaticOpt="dynamic" vert-align="top" text="100" max="3.40282e+038" usingFormat="#" value="100" keypad-type="None" min="-3.40282e+038" mtx="1,0,0,0,1,0,0,0,1" width="25.50" numberFormat="6" readWrite="true" height="19.50" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="visibility" tag="IndexedTagSet_Globale.xHeating_Active" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="*.PaadragKjoling.label">
+   <wgtStyle width="26" x="26" forcePaint="16" y="0.50" font-family="Tahoma" cx="13" cy="10" wgtStaticOpt="dynamic" height="20" vert-align="top" mtx="1,0,0,0,1,0,0,0,1" marker="true" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="visibility" tag="IndexedTagSet_Globale.xHeating_Active" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="10"/>
+   </links>
+  </object>
+ </object>
+</customWgt>

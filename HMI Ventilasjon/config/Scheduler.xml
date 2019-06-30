@@ -1,0 +1,261 @@
+<scheduledActions>
+ <multiLangs>
+  <langs defLangId="L1" curLangId="L1">
+   <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+   <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
+  </langs>
+  <MLTexts/>
+ </multiLangs>
+ <timedAction>
+  <id>360-01 Start Ukedager</id>
+  <enable>true</enable>
+  <onstartup>true</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition>744651//BY5602_360_001_Kalender_Enable</condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>0</second>
+  <minute>15</minute>
+  <hour>07</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="1">
+   <macroAction actionFunction="writeTag" parameters="10239/&quot;/BY2209_360_20_Ext_Start&quot;;1" actionID="0"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>360-01 Stopp Ukedager</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition>744651//BY5602_360_001_Kalender_Enable</condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>0</second>
+  <minute>30</minute>
+  <hour>23</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="2">
+   <macroAction actionFunction="writeTag" parameters="10239/&quot;/BY2209_360_20_Ext_Start&quot;;0" actionID="1"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>360-01 Start Helgedager</id>
+  <enable>true</enable>
+  <onstartup>true</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition>744651//BY5602_360_001_Kalender_Enable</condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>0</second>
+  <minute>00</minute>
+  <hour>08</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="3">
+   <macroAction actionFunction="setBit" parameters="10239/&quot;/BY2209_360_20_Ext_Start&quot;;1" actionID="2"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>360-01 Stopp Helgedager</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition>744651//BY5602_360_001_Kalender_Enable</condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>0</second>
+  <minute>00</minute>
+  <hour>23</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="4">
+   <macroAction actionFunction="resetBit" parameters="10239/&quot;/BY2209_360_20_Ext_Start&quot;;0" actionID="3"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>360-01 Start Natt</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition>744651//BY5602_360_001_Kalender_Enable</condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>0</second>
+  <minute>00</minute>
+  <hour>03</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="5">
+   <macroAction actionFunction="setBit" parameters="10239/&quot;/BY2209_360_20_Ext_Start&quot;;1" actionID="4"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>360-01 Stopp Natt</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition>744651//BY5602_360_001_Kalender_Enable</condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>0</second>
+  <minute>00</minute>
+  <hour>06</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="6">
+   <macroAction actionFunction="resetBit" parameters="10239/&quot;/BY2209_360_20_Ext_Start&quot;;0" actionID="5"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>360-02 Start Ukedager</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>0</second>
+  <minute>25</minute>
+  <hour>13</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="7">
+   <macroAction actionFunction="writeTag" parameters="10239/&quot;/BY2209_360_20_Ext_Start&quot;;1" actionID="6"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>360-02 Stopp Ukedager</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>0</second>
+  <minute>25</minute>
+  <hour>13</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="8">
+   <macroAction actionFunction="writeTag" parameters="10239/&quot;/BY2209_360_20_Ext_Start&quot;;0" actionID="7"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>360-02 Start Helgedager</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>0</second>
+  <minute>25</minute>
+  <hour>13</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="9">
+   <macroAction actionFunction="setBit" parameters="10239/&quot;/BY2209_360_20_Ext_Start&quot;;1" actionID="8"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>360-02 Stopp Helgedager</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>0</second>
+  <minute>25</minute>
+  <hour>13</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="10">
+   <macroAction actionFunction="resetBit" parameters="10239/&quot;/BY2209_360_20_Ext_Start&quot;;0" actionID="9"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>360-02 Start Natt</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>0</second>
+  <minute>25</minute>
+  <hour>13</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="11">
+   <macroAction actionFunction="setBit" parameters="10239/&quot;/BY2209_360_20_Ext_Start&quot;;1" actionID="10"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>360-02 Stopp Natt</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>0</second>
+  <minute>25</minute>
+  <hour>13</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="12">
+   <macroAction actionFunction="setBit" parameters="10239/&quot;/BY2209_360_20_Ext_Start&quot;;0" actionID="11"/>
+  </actions>
+ </timedAction>
+</scheduledActions>

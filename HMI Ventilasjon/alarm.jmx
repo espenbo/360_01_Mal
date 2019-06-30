@@ -1,0 +1,54 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Alarm" singleInstance="true" pageType="modal" pageSize="350,100" class="DialogWgt" dataWndSize="0,70" downloadPrepDone="true" px="0" usedFonts="Tahoma" py="0" titlebar="true" staticFile="opt/alarm.png" dynPosition="false" id="Alarm" titleName="" staticOptEnable="true">
+  <wgtStyle width="350" x="0" y="0" height="100" mtx="1,0,0,0,1,0,0,0,1" ver="020800363" v="02.08.00.363"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+    <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="Alarm. Se alarmliste" L2="Label" id="0"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1" customType="Button">
+   <wgtStyle width="65" x="257" y="62" cx="32" cy="14" height="29"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="WinBtn1-pushbutton1">
+    <wgtStyle width="65" x="1" y="0" fill="rgb(160,160,164)" dx="1" form="standard" dy="-1" height="28" releasePath="images\win-like.svg" needlePath="images\win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+    <links>
+     <action pageName="" class="CloseDialogAction" attribute="onMouseRelease" event="onMouseUp" actionID="0" closeParam="Selected" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="WinBtn1-text1">
+    <wgtStyle width="36.12" font-color="rgb(255,255,255)" x="15" forcePaint="1" y="7" font-family="Tahoma" cx="14" cy="8" height="13.92" alignment="center" vert-align="middle" text="OK" keypad-type="None" font-size="10"/>
+   </object>
+  </object>
+  <object class="ShapeWgt" id="rect1" static="true">
+   <wgtStyle width="352" x="0" y="55" fill="rgb(127,127,127)" cx="176" cy="0.50" height="1" nodeName="rect" stroke="rgb(102,102,102)"/>
+  </object>
+  <object class="LabelWgt" id="label1">
+   <wgtStyle width="157.22" font-color="rgb(23,30,40)" x="96.39" forcePaint="2" y="15" font-family="Tahoma" wrapping="true" cx="43.93" cy="4.89" height="31" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="GroupWgt2" customType="Button">
+   <wgtStyle width="115" x="31.69" y="62" cx="56.62" cy="14" height="29"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="WinBtn1-pushbutton2">
+    <wgtStyle width="115" x="1.77" y="0" fill="rgb(160,160,164)" dx="1" form="standard" dy="-1" height="28" releasePath="images\win-like.svg" needlePath="images\win-like-press.svg" mtx="1,0,0,0,1,0,0,0,1" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+    <links>
+     <action pageName="alarmer.jmx" class="LoadPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="WinBtn1-text2">
+    <wgtStyle width="63.90" font-color="rgb(255,255,255)" x="26.54" forcePaint="1" y="7" font-family="Tahoma" cx="24.77" cy="8" height="13.92" alignment="center" vert-align="middle" mtx="1,0,0,0,1,0,0,0,1" text="Alarmliste" keypad-type="None" font-size="10"/>
+   </object>
+  </object>
+ </object>
+</wgtPage>

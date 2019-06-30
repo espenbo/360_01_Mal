@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" height="64.49" width="65.15" version="1.1" viewBox="0 0 65.15 64.49">
+<rect id="bgColor00" height="63.494" width="64.146" y="0.499" x="0.502" fill="#b7b7b7"/>
+<path fill="#fff" d="m0.502 0.499v63.494h64.146v-63.494h-64.146zm64.146 63.493h-64.146l1.943-1.926v-59.462h60.364l1.84-2.188v63.576z"/>
+<polygon opacity=".6" points="2.445 62.066 1.002 63.492 64.148 63.492 64.148 0.999 62.809 2.604 62.809 62.066"/>
+<path d="m0.002-0.001v64.494h65.146v-64.494h-65.146zm64.146 63.493h-63.146v-62.493h63.146v62.493z"/>
+</svg>

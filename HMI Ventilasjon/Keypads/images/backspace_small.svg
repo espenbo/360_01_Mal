@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="300" width="300" viewBox="0 0 300 300">
+	<path
+		d="M12 150 L75 40 L290 40 L290 260 L75 260 Z"
+		style="fill:none;      
+			stroke-width:20;      
+			stroke:rgb(0,0,0);     
+			stroke-miterlimit:4;     
+			stroke-dasharray:none;     
+			stroke-linejoin:round;     
+			stroke-linecap:butt  
+			"
+	/>
+	<path
+		d="M 128.49056,97.924527 233.20755,202.64151"
+		style="fill:none;      
+			stroke-width:20;      
+			stroke:rgb(0,0,0);     
+			stroke-linecap:butt  
+			"
+	/>
+	<path
+		d="M 233.20755,97.924527 128.49056,202.64151"
+		style="fill:none;      
+			stroke-width:20;      
+			stroke:rgb(0,0,0);     
+			stroke-linecap:butt  
+			"
+	/>
+</svg>

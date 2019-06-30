@@ -1,0 +1,104 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Kalende360_01" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="maintemplate.jmx" usedFonts="Tahoma,Arial" staticFile="opt/kalende360_01.png" id="Kalende360_01" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020800363" v="02.08.00.363"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+    <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="Enable" L2="Enable" id="2"/>
+    <MLText L1="Condition" L2="Condition" id="3"/>
+    <MLText L1="Occurence" L2="Occurence" id="4"/>
+    <MLText L1="Time" L2="Time" id="5"/>
+    <MLText L1="Mode" L2="Mode" id="6"/>
+    <MLText L1="Type" L2="Type" id="7"/>
+    <MLText L1="Name" L2="Name" id="8"/>
+    <MLText L1="Kalender" L2="Kalender" id="12"/>
+    <MLText L1="Hovedside" L2="Hovedside" id="42"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" id="Scheduler" customType="Scheduler">
+   <wgtStyle width="775" x="14" y="98" cx="386.79" cy="105" height="210"/>
+   <object class="IdalScheduleWgt" id="IdalSchedule3">
+    <wgtStyle width="0" x="0" y="0" height="0"/>
+   </object>
+   <object class="ScheduleWgtEx" schedule="360-01 Start Ukedager;360-01 Stopp Ukedager;360-01 Start Helgedager;360-01 Stopp Helgedager;360-01 Start Natt;360-01 Stopp Natt" id="schedulewgtEx1">
+    <wgtStyle width="775" x="0" forcePaint="10" y="0" gridlineColor="rgb(127,127,127)" cx="387.52" cy="105" hfont-style="normal" height="210" hTextColor="rgb(0,0,0)" cBGColor1="rgb(255,255,255)" cBGColor2="rgb(230,230,250)" borderSize="1" timeSpec="local" hFont="Tahoma"/>
+    <dataLinks>
+     <dataLink readWrite="W" attribute="WriteSource" sourceType="Data" dataSource="IdalSchedule3"/>
+    </dataLinks>
+    <table cols="7" rows="6">
+     <colInfo>
+      <col width="170" visibility="false" headerLabel="Name">
+       <links>
+        <lang class="MLTableColLink:schCol:" textid="8"/>
+       </links>
+      </col>
+      <col width="70" visibility="false" headerLabel="Type">
+       <links>
+        <lang class="MLTableColLink:schCol:" textid="7"/>
+       </links>
+      </col>
+      <col width="50" visibility="false" headerLabel="Mode">
+       <links>
+        <lang class="MLTableColLink:schCol:" textid="6"/>
+       </links>
+      </col>
+      <col width="70" visibility="false" headerLabel="Time">
+       <links>
+        <lang class="MLTableColLink:schCol:" textid="5"/>
+       </links>
+      </col>
+      <col width="80" visibility="false" headerLabel="Occurence">
+       <links>
+        <lang class="MLTableColLink:schCol:" textid="4"/>
+       </links>
+      </col>
+      <col width="280" visibility="false" headerLabel="Condition">
+       <links>
+        <lang class="MLTableColLink:schCol:" textid="3"/>
+       </links>
+      </col>
+      <col width="50" visibility="false" headerLabel="Enable">
+       <links>
+        <lang class="MLTableColLink:schCol:" textid="2"/>
+       </links>
+      </col>
+     </colInfo>
+    </table>
+   </object>
+  </object>
+  <object class="GroupSubscribeWgt" id="Kalende360_01@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="LabelWgt" id="label3">
+   <wgtStyle width="149" x="325.50" forcePaint="2" y="18.50" font-family="Tahoma" cx="54.33" cy="21" height="39" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="24"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="BtnStd8" customType="Button">
+   <wgtStyle width="93" x="5" y="442.61" cx="46" cy="17" height="34"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image16" static="true">
+    <wgtStyle width="93" imagePath="images/frame_rect45bar_chrome.svg" x="0" y="0" cx="46.50" cy="17.30" height="34"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd8">
+    <wgtStyle width="85" x="4" y="4" fill="rgb(192,192,192)" dx="1" cx="42.54" form="standard" cy="12.91" height="25" releasePath="images/btn_plastic_rect45bar_1.svg" needlePath="images/btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="main.jmx" class="LoadPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label37">
+    <wgtStyle width="74" font-color="rgb(40,40,40)" x="7" forcePaint="3" y="5" font-family="Tahoma" font-bold="true" wrapping="true" cx="37.10" cy="12.64" height="25" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="42"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image17" static="true">
+    <wgtStyle width="27" x="31" y="8" cx="13.82" cy="8.75" height="17"/>
+   </object>
+  </object>
+ </object>
+</wgtPage>

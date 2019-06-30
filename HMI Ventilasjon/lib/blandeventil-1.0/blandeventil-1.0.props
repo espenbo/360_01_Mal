@@ -1,0 +1,10 @@
+<defs>
+ <g id="custom_properties" showChildNodes="0" inherit="basicgroup_properties" attributeName="BlandeVentil-1.0:1.0">
+  <info></info>
+  <text display="Tag_Text" default="true" attributeType="mltext" editChild="true" attachTag="true" attributeName="*.Tag.text">Text</text>
+  <text display="PaadragKjoling_Visible" attributeType="bool" editChild="true" attachTag="true" adv="true" attributeName="*.PaadragKjoling.visibility"/>
+  <text display="PaadragKjoling_Value" default="true" attributeType="float" editChild="true" attachTag="true" attributeName="*.PaadragKjoling.PaadragValue.value" isCompound="true"/>
+  <text display="PaadragVarme_Visible" attributeType="bool" attachTag="true" adv="true" attributeName="*.PaadragVarme.visibility"/>
+  <text display="PaadragVarme_Value" default="true" attributeType="float" attachTag="true" attributeName="*.PaadragVarme.PaadragValue.value"/>
+ </g>
+</defs>

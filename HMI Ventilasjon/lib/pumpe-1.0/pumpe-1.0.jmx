@@ -1,0 +1,23 @@
+<customWgt>
+ <object class="CustomWgtMLTextMgrWgt" id="Pumpe_1_0:1_0_CustomWgtMLMgrWgt" mgrType="CustomWgt" mlFileName="">
+  <wgtStyle width="0" x="0" y="0" height="0"/>
+  <langs defLangId="L1" curLangId="L1">
+   <lang removable="false" langCode="" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+  </langs>
+ </object>
+ <object class="ShapeWgt" id="*.Sirkel">
+  <wgtStyle width="45" x="0" forcePaint="16" y="0" fill="rgb(255,255,255)" cx="22.22" cy="22.64" wgtStaticOpt="dynamic" rx="22" height="45" nodeName="ellipse" ry="19" stroke="rgb(0,13,6)" mtx="0,1,0,-1,0,0,45,0,1"/>
+ </object>
+ <object class="ShapeWgt" id="*.SortTriangle">
+  <wgtStyle width="36" x="4.58" forcePaint="16" y="0.24" fill="rgb(0,13,6)" points="76,122 95,88 114,122 " cx="18" cy="16" wgtStaticOpt="dynamic" height="33" nodeName="polygon"/>
+ </object>
+ <object class="ShapeWgt" id="*.RodTriangel">
+  <wgtStyle width="36" x="4.58" forcePaint="16" y="0.24" fill="rgb(255,0,0)" points="76,122 95,88 114,122 " cx="18" cy="16" wgtStaticOpt="dynamic" height="33" nodeName="polygon" stroke="rgb(255,0,0)"/>
+ </object>
+ <object class="ShapeWgt" id="*.GulTriangel">
+  <wgtStyle width="36" x="4.58" forcePaint="16" y="0.24" fill="rgb(255,255,0)" points="76,122 95,88 114,122 " cx="18" cy="16" wgtStaticOpt="dynamic" height="33" nodeName="polygon" stroke="rgb(255,255,0)"/>
+ </object>
+ <object class="ShapeWgt" id="*.GronnTriangel">
+  <wgtStyle width="36" x="4.58" forcePaint="16" y="0.24" fill="rgb(0,147,0)" points="76,122 95,88 114,122 " cx="18" cy="16" wgtStaticOpt="dynamic" height="33" nodeName="polygon" stroke="rgb(0,147,0)"/>
+ </object>
+</customWgt>

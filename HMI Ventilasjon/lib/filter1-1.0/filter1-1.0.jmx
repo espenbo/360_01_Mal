@@ -1,0 +1,68 @@
+<customWgt>
+ <object class="CustomWgtMLTextMgrWgt" id="Filter1_1_0:1_0_CustomWgtMLMgrWgt" mgrType="CustomWgt" mlFileName="">
+  <wgtStyle width="0" x="0" y="0" height="0"/>
+  <langs defLangId="L1" curLangId="L1">
+   <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+   <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
+  </langs>
+  <MLTexts>
+   <MLText L1="" L2="" id="17"/>
+   <MLText L1="P" L2="" id="18"/>
+   <MLText L1="-QD500" L2="" id="19"/>
+  </MLTexts>
+ </object>
+ <object class="ShapeWgt" id="*.Firkant">
+  <wgtStyle width="60.89" x="4.01" forcePaint="16" y="0" fill="rgb(192,192,192)" cx="30.44" cy="22.48" wgtStaticOpt="dynamic" height="44.96" nodeName="rect" stroke="rgb(127,127,127)" mtx="-1,0,0,0,-1,0,60.8899,44.9599,1"/>
+ </object>
+ <object class="ShapeWgt" id="*.Trekant">
+  <wgtStyle width="39.65" x="6" forcePaint="16" y="2" fill="rgb(255,255,255)" cx="33.64" cy="21.93" wgtStaticOpt="dynamic" height="39.65" nodeName="path" stroke="rgb(127,127,127)" mtx="0.839309,0.543654,0,-0.839309,0.543654,0,33.2786,0,1" stroke-width="1.00006" d="M19.0933 137.952l40.9595 37.7014 -40.9595 0 0 -37.7014zm20.4797 18.8507m0 18.8507m-20.4797 -18.8507"/>
+ </object>
+ <object class="GroupWgt" id="*.FilterAlarm" customType="Light">
+  <wgtStyle width="17.40" x="47" forcePaint="16" y="4" cx="8.70" cy="9.63" wgtStaticOpt="dynamic" height="19.27" mtx="1,0,0,0,1,0,0,0,1"/>
+  <links>
+   <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+  </links>
+  <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image4">
+   <wgtStyle width="17.40" imagePath="lib/filter1-1.0/images/frame_round_chrome.svg" x="0" forcePaint="16" y="0" cx="8.54" cy="9.44" wgtStaticOpt="dynamic" height="19.27" mtx="1,0,0,0,1,0,0,0,1"/>
+  </object>
+  <object class="IndicatorWgt" hmiStyle="hmi-name:pointy; hmi-shape:round; hmi-type:light; type:light" id="light_ind1">
+   <wgtStyle width="12.97" imagePath="lib/filter1-1.0/images/li_round_pointy1.svg" x="2.21" forcePaint="16" y="2.36" cx="8.23" cy="5.90" wgtStaticOpt="dynamic" bkgColor="rgb(0,255,0);rgb(255,0,0)" height="14.55" stroke="rgb(255,251,240)" mtx="1,0,0,0,1,0,0,0,1"/>
+  </object>
+  <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label4">
+   <wgtStyle width="11.38" x="2.53" forcePaint="16" font-sizepx="10" y="3.15" font-family="Tahoma" cx="5.69" cy="6.29" wgtStaticOpt="dynamic" height="12.97" alignment="center" vert-align="middle" mtx="1,0,0,0,1,0,0,0,1" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="17"/>
+   </links>
+  </object>
+  <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="icon1">
+   <wgtStyle width="5.06" enableCache="true" x="6.01" forcePaint="16" y="6.29" cx="2.53" cy="2.75" wgtStaticOpt="dynamic" height="5.90" fill-opacity="0.5" mtx="1,0,0,0,1,0,0,0,1"/>
+  </object>
+ </object>
+ <object class="ShapeWgt" id="*.circle">
+  <wgtStyle width="15" x="27" forcePaint="16" y="49" fill="rgb(255,255,224)" cx="7.50" cy="7.50" wgtStaticOpt="dynamic" rx="22" height="15" nodeName="ellipse" ry="19" mtx="1,0,0,0,1,0,0,0,1"/>
+ </object>
+ <object class="LabelWgt" id="*.P">
+  <wgtStyle width="6" x="31" forcePaint="16" font-sizepx="10" y="50" font-family="Tahoma" cx="3" cy="7" wgtStaticOpt="dynamic" height="14" vert-align="top" mtx="1,0,0,0,1,0,0,0,1" keypad-type="None" font-size="8"/>
+  <links>
+   <lang class="MLTextLink" textid="18"/>
+  </links>
+ </object>
+ <object class="LineWgt" id="*.line4">
+  <wgtStyle width="26" x="70" forcePaint="16" y="30" cx="0" cy="13" wgtStaticOpt="dynamic" height="0" mtx="0,1,0,-1,0,0,0,0,1"/>
+ </object>
+ <object class="LineWgt" id="*.line3">
+  <wgtStyle width="27" x="42" forcePaint="16" y="56" cx="13.50" cy="0" wgtStaticOpt="dynamic" height="0" mtx="1,0,0,0,1,0,0,0,1"/>
+ </object>
+ <object class="LineWgt" id="*.line2">
+  <wgtStyle width="27" x="0" forcePaint="16" y="56" cx="13.50" cy="0" wgtStaticOpt="dynamic" height="0" mtx="1,0,0,0,1,0,0,0,1"/>
+ </object>
+ <object class="LineWgt" id="*.line1">
+  <wgtStyle width="26" x="0" forcePaint="16" y="30" cx="0" cy="13" wgtStaticOpt="dynamic" height="0" mtx="0,1,0,-1,0,0,0,0,1"/>
+ </object>
+ <object class="LabelWgt" id="*.Tag">
+  <wgtStyle marker="true" forcePaint="16" font-family="Tahoma" font-sizepx="13" cx="25" cy="9.47" alignment="center" x="6" y="64" wgtStaticOpt="dynamic" vert-align="top" keypad-type="None" font-color="rgb(23,30,40)" mtx="1,0,0,0,1,0,0,0,1" width="50" wrapping="true" height="20" font-size="10"/>
+  <links>
+   <lang class="MLTextLink" textid="19"/>
+  </links>
+ </object>
+</customWgt>

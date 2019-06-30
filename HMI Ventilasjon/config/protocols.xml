@@ -1,0 +1,34 @@
+<protocols>
+ <protocol>
+  <id>prot2</id>
+  <name>VRBL</name>
+  <file></file>
+  <configuration>CfgVer=1 </configuration>
+  <autoImport></autoImport>
+  <enableOptimization>true</enableOptimization>
+  <enableDatagram>false</enableDatagram>
+  <offline_ort>120000</offline_ort>
+  <offline_opt>false</offline_opt>
+  <offline_rpt>3</offline_rpt>
+  <dictionaryname autoSync="false"></dictionaryname>
+  <enableSimProtocol>true</enableSimProtocol>
+  <simFlags>0</simFlags>
+  <displayName>Variables</displayName>
+ </protocol>
+ <protocol>
+  <id>prot1</id>
+  <name>BACN</name>
+  <file>BACN</file>
+  <configuration>CfgVer=1 panelDeviceID=10240 objectName=BY2209_360_20_OS002 description=HMI_360_20 media=IP timeout=5000. panelNode=1. covLifetime=60 covConfirmed=false maxMaster=127 maxFrameCount=1 maxMSTP_APDU=480. maxIP_APDU=480. timeSyncInterval=0 timeSyncUtc=false ipUdpPort=47808. LocalIP=10.103.61.33 port=com1 baudrate=even parity=none bits=8 stopbits=1 mode=RS-485 model=1 </configuration>
+  <autoImport></autoImport>
+  <enableOptimization>true</enableOptimization>
+  <enableDatagram>true</enableDatagram>
+  <offline_ort>30000</offline_ort>
+  <offline_opt>true</offline_opt>
+  <offline_rpt>3</offline_rpt>
+  <dictionaryname autoSync="false">[BACnet prot1] BY2209_360_20_OS001_EDE</dictionaryname>
+  <enableSimProtocol>true</enableSimProtocol>
+  <simFlags>0</simFlags>
+  <displayName>BACnet</displayName>
+ </protocol>
+</protocols>
