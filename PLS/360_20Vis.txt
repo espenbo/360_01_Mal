@@ -1,0 +1,38 @@
+0
+c:\programdata\codesys v2.3\compile\visu_ini.xml
+c:\programdata\codesys v2.3\compile\alm_ini.xml
+c:\program files (x86)\wago software\codesys v2.3\visu\minml.jar
+c:\program files (x86)\wago software\codesys v2.3\visu\webvisu.jar
+c:\program files (x86)\wago software\codesys v2.3\visu\webvisu.htm
+c:\programdata\codesys v2.3\compile\guruvisuftp.xml
+c:\programdata\codesys v2.3\compile\hovedside.xml
+c:\programdata\codesys v2.3\compile\line1.xml
+c:\programdata\codesys v2.3\compile\modbus_regin_1_2_3.xml
+c:\programdata\codesys v2.3\compile\modbusreginfullinfo_regin1.xml
+c:\programdata\codesys v2.3\compile\modbusreginfullinfo_regin2.xml
+c:\programdata\codesys v2.3\compile\modbusreginfullinfo_regin3.xml
+c:\programdata\codesys v2.3\compile\modbusunidrive200fullinfo_1.xml
+c:\programdata\codesys v2.3\compile\modbusunidrive200fullinfo_2.xml
+c:\programdata\codesys v2.3\compile\modbusunidrive200fullinfo_3.xml
+c:\programdata\codesys v2.3\compile\oljefyr_styring_visu.xml
+c:\programdata\codesys v2.3\compile\plc_visu.xml
+c:\programdata\codesys v2.3\compile\romdetalj1.xml
+c:\programdata\codesys v2.3\compile\romdetalj2.xml
+c:\programdata\codesys v2.3\compile\romdetalj3.xml
+c:\programdata\codesys v2.3\compile\romdetalj4.xml
+c:\programdata\codesys v2.3\compile\romdetalj5.xml
+c:\programdata\codesys v2.3\compile\romdetalj6.xml
+c:\programdata\codesys v2.3\compile\romdetalj7.xml
+c:\programdata\codesys v2.3\compile\romdetalj8.xml
+c:\programdata\codesys v2.3\compile\romkontrollerinstillinger.xml
+c:\programdata\codesys v2.3\compile\romoversikt1_8.xml
+c:\programdata\codesys v2.3\compile\romoversikt9_16.xml
+c:\programdata\codesys v2.3\compile\romoversikttabel1_8.xml
+c:\programdata\codesys v2.3\compile\reginfoler.xml
+c:\programdata\codesys v2.3\compile\reginfolerfullinfo.xml
+c:\programdata\codesys v2.3\compile\rom.xml
+c:\programdata\codesys v2.3\compile\rominfo.xml
+c:\programdata\codesys v2.3\compile\serialnumber.xml
+c:\programdata\codesys v2.3\compile\status.xml
+c:\programdata\codesys v2.3\compile\unidrive200fullinfo.xml
+c:\programdata\codesys v2.3\compile\360_20vis.txt
