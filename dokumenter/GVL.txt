@@ -1,0 +1,223 @@
+VAR_GLOBAL
+	xVent_auto							: BOOL;			(* Bryter styring av ventilasjon i posisjon auto *)
+	xVent_man							: BOOL;			(* Bryter styring av ventilasjon i posisjon manuel*)
+	xVent_av							: BOOL;			(* Bryter styring av ventilasjon i posisjon av   *)
+	xSystemOK_StartStop					: BOOL;			(* System OK fra start/stopp blokka*)
+	xMOD_V								: BOOL;			(* Høyt signal angir at kjøling er aktiv*)
+	xVentilasjon_US						: BOOL;			(* Ventilasjonsanlegget er Enablet		*)
+	xRES								: BOOL;			(* Reset alarm*)
+	xResetAL							: BOOL;			(* Reset Alarmer*)
+	xEnable_Ventilasjon					: BOOL:= TRUE;	(* Enable ventilasjonsanlegget*)
+	xExt_Start_Ventilasjon				: BOOL;			(* Kontroll signal for ekstern start. Kalender må vare enable*)
+	xKalender_Enable					: BOOL;			(* Kalender er endable. Kan starte anlegget fra xExt_Start_Ventilasjon*)
+	xNattventilasjon_US					: BOOL;			(* Nattventilasjon er aktiv*)
+	sStatus_Malfunction					: STRING;		(* CollectivMalfunction status *)
+	wStatus_Malfunction					: WORD;     	(* System status, Se hjelpe tekst*)
+	xHorn_Malfunction					: BOOL;			(* CollectivMalfunction status Horn*)
+	xSignalLamp_Malfunction				: BOOL;			(* CollectivMalfunction status Lamp*)
+	xSystemError_Malfunction			: BOOL;			(* CollectivMalfunction status Alarm*)
+(*Følere*)
+	rTempUte							: REAL;			(* Utetemp          *)
+	rTempInntak							: REAL;			(* Tempføler inntak *)
+	rTempAvkast							: REAL;			(* Tempføler avkast *)
+	rTempTilluft						: REAL;			(* Tempføler tilluft*)
+	rTempAvtrekk						: REAL;			(* Tempføler avtrekk*)
+	rTempTurvann						: REAL;			(* Temp turvann vvb   *)
+	rTempReturvann						: REAL;			(* Temp returvann vvb  *)
+	xReturfolerVann						: BOOL := TRUE;	
+(*Filter*)
+	rTilluftFilter						: REAL;			(* Tilluftsfilter verdi*)
+	rAvtrekksFilter						: REAL;			(* Avtrekksfilter verdi*)
+	xTilluftFilter_AL					: BOOL;			(* Tilluftsfilter er tett*)
+	xAvtrekksFilter_AL					: BOOL;			(* Avtrekksfilter er tett*)
+(*Trykk*)
+	rTrykkTilluft						: REAL;			(* Trykk tilluft*)
+	rTrykkAvtrekk						: REAL;			(* Trykk avtrekk*)
+
+(*Sjekker om føleren er defekt*)
+	xAvtrekkfoler_AL					: BOOL;			(* Alarmer tempfølere*)
+	xAvkastfoler_AL						: BOOL;			(* Alarmer tempfølere*)
+	xTilluftfoler_AL					: BOOL;			(* Alarmer tempfølere*)
+	xInntakfoler_AL						: BOOL;			(* Alarmer tempfølere*)
+	xSignalLamp_AL						: BOOL;			(* Alarmer tempfølere*)
+
+	(*Temp regulering*)
+	xAvtrekkReg_Aktiv					: BOOL;			(* Avtrekksregulering er aktiv*)
+	xTilluftReg_Aktiv					: BOOL;			(* Tilluftsregulering er aktiv*)
+	xTempRegAuto_Aktiv					: BOOL;			(* Automatisk tilluft/avtrekk regulering aktiv*)
+	xAlt_Cooling_En						: BOOL; 		(* kjølemodus *)
+	xAvtrekkReg_Aktiv_Fra_Temp			: BOOL;			(* Avtrekksregulering valg pga utetemp*)
+	(*Anti freeze water*)
+	xFlush_OK							: BOOL;			(* AntifreezeWater Flush OK *)
+	xTempxFrostalarm_vann				: BOOL;			(* Fra digital inngang og AntifreezeWater blokk Frostalarm*)
+	xAntifreezeWater_StartupError		: BOOL;
+	xFrostalarm_vann					: BOOL;			(* Frostalarm vann fra AntifreezeWater funksjonsblokk*)
+	wAntifreezeWater_Status				: WORD;			(* System status, Se hjelpe tekst*)
+	sAntifreezeWater_Status				: STRING;		(* System status, Se hjelpe tekst*)
+	rY_Flush							: REAL;			(* AntifreezeWater pådrag i REAL*)
+	wY_Flush							: WORD;			(* AntifreezeWater pådrag i WORD *)
+	xAntifreezeWater_Test				: BOOL;			(* Test antifreezeWater*)
+
+(*Utekompensering*)
+	rSPU_PV								: REAL;			(* Kalkulert setpunkt*)
+(*Anti freeze air*)
+	xFrostalarm_luft					: BOOL;			(* Frostalarm luft       *)
+(*Cooling*)
+	xCooling_Active						: BOOL;			(* Kjøling er aktiv*)
+(*HeatExchange*)
+	xHeatExchange_Active				: BOOL;			(* Pådrag sekvens til varmegjenvinner aktiv*)
+(*Heating*)
+	xHeating_Active						: BOOL; 		(* varmepådrag aktiv*)
+(*Spjeld Inntak*)
+	xSpjeld_inntak_Open_V				: BOOL;			(* Status inntak aapent*)
+	xSpjeld_inntak_Closed_V				: BOOL;			(* Status inntak stengt*)
+	xSpjeld_inntak_ERROR				: BOOL;			(* Inntak alarm*)
+	xSpjeld_inntak_MAN					: BOOL;			(* Manuel styring av spjeld*)
+	xSpjeld_inntak_MAN_CMD				: BOOL;			(* Manuel aapning ved 2Point spjeld*)
+	wSpjeld_inntak_Status				: WORD;			(* System status, Se hjelpe tekst*)
+	sSpjeld_inntak_Status				: STRING;
+	rSpjeld_inntak_rY					: REAL;			(* Sendt Posisjon til spjeld*)
+	wSpjeld_inntak_wY					: WORD;			(* Sendt Posisjon til spjeld*)
+	rSpjeld_inntak_VP					: REAL;			(* Posisjon på spjeld*)
+	rSpjeld_inntak_MAN_SP				: REAL;			(* Sende manuel posisjon til spjeld*)
+	rSpjeld_100							: REAL :=100;	(* Posisjon 100 % spjeld*)
+	rSpjeld_0							: REAL :=0;		(* Posisjon 0 % spjeld*)
+(*Spjeld avkast*)
+	xSpjeld_avkast_Open_V				: BOOL;			(* Status avkast aapent*)
+	xSpjeld_avkast_Closed_V				: BOOL;			(* Status avkast stengt*)
+	xSpjeld_avkast_ERROR				: BOOL;			(* Inntak alarm*)
+	xSpjeld_avkast_MAN					: BOOL;
+	xSpjeld_avkast_MAN_CMD				: BOOL;			(* Manuel aapning ved 2Point spjeld*)
+	wSpjeld_avkast_Status				: WORD;			(* System status, Se hjelpe tekst*)
+	sSpjeld_avkast_Status				: STRING;
+	rSpjeld_avkast_rY					: REAL;			(* Sendt Posisjon til spjeld*)
+	wSpjeld_avkast_wY					: WORD;			(* Sendt Posisjon til spjeld*)
+	rSpjeld_avkast_VP					: REAL;			(* Posisjon på spjeld*)
+	rSpjeld_avkast_MAN_SP				: REAL;			(* Sende manuel posisjon til spjeld*)
+	
+(*Tilluftsvifte*)
+	rTilluftsvifte_DT					: REAL; 		(* Driftstid Avtrekksvifte*)
+	xTilluftsvifte_ERROR				: BOOL;			(* Avtrekksvifte feil*)
+	rTilluftsvifte_SP					: REAL := 30;	(* Setpunkt ved standard drift*)
+	rTilluftsvifte_rY					: REAL;			(* Pådrag til frekvensomformer*)
+	wTilluftsvifte_wY					: REAL;			(* Pådrag til frekvensomformer*)
+	xTilluftsvifte_MAN					: BOOL;			(* Manuel styring Avtrekksvifte*)
+	xTilluftsvifte_MAN_CMD				: BOOL;			(* Tillat manuel styring Avtrekksvifte*)
+	rTilluftsvifte_MAN_SP				: REAL;			(* Manuelt setpunkt*)
+	wTilluftsvifte_Status				: WORD;
+	sTilluftsvifte_Status				: STRING;
+
+(*Avtrekksvifte*)
+	rAvtrekksvifte_DT					: REAL; 		(* Driftstid Avtrekksvifte*)
+	xAvtrekksvifte_ERROR				: BOOL;			(* Avtrekksvifte feil*)
+	rAvtrekksvifte_SP					: REAL := 30;	(* Setpunkt ved standard drift*)
+	rAvtrekksvifte_rY					: REAL;			(* Pådrag til frekvensomformer*)
+	wAvtrekksvifte_wY					: REAL;			(* Pådrag til frekvensomformer*)
+	xAvtrekksvifte_MAN					: BOOL;			(* Manuel styring Avtrekksvifte*)
+	xAvtrekksvifte_MAN_CMD				: BOOL;			(* Tillat manuel styring Avtrekksvifte*)
+	rAvtrekksvifte_MAN_SP				: REAL;			(* Manuelt setpunkt*)
+	wAvtrekksvifte_Status				: WORD;			(* System status, Se hjelpe tekst*)
+	sAvtrekksvifte_Status				: STRING;
+
+(*Gjennvinner*)
+	rReguleringGjennvinner_OP			: REAL;			(* Pådrag gjennvinner i REAL    *)
+	xGjennvinner_MAN					: BOOL;			(* Styring av gjenvinner i manuel*)
+	xGjennvinner_MAN_CMD				: BOOL;			(* Tillat manuel styring av gjenvinner i manuel*)
+	rGjennvinner_SP						: REAL;			(* Setpunkt på gjennvinner når den er i manuel*)
+	rGjennvinner_DT						: REAL; 		(* Driftstid Gjennvinner*)
+	xGjennvinner_ERROR					: BOOL;			(* Gjennvinner feil*)
+	xGjennvinner_Warning				: BOOL;			(* Gjennvinner warning*)
+	rGjennvinner_En_SelfClean			: REAL := 30;	(* Gjennvinner selvrens*)
+	wGjennvinner_Status					: WORD;			(* System status, Se hjelpe tekst*)
+	sGjennvinner_Status					: STRING;
+	
+(*Sirkulasjons pumpe*)
+	xSirkpumpe_MAN						: BOOL;
+	xSirkpumpe_MAN_CMD					: BOOL;
+	xSirkpumpe_ERROR					: BOOL;
+	rSirkpumpe_DT						: REAL;			(* Driftstid*)
+	xSirkpumpe_StoppedByTemp			: BOOL;
+	xSirkpumpe_FollowupTime				: BOOL;
+
+(*MP_Line1	(*SB1*)
+	xMP1_SB1_Man_CMD					: BOOL;			(* Bruke manuelt setpunkt, rMan_OP inn på rPosistion*)
+	xMP1_SB1_Reset						: BOOL;			(* Resete feilmeldinger fra MP-Bus *)
+	rMP1_SB1_OP							: REAL;			(* Kontroll input 0-100%*)
+	rMP1_SB1_Man_OP						: REAL;			(* Manuel kontroll input 0-100%*)
+	bMP1_SB1_Error_Status				: BYTE;			(* Feilkode se MpBus_02_e.pdf*)
+	rMP1_SB1_Pos						: REAL;			(* Erverdi posisjon[%]*)
+	wMP1_SB1_SensorValue				: WORD;			(* Messwert des angeschlossenen Sensors*)
+	xMP1_SB1_CRI_ERROR					: BOOL;			(* Feilmelding kontroll lengde overskredet*)
+	xMP1_SB1_MOL_ERROR					: BOOL;			(* Feilmelding mekanisk feil*)
+	xMP1_SB1_AH_ERROR					: BOOL;			(* Feilmelding aktuator jager*)
+	xMP1_SB1_Com_Error					: BOOL;			(* Kommunikasjons feil*)
+	xMP1_SB1_SensorError				: BOOL;			(* Falscher Messwert des angeschlossenen Sensors*)
+*)
+
+(*Kan være Digitale innganger*)
+	xGjennvinner_av						: BOOL;			(* Bryter styring av gjenvinner i av             *)
+	xGjennvinner_auto					: BOOL;			(* Bryter styring av gjenvinner i auto           *)
+	xSirkpumpe_av						: BOOL;			(* Bryter styring av sirk.pumpe i av             *)
+	xSirkpumpe_auto						: BOOL;			(* Bryter styring av sirk.pumpe i auto            *)
+	xTilluftsvifte_Drift				: BOOL;			(* Tilluftsvifte drift   *)
+	xTilluftsvifte_AL					: BOOL;			(* Tilluftsvifte feil    *)
+	xAvtrekksvifte_Drift				: BOOL;			(* Avtrekkssvifte drift  *)
+	xAvtrekksvifte_AL					: BOOL;			(* Avtrekksvifte feil    *)
+	xSirkpumpe_Drift					: BOOL;			(* Sirkpumpe drift       *)
+	xSirkpumpe_AL						: BOOL;			(* Sirkpumpe feil        *)
+	xGjenvinner_Drift					: BOOL;			(* Gjennvinner drift     *)
+	xGjenvinner_AL						: BOOL;			(* Gjennvinner feil      *)
+	xSirkpumpe_V						: BOOL;			(* Status sirk. pumpe*)
+	xGjennvinner_V						: BOOL;			(* Gjennvinner drift fra funksjonsblokk*)
+	xFrostalarm_vannQT40				: BOOL;			(* Digital inngang Frostalarm vann  *)
+	xTilluftFilter_tett					: BOOL;			(* Tilluftsfilter er tett*)
+	xAvtrekksFilter_tett				: BOOL;			(* Avtrekksfilter er tett*)
+	xFireAlarm							: BOOL;			(* Brann alarm signal*)
+
+(*Utganger digitale*)
+	xStartRele_US						: BOOL;			(* Releutgang som viser at anlegget er igang starter vifter*)
+	xFrostRele_US						: BOOL;			(* Frost rele                                              *)
+	xSpjeld_inntak_US					: BOOL;			(* Utgang for styring av inntaksspjeld                     *)
+	xSpjeld_avkast_US					: BOOL;			(* Utgang for styring av avkastspjeld                      *)
+	xGjennvinner_US						: BOOL;			(* Utgang for styring av gjenvinner                        *)
+	xSirkpumpe_US						: BOOL;			(* Utgang for styring av sirk.pumpe                        *)
+	xSommer_Vinter						: BOOL;			(* Sommer vinter veksling                                  *)
+	xTilluftsvifte_US					: BOOL;			(* Start avtrekksvifte*)
+	xAvtrekksvifte_US					: BOOL;			(* Start avtrekksvifte*)
+
+
+(*Kan være Utganger 0-10 V*)
+	rGjennvinner_OP						: REAL;			(* Pådrag gjennvinner i REAL    *)
+	wGjennvinner_OP						: WORD;			(* Pådrag gjennvinner i WORD    *)
+	rVentilVarme_OP						: REAL;			(* Pådrag ventil varme i REAL   *)
+	wVentilVarme_OP						: WORD;			(* Pådrag ventil varme i WORD   *)
+	rVentilKjoling_OP					: REAL;			(* Pådrag ventil kjøling i REAL *)
+	wVentilKjoling_OP					: WORD;			(* Pådrag ventil kjøling i WORD *)
+
+	xOverforeIO							: BOOL;			(* Overføre IOtagnavn til nye tag*)
+
+(*Regulering*)
+	rY_SequenceController				: REAL;			(* Pådrag fra FbSequenceController	*)
+	xCooling_Active_Sequence			: BOOL;
+
+	rY_MinTempCoolingPID				: REAL;			(* Minimums temp kjøling*)
+	wY_MinTempCoolingPID				: WORD;
+	rDiff_MinTempCoolingPID				: REAL;			(* Diff kjøling*)
+	xMaxLimit_MinTempCoolingPID			: BOOL;
+	xMinLimit_MinTempCoolingPID			: BOOL;
+	rY_EnergyRecovery					: REAL;			(* Pådrag sekvens til varmegjenvinner*)
+	wY_EnergyRecovery					: WORD;			(* Pådrag sekvens til varmegjenvinner*)
+
+	rY_MinTempEnergyRecoveryPID			: REAL;
+	wY_MinTempEnergyRecoveryPID			: WORD;
+	rDiff_MinTempEnergyRecoveryPID		: REAL;
+	xMaxLimit_MinTempEnergyRecoveryPID	: BOOL;
+	xMinLimit_MinTempEnergyRecoveryPID	: BOOL;
+
+	rY_Heat								: REAL;			(* Fra varmepådragblokk til frostvaktluft blokk	*)
+	wY_Heat								: WORD;			(* Fra varmepådragblokk til frostvaktluft blokk	*)
+
+	rMinTemp							:REAL := -40;	(* Minimumsverdi tempverdien kan ha før det blir alarm *)
+	rMaxTemp							:REAL := 100;	(* Maksimumsverdi tempverdien kan ha før det blir alarm *)
+
+END_VAR

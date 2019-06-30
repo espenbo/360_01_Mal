@@ -1,0 +1,183 @@
+xVent_auto											:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV := BY2220_360_001_AUT.Present_Value				);
+xVent_man											:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV := BY2220_360_001_MAN.Present_Value				);			
+xVent_av											:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV := BY2220_360_001_OFF.Present_Value				);		
+
+BY2220_360_001_MOD_V.Present_Value					:=	FuBOOL_to_BACnetBinaryPV(xInput := xMOD_V										);				
+BY2220_360_001_US.Present_Value						:=	FuBOOL_to_BACnetBinaryPV(xInput := xVentilasjon_US								);			
+xRES												:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV := BY2220_360_001_RES.Present_Value				);		
+
+xEnable_Ventilasjon									:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV := BY2220_360_001_CMD.Present_Value				);	
+xExt_Start_Ventilasjon								:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV := BY2220_360_001_Ext_Start.Present_Value		);	
+xKalender_Enable									:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV := BY2220_360_001_Kalender_Enable.Present_Value	);
+BY2220_360_001_NATT_US.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput := xNattventilasjon_US			);	
+(*BY2220_360_001_SYSTEM_STATUS.Present_Value			:=	FuBOOL_to_BACnetBinaryPV(xInput := *)
+BY2220_360_001_SYS_AL_HORN.Present_Value			:=	FuBOOL_to_BACnetBinaryPV(xInput := xHorn_Malfunction			);
+BY2220_360_001_SYS_AL_LAMP.Present_Value			:=	FuBOOL_to_BACnetBinaryPV(xInput := xSignalLamp_Malfunction		);
+BY2220_360_001_SYS_AL.Present_Value					:=	FuBOOL_to_BACnetBinaryPV(xInput := xSystemError_Malfunction		);
+
+(*Temperatur*)                      
+BY2220_360_001_RT901_PV.Present_Value				:=	rTempUte			;
+BY2220_360_001_RT400_PV.Present_Value				:=	rTempInntak			;
+BY2220_360_001_RT401_PV.Present_Value				:=	rTempAvkast			;
+BY2220_360_001_RT500_PV.Present_Value				:=	rTempTilluft		;
+BY2220_360_001_RT501_PV.Present_Value				:=	rTempAvtrekk		;
+BY2220_360_001_QT500_PV.Present_Value				:=	rTempTurvann		;
+BY2220_360_001_QT501_PV.Present_Value				:=	rTempReturvann		;
+
+(*Filter*)                          
+BY2220_360_001_RP400_PV.Present_Value				:=	rTilluftFilter		;		 
+BY2220_360_001_RP500_PV.Present_Value				:=	rAvtrekksFilter		;
+BY2220_360_001_RP400_AL.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput :=xTilluftFilter_AL				);
+BY2220_360_001_RP500_AL.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput :=xAvtrekksFilter_AL			);
+(*Trykk*)                           
+BY2220_360_001_RP401_PV.Present_Value				:=	rTrykkTilluft		;	
+BY2220_360_001_RP501_PV.Present_Value				:=	rTrykkAvtrekk		;
+(*Sjekker om føleren er defekt*)
+BY2220_360_001_TEMP_AL.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput := xSignalLamp_AL				);		
+	                                    
+(*Temp regulering*)                     
+BY2220_360_001_AvtrekkReg_Aktiv.Present_Value		:=	FuBOOL_to_BACnetBinaryPV(xInput := xAvtrekkReg_Aktiv			);		
+BY2220_360_001_TilluftReg_Aktiv.Present_Value		:=	FuBOOL_to_BACnetBinaryPV(xInput := xTilluftReg_Aktiv			);
+BY2220_360_001_TempRegAuto_Aktiv.Present_Value		:=	FuBOOL_to_BACnetBinaryPV(xInput := xTempRegAuto_Aktiv			);
+BY2220_360_001_Cooling_Enable_Aktiv.Present_Value	:=	FuBOOL_to_BACnetBinaryPV(xInput := xAlt_Cooling_En				);
+BY2220_360_001_AvtrekkReg_Fra_Temp.Present_Value	:=	FuBOOL_to_BACnetBinaryPV(xInput := xAvtrekkReg_Aktiv_Fra_Temp	);
+(*Anti freeze water*)                   
+BY2220_360_001_Flush_OK.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput := xFlush_OK					);
+BY2220_360_001_Frost_Water_AL.Present_Value			:=	FuBOOL_to_BACnetBinaryPV(xInput := xTempxFrostalarm_vann		);
+BY2220_360_001_StartUp_AL.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput := xAntifreezeWater_StartupError);
+
+BY2220_360_001_AFW_STATUS.Present_Value				:=	WORD_TO_REAL(wAntifreezeWater_Status		);
+
+(*Utekompensering*)	            
+BY2220_360_001_SPU_PV.Present_Value					:=	rSPU_PV				; 
+(*Anti freeze air*)             
+BY2220_360_001_Frost_AL_Air.Present_Value			:=	FuBOOL_to_BACnetBinaryPV(xInput := xFrostalarm_luft				);
+(*Cooling*)                     
+BY2220_360_001_Cooling_Active.Present_Value			:=	FuBOOL_to_BACnetBinaryPV(xInput := xCooling_Active				);
+(*HeatExchange*)                
+BY2220_360_001_HeatExchange_Active.Present_Value	:=	FuBOOL_to_BACnetBinaryPV(xInput := xHeatExchange_Active			);
+(*Heating*)                     
+BY2220_360_001_Heating_Active.Present_Value			:=	FuBOOL_to_BACnetBinaryPV(xInput := xHeating_Active				);
+(*KA400*)                       
+BY2220_360_001_KA400_Open_V.Present_Value			:=	FuBOOL_to_BACnetBinaryPV(xInput := xSpjeld_inntak_Open_V		);
+BY2220_360_001_KA400_Closed_V.Present_Value			:=	FuBOOL_to_BACnetBinaryPV(xInput := xSpjeld_inntak_Closed_V		);
+BY2220_360_001_KA400_ERROR.Present_Value			:=	FuBOOL_to_BACnetBinaryPV(xInput := xSpjeld_inntak_ERROR			);
+xSpjeld_inntak_MAN									:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV := BY2220_360_001_KA400_MAN.Present_Value		);	
+xSpjeld_inntak_MAN_CMD								:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV := BY2220_360_001_KA400_MAN_CMD.Present_Value	);
+BY2220_360_001_KA400_STATUS.Present_Value			:=	WORD_TO_REAL(wSpjeld_inntak_Status			);
+                                
+BY2220_360_001_KA400_OP.Present_Value				:=	rSpjeld_inntak_rY							;
+
+BY2220_360_001_KA400_VP.Present_Value				:=	rSpjeld_inntak_VP							;
+rSpjeld_inntak_MAN_SP								:=	BY2220_360_001_KA400_MAN_SP.Present_Value	;
+
+
+(*KA500*)                       
+BY2220_360_001_KA500_Open_V.Present_Value			:=	FuBOOL_to_BACnetBinaryPV(xInput := xSpjeld_avkast_Open_V                     	);
+BY2220_360_001_KA500_Closed_V.Present_Value			:=	FuBOOL_to_BACnetBinaryPV(xInput := xSpjeld_avkast_Closed_V                  	);
+BY2220_360_001_KA500_ERROR.Present_Value			:=	FuBOOL_to_BACnetBinaryPV(xInput := xSpjeld_avkast_ERROR							);
+xSpjeld_avkast_MAN									:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV := BY2220_360_001_KA500_MAN.Present_Value		);
+xSpjeld_avkast_MAN_CMD								:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV := BY2220_360_001_KA500_MAN_CMD.Present_Value	);
+BY2220_360_001_KA500_STATUS.Present_Value			:=	WORD_TO_REAL(wSpjeld_avkast_Status			);
+                                
+BY2220_360_001_KA500_OP.Present_Value				:=	rSpjeld_avkast_rY	; 		
+                                
+BY2220_360_001_KA500_VP.Present_Value				:=	rSpjeld_avkast_VP	; 		
+rSpjeld_avkast_MAN_SP								:=	BY2220_360_001_KA500_MAN_SP.Present_Value	;
+	                            
+(*JV400 Tilluftsvifte*)         
+BY2220_360_001_JV400_DT.Present_Value				:=	rTilluftsvifte_DT							; 		
+BY2220_360_001_JV400_ERROR.Present_Value			:=	FuBOOL_to_BACnetBinaryPV(xInput := xTilluftsvifte_ERROR 						);
+rTilluftsvifte_SP									:=	BY2220_360_001_JV400_SP.Present_Value		;
+BY2220_360_001_JV400_OP.Present_Value				:=	rTilluftsvifte_rY 							;
+
+xTilluftsvifte_MAN									:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV :=	BY2220_360_001_JV400_MAN.Present_Value		);
+xTilluftsvifte_MAN_CMD								:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV :=	BY2220_360_001_JV400_MAN_CMD.Present_Value	);
+rTilluftsvifte_MAN_SP								:=	BY2220_360_001_JV400_MAN_SP.Present_Value	;
+BY2220_360_001_JV400_STATUS.Present_Value			:=	WORD_TO_REAL(wTilluftsvifte_Status			);	
+	                            
+                                
+(*JV500 Avtrekksvifte*)         
+BY2220_360_001_JV500_DT.Present_Value				:=	rAvtrekksvifte_DT							;
+BY2220_360_001_JV500_ERROR.Present_Value			:=	FuBOOL_to_BACnetBinaryPV(xInput := xAvtrekksvifte_ERROR							);
+rAvtrekksvifte_SP									:=	BY2220_360_001_JV500_SP.Present_Value		;
+BY2220_360_001_JV500_OP.Present_Value				:=	rAvtrekksvifte_rY 							;
+                                
+xAvtrekksvifte_MAN									:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV :=	BY2220_360_001_JV500_MAN.Present_Value		);
+xAvtrekksvifte_MAN_CMD								:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV :=	BY2220_360_001_JV500_MAN_CMD.Present_Value	);
+BY2220_360_001_JV500_MAN_SP.Present_Value			:=	rAvtrekksvifte_MAN_SP						;
+BY2220_360_001_JV500_STATUS.Present_Value			:=	WORD_TO_REAL(wAvtrekksvifte_Status			); 	
+                                
+                                
+(*LX400 Gjennvinner*)           
+
+xGjennvinner_MAN									:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV :=	BY2220_360_001_LX400_MAN.Present_Value		);
+xGjennvinner_MAN_CMD								:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV :=	BY2220_360_001_LX400_MAN_CMD.Present_Value	);
+rGjennvinner_SP										:=	BY2220_360_001_LX400_MAN_SP.Present_Value	;
+BY2220_360_001_LX400_DT.Present_Value				:=	rGjennvinner_DT								;
+BY2220_360_001_LX400_AL.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput :=	xGjennvinner_ERROR							);
+BY2220_360_001_LX400_Warning.Present_Value			:=	FuBOOL_to_BACnetBinaryPV(xInput :=	xGjennvinner_Warning						);
+rGjennvinner_En_SelfClean							:=	BY2220_360_001_LX400_En_SelfClean.Present_Value	;
+BY2220_360_001_LX400_STATUS.Present_Value			:=	WORD_TO_REAL(wGjennvinner_Status			); 	
+                                
+		                        
+(*JP400 Sirkulasjons pumpe*)    
+xSirkpumpe_MAN										:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV :=	BY2220_360_001_JP400_MAN.Present_Value		);	
+xSirkpumpe_MAN_CMD									:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV :=	BY2220_360_001_JP400_MAN_CMD.Present_Value	);
+BY2220_360_001_JP400_AL.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput :=	xSirkpumpe_ERROR							);
+BY2220_360_001_JP400_DT.Present_Value				:=	rSirkpumpe_DT								;
+BY2220_360_001_JP400_StoppedByTemp.Present_Value			:=	FuBOOL_to_BACnetBinaryPV(xInput :=	xSirkpumpe_StoppedByTemp					);
+		                        
+		                        
+(*MP_Line1	(*SB400*)           
+BY2220_360_001_SB400_MAN.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput := 	
+BY2220_360_001_SB400_RES.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput := 	
+BY2220_360_001_SB400_OP.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput := 		
+BY2220_360_001_SB400_MAN_SP.Present_Value			:=	FuBOOL_to_BACnetBinaryPV(xInput := 	
+
+BY2220_360_001_SB400_POS.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput := 	
+
+BY2220_360_001_SB400_CRI.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput := 	
+BY2220_360_001_SB400_MOL.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput := 	
+BY2220_360_001_SB400_AH.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput := 		
+BY2220_360_001_SB400_COM_ERR.Present_Value			:=	FuBOOL_to_BACnetBinaryPV(xInput := 
+
+*)		                        
+		                        
+(*Kan være Digitale innganger*)
+xGjennvinner_av										:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV :=	BY2220_360_001_LX400_OFF.Present_Value		);
+xGjennvinner_auto									:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV :=	BY2220_360_001_LX400_AUT.Present_Value		);
+xSirkpumpe_av										:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV :=	BY2220_360_001_JP400_OFF.Present_Value		);
+xSirkpumpe_auto										:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV :=	BY2220_360_001_JP400_AUT.Present_Value		);
+xTilluftsvifte_Drift								:=	FuBOOL_to_BACnetBinaryPV(xInput :=	BY2220_360_001_JV400_V.Present_Value		);	
+	                                                    
+BY2220_360_001_JV500_V.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput :=	xAvtrekksvifte_Drift						);
+		                                                    
+BY2220_360_001_JP400_V.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput :=	xSirkpumpe_Drift							);
+	                                                    
+BY2220_360_001_LX400_V.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput :=	xGjenvinner_Drift							);
+
+	
+	
+	
+	
+	
+BY2220_360_001_BRANN_AL.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput := 	xFireAlarm									);
+
+(*Utganger digitale*)
+BY2220_360_001_START_US.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput :=	xStartRele_US								);	
+BY2220_360_001_FROST_US.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput :=	xFrostRele_US								);	
+BY2220_360_001_KA400_US.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput :=	xSpjeld_inntak_US							);	
+BY2220_360_001_KA500_US.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput :=	xSpjeld_avkast_US							);	
+BY2220_360_001_LX400_US.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput :=	xGjennvinner_US								);	
+BY2220_360_001_JP400_US.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput :=	xSirkpumpe_US								);
+BY2220_360_001_SOMMER_US.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput :=	xSommer_Vinter		    					);
+BY2220_360_001_JV400_US.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput :=	xTilluftsvifte_US							);
+BY2220_360_001_JV500_US.Present_Value				:=	FuBOOL_to_BACnetBinaryPV(xInput :=	xAvtrekksvifte_US							);
+
+(*Kan være Utganger 0-10 V*)	
+BY2220_360_001_LX400_OP.Present_Value				:=	rGjennvinner_OP				;
+
+BY2220_360_001_SB400_V_OP.Present_Value				:=	rVentilVarme_OP				;
+	                            
+BY2220_360_001_SB400_K_OP.Present_Value				:=	rVentilKjoling_OP			;	

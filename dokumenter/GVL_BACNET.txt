@@ -1,0 +1,214 @@
+VAR_GLOBAL
+	BY2209_360_20_AUT									: BACNET_BINARY_VALUE	:= (Description:='Bryter styring av ventilasjon i posisjon auto');					(* Bryter styring av ventilasjon i posisjon auto *)
+	BY2209_360_20_MAN									: BACNET_BINARY_VALUE	:= (Description:='Bryter styring av ventilasjon i posisjon manuel');				(* Bryter styring av ventilasjon i posisjon manuel*)
+	BY2209_360_20_OFF									: BACNET_BINARY_VALUE	:= (Description:='Bryter styring av ventilasjon i posisjon av');					(* Bryter styring av ventilasjon i posisjon av   *)
+																																									(* System OK fra start/stopp blokka*)
+	BY2209_360_20_MOD_V									: BACNET_BINARY_VALUE	:= (Description:='Høyt signal angir at kjøling er aktiv');							(* Høyt signal angir at kjøling er aktiv*)
+	BY2209_360_20_US									: BACNET_BINARY_VALUE	:= (Description:='Ventilasjonsanlegget er Enablet');								(* Ventilasjonsanlegget er Enablet		*)
+	BY2209_360_20_RES									: BACNET_BINARY_VALUE	:= (Description:='Reset alarm');													(* Reset alarm*)
+																																									(* Reset Alarmer*)
+	BY2209_360_20_CMD									: BACNET_BINARY_VALUE	:= (Description:='Enable ventilasjonsanlegget');									(* Enable ventilasjonsanlegget*)
+	BY2209_360_20_Ext_Start								: BACNET_BINARY_VALUE	:= (Description:='Kontroll signal for ekstern start');								(* Kontroll signal for ekstern start. Kalender må vare enable*)
+	BY2209_360_20_Kalender_Enable						: BACNET_BINARY_VALUE	:= (Description:='Kalender er endable');											(* Kalender er endable. Kan starte anlegget fra xExt_Start_Ventilasjon*)
+	BY2209_360_20_NATT_US								: BACNET_BINARY_VALUE	:= (Description:='Nattventilasjon er aktiv');										(* Nattventilasjon er aktiv*)
+	BY2209_360_20_SYSTEM_STATUS							: BACNET_ANALOG_VALUE	:= (Description:='CollectivMalfunction status');									(* CollectivMalfunction status *)
+
+	BY2209_360_20_SYS_AL_HORN							: BACNET_BINARY_VALUE	:= (Description:='System status, Se hjelpe tekst');									(* System status, Se hjelpe tekst*)
+	BY2209_360_20_SYS_AL_LAMP							: BACNET_BINARY_VALUE	:= (Description:='CollectivMalfunction status Horn');								(* CollectivMalfunction status Horn*)
+	BY2209_360_20_SYS_AL								: BACNET_BINARY_VALUE	:= (Description:='CollectivMalfunction status Lamp');								(* CollectivMalfunction status Lamp*)
+(*Temperatur*)                                                                                                                      
+	BY2209_360_20_RT901_PV								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Utetemp');				(* Utetemp          *)
+	BY2209_360_20_RT400_PV								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Tempføler inntak');		(* Tempføler inntak *)
+	BY2209_360_20_RT401_PV								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Tempføler avkast');		(* Tempføler avkast *)
+	BY2209_360_20_RT500_PV								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Tempføler tilluft');		(* Tempføler tilluft*)
+	BY2209_360_20_RT501_PV								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Tempføler avtrekkk');		(* Tempføler avtrekk*)
+	BY2209_360_20_QT500_PV								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Temp turvann vvb');		(* Temp turvann vvb   *)
+	BY2209_360_20_QT501_PV								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Temp returvann vvb');		(* Temp returvann vvb  *)
+                                                                                                                                    
+(*Filter*)                                                                                                                          
+	BY2209_360_20_RP400_PV								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_PASCALS,			Description:='Tilluftsfilter verdi');			(* Tilluftsfilter verdi*)
+	BY2209_360_20_RP500_PV								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_PASCALS,			Description:='Avtrekksfilter verdi');			(* Avtrekksfilter verdi*)
+	BY2209_360_20_RP400_AL								: BACNET_BINARY_VALUE	:= (Description:='Tilluftsfilter er tett');											(* Tilluftsfilter er tett*)
+	BY2209_360_20_RP500_AL								: BACNET_BINARY_VALUE	:= (Description:='Avtrekksfilter er tett');											(* Avtrekksfilter er tett*)
+(*Trykk*)                                                                                                                           
+	BY2209_360_20_RP401_PV								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_PASCALS,			Description:='Trykk tilluft');					(* Trykk tilluft*)
+	BY2209_360_20_RP501_PV								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_PASCALS,			Description:='Trykk avtrekk');					(* Trykk avtrekk*)
+	                                                                                                                                
+(*Sjekker om føleren er defekt*)	                                                                                                
+(*Sammler opp tempalarmer til en utgangsalarm i bacnet*)	                                                                        (* Alarmer tempfølere*)
+(*Sammler opp tempalarmer til en utgangsalarm i bacnet*)                                                                            (* Alarmer tempfølere*)
+(*Sammler opp tempalarmer til en utgangsalarm i bacnet*)                                                                            (* Alarmer tempfølere*)
+(*Sammler opp tempalarmer til en utgangsalarm i bacnet*)                                                                            (* Alarmer tempfølere*)
+	BY2209_360_20_TEMP_AL								: BACNET_BINARY_VALUE	:= (Description:='Alarmer tempfolere');				(* Alarmer tempfølere*)
+	                                                                                                                                
+(*Temp regulering*)                                                                                                                 
+	BY2209_360_20_AvtrekkReg_Aktiv						: BACNET_BINARY_VALUE	:= (Description:='Avtrekksregulering er aktiv');									(* Avtrekksregulering er aktiv*)
+	BY2209_360_20_TilluftReg_Aktiv						: BACNET_BINARY_VALUE	:= (Description:='Tilluftsregulering er aktiv');									(* Tilluftsregulering er aktiv*)
+	BY2209_360_20_TempRegAuto_Aktiv						: BACNET_BINARY_VALUE	:= (Description:='Automatisk tilluft/avtrekk regulering aktiv');					(* Automatisk tilluft/avtrekk regulering aktiv*)
+	BY2209_360_20_Cooling_Enable_Aktiv					: BACNET_BINARY_VALUE	:= (Description:='Kjolemodus');														(* kjølemodus *)
+	BY2209_360_20_AvtrekkReg_Fra_Temp					: BACNET_BINARY_VALUE	:= (Description:='Avtrekksregulering valg pga utetemp');							(* Avtrekksregulering valg pga utetemp*)
+(*Anti freeze water*)                                                                                                               
+	BY2209_360_20_Flush_OK								: BACNET_BINARY_VALUE	:= (Description:='AntifreezeWater Flush OK');										(* AntifreezeWater Flush OK *)
+	BY2209_360_20_Frost_Water_AL						: BACNET_BINARY_VALUE	:= (Description:='DI.inngang, AntifreezeWater blokk Frostalarm');					(* Fra digital inngang og AntifreezeWater blokk Frostalarm*)
+	BY2209_360_20_StartUp_AL							: BACNET_BINARY_VALUE	:= (Description:='Oppstart alarm');													(* Oppstart alarm*)
+
+	BY2209_360_20_AFW_STATUS							: BACNET_ANALOG_VALUE	:= (Description:='System status, Se hjelpe tekst');									(* System status, Se hjelpe tekst*)
+
+(*	rY_Flush							: REAL;		*)(* AntifreezeWater pådrag i REAL*)                                            (* AntifreezeWater pådrag i REAL*)
+(*	wY_Flush							: WORD;		*)(* AntifreezeWater pådrag i WORD *)                                           (* AntifreezeWater pådrag i WORD *)
+(*	xAntifreezeWater_Test				: BOOL;		*)(*Test antifreezeWater*)                                                      (* Test antifreezeWater*)
+                                                                                                                                    
+(*Utekompensering*)	                                                                                                                
+	BY2209_360_20_SPU_PV								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Kalkulert setpunkt');		(* Kalkulert setpunkt*)
+(*Anti freeze air*)                                                                                                                 
+	BY2209_360_20_Frost_AL_Air							: BACNET_BINARY_VALUE	:= (Description:='AntifreezeWater Flush OK');										(* Frostalarm luft       *)
+(*Cooling*)
+	BY2209_360_20_Cooling_Active						: BACNET_BINARY_VALUE	:= (Description:='AntifreezeWater Flush OK');										(* Kjøling er aktiv*)
+(*HeatExchange*)                                                                                                                    
+	BY2209_360_20_HeatExchange_Active					: BACNET_BINARY_VALUE	:= (Description:='AntifreezeWater Flush OK');										(* Pådrag sekvens til varmegjenvinner aktiv*)
+(*Heating*)
+	BY2209_360_20_Heating_Active						: BACNET_BINARY_VALUE	:= (Description:='AntifreezeWater Flush OK');										(* varmepådrag aktiv*)
+(*KA400*)                                                                                                                           
+	BY2209_360_20_KA400_Open_V							: BACNET_BINARY_VALUE	:= (Description:='Status inntak aapent');											(* Status inntak aapent*)
+	BY2209_360_20_KA400_Closed_V						: BACNET_BINARY_VALUE	:= (Description:='Status inntak stengt');											(* Status inntak stengt*)
+	BY2209_360_20_KA400_ERROR							: BACNET_BINARY_VALUE	:= (Description:='Inntak alarm');													(* Inntak alarm*)
+	BY2209_360_20_KA400_MAN								: BACNET_BINARY_VALUE	:= (Description:='Manuel styring av spjeld');										(* Manuel styring av spjeld*)
+	BY2209_360_20_KA400_MAN_CMD							: BACNET_BINARY_VALUE	:= (Description:='Manuel aapning ved 2Point spjeld');								(* Manuel aapning ved 2Point spjeld*)       
+	BY2209_360_20_KA400_STATUS							: BACNET_ANALOG_VALUE	:= (Description:='System status, Se hjelpe tekst');									(* System status, Se hjelpe tekst*)     
+                                                                                                                                    
+	BY2209_360_20_KA400_OP								: BACNET_ANALOG_VALUE	:= (Description:='Sendt Posisjon til spjeld');										(* Sendt Posisjon til spjeld*)
+
+	BY2209_360_20_KA400_VP								: BACNET_ANALOG_VALUE	:= (Description:='Posisjon på spjeld');												(* Posisjon på spjeld*)
+	BY2209_360_20_KA400_MAN_SP							: BACNET_ANALOG_VALUE	:= (Description:='Sende manuel posisjon til spjeld');								(* Sende manuel posisjon til spjeld*)
+
+
+(*KA500*)                                                                                                                           
+	BY2209_360_20_KA500_Open_V							: BACNET_BINARY_VALUE	:= (Description:='Status inntak aapent');											(* Status inntak aapent*)
+	BY2209_360_20_KA500_Closed_V						: BACNET_BINARY_VALUE	:= (Description:='Status inntak stengt');											(* Status inntak stengt*)
+	BY2209_360_20_KA500_ERROR							: BACNET_BINARY_VALUE	:= (Description:='Inntak alarm');													(* Inntak alarm*)
+	BY2209_360_20_KA500_MAN								: BACNET_BINARY_VALUE	:= (Description:='Manuel styring av spjeld');										(* Manuel styring av spjeld*)
+	BY2209_360_20_KA500_MAN_CMD							: BACNET_BINARY_VALUE	:= (Description:='Manuel aapning ved 2Point spjeld');								(* Manuel aapning ved 2Point spjeld*)
+	BY2209_360_20_KA500_STATUS							: BACNET_ANALOG_VALUE	:= (Description:='System status, Se hjelpe tekst');									(* System status, Se hjelpe tekst*)  
+                                                                                                                                    
+	BY2209_360_20_KA500_OP								: BACNET_ANALOG_VALUE	:= (Description:='Sendt Posisjon til spjeld');										(* Sendt Posisjon til spjeld*)
+                                                                             
+	BY2209_360_20_KA500_VP								: BACNET_ANALOG_VALUE	:= (Description:='Posisjon på spjeld');												(* Posisjon på spjeld*)
+	BY2209_360_20_KA500_MAN_SP							: BACNET_ANALOG_VALUE	:= (Description:='Sende manuel posisjon til spjeld');								(* Sende manuel posisjon til spjeld*)
+	                                                                                                                                
+(*JV400 Tilluftsvifte*)                                                                                                             
+	BY2209_360_20_JV400_DT								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_HOURS,			Description:='Driftstid Avtrekksvifte');		(* Driftstid Avtrekksvifte*)
+	BY2209_360_20_JV400_ERROR							: BACNET_BINARY_VALUE	:= (Description:='Avtrekksvifte feil');												(* Avtrekksvifte feil*)
+	BY2209_360_20_JV400_SP								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_PERCENT,			Description:='Setpunkt ved standard drift');	(* Setpunkt ved standard drift*)
+	BY2209_360_20_JV400_OP								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_PERCENT,			Description:='Pådrag til frekvensomformer');	(* Pådrag til frekvensomformer*)
+
+	BY2209_360_20_JV400_MAN								: BACNET_BINARY_VALUE	:= (Description:='Manuel styring Avtrekksvifte');									(* Manuel styring Avtrekksvifte*)
+	BY2209_360_20_JV400_MAN_CMD							: BACNET_BINARY_VALUE	:= (Description:='Tillat manuel styring Avtrekksvifte');							(* Tillat manuel styring Avtrekksvifte*)
+	BY2209_360_20_JV400_MAN_SP							: BACNET_ANALOG_VALUE	:= (Units:=BACNET_PERCENT,			Description:='Manuelt setpunkt');				(* Manuelt setpunkt*)
+	BY2209_360_20_JV400_STATUS							: BACNET_ANALOG_VALUE	:= (Description:='System status, Se hjelpe tekst');									(* System status, Se hjelpe tekst*)                                                      
+	                                                                                                                                
+                                                                                                                                    
+(*JV500 Avtrekksvifte*)                                                                                                             
+	BY2209_360_20_JV500_DT								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_HOURS,			Description:='Driftstid Avtrekksvifte');		(* Driftstid Avtrekksvifte*)
+	BY2209_360_20_JV500_ERROR							: BACNET_BINARY_VALUE	:= (Description:='Avtrekksvifte feil');												(* Avtrekksvifte feil*)
+	BY2209_360_20_JV500_SP								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_PERCENT,			Description:='Setpunkt ved standard drift');	(* Setpunkt ved standard drift*)
+	BY2209_360_20_JV500_OP								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_PERCENT,			Description:='Pådrag til frekvensomformer');	(* Pådrag til frekvensomformer*)
+
+	BY2209_360_20_JV500_MAN								: BACNET_BINARY_VALUE	:= (Description:='Manuel styring Avtrekksvifte');									(* Manuel styring Avtrekksvifte*)
+	BY2209_360_20_JV500_MAN_CMD							: BACNET_BINARY_VALUE	:= (Description:='Tillat manuel styring Avtrekksvifte');							(* Tillat manuel styring Avtrekksvifte*)
+	BY2209_360_20_JV500_MAN_SP							: BACNET_ANALOG_VALUE	:= (Units:=BACNET_PERCENT,			Description:='Manuelt setpunkt');				(* Manuelt setpunkt*)
+	BY2209_360_20_JV500_STATUS							: BACNET_ANALOG_VALUE	:= (Description:='System status, Se hjelpe tekst');									(* System status, Se hjelpe tekst*)       
+                                                                                                                                    
+                                                                                                                                    
+(*LX400 Gjennvinner*)                                                                                                               
+
+	BY2209_360_20_LX400_MAN								: BACNET_BINARY_VALUE	:= (Description:='Manuel styring Avtrekksvifte');									(* Manuel styring Avtrekksvifte*)
+	BY2209_360_20_LX400_MAN_CMD							: BACNET_BINARY_VALUE	:= (Description:='Tillat manuel styring Avtrekksvifte');							(* Tillat manuel styring Avtrekksvifte*)
+	BY2209_360_20_LX400_MAN_SP							: BACNET_ANALOG_VALUE	:= (Units:=BACNET_PERCENT,			Description:='Setpunkt på gjennvinner i manuel');(* Setpunkt på gjennvinner når den er i manuel*)
+	BY2209_360_20_LX400_DT								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_HOURS,			Description:='Driftstid Gjennvinner');			(* Driftstid Gjennvinner*)
+	BY2209_360_20_LX400_AL								: BACNET_BINARY_VALUE	:= (Description:='Gjennvinner feil');												(* Gjennvinner feil*)
+	BY2209_360_20_LX400_Warning							: BACNET_BINARY_VALUE	:= (Description:='Gjennvinner warning');											(* Gjennvinner warning*)
+	BY2209_360_20_LX400_En_SelfClean					: BACNET_BINARY_VALUE	:= (Description:='Gjennvinner selvrens');											(* Gjennvinner selvrens*)
+	BY2209_360_20_LX400_STATUS							: BACNET_ANALOG_VALUE	:= (Description:='System status, Se hjelpe tekst');									(* System status, Se hjelpe tekst*)
+                                                                                                                                    
+		                                                                                                                            
+(*JP400 Sirkulasjons pumpe*)                                                                                                        
+	BY2209_360_20_JP400_MAN								: BACNET_BINARY_VALUE	:= (Description:='Manuel styring Avtrekksvifte');									(* Manuel styring Avtrekksvifte*)                                                      
+	BY2209_360_20_JP400_MAN_CMD							: BACNET_BINARY_VALUE	:= (Description:='Tillat manuel styring Avtrekksvifte');							(* Tillat manuel styring Avtrekksvifte*)                                                      
+	BY2209_360_20_JP400_AL								: BACNET_BINARY_VALUE	:= (Description:='Pumpe alarm');													(* Pumpe alarm*)
+	BY2209_360_20_JP400_DT								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_HOURS,			Description:='Driftstid pumpe');				(* Driftstid Pumpe*)
+	BY2209_360_20_JP400_StoppedByTemp					: BACNET_BINARY_VALUE;		                                                
+		                                                                                                                            
+		                                                                                                                            
+(*MP_Line1	(*SB400*)                                                                                                                   
+	BY2209_360_20_SB400_MAN								: BACNET_BINARY_VALUE	:= (Description:='Manuel styring');													(* Bruke manuelt setpunkt, rMan_OP inn på rPosistion*)
+	BY2209_360_20_SB400_RES								: BACNET_BINARY_VALUE	:= (Description:='Resete feilmeldinger fra MP-Bus');								(* Resete feilmeldinger fra MP-Bus *)
+	BY2209_360_20_SB400_OP								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_PERCENT,			Description:='Sendt paadrag');					(* Sendt paadrag. Kontroll input 0-100%*)
+	BY2209_360_20_SB400_MAN_SP							: BACNET_ANALOG_VALUE	:= (Units:=BACNET_PERCENT,			Description:='Manuel kontroll input 0-100%');	(* Manuel kontroll input 0-100%*)
+
+	BY2209_360_20_SB400_POS								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_PERCENT,			Description:='Erverdi posisjon[%]');			(* Erverdi posisjon[%]*)
+
+	BY2209_360_20_SB400_CRI								: BACNET_BINARY_VALUE	:= (Description:='Feilmelding kontroll lengde overskredet');						(* Feilmelding kontroll lengde overskredet*)
+	BY2209_360_20_SB400_MOL								: BACNET_BINARY_VALUE	:= (Description:='Feilmelding mekanisk feil');										(* Feilmelding mekanisk feil*)
+	BY2209_360_20_SB400_AH								: BACNET_BINARY_VALUE	:= (Description:='Feilmelding aktuator jager');										(* Feilmelding aktuator jager*)
+	BY2209_360_20_SB400_COM_ERROR						: BACNET_BINARY_VALUE	:= (Description:='Kommunikasjons feil');											(* Kommunikasjons feil*)
+
+*)		                                                                                                                            
+		                                                                                                                            
+(*Kan være Digitale innganger*)
+	BY2209_360_20_LX400_OFF								: BACNET_BINARY_VALUE	:= (Description:='Gjenvinner i av');												(* Manuel styring Avtrekksvifte*)
+	BY2209_360_20_LX400_AUT								: BACNET_BINARY_VALUE	:= (Description:='Gjenvinner i auto');												(* Tillat manuel styring Avtrekksvifte*)
+ 	BY2209_360_20_JP400_OFF								: BACNET_BINARY_VALUE	:= (Description:='Sirkpumpe i av');													(* Manuel styring Avtrekksvifte*)
+	BY2209_360_20_JP400_AUT								: BACNET_BINARY_VALUE	:= (Description:='Sirkpumpe i auto');												(* Tillat manuel styring Avtrekksvifte*)
+	BY2209_360_20_JV400_V								: BACNET_BINARY_VALUE	:= (Description:='Tilluftsvifte drift');											(* Tilluftsvifte drift   *)
+
+	BY2209_360_20_JV500_V								: BACNET_BINARY_VALUE	:= (Description:='Avtrekksvifte drift');											(* Avtrekksvifte drift   *)
+
+	BY2209_360_20_JP400_V								: BACNET_BINARY_VALUE	:= (Description:='Sirkulasjons pumpe drift');										(* Sirkulasjons pumpe drift*)
+
+	BY2209_360_20_LX400_V								: BACNET_BINARY_VALUE	:= (Description:='Gjennvinner drift');												(* Sirkulasjons pumpe *)
+
+	
+	
+	
+	
+	
+	BY2209_360_20_BRANN_AL								: BACNET_BINARY_VALUE	:= (Description:='Brann alarm utlost');												(* Brann alarm utlost *)
+
+(*Utganger digitale*)
+	BY2209_360_20_START_US								: BACNET_BINARY_VALUE	:= (Description:='Releutgang anlegget er igang starter vifter');					(* Releutgang som viser at anlegget er igang starter vifter*)
+	BY2209_360_20_FROST_US								: BACNET_BINARY_VALUE	:= (Description:='Frost rele');														(* Frost rele                                              *)
+	BY2209_360_20_KA400_US								: BACNET_BINARY_VALUE	:= (Description:='Utgang for styring av inntaksspjeld');							(* Utgang for styring av inntaksspjeld                     *)
+	BY2209_360_20_KA500_US								: BACNET_BINARY_VALUE	:= (Description:='Utgang for styring av avkastspjel');								(* Utgang for styring av avkastspjeld                      *)
+	BY2209_360_20_LX400_US								: BACNET_BINARY_VALUE	:= (Description:='Utgang for styring av gjenvinner');								(* Utgang for styring av gjenvinner                        *)
+	BY2209_360_20_JP400_US								: BACNET_BINARY_VALUE	:= (Description:='Utgang for styring av sirk.pumpe');								(* Utgang for styring av sirk.pumpe                        *)
+	BY2209_360_20_SOMMER_US								: BACNET_BINARY_VALUE	:= (Description:='Sommer vinter veksling');											(* Sommer vinter veksling                                  *)
+	BY2209_360_20_JV400_US								: BACNET_BINARY_VALUE	:= (Description:='Start avtrekksvifte');											(* Start avtrekksvifte*)
+	BY2209_360_20_JV500_US								: BACNET_BINARY_VALUE	:= (Description:='Start avtrekksvifte');											(* Start avtrekksvifte*)
+
+(*Kan være Utganger 0-10 V*)	                                                                                                                                
+	BY2209_360_20_LX400_OP								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_PERCENT,			Description:='Sendt paadrag gjenvinner erverdi posisjon[%]');			(* Erverdi posisjon[%]*)
+
+	BY2209_360_20_SB400_V_OP							: BACNET_ANALOG_VALUE	:= (Units:=BACNET_PERCENT,			Description:='Sendt paadrag varmeventil erverdi posisjon[%]');			(* Erverdi posisjon[%]*)
+	                                                                                                                                
+	BY2209_360_20_SB400_K_OP							: BACNET_ANALOG_VALUE	:= (Units:=BACNET_PERCENT,			Description:='Sendt paadrag kjoleventil erverdi posisjon[%]');			(* Erverdi posisjon[%]*)
+
+(*IKKE I BRUK	
+	BY2209_360_20_EN_Optimizer							: BACNET_BINARY_VALUE;	(*Aktiver Optimizer funksjon*)
+	BY2209_360_20_EN_Volctrl							: BACNET_BINARY_VALUE;	(*Aktiver Volumstyring*)
+	BY2209_360_20_EN_Volctrl_Ext						: BACNET_BINARY_VALUE;	(*Aktiver Volumstyring med eksternt settpunkt*)
+	BY2209_360_20_OPT400_OP								: BACNET_ANALOG_VALUE := (Units:=BACNET_PERCENT);
+	BY2209_360_20_OPT500_OP								: BACNET_ANALOG_VALUE := (Units:=BACNET_PERCENT);
+(*Røyk detektor*)
+	BY2209_360_20_RY400_AL								: BACNET_BINARY_VALUE;
+	BY2209_360_20_RY400_PV								: BACNET_ANALOG_VALUE := (Units:=BACNET_PERCENT); (*0-20% Feil, 30-70% Normal, 70-90% Trenger rengjøring, 95-100% Røy alarm*)
+	BY2209_360_20_RY400_FAULT							: BACNET_BINARY_VALUE;
+	BY2209_360_20_RY400_OK								: BACNET_BINARY_VALUE;
+	BY2209_360_20_RY400_SERVICE							: BACNET_BINARY_VALUE;
+	BY2209_360_20_RY400_SMOKE							: BACNET_BINARY_VALUE;
+(*Volum*)
+	BY2209_360_20_RF400_PV								: BACNET_ANALOG_VALUE := (Units:=BACNET_CUBIC_METERS_PER_HOUR);
+	BY2209_360_20_RF500_PV								: BACNET_ANALOG_VALUE := (Units:=BACNET_CUBIC_METERS_PER_HOUR);
+
+
+*)	
+END_VAR

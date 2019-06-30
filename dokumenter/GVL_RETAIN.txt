@@ -1,0 +1,90 @@
+VAR_GLOBAL PERSISTENT RETAIN
+	sAnlegg										: STRING := '360.01' ;
+	xEnableNattVentilasjon						: BOOL;				(* Tillat nattventilasjon*)
+	rReferanseRomteperaturNattVentilasjon_SP	: REAL := 25;		(* Setpunkt romtemp. for nattventilasjon*)
+	rReferanseRomteperaturNattVentilasjon_PV	: REAL;				(* Referanseføler, romtemp. for nattventilasjon*)
+(*Nattkjøring ventilasjon*)
+	rVifte_SP_NATT								: REAL := 10;		(*Setpunkt ved Natt drift*)
+(*AntiFreeze water*)
+	rLimOutsideTempFlush						: REAL := 8;
+	rAntifreezeWater_LimitOutsideTempStandby	: REAL := 2;
+	rAntifreezeWater_rY_Standby					: REAL := 5;		(* Anti frys på varmebatteri *)
+	tAntifreezeWater_FollowUpTime				: TIME := T#10M;
+	rAntifreezeWater_PercentAfterStartUp		: REAL := 50;
+	rLimFrostAlarm								: REAL := 5;		(* Setpunkt frost alarm *)
+	rMaxFlushPeriod								: REAL := 15;		(* Setpunkt flushtid *)
+	tTid1Multiplikator							: REAL := 60;		(* TidMultiplikator FOR rMaxFlushPeriod *)
+	rLimWaterStartUp							: REAL := 25;		(*Setpunkt vann start *)
+	rRefTempReturn								: REAL := 15;		(*Referanse verdi for Antifreeze*)
+
+(*Utekompensering*)
+	rSPU_X1										: REAL := -20;		(* Utekompenseringskurve X1 *)
+	rSPU_Y1										: REAL := 23;		(* Utekompenseringskurve Y1 *)
+	rSPU_X2										: REAL := -5;		(* Utekompenseringskurve X2 *)
+	rSPU_Y2										: REAL := 22;		(* Utekompenseringskurve Y2 *)
+	rSPU_X3										: REAL := 5;		(* Utekompenseringskurve X3 *)
+	rSPU_Y3										: REAL := 20;		(* Utekompenseringskurve Y3 *)
+	rSPU_X4										: REAL := 15;		(* Utekompenseringskurve X4 *)
+	rSPU_Y4										: REAL := 19;		(* Utekompenseringskurve Y4 *)
+
+(*Tempraturregulering*)
+	xVelg_AvtrekkReg							: BOOL;				(*Avtrekksregulering hvis TRUE*)
+	xVelg_TilluftReg							: BOOL;				(*Tilluftsregulering hvis TRUE*)
+	xVelg_TempRegAuto							: BOOL;				(*Auto temp regulering tilluft/avtrekk hvis TRUE*)
+	rAvtrekkReg_ChangeoverTemp					: REAL := 20;		(*Avtrekksregulering vekslings temperatur*)
+	rAvtrekkReg_SP								: REAL := 20;		(*Avtrekksregulering setpunkt*)
+	rSequenceController_DeadZone				: REAL := 0.1;		(*Temperatur kontroller sekvens dodsone*)
+	rSequenceController_KP1						: REAL := 0.7;		(*Sekvens 1. P leddet paadrag som er proporsjonalt*)
+	rSequenceController_KP2						: REAL := 0.6;		(*Sekvens 2. P leddet paadrag som er proporsjonalt*)
+	rSequenceController_TN1						: REAL := 100;		(*Sekvens 1. Reset tid*)
+	rSequenceController_TN2						: REAL := 75;		(*Sekvens 2. Reset tid*)
+	rSequenceController_TD1						: REAL := 0;		(*Derivasjon, dempe hurtige endringer i avviket*)
+	rSequenceController_TD2						: REAL := 0;		(*Derivasjon, dempe hurtige endringer i avviket*)
+	rSequenceController_Deviation				: REAL := 15;		(*Maksimal avvik mellom spesifiserte verdier*)
+	rSequence_Cooling_X1						: REAL := 0;		(*Sekvens kjoling 1*)
+	rSequence_Cooling_X2						: REAL := 35;		(*Sekvens kjoling 2*)
+	rSequence_EnergyRecovery_X1					: REAL := 36;		(*Sekvens gjennvinning 1*)
+	rSequence_EnergyRecovery_X2					: REAL := 55;		(*Sekvens gjennvinning 2*)
+	rSequence_Heat_X1							: REAL := 55;		(*Sekvens varme 1*)
+	rSequence_Heat_X2							: REAL := 90;		(*Sekvens varme 2*)
+	rMinTempSupply_SP							: REAL := 15;		(*Minimums tillufts temperatur*)
+(*Anti freeze air*)
+	rStopTemp_SupAir							: REAL := 5;		(* Stopp anlegget hvis temperaturen synker under dette *)
+	tTidsforsinkelseFrostalarmLuft				: TIME := T#30S;	(* Tidsforsinkelse FOR frostalarm *)
+(*PID Kjøle controller*)
+	rMinTempCooling_KP							: REAL := 3;
+	rMinTempCooling_TN							: REAL := 5;
+	rMinTempCooling_TD							: REAL := 0;
+(*Filter*)
+	rTilluftFilter_SP							: REAL :=0.6;		(* Tilluftsfilter setpunkt for alarm*)
+	rAvtrekksFilter_SP							: REAL :=0.6;		(* Avtrekksfilter setpunkt for alarm*)
+(*Gjennvinner*)
+	rGjennvinner_MinStartValue					: REAL := 10;		(* Gjennvinner minimums startverdi *)
+	dwGjennvinner								: DWORD;			(* Driftstid gjennvinner *)
+(*Sikrkulasjonspumpe*)
+	rSirkpumpe_OutsideTempStart					: REAL := 5;
+	rSirkpumpe_StoppDelay						: REAL := 10;
+	rSirkpumpe_TempDemand						: REAL := 15;
+	xPumpWinter									: BOOL := TRUE;
+	dwPump_OM									: DWORD;			(* Driftstid sirkpumpe *)
+	tPumpMaxOff									: TIME := T#48H;
+	tPumpSwitchOnTime							: TIME := T#60S;
+	xPumpBlockingProtection						: BOOL := TRUE;
+(*Spjeld*)
+	tDamperSupply_MaxRuntime					: TIME := T#1M;
+	tForsinkelseSpjeld_open						: TIME := T#1S;
+	dwTilluftSpjeld								: DWORD;
+	dwAvtrekksSpjeld							: DWORD;
+(* Driftstid avtrekksvifte *)
+	dwAvtrekksvifte								: DWORD;
+	rAvtrekksvifte_StartDelay					: REAL := 100; 		(* Oppstartsforsinkelse Avtrekksvifte *)
+	rAvtrekksvifte_StartUpPeriod				: REAL := 10; 		(* Oppstartsperiode Avtrekksvifte *)
+(* Driftstid Tilluftsvifte *)
+	dwTilluftsvifte								: DWORD;
+	rTilluftsvifte_StartDelay					: REAL := 100; 		(* Oppstartsforsinkelse Tilluftsvifte *)
+	rTilluftsvifte_StartUpPeriod				: REAL := 10; 		(* Oppstartsperiode Tilluftsvifte *)
+	rTilluftsvifte_StBypassDelay				: REAL := 5; 		(* Bypass protection delay time on frequency converter error Default setting: t#5s*)
+(* Tidsforsinkelse før filteralarm slår ut *)
+	tFilter_Supply_AL_Delay						: TIME := T#5S;
+
+END_VAR

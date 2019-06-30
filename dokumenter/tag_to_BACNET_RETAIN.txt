@@ -1,0 +1,116 @@
+
+	sAnlegg										:=	BY2220_360_001_Anlegg.Present_Value														;
+	xEnableNattVentilasjon						:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV := BY2220_360_001_NATT_VENT_CMD.Present_Value	);
+	rReferanseRomteperaturNattVentilasjon_SP	:=	BY2220_360_001_NATT_VENT_SP.Present_Value                                               ;
+	rReferanseRomteperaturNattVentilasjon_PV	:=	BY2220_360_001_NATT_VENT_REF_TEMP.Present_Value                                         ;
+(*Nattkjøring ventilasjon*)
+	rVifte_SP_NATT								:=	BY2220_360_001_VIFTER_NATT_SP.Present_Value												;
+	(*AntiFreeze water*)
+	rLimOutsideTempFlush						:=	BY2220_360_001_LimOutsideTempFlush.Present_Value                                        ;
+	rAntifreezeWater_LimitOutsideTempStandby	:=	BY2220_360_001_LimitOutsideTempStandby.Present_Value                                    ;
+	rAntifreezeWater_rY_Standby					:=	BY2220_360_001_rY_Standby.Present_Value                                                 ;
+
+	rAntifreezeWater_PercentAfterStartUp		:=	BY2220_360_001_PercentAfterStartUp.Present_Value                                        ;
+	rLimFrostAlarm								:=	BY2220_360_001_LimFrostAlarm.Present_Value                                              ;
+	rMaxFlushPeriod								:=	BY2220_360_001_MaxFlushPeriod.Present_Value                                             ;
+
+	rLimWaterStartUp							:=	BY2220_360_001_LimWaterStartUp.Present_Value                                            ;
+	rRefTempReturn								:=	BY2220_360_001_RefTempReturn.Present_Value                                              ;
+
+(*Utekompensering*)
+	rSPU_X1										:=	BY2220_360_001_SPU_X1.Present_Value                                                     ;
+	rSPU_Y1										:=	BY2220_360_001_SPU_Y1.Present_Value                                                     ;
+	rSPU_X2										:=	BY2220_360_001_SPU_X2.Present_Value                                                     ;
+	rSPU_Y2										:=	BY2220_360_001_SPU_Y2.Present_Value                                                     ;
+	rSPU_X3										:=	BY2220_360_001_SPU_X3.Present_Value                                                     ;
+	rSPU_Y3										:=	BY2220_360_001_SPU_Y3.Present_Value                                                     ;
+	rSPU_X4										:=	BY2220_360_001_SPU_X4.Present_Value                                                     ;
+	rSPU_Y4										:=	BY2220_360_001_SPU_Y4.Present_Value                                                     ;
+
+(*Tempraturregulering*)
+	xVelg_AvtrekkReg							:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV := BY2220_360_001_Velg_AvtrekkReg.Present_Value	);
+	xVelg_TilluftReg							:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV := BY2220_360_001_Velg_TilluftReg.Present_Value	);
+	xVelg_TempRegAuto							:=	FuBACnetBinaryPV_to_BOOL(BACnetBinaryPV := BY2220_360_001_Velg_TempRegAuto.Present_Value);
+	rAvtrekkReg_ChangeoverTemp					:=	BY2220_360_001_AvtrekkReg_ChangeoverTemp.Present_Value                                  ;
+	rAvtrekkReg_SP								:=	BY2220_360_001_AvtrekkReg_SP.Present_Value                                              ;
+	rSequenceController_DeadZone				:=	BY2220_360_001_SequenceController_DeadZone.Present_Value                                ;
+	rSequenceController_KP1						:=	BY2220_360_001_SequenceController_KP1.Present_Value                                     ;
+	rSequenceController_KP2						:=	BY2220_360_001_SequenceController_KP2.Present_Value                                     ;
+	rSequenceController_TN1						:=	BY2220_360_001_SequenceController_TN1.Present_Value                                     ;
+	rSequenceController_TN2						:=	BY2220_360_001_SequenceController_TN2.Present_Value                                     ;
+	rSequenceController_TD1						:=	BY2220_360_001_SequenceController_TD1.Present_Value                                     ;
+	rSequenceController_TD2						:=	BY2220_360_001_SequenceController_TD2.Present_Value                                     ;
+	rSequenceController_Deviation				:=	BY2220_360_001_SequenceController_Deviation.Present_Value                               ;
+	rSequence_Cooling_X1						:=	BY2220_360_001_Sequence_Cooling_X1.Present_Value                                        ;
+	rSequence_Cooling_X2						:=	BY2220_360_001_Sequence_Cooling_X2.Present_Value                                        ;
+	rSequence_EnergyRecovery_X1					:=	BY2220_360_001_Sequence_EnergyRecovery_X1.Present_Value                                 ;
+	rSequence_EnergyRecovery_X2					:=	BY2220_360_001_Sequence_EnergyRecovery_X2.Present_Value                                 ;
+	rSequence_Heat_X1							:=	BY2220_360_001_Sequence_Heat_X1.Present_Value                                           ;
+	rSequence_Heat_X2							:=	BY2220_360_001_Sequence_Heat_X2.Present_Value                                           ;
+	rMinTempSupply_SP							:=	BY2220_360_001_MinTempSupply_SP.Present_Value                                           ;
+(*Anti freeze air*)
+	rStopTemp_SupAir							:=	BY2220_360_001_StopTemp_SupAir.Present_Value											;
+
+(*PID Kjøle controller*)
+	rMinTempCooling_KP							:=	BY2220_360_001_MinTempCooling_KP.Present_Value											;
+	rMinTempCooling_TN							:=	BY2220_360_001_MinTempCooling_TN.Present_Value											;
+	rMinTempCooling_TD							:=	BY2220_360_001_MinTempCooling_TD.Present_Value											;
+(*Filter*)
+	rTilluftFilter_SP							:=	BY2220_360_001_RP401_AL_SP.Present_Value												;
+	rAvtrekksFilter_SP							:=	BY2220_360_001_RP500_AL_SP.Present_Value												;
+(*Gjennvinner*)
+	rGjennvinner_MinStartValue					:=	BY2220_360_001_LX400_MinStartValue.Present_Value										;
+
+(*Sikrkulasjonspumpe*)
+	rSirkpumpe_OutsideTempStart					:=	BY2220_360_001_JP400_OutsideTempStart.Present_Value										;
+	rSirkpumpe_StoppDelay						:=	BY2220_360_001_JP400_StoppDelay.Present_Value											;
+	rSirkpumpe_TempDemand						:=	BY2220_360_001_JP400_TempDemand.Present_Value											;
+
+
+(*	IKKE I BRUK
+	(*Trykk*)                                           
+
+	BY2220_360_001_Supply_Pressure_SP					
+	BY2220_360_001_Exhaust_Pressure_SP					
+	BY2220_360_001_SupplyPressureController_DeadZone	
+	BY2220_360_001_SupplyPressureController_KP1			
+	BY2220_360_001_SupplyPressureController_KP2			
+	BY2220_360_001_SupplyPressureController_TN1			
+	BY2220_360_001_SupplyPressureController_TN2			
+	BY2220_360_001_SupplyPressureController_TD1			
+	BY2220_360_001_SupplyPressureController_TD2			
+	BY2220_360_001_SupplyPressureController_Deviation	
+	BY2220_360_001_ExhaustPressureController_DeadZone	
+	BY2220_360_001_ExhaustPressureController_KP1		
+	BY2220_360_001_ExhaustPressureController_KP2		
+	BY2220_360_001_ExhaustPressureController_TN1		
+	BY2220_360_001_ExhaustPressureController_TN2		
+	BY2220_360_001_ExhaustPressureController_TD1		
+	BY2220_360_001_ExhaustPressureController_TD2		
+	BY2220_360_001_ExhaustPressureController_Deviatio	
+	
+	BY2220_360_001_Supply_Volume_SP						
+	BY2220_360_001_Exhaust_Volume_SP					
+	BY2220_360_001_SupplyVolumeController_DeadZone		
+	BY2220_360_001_SupplyVolumeController_KP1			
+	BY2220_360_001_SupplyVolumeController_KP2			
+	BY2220_360_001_SupplyVolumeController_TN1			
+	BY2220_360_001_SupplyVolumeController_TN2			
+	BY2220_360_001_SupplyVolumeController_TD1			
+	BY2220_360_001_SupplyVolumeController_TD2			
+	BY2220_360_001_SupplyVolumeController_Deviation		
+	BY2220_360_001_ExhaustVolumeController_DeadZone		
+	BY2220_360_001_ExhaustVolumeController_KP1			
+	BY2220_360_001_ExhaustVolumeController_KP2			
+	BY2220_360_001_ExhaustVolumeController_TN1			
+	BY2220_360_001_ExhaustVolumeController_TN2			
+	BY2220_360_001_ExhaustVolumeController_TD1			
+	BY2220_360_001_ExhaustVolumeController_TD2			
+	BY2220_360_001_ExhaustVolumeController_Deviatio		
+
+	BY2220_360_001_MinVolSupply_SP						
+	BY2220_360_001_MinVolExhaust_SP						
+	BY2220_360_001_MaxVolSupply_SP						
+	BY2220_360_001_MaxVolExhaust_SP						
+	
+	*)

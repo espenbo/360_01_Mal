@@ -1,0 +1,117 @@
+VAR_GLOBAL
+	BY2209_360_20_Anlegg								: BACNET_BINARY_VALUE	:= (Description:='Anleggsinfo i beskrivelse');															(* Anleggsinfo i beskrivelse*)
+	BY2209_360_20_NATT_VENT_CMD							: BACNET_BINARY_VALUE	:= (Description:='Tillat nattventilasjon');																(* Tillat nattventilasjon*)
+	BY2209_360_20_NATT_VENT_SP							: BACNET_ANALOG_VALUE	:= (Description:='Setpunkt romtemp. for nattventilasjon');												(* Setpunkt romtemp. for nattventilasjon*)
+	BY2209_360_20_NATT_VENT_REF_TEMP					: BACNET_ANALOG_VALUE	:= (Description:='Referansefoler, romtemp. for nattventilasjon');										(* Referanseføler, romtemp. for nattventilasjon*)
+(*Nattkjøring ventilasjon*)																                                                    
+	BY2209_360_20_VIFTER_NATT_SP						: BACNET_ANALOG_VALUE	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Setpunkt ved Natt drift');					(*Setpunkt ved Natt drift*)
+	(*AntiFreeze water*)	                                                                                                                
+	BY2209_360_20_LimOutsideTempFlush					: BACNET_ANALOG_VALUE 	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Flusher VVB ved utetemp');          
+	BY2209_360_20_LimitOutsideTempStandby				: BACNET_ANALOG_VALUE 	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Utetemp setpunkt for standby verdi');          
+	BY2209_360_20_rY_Standby							: BACNET_ANALOG_VALUE 	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Antifrys på varmebatteri');        			(* Anti frys på varmebatteri *)
+                                                                                                                                            
+	BY2209_360_20_PercentAfterStartUp					: BACNET_ANALOG_VALUE 	:= (Units:=BACNET_PERCENT,					Description:='Paadrag VVB ved oppstart');					(* Paadrag ved oppstart*)                                       
+	BY2209_360_20_LimFrostAlarm							: BACNET_ANALOG_VALUE	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Setpunkt frost alarm');       				(* Setpunkt frost alarm *)
+	BY2209_360_20_MaxFlushPeriod						: BACNET_ANALOG_VALUE	:= (Units:=BACNET_MINUTES,					Description:='Setpunkt flushtid');           		    	(* Setpunkt flushtid *)
+
+	BY2209_360_20_LimWaterStartUp						: BACNET_ANALOG_VALUE	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Setpunkt vann start');        				(*Setpunkt vann start *)
+	BY2209_360_20_RefTempReturn							: BACNET_ANALOG_VALUE	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Referanse verdi for Antifreeze');				(*Referanse verdi for Antifreeze*)
+	                                                                                                                                        
+(*Utekompensering*)                                                                                                                         
+	BY2209_360_20_SPU_X1								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Utekompenseringskurve X1');					(* Utekompenseringskurve X1 *)
+	BY2209_360_20_SPU_Y1								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Utekompenseringskurve Y1');					(* Utekompenseringskurve Y1 *)
+	BY2209_360_20_SPU_X2								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Utekompenseringskurve X2');					(* Utekompenseringskurve X2 *)
+	BY2209_360_20_SPU_Y2								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Utekompenseringskurve Y2');					(* Utekompenseringskurve Y2 *)
+	BY2209_360_20_SPU_X3								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Utekompenseringskurve X3');					(* Utekompenseringskurve X3 *)
+	BY2209_360_20_SPU_Y3								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Utekompenseringskurve Y3');					(* Utekompenseringskurve Y3 *)
+	BY2209_360_20_SPU_X4								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Utekompenseringskurve X4');					(* Utekompenseringskurve X4 *)
+	BY2209_360_20_SPU_Y4								: BACNET_ANALOG_VALUE	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Utekompenseringskurve Y4');					(* Utekompenseringskurve Y4 *)
+
+(*Tempraturregulering*)	                                                                                                                    
+	BY2209_360_20_Velg_AvtrekkReg						: BACNET_BINARY_VALUE	:= (Description:='Avtrekksregulering hvis TRUE');														(*Avtrekksregulering hvis TRUE*)
+	BY2209_360_20_Velg_TilluftReg						: BACNET_BINARY_VALUE	:= (Description:='Tilluftsregulering hvis TRUE');														(*Tilluftsregulering hvis TRUE*)
+	BY2209_360_20_Velg_TempRegAuto						: BACNET_BINARY_VALUE	:= (Description:='Auto temp regulering tilluft/avtrekk hvis TRUE');										(*Auto temp regulering tilluft/avtrekk hvis TRUE*)
+	BY2209_360_20_AvtrekkReg_ChangeoverTemp				: BACNET_ANALOG_VALUE	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Avtrekksregulering vekslings temperatur');	(*Avtrekksregulering vekslings temperatur*)
+	BY2209_360_20_AvtrekkReg_SP							: BACNET_ANALOG_VALUE	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Avtrekksregulering setpunkt');				(*Avtrekksregulering setpunkt*)
+	BY2209_360_20_SequenceController_DeadZone			: BACNET_ANALOG_VALUE	:= (Units:=BACNET_DEGREES_KELVIN,			Description:='Temperatur kontroller sekvens dodsone');		(*Temperatur kontroller sekvens dodsone*)
+	BY2209_360_20_SequenceController_KP1				: BACNET_ANALOG_VALUE	:= (Description:='Sekvens 1. P leddet paadrag som er proporsjonalt');									(*Sekvens 1. P leddet paadrag som er proporsjonalt*)
+	BY2209_360_20_SequenceController_KP2				: BACNET_ANALOG_VALUE	:= (Description:='Sekvens 2. P leddet paadrag som er proporsjonalt');									(*Sekvens 2. P leddet paadrag som er proporsjonalt*)
+	BY2209_360_20_SequenceController_TN1				: BACNET_ANALOG_VALUE	:= (Units:=BACNET_SECONDS,					Description:='Sekvens 1. Reset tid');						(*Sekvens 1. Reset tid*)
+	BY2209_360_20_SequenceController_TN2				: BACNET_ANALOG_VALUE	:= (Units:=BACNET_SECONDS,					Description:='Sekvens 2. Reset tid');						(*Sekvens 2. Reset tid*)
+	BY2209_360_20_SequenceController_TD1				: BACNET_ANALOG_VALUE	:= (Units:=BACNET_SECONDS,					Description:='Derivasjon, dempe hurtige endringer i avviket');(*Derivasjon, dempe hurtige endringer i avviket*)
+	BY2209_360_20_SequenceController_TD2				: BACNET_ANALOG_VALUE	:= (Units:=BACNET_SECONDS,					Description:='Derivasjon, dempe hurtige endringer i avviket');(*Derivasjon, dempe hurtige endringer i avviket*)
+	BY2209_360_20_SequenceController_Deviation			: BACNET_ANALOG_VALUE	:= (Units:=BACNET_PERCENT,					Description:='Maksimal avvik mellom spesifiserte verdier');	(*Maksimal avvik mellom spesifiserte verdier*)
+	BY2209_360_20_Sequence_Cooling_X1					: BACNET_ANALOG_VALUE	:= (Units:=BACNET_PERCENT,					Description:='Sekvens kjoling 1');							(*Sekvens kjoling 1*)
+	BY2209_360_20_Sequence_Cooling_X2					: BACNET_ANALOG_VALUE	:= (Units:=BACNET_PERCENT,					Description:='Sekvens kjoling 2');							(*Sekvens kjoling 2*)
+	BY2209_360_20_Sequence_EnergyRecovery_X1			: BACNET_ANALOG_VALUE	:= (Units:=BACNET_PERCENT,					Description:='Sekvens gjennvinning 1');						(*Sekvens gjennvinning 1*)
+	BY2209_360_20_Sequence_EnergyRecovery_X2			: BACNET_ANALOG_VALUE	:= (Units:=BACNET_PERCENT,					Description:='Sekvens gjennvinning 2');						(*Sekvens gjennvinning 2*)
+	BY2209_360_20_Sequence_Heat_X1						: BACNET_ANALOG_VALUE	:= (Units:=BACNET_PERCENT,					Description:='Sekvens varme 1');							(*Sekvens varme 1*)
+	BY2209_360_20_Sequence_Heat_X2						: BACNET_ANALOG_VALUE	:= (Units:=BACNET_PERCENT,					Description:='Sekvens varme 2');							(*Sekvens varme 2*)
+	BY2209_360_20_MinTempSupply_SP						: BACNET_ANALOG_VALUE	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Minimums tillufts temperatur');				(*Minimums tillufts temperatur*)
+(*Anti freeze air*)                                                                                                                         
+	BY2209_360_20_StopTemp_SupAir						: BACNET_ANALOG_VALUE	:= (Units:=BACNET_DEGREES_CELSIUS,			Description:='Stopp anlegget hvis temp. synker under dette');(* Stopp anlegget hvis temperaturen synker under dette *)
+
+(*PID Kjøle controller*)	                                                                                                                
+	BY2209_360_20_MinTempCooling_KP						: BACNET_ANALOG_VALUE := (Description:='P leddet paadrag som er proporsjonalt');	                                    
+	BY2209_360_20_MinTempCooling_TN						: BACNET_ANALOG_VALUE := (Description:='Reset tid');	                                    
+	BY2209_360_20_MinTempCooling_TD						: BACNET_ANALOG_VALUE := (Description:='Derivasjon, dempe hurtige endringer i avviket');	                                    
+(*Filter*)                                                                                                                                  
+	BY2209_360_20_RP401_AL_SP							: BACNET_ANALOG_VALUE := (Units:=BACNET_PASCALS,					Description:='Tilluftsfilter setpunkt for alarm');			(* Tilluftsfilter setpunkt for alarm*)
+	BY2209_360_20_RP500_AL_SP							: BACNET_ANALOG_VALUE := (Units:=BACNET_PASCALS,					Description:='Avtrekksfilter setpunkt for alarm');			(* Avtrekksfilter setpunkt for alarm*)
+(*Gjennvinner*)                                                                                                                             
+	BY2209_360_20_LX400_MinStartValue					: BACNET_ANALOG_VALUE := (Units:=BACNET_PERCENT,					Description:='Gjennvinner minimums startverdi');			(* Gjennvinner minimums startverdi *)
+
+(*Sikrkulasjonspumpe*)	                                                                                                                    
+	BY2209_360_20_JP400_OutsideTempStart				: BACNET_ANALOG_VALUE := (Units:=BACNET_DEGREES_CELSIUS,			Description:='Utetemp setpunkt pumpestart');          
+	BY2209_360_20_JP400_StoppDelay						: BACNET_ANALOG_VALUE := (Units:=BACNET_SECONDS,					Description:='Stoppforsinkelse for pumpe');                                   
+	BY2209_360_20_JP400_TempDemand						: BACNET_ANALOG_VALUE := (Units:=BACNET_DEGREES_CELSIUS,			Description:='Temp Demand pumpe');        
+	                                                                                                                                        
+
+(*	IKKE I BRUK                                                                                                                             
+	(*Trykk*)                                                                                                                               
+                                                                                                                                            
+	BY2209_360_20_Supply_Pressure_SP					: BACNET_ANALOG_VALUE := (Present_Value:=100,Units:=BACNET_PASCALS);                
+	BY2209_360_20_Exhaust_Pressure_SP					: BACNET_ANALOG_VALUE := (Present_Value:=100,Units:=BACNET_PASCALS);                
+	BY2209_360_20_SupplyPressureController_DeadZone		: BACNET_ANALOG_VALUE := (Present_Value:=1,Units:=BACNET_DEGREES_KELVIN);           
+	BY2209_360_20_SupplyPressureController_KP1			: BACNET_ANALOG_VALUE := (Present_Value:=1);                                        
+	BY2209_360_20_SupplyPressureController_KP2			: BACNET_ANALOG_VALUE := (Present_Value:=0.5);                                      
+	BY2209_360_20_SupplyPressureController_TN1			: BACNET_ANALOG_VALUE := (Present_Value:=30,Units:=BACNET_SECONDS);                 
+	BY2209_360_20_SupplyPressureController_TN2			: BACNET_ANALOG_VALUE := (Present_Value:=50,Units:=BACNET_SECONDS);                 
+	BY2209_360_20_SupplyPressureController_TD1			: BACNET_ANALOG_VALUE := (Present_Value:=0,Units:=BACNET_SECONDS);                  (* Oppstartsforsinkelse Avtrekksvifte *)
+	BY2209_360_20_SupplyPressureController_TD2			: BACNET_ANALOG_VALUE := (Present_Value:=0,Units:=BACNET_SECONDS);                  (* Oppstartsperiode Avtrekksvifte *)
+	BY2209_360_20_SupplyPressureController_Deviation	: BACNET_ANALOG_VALUE := (Present_Value:=10,Units:=BACNET_PERCENT);                 
+	BY2209_360_20_ExhaustPressureController_DeadZone	: BACNET_ANALOG_VALUE := (Present_Value:=1,Units:=BACNET_DEGREES_KELVIN);           
+	BY2209_360_20_ExhaustPressureController_KP1			: BACNET_ANALOG_VALUE := (Present_Value:=1);                                        (* Oppstartsforsinkelse Tilluftsvifte *)
+	BY2209_360_20_ExhaustPressureController_KP2			: BACNET_ANALOG_VALUE := (Present_Value:=0.5);                                      (* Oppstartsperiode Tilluftsvifte *)
+	BY2209_360_20_ExhaustPressureController_TN1			: BACNET_ANALOG_VALUE := (Present_Value:=30,Units:=BACNET_SECONDS);                 (* Bypass protection delay time on frequency converter error Default setting: t#5s*)
+	BY2209_360_20_ExhaustPressureController_TN2			: BACNET_ANALOG_VALUE := (Present_Value:=50,Units:=BACNET_SECONDS);
+	BY2209_360_20_ExhaustPressureController_TD1			: BACNET_ANALOG_VALUE := (Present_Value:=0,Units:=BACNET_SECONDS);
+	BY2209_360_20_ExhaustPressureController_TD2			: BACNET_ANALOG_VALUE := (Present_Value:=0,Units:=BACNET_SECONDS);
+	BY2209_360_20_ExhaustPressureController_Deviatio	: BACNET_ANALOG_VALUE := (Present_Value:=10,Units:=BACNET_PERCENT);
+	
+	BY2209_360_20_Supply_Volume_SP						: BACNET_ANALOG_VALUE := (Present_Value:=100,Units:=BACNET_CUBIC_METERS_PER_HOUR);
+	BY2209_360_20_Exhaust_Volume_SP						: BACNET_ANALOG_VALUE := (Present_Value:=100,Units:=BACNET_CUBIC_METERS_PER_HOUR);
+	BY2209_360_20_SupplyVolumeController_DeadZone		: BACNET_ANALOG_VALUE := (Present_Value:=1,Units:=BACNET_CUBIC_METERS_PER_HOUR);
+	BY2209_360_20_SupplyVolumeController_KP1			: BACNET_ANALOG_VALUE := (Present_Value:=1);
+	BY2209_360_20_SupplyVolumeController_KP2			: BACNET_ANALOG_VALUE := (Present_Value:=0.5);
+	BY2209_360_20_SupplyVolumeController_TN1			: BACNET_ANALOG_VALUE := (Present_Value:=30,Units:=BACNET_SECONDS);
+	BY2209_360_20_SupplyVolumeController_TN2			: BACNET_ANALOG_VALUE := (Present_Value:=50,Units:=BACNET_SECONDS);
+	BY2209_360_20_SupplyVolumeController_TD1			: BACNET_ANALOG_VALUE := (Present_Value:=0,Units:=BACNET_SECONDS);
+	BY2209_360_20_SupplyVolumeController_TD2			: BACNET_ANALOG_VALUE := (Present_Value:=0,Units:=BACNET_SECONDS);
+	BY2209_360_20_SupplyVolumeController_Deviation		: BACNET_ANALOG_VALUE := (Present_Value:=10,Units:=BACNET_PERCENT);
+	BY2209_360_20_ExhaustVolumeController_DeadZone		: BACNET_ANALOG_VALUE := (Present_Value:=1,Units:=BACNET_CUBIC_METERS_PER_HOUR);
+	BY2209_360_20_ExhaustVolumeController_KP1			: BACNET_ANALOG_VALUE := (Present_Value:=1);
+	BY2209_360_20_ExhaustVolumeController_KP2			: BACNET_ANALOG_VALUE := (Present_Value:=0.5);
+	BY2209_360_20_ExhaustVolumeController_TN1			: BACNET_ANALOG_VALUE := (Present_Value:=30,Units:=BACNET_SECONDS);
+	BY2209_360_20_ExhaustVolumeController_TN2			: BACNET_ANALOG_VALUE := (Present_Value:=50,Units:=BACNET_SECONDS);
+	BY2209_360_20_ExhaustVolumeController_TD1			: BACNET_ANALOG_VALUE := (Present_Value:=0,Units:=BACNET_SECONDS);
+	BY2209_360_20_ExhaustVolumeController_TD2			: BACNET_ANALOG_VALUE := (Present_Value:=0,Units:=BACNET_SECONDS);
+	BY2209_360_20_ExhaustVolumeController_Deviatio		: BACNET_ANALOG_VALUE := (Present_Value:=10,Units:=BACNET_PERCENT);
+
+	BY2209_360_20_MinVolSupply_SP						: BACNET_ANALOG_VALUE := (Present_Value:=15,Units:=BACNET_CUBIC_METERS_PER_HOUR);
+	BY2209_360_20_MinVolExhaust_SP						: BACNET_ANALOG_VALUE := (Present_Value:=15,Units:=BACNET_CUBIC_METERS_PER_HOUR);
+	BY2209_360_20_MaxVolSupply_SP						: BACNET_ANALOG_VALUE := (Present_Value:=15,Units:=BACNET_CUBIC_METERS_PER_HOUR);
+	BY2209_360_20_MaxVolExhaust_SP						: BACNET_ANALOG_VALUE := (Present_Value:=15,Units:=BACNET_CUBIC_METERS_PER_HOUR);	
+	
+	*)
+END_VAR
