@@ -1,11 +1,13 @@
 <JMFiles>
- <ProjectInfo Size="2482162" AllowedSize="62914560"/>
+ <ProjectInfo Size="1939297" AllowedSize="62914560"/>
  <files>
-  <file size="39711" md5="3c24e9abfc58ac1fd488c09b14f527cb" name="alarmer.jmx"/>
-  <file size="6761" md5="1fed8da24a427e070f0f22abd1298164" name="commstatus.jmx"/>
-  <file size="17479" md5="adb02929d570709e7d9de36e5fb44311" name="drift.jmx"/>
-  <file size="11006" md5="f68164c9847693b085facaeab6a09c88" name="driftstider.jmx"/>
-  <file size="33626" md5="a2d91cc545b05a13b96bec6c28d78493" name="histalarm.jmx"/>
+  <file size="1969" md5="803699d98316939e2fca610c67ccf6ff" name="alarm.jmxb"/>
+  <file size="20048" md5="7db7ed9fb8f1fc4f700b012d2ed7dc3d" name="alarmer.jmxb"/>
+  <file size="2719" md5="65c7d6b4685ffd39a8156da4af740d83" name="avtrekksvifte.jmxb"/>
+  <file size="3875" md5="36705cde4b0070a7b0f163d1d1d1d9fc" name="commstatus.jmxb"/>
+  <file size="11852" md5="bae5eb8ff2d10774facf9e5a2325fb15" name="drift.jmxb"/>
+  <file size="7476" md5="6602badf6748c9631dd5d9516e6671d8" name="driftstider.jmxb"/>
+  <file size="19330" md5="f6d219d58fe6e930b9bcde882a351be2" name="histalarm.jmxb"/>
   <file size="1598" md5="32a2ad916e8d5c74594142d4c82439c3" name="images/acceleratingarrow.svg"/>
   <file size="2705" md5="535d7a8af6d193fe09e920d7d6715e73" name="images/barseg_vert_flat.svg"/>
   <file size="4163" md5="4f5cf0a99c3bca32fa6e740097ec7e36" name="images/btn_gray_down.svg"/>
@@ -18,15 +20,28 @@
   <file size="2319" md5="674959bc78b694fd7e6651610ef0f3f2" name="images/btn_plastic_rrectbar_2.svg"/>
   <file size="491" md5="77cf129807ce5d62e88302faa19208da" name="images/decreasingarrow.svg"/>
   <file size="11259" md5="b3743e7ab11f0352a8c81bf7381a36ba" name="images/frame_rect45bar_chrome.svg"/>
-  <file size="6989" md5="d3382044edf6da440243bf5a1c13db5f" name="images/frame_rect_chrome.svg"/>
+  <file size="4447" md5="d061aca03f49085f2782aa6472691fc7" name="images/frame_rect_chrome.svg"/>
   <file size="6200" md5="679b4da44d138acb8cb3dff23328e7b0" name="images/frame_round_chrome.svg"/>
-  <file size="9764" md5="bd69f415e093937f23d350e0df6ce785" name="images/frame_rrect_chrome.svg"/>
+  <file size="6848" md5="b31656df812f5a0151f02d0a7588f49b" name="images/frame_rrect_chrome.svg"/>
   <file size="8025" md5="e5adccc41083cca0796b1aa70fdef418" name="images/frame_rrectbar_chrome.svg"/>
+  <file size="665" md5="546ae9386a743f450fc49a10d859acdd" name="images/glass.svg"/>
+  <file size="1162" md5="b530c3f7414658021b1c2e3318dc01b8" name="images/ic_di1_104.svg"/>
+  <file size="1089" md5="91a3421086907628fd08bfbea2724a6a" name="images/ic_di1_105.svg"/>
+  <file size="1035" md5="65c41c94bba7dd250e6cbc54c48a70f4" name="images/ic_di1_106.svg"/>
+  <file size="517" md5="1299ce2c806b048217ba8c2d261110e8" name="images/ic_pl1_019.svg"/>
+  <file size="541" md5="9c15e1d3bb97d965b68297de787aa317" name="images/ic_pl1_022.svg"/>
+  <file size="523" md5="3bbc681d53101e82680abf85716e4284" name="images/ic_pl1_032.svg"/>
+  <file size="518" md5="cd7a126ed966079fa431b77da4467697" name="images/ic_pl1_033.svg"/>
+  <file size="508" md5="c08def103ae2df65875232dee9f7ea60" name="images/ic_pl1_038.svg"/>
+  <file size="515" md5="f256ad34eff9d4c7e661d30a56a7b301" name="images/ic_pl1_039.svg"/>
+  <file size="835" md5="5d16ac6bda213725387b6308d6f4e4ca" name="images/ic_pl1_053.svg"/>
+  <file size="802" md5="f3a64c5a123e6016460f0c8c40c52e54" name="images/ic_pl1_069.svg"/>
   <file size="944" md5="0d0743108fa777bec4d7784cf6c16dc4" name="images/leftarrow_symbol.svg"/>
   <file size="11063" md5="a6a613bc344c4c28515e228474564995" name="images/li_round_pointy1.svg"/>
   <file size="1698" md5="7a82e5856caebd05ea87f87bb082fcf7" name="images/li_round_shiney1_rev2.svg"/>
   <file size="15288" md5="df84d974e86de9acf4ce9902fb5c4e45" name="images/li_rrect_pointy1.svg"/>
   <file size="146" md5="785308b732afa1b4f4df2551e7d083a7" name="images/li_shape_rect.svg"/>
+  <file size="608" md5="8b44c317346a789826f1029a842ae985" name="images/li_shape_rrect.svg"/>
   <file size="950" md5="166d4dec1ae6bc0f252da6d4ac8283bd" name="images/rightarrow_symbol.svg"/>
   <file size="5009" md5="8af8951ce9fb0bc8adfe7eb8e3f09746" name="images/storm elektro avd automasjon logo liten.jpg"/>
   <file size="8584" md5="4c7d622fb1a4afaee0cd21cc5be899f0" name="images\btn_kbdwht_long_1_rev1.svg"/>
@@ -35,13 +50,20 @@
   <file size="6929" md5="263f36caca8c2decbd1b1870b23f3001" name="images\btn_plastic_rect45bar_2.svg"/>
   <file size="3114" md5="05232aa055f1513231934a1ad3add930" name="images\btn_plastic_rrectbar_1.svg"/>
   <file size="2319" md5="674959bc78b694fd7e6651610ef0f3f2" name="images\btn_plastic_rrectbar_2.svg"/>
+  <file size="3731" md5="1bcbd842dca1d0a87ef316e4a0aec5d1" name="images\btn_shiney_rrect_1.svg"/>
+  <file size="1591" md5="46ce68024a25f80724c32b0d9f568947" name="images\btn_shiney_rrect_2_rev2.svg"/>
+  <file size="632" md5="18d2f46935a5864313f3883ec6b94a78" name="images\bu_oldwin_rect_1_rev1.svg"/>
+  <file size="534" md5="5402405d5b1b5f1050dec55807c34309" name="images\bu_oldwin_rect_2_rev2.svg"/>
+  <file size="1772" md5="243c40b8790cac883656294063c2a35f" name="images\bu_oldwin_rrect_1_rev1.svg"/>
+  <file size="1353" md5="d1fc6a021382df86746d7d30ed37ea2f" name="images\bu_oldwin_rrect_2_rev2.svg"/>
+  <file size="3188" md5="719e443558c2bc3376dcb8adaf78f910" name="images\bu_smooth_rrect_1.svg"/>
+  <file size="1677" md5="4363c08fa94aa88035ff5ff9bd55cd7e" name="images\bu_smooth_rrect_2_rev2.svg"/>
   <file size="293" md5="47ef76106736f01b4d941b12362ed42c" name="images\checked.png"/>
   <file size="161" md5="94af1956c9a3906b2da937e8bdf9325c" name="images\not_checked.png"/>
   <file size="246" md5="cdd18e9d429840311bed355b0334d2a7" name="images\win-like-press.svg"/>
   <file size="324" md5="1b90e3ab10911021640735311741880b" name="images\win-like.svg"/>
-  <file size="18111" md5="7cb4b1274e10851dbf313c19735d4603" name="instillinger.jmx"/>
-  <file size="5845" md5="d8dbe0d23b65bc0196b403947feb1bae" name="kalende360_01.jmx"/>
-  <file size="5853" md5="d8da0afd710184bad427e6f5c333a919" name="kalende360_02.jmx"/>
+  <file size="10901" md5="4db6d63f0ccca60527382c0582ffaa4e" name="instillinger.jmxb"/>
+  <file size="3294" md5="fdb8d6a41223b606d09a2217a6df3286" name="kalende360_01.jmxb"/>
   <file size="690" md5="be7f6627f4532827b35a7890da1855bf" name="keypads/images/Backspace_small.svg"/>
   <file size="8633" md5="15c777f7cd26b3c47d121f6f5c95395d" name="keypads/images/btn_kbdwht_long_1_rev1.svg"/>
   <file size="7800" md5="23fc4b4815b9593ae07bce83598646aa" name="keypads/images/btn_kbdwht_long_2_rev1.svg"/>
@@ -56,61 +78,73 @@
   <file size="959" md5="33e6212f4282047a4d0d5ae2f26174b4" name="keypads/images/ic_pl2_117.svg"/>
   <file size="8633" md5="15c777f7cd26b3c47d121f6f5c95395d" name="keypads/images\btn_kbdwht_long_1_rev1.svg"/>
   <file size="7800" md5="23fc4b4815b9593ae07bce83598646aa" name="keypads/images\btn_kbdwht_long_2_rev1.svg"/>
-  <file size="28511" md5="83b1c85c4becab172301bca3b26a3050" name="keypads\alphabet.jmx"/>
-  <file size="9329" md5="d53e2a814f755fb1b4a219738fda6166" name="keypads\calendar.jmx"/>
-  <file size="11133" md5="6ef90a636c02cb112cd4a7349be4ca55" name="keypads\numeric.jmx"/>
-  <file size="23429" md5="3f5130edb85731fbf57e8d94906fee01" name="main.jmx"/>
-  <file size="1979" md5="0b66bfb938a6c70a1989b2be10490cf4" name="maintemplate.jmx"/>
-  <file size="15917" md5="073fff60a555051c8b142698a9a1b129" name="manspjeld.jmx"/>
-  <file size="51280" md5="ae295c189722fc73b08fe37e299df9f9" name="manstyring.jmx"/>
-  <file size="7724" md5="8fe1a5a9cd232fc8c2754c0ec2d1caea" name="nettworkinfo.jmx"/>
-  <file size="35192" md5="1de1596944468802f1adc69601b0c8e0" name="oppstart.jmx"/>
-  <file size="8127" md5="0bab1e8803969077cc424901c3bfecba" name="opt/Trend360_02GroupWgt1.png"/>
-  <file size="22288" md5="e947e23380139d944a69c38dc479db37" name="opt/alarmer.png"/>
-  <file size="5808" md5="c1e533597e1e3e79c9ff7706ac147641" name="opt/commstatus.png"/>
-  <file size="27442" md5="c10188305562e6739367178a09540549" name="opt/drift.png"/>
-  <file size="31181" md5="a4506f512fc5fe42c68dbeccd46afe81" name="opt/driftstider.png"/>
-  <file size="20910" md5="90145ad30e286254a7e4e6ba9665ebe6" name="opt/histalarm.png"/>
-  <file size="29899" md5="b7f5debe03022b122bcfa871c70e53da" name="opt/instillinger.png"/>
-  <file size="22693" md5="12a725686e87f24ecc9dee077c3c75a8" name="opt/kalende360_01.png"/>
-  <file size="22693" md5="12a725686e87f24ecc9dee077c3c75a8" name="opt/kalende360_02.png"/>
-  <file size="39368" md5="c81f05451c9268329202ceaa5de63492" name="opt/main.png"/>
-  <file size="34361" md5="a0ffcb82fe3ad9ae796fc121aadc890c" name="opt/manspjeld.png"/>
-  <file size="60061" md5="6c49d2fc6b6bf25f174a6f0819d6c5f9" name="opt/manstyring.png"/>
-  <file size="4157" md5="61fdcfdc091a4496c783aa8c87ca8137" name="opt/nettworkinfo.png"/>
-  <file size="66705" md5="2b8dabd67a5217e86e88a2386e3d29a3" name="opt/oppstart.png"/>
-  <file size="54613" md5="1e45c65060268d2e9123dd9f8aca7671" name="opt/sekvens.png"/>
-  <file size="19515" md5="1c49a325792a7d1e78c6b42891ba4371" name="opt/service.png"/>
-  <file size="39726" md5="70aed0f59083d3ee878c5e5b30cf119d" name="opt/settpunkt.png"/>
-  <file size="47599" md5="9039ca61cf18befb5f42525151575e5e" name="opt/signaler s1.png"/>
-  <file size="35872" md5="1b6cb6d982e99bcc541947a7306b4f3c" name="opt/signaler s5.png"/>
-  <file size="7545" md5="af6ea2683feaf3adf387468f4cc67ff9" name="opt/sirkpumpinnsillinger.png"/>
-  <file size="33359" md5="19f1ecde8bf711aee20c00fcea064765" name="opt/status.png"/>
-  <file size="26502" md5="250a4b011f40fc35b31dd00867f05c32" name="opt/sysinstillinger.png"/>
-  <file size="28037" md5="a16c25246e721771f814fc23390c2d07" name="opt/system.png"/>
-  <file size="7180" md5="7d19042b3ee005eafd4d58873055c1b8" name="opt/systeminfo.png"/>
-  <file size="30278" md5="1d6561f9dd7c55f4760276801b36b620" name="opt/trend360_01.png"/>
-  <file size="21298" md5="3cdb6f7d07f6eb2b867a71f974404172" name="opt/trend360_02.png"/>
-  <file size="6938" md5="2f46da75ae6d8440839652ccb0dbff52" name="opt/trendPadrag360_02GroupWgt2.png"/>
-  <file size="28419" md5="953ad270269bf83d76c492ec9a966345" name="opt/trendpadrag360_01.png"/>
-  <file size="21084" md5="fb3a4c62d0ccd172d6702c56718a161d" name="opt/trendpadrag360_02.png"/>
-  <file size="36048" md5="62f1b6cff575cba8c8be165aa730c2df" name="opt/utetempkomp.png"/>
-  <file size="44534" md5="d8f6dc380c49ef09ec71deb7c9cc74c6" name="opt/vent_360_0.png"/>
-  <file size="32075" md5="9bb40d195b6f55b829a795a92f92d420" name="opt/ventil.png"/>
-  <file size="31928" md5="7b0aad56b094973687c6bcc3072c509e" name="sekvens.jmx"/>
-  <file size="20130" md5="dfc86eacd6de31cfbf11f1739006c9bd" name="service.jmx"/>
-  <file size="17026" md5="39d56ff8fdff5527633f4909704b5893" name="settpunkt.jmx"/>
-  <file size="30463" md5="cdb7cd29c7ce57d216aeb965c854c3e6" name="signaler s1.jmx"/>
-  <file size="16924" md5="e856400d15ba79eea84ee60e8e914371" name="signaler s5.jmx"/>
-  <file size="6646" md5="b078ca784855a59c28ad1efb573b0f70" name="sirkpumpinnsillinger.jmx"/>
-  <file size="36221" md5="5f6160449b5fb9b66820de92af6d7593" name="status.jmx"/>
-  <file size="7585" md5="16b27b63f2dfc1fba68051ccecc7c780" name="sysinstillinger.jmx"/>
-  <file size="11019" md5="b64933b8005e369d3a2ec430ee801bf5" name="system.jmx"/>
-  <file size="8195" md5="bbe3cd283d5b3219d49d45ed2ba1b8c5" name="systeminfo.jmx"/>
-  <file size="21464" md5="57970aa3d52cb07d7a1ad343e935379e" name="trend360_01.jmx"/>
-  <file size="19820" md5="1f17feb9292d50be3c39efbc8772c228" name="trend360_02.jmx"/>
-  <file size="16131" md5="fe265d5f1424e5949177e41215af0054" name="trendpadrag360_01.jmx"/>
-  <file size="14518" md5="f9be992ab091b7693eb13852a850eee9" name="trendpadrag360_02.jmx"/>
+  <file size="28831" md5="4a8f8969696b43c3067d9d7ecd01a099" name="keypads\alphabet.jmx"/>
+  <file size="9497" md5="0d4a3126bf5618c4f47c9094d53979c7" name="keypads\calendar.jmx"/>
+  <file size="11668" md5="67ae91e17310688c4a30d8101ebbb28d" name="keypads\numeric.jmx"/>
+  <file size="6200" md5="679b4da44d138acb8cb3dff23328e7b0" name="lib/filter-1.0/images/frame_round_chrome.svg"/>
+  <file size="11063" md5="a6a613bc344c4c28515e228474564995" name="lib/filter-1.0/images/li_round_pointy1.svg"/>
+  <file size="8896" md5="caffac609346f6662749f68ba7e4296c" name="lib/filter1-1.0/images/frame_round_chrome.svg"/>
+  <file size="11063" md5="a6a613bc344c4c28515e228474564995" name="lib/filter1-1.0/images/li_round_pointy1.svg"/>
+  <file size="8632" md5="befff46a87f390479a9ae4dba258d932" name="main.jmxb"/>
+  <file size="1342" md5="16dbb62882a849d6f6e4c4e05e418774" name="maintemplate.jmxb"/>
+  <file size="23084" md5="0d263a300d416e687bcc9c9b24d722cc" name="manspjeld.jmxb"/>
+  <file size="45024" md5="76f8192bcad7ffb1646aa392729b290a" name="manstyring.jmxb"/>
+  <file size="0" md5="d41d8cd98f00b204e9800998ecf8427e" name="manstyring.js"/>
+  <file size="4256" md5="eb44f4d20fdb4db48632163f9f663607" name="nettworkinfo.jmxb"/>
+  <file size="20071" md5="cb569b830f11e9df34cb8eb304815114" name="oppstart.jmxb"/>
+  <file size="6172" md5="237d79ab667985a5a075d1cac2fa3e8d" name="opt/Trend360_01GroupWgt1.png"/>
+  <file size="5590" md5="292549e9597c24a7865c650531cf9004" name="opt/TrendPadrag360_01GroupWgt2.png"/>
+  <file size="2533" md5="7146d7ff69940621339a8e3068a628b1" name="opt/VentAnleggFilter2.png"/>
+  <file size="429" md5="e11cecb8dd127ad277f91c80957aac96" name="opt/alarm.png"/>
+  <file size="17464" md5="28f482aa5dd16344b00d6cbf5f509a5a" name="opt/alarmer.png"/>
+  <file size="1911" md5="1844158859f3d61deaf5d070e94ffb9e" name="opt/avtrekksvifte.png"/>
+  <file size="1546" md5="bd3b136a344d9875d3eb1af8fc44add6" name="opt/commstatus.png"/>
+  <file size="19507" md5="29b7bddb45c68252cdc0f8beacfad2da" name="opt/drift.png"/>
+  <file size="16973" md5="9ddb8f52ce1137fe2dab8bf487f5ea43" name="opt/driftstider.png"/>
+  <file size="15942" md5="779059e11c2a503e56b5e56b4fbb7990" name="opt/histalarm.png"/>
+  <file size="20850" md5="8c448ec86b99115273c5d89fa06bf673" name="opt/instillinger.png"/>
+  <file size="15937" md5="be3b54f3bf857830343b53f436a0eeee" name="opt/kalende360_01.png"/>
+  <file size="24723" md5="ee6019d7b6c607c7c67e264e111f0c48" name="opt/main.png"/>
+  <file size="23854" md5="0f54a6399360242c5649516e76686a45" name="opt/manspjeld.png"/>
+  <file size="20232" md5="ba3ce41f83a8830a82358370b71213b4" name="opt/manstyring.png"/>
+  <file size="1078" md5="ab0b36b63284963e7186cdb6bdf591b5" name="opt/nettworkinfo.png"/>
+  <file size="21364" md5="67ec129717aafa039ab53b26fd365269" name="opt/oppstart.png"/>
+  <file size="24145" md5="1b0d5860c1785010c6d6da7d888000be" name="opt/sekvens.png"/>
+  <file size="14499" md5="b88181f2d69c60254be32b3c8405c896" name="opt/service.png"/>
+  <file size="19045" md5="612f761593cfb059d56c6e3112507612" name="opt/settpunkt.png"/>
+  <file size="24783" md5="2ce920736f5c271ac4acb113c2b21310" name="opt/signaler s1.png"/>
+  <file size="18645" md5="c79d78500624d34b6a6be33d7cb49a48" name="opt/signaler s5.png"/>
+  <file size="2289" md5="6d225c4127c32d6c6674659a5e19b39d" name="opt/sirkpumpinnsillinger.png"/>
+  <file size="16544" md5="e0492336eace544b470f3b1afd0d328c" name="opt/status.png"/>
+  <file size="17082" md5="5cf3eb798b9cd21cb1e812cd83543336" name="opt/sysinstillinger.png"/>
+  <file size="22834" md5="73893613ebf241e99f68d1d00062c93c" name="opt/system.png"/>
+  <file size="1156" md5="90d19dfc92eeeae72251d1287e2be837" name="opt/systeminfo.png"/>
+  <file size="28582" md5="f49064d2de8cc73d6941d6852f3c1e95" name="opt/testmain.png"/>
+  <file size="1911" md5="1844158859f3d61deaf5d070e94ffb9e" name="opt/tilluftsvifte.png"/>
+  <file size="16246" md5="239c6d1ecb900ab8e5d33859befce373" name="opt/trend360_01.png"/>
+  <file size="11987" md5="8e9ec3a0fcbf28e62c17e8ea53d3eabf" name="opt/trendpaadrag.png"/>
+  <file size="16102" md5="21179df9f431fcfd7cf43c41117abe2f" name="opt/trendpadrag360_01.png"/>
+  <file size="14131" md5="b28cae7b39c3905d5607794d4ed54157" name="opt/trendtemp.png"/>
+  <file size="19914" md5="3d1a945c45dcbd3900410b84c1f95e19" name="opt/utetempkomp.png"/>
+  <file size="16762" md5="d0a0f5bb7b0647b72ddb7b65d295efe9" name="opt/ventanlegg.png"/>
+  <file size="17750" md5="cfb35ab0d71c149d3b2dc7d865a42e7e" name="opt/ventil.png"/>
+  <file size="18291" md5="b1d5e070675f3a9a3a9746019a19d2ce" name="sekvens.jmxb"/>
+  <file size="13458" md5="b70ba992941e0151562adc3a727a825c" name="service.jmxb"/>
+  <file size="10041" md5="290c966b73a80c49a8bca80f02b022ac" name="settpunkt.jmxb"/>
+  <file size="19146" md5="fba6e30a743508cb76c128e9b08804f5" name="signaler s1.jmxb"/>
+  <file size="11206" md5="a3d7a35271fff292eda0881c982eac2a" name="signaler s5.jmxb"/>
+  <file size="3794" md5="8a4d8b959897e553885cfa3d516e3c8a" name="sirkpumpinnsillinger.jmxb"/>
+  <file size="17700" md5="2783e1f0bb9cc0d5be8cdf455130211b" name="status.jmxb"/>
+  <file size="4565" md5="bd0f9af9816c4bec480026359b065380" name="sysinstillinger.jmxb"/>
+  <file size="6884" md5="0ab92c60388efc56f334d9d124d3590c" name="system.jmxb"/>
+  <file size="4573" md5="a8b05c20c91ae72e3a3af9a4063e9ca6" name="systeminfo.jmxb"/>
+  <file size="7452" md5="ee908735041a7b5649c67409cca62a0f" name="templatepage1.jmxb"/>
+  <file size="23215" md5="7e99d11eb704a1242d2b59e2dd77d771" name="testmain.jmxb"/>
+  <file size="2719" md5="55746e6a351f31be407ef7f6617deefd" name="tilluftsvifte.jmxb"/>
+  <file size="12051" md5="d3a6d65b6ba6631510434b55e6b61138" name="trend360_01.jmxb"/>
+  <file size="28118" md5="2febc8910788fed9e3e9b3a1d383feb4" name="trendpaadrag.jmxb"/>
+  <file size="9058" md5="d6f3d7c4cec09a05e86858b556d37b5c" name="trendpadrag360_01.jmxb"/>
+  <file size="31701" md5="21bd8fb89225a5db9c88115abc932dff" name="trendtemp.jmxb"/>
   <file size="4586" md5="4137eb5b1c689967b920ea6cd217967b" name="usermgmttemplates/images/Button.svg"/>
   <file size="6250" md5="2a71e1093df90b1829b0296a58937a10" name="usermgmttemplates/images/ButtonFrame.svg"/>
   <file size="5244" md5="bb902146e5b22c6209291715e76fc66f" name="usermgmttemplates/images/ButtonPressed.svg"/>
@@ -126,32 +160,42 @@
   <file size="5244" md5="bb902146e5b22c6209291715e76fc66f" name="usermgmttemplates/images\ButtonPressed.svg"/>
   <file size="3029" md5="bd6b02019d306eb4964c5284a879cd8f" name="usermgmttemplates/images\checkboxOFF.svg"/>
   <file size="2542" md5="06a14a52c48885bba652e0537356571a" name="usermgmttemplates/images\checkboxON.svg"/>
-  <file size="12730" md5="2660096c26e013abdb9fb870c1149bb1" name="usermgmttemplates\adduser.jmx"/>
-  <file size="9256" md5="da455a7ccdcc82c23b5e313dda587a1e" name="usermgmttemplates\changepassword.jmx"/>
-  <file size="7274" md5="b3304ebcbfe48e5c6d36495ef7091b1d" name="usermgmttemplates\deleteuser.jmx"/>
-  <file size="6794" md5="61b552f19c4ee302cfe4faa735971e89" name="usermgmttemplates\loginpage.jmx"/>
-  <file size="7090" md5="079a284409cf99420b5466ca4dcaa568" name="usermgmttemplates\loginpage_combo.jmx"/>
+  <file size="15446" md5="a34348751f62154ecdca29313699d684" name="usermgmttemplates/opt/adduser.png"/>
+  <file size="9353" md5="61155dc77ed048de7470e3491fb8978f" name="usermgmttemplates/opt/changepassword.png"/>
+  <file size="5702" md5="a77c6da2ec97705c3774fef4e5aade83" name="usermgmttemplates/opt/deleteuser.png"/>
+  <file size="6005" md5="43e623d0989a9a33d0eb2cfd58f6b385" name="usermgmttemplates/opt/loginpage.png"/>
+  <file size="5970" md5="e2b5b621ad490942931d266753818d8f" name="usermgmttemplates/opt/loginpage_combo.png"/>
+  <file size="6279" md5="3ac6eece2af7aad35eae5b503bf446d4" name="usermgmttemplates/opt/switchuserloginpage.png"/>
+  <file size="6242" md5="56bfbbd2025986b859a200dfbc621d50" name="usermgmttemplates/opt/switchuserloginpage_combo.png"/>
+  <file size="15456" md5="086f09c7778e324ae18c5ae494d7475a" name="usermgmttemplates/opt/usereditor.png"/>
+  <file size="13560" md5="d4aee5752337d871c08af1a728814148" name="usermgmttemplates\adduser.jmx"/>
+  <file size="10079" md5="c5885b0195a5ff3678ed08f37e62dfd7" name="usermgmttemplates\changepassword.jmx"/>
+  <file size="8097" md5="5722270bb6a4f5a8dda09875c967b327" name="usermgmttemplates\deleteuser.jmx"/>
+  <file size="7617" md5="d85618374e29776227ea3ebdba072dba" name="usermgmttemplates\loginpage.jmx"/>
+  <file size="7913" md5="f2860c5960d1c717b1d43d6f4adad0cf" name="usermgmttemplates\loginpage_combo.jmx"/>
   <file size="7193" md5="14daafd0083d5ae12ecc5ca8ed79beaf" name="usermgmttemplates\signaturedialog.jmx"/>
-  <file size="8050" md5="4b58d5191a2a2f561454c0a017c5f3b8" name="usermgmttemplates\switchuserloginpage.jmx"/>
-  <file size="8331" md5="eafaaaa0cfe2b447e01223e27b6983b7" name="usermgmttemplates\switchuserloginpage_combo.jmx"/>
-  <file size="12361" md5="9d6e94db0b662edac9a8881ac2b89b2c" name="usermgmttemplates\usereditor.jmx"/>
-  <file size="21638" md5="ba284dee83ea9da754e2f59499f26596" name="utetempkomp.jmx"/>
-  <file size="75353" md5="f5cafa7617927a4f2af34d030b35c4c4" name="vent_360_0.jmx"/>
-  <file size="8657" md5="a5b6b3c6d8670c13a61a425943478f25" name="ventil.jmx"/>
-  <file size="11987" md5="6e27c0d41260df0a3b72fed592456024" name="FRBY5602_360_01_OS001.jpr"/>
-  <file size="58952" md5="261ff44a1848519e0b67af363aff93cb" name="config\groups.xml"/>
+  <file size="8873" md5="445920c31868a7b50429d2612ba65ee0" name="usermgmttemplates\switchuserloginpage.jmx"/>
+  <file size="9154" md5="714fa5d9a3ae923f3888097dc72a47af" name="usermgmttemplates\switchuserloginpage_combo.jmx"/>
+  <file size="13184" md5="fd2e883b5315ff1ee13158ea8bc83690" name="usermgmttemplates\usereditor.jmx"/>
+  <file size="12488" md5="e99def9f80f7d2045aaf9a0adc4cc102" name="utetempkomp.jmxb"/>
+  <file size="18486" md5="b6627ec8c1dfc07eec11dae75f8971d7" name="ventanlegg.jmxb"/>
+  <file size="5821" md5="667af5a9d08024e04a18dde72c9b844b" name="ventil.jmxb"/>
+  <file size="12365" md5="8247059735877407b6afb0fe6b8395cd" name="HMI_360.jpr"/>
+  <file size="21484" md5="77369529854edd40ea069259728b33ac" name="config\groups.xml"/>
   <file size="157" md5="817547b7240e03e1bfab1e9de9ae2318" name="config\engineconfig.xml"/>
   <file size="70" md5="9c686935bec5664c48af2db23cef4bb3" name="config\fastboot.xml"/>
-  <file size="321086" md5="722db6a6ca414a9841b775683d4fc3a1" name="config\tags.xml"/>
-  <file size="8499" md5="9556c24e53a74b169148e92f1ba6059f" name="config\trends.xml"/>
-  <file size="47030" md5="41c1d81236e6ca5fa6a64cf82568d5b8" name="config\indexedtagset.xml"/>
+  <file size="120504" md5="73d2cdce1bc6da5bf93884ffb4f20a81" name="config\tags.xml"/>
+  <file size="43243" md5="67fb7306b4d0ab6bc414f132f02de7d2" name="config\tags.bin"/>
+  <file size="7283" md5="d0d24a11b0cc086c89573a4332709d57" name="config\trends.xml"/>
+  <file size="20309" md5="b157eb0e59806b12acf4e28583a16020" name="config\indexedtagset.xml"/>
   <file size="63" md5="320ca9c6da63d1ef6e59979d13d67173" name="config\recipe.xml"/>
-  <file size="36862" md5="18a5bbc3527c8f903faea538126a2395" name="config\alarms.xml"/>
-  <file size="187" md5="e601c0792d282a752cf9405187c980eb" name="config\multilang.xml"/>
-  <file size="9346" md5="dbdad72d9369360e1cddee9f7124743d" name="config\scheduler.xml"/>
-  <file size="1854" md5="4a9f720caef04646e7633e1172e677fb" name="config\protocols.xml"/>
+  <file size="13075" md5="224de514aa5a8a8005c5cca714952379" name="config\alarms.xml"/>
+  <file size="3428" md5="858f43359f78fa405a85ff5c796d2955" name="config\alarms.bin"/>
+  <file size="304" md5="4fc5abf26f13c1bf876e05f7e6b480f4" name="config\multilang.xml"/>
+  <file size="8462" md5="880089d3170bf02e4688689b705b2f25" name="config\scheduler.xml"/>
+  <file size="1458" md5="188e87cf70462b70745a6db9b62e2d8b" name="config\protocols.xml"/>
   <file size="1841" md5="5b734b7fb63635333c74a68c96446b03" name="config\eventconfig.xml"/>
-  <file size="3813" md5="b4409434fdaa4f3fa39041dffcbff096" name="config\eventlistinfo.xml"/>
+  <file size="1370" md5="0eec4f8ec89656b195e03da9c020618c" name="config\eventlistinfo.xml"/>
   <file size="15" md5="f8881ec42a49a6129262a2d1118d3db9" name="config\emailinfo.xml"/>
   <file size="730" md5="d7da5c76a303027f594bfd55d1344504" name="config\reports.xml"/>
   <file size="242" md5="727112fb0bd7937ff87f0885ae415706" name="config\print.xml"/>
@@ -164,13 +208,69 @@
   <file size="59" md5="22f2393ca4d87f6e330372761f7a0c01" name="config\dbconnector.xml"/>
   <file size="82" md5="ea04482112d41f5d12e38ac8a58f81d5" name="config\datatransfers.xml"/>
   <file size="229" md5="393498678e4be0b6c957df0f7c17610c" name="config\screensaver.xml"/>
-  <file size="7259" md5="d7b90e1a8a5ea0a0fa552efdbbbc3a0a" name="opt\imagecachelist.xml"/>
+  <file size="11009" md5="43e7f39bfb9bd3a79b2dda41da380a43" name="opt\imagecachelist.xml"/>
   <file size="311" md5="cee6fd1306d07bc8dacd867d5c2d2e9e" name="config\if_opcua.xml"/>
   <file size="5822" md5="10d3961757c569bbc3705f42a18183d4" name="config\opcserverconfig.ini"/>
   <file size="1018" md5="2ab67733d09edc4cf75d8fd8cd2d08aa" name="js/com/hmi/calendarkeypadmodule-1.2.0.js"/>
+  <file size="101" md5="2b6ca8ff6bd9ad6364b4ae475ce9009a" name="lib/batteri-1.0/batteri-1.0.js"/>
+  <file size="2523" md5="6a69f83e1c09a2617324a69fb94859f6" name="lib/batteri-1.0/batteri-1.0.jmx"/>
+  <file size="2437" md5="e9af827612f3d3c9fd2403e795b6617a" name="lib/batteri-1.0/batteri-1.0.png"/>
+  <file size="413" md5="aed40cf9a215cd431f3c6887aca88459" name="lib/batteri-1.0/batteri-1.0.props"/>
+  <file size="115" md5="efefd0c9705c688c94e85785230a4a30" name="lib/blandeventil-1.0/blandeventil-1.0.js"/>
+  <file size="5886" md5="c55a85b0a23ca2f76291ccb37ff06fa8" name="lib/blandeventil-1.0/blandeventil-1.0.jmx"/>
+  <file size="8050" md5="4bd14db6e008429d961fa59b90aa6eb4" name="lib/blandeventil-1.0/blandeventil-1.0.png"/>
+  <file size="12" md5="e15186b4100430c8fffd1ead60ba7a00" name="lib/blandeventil-1.0/blandeventil-1.0.tr"/>
+  <file size="911" md5="9e9bcb75bd872223f79fbd71304c5ae4" name="lib/blandeventil-1.0/blandeventil-1.0.props"/>
+  <file size="97" md5="e31a22d1964ec428441c9e640acf3ca3" name="lib/filter-1.0/filter-1.0.js"/>
+  <file size="3373" md5="778ae28a9e4827e512f1f9986a09052f" name="lib/filter-1.0/filter-1.0.jmx"/>
+  <file size="7754" md5="9a7bfe4fc4af01fda2f8f861be15d7b5" name="lib/filter-1.0/filter-1.0.png"/>
+  <file size="12" md5="e15186b4100430c8fffd1ead60ba7a00" name="lib/filter-1.0/filter-1.0.tr"/>
+  <file size="966" md5="4069f192a64cc6ef0ee13309e0d735dd" name="lib/filter-1.0/filter-1.0.props"/>
+  <file size="100" md5="8bba86da22ef43d7de20145b7aafcc03" name="lib/filter1-1.0/filter1-1.0.js"/>
+  <file size="4760" md5="bc2f7df7d9fc09f0d0890c3d23869820" name="lib/filter1-1.0/filter1-1.0.jmx"/>
+  <file size="13765" md5="5441d43fa099e6f0ba1fcca6d3f319df" name="lib/filter1-1.0/filter1-1.0.png"/>
+  <file size="12" md5="e15186b4100430c8fffd1ead60ba7a00" name="lib/filter1-1.0/filter1-1.0.tr"/>
+  <file size="494" md5="6643875e51f98382c7e0d5eaaa4f7ef9" name="lib/filter1-1.0/filter1-1.0.props"/>
+  <file size="95" md5="3e034f41b10e3091ed625610a3f75fb0" name="lib/pumpe-1.0/pumpe-1.0.js"/>
+  <file size="1663" md5="59503ea4019dbeaed58cb3ae071af870" name="lib/pumpe-1.0/pumpe-1.0.jmx"/>
+  <file size="11787" md5="37468d35c8f04e60b0fd06d027602ec4" name="lib/pumpe-1.0/pumpe-1.0.png"/>
+  <file size="12" md5="e15186b4100430c8fffd1ead60ba7a00" name="lib/pumpe-1.0/pumpe-1.0.tr"/>
+  <file size="560" md5="ff6c36c0e5fcac429971ac7077c00b86" name="lib/pumpe-1.0/pumpe-1.0.props"/>
+  <file size="107" md5="ee95f9fbd09a69ca78485cf5767b0dad" name="lib/sirkpumpe-1.0/sirkpumpe-1.0.js"/>
+  <file size="1090" md5="288e5edaea72c131c00a8d22458b71cd" name="lib/sirkpumpe-1.0/sirkpumpe-1.0.jmx"/>
+  <file size="6973" md5="36e6cca4728c7d04f9ace80501fa46e5" name="lib/sirkpumpe-1.0/sirkpumpe-1.0.png"/>
+  <file size="709" md5="e434594267caacdd7fdb1d6a182d5763" name="lib/sirkpumpe-1.0/sirkpumpe-1.0.props"/>
+  <file size="95" md5="cad0c7c2bed7061def8e4fef3a40e878" name="lib/temp1-1.0/temp1-1.0.js"/>
+  <file size="2720" md5="eee01fc6ca18d68d65a9f69c436a8479" name="lib/temp1-1.0/temp1-1.0.jmx"/>
+  <file size="8996" md5="3ffc95369b74654dfd4773d90f98de87" name="lib/temp1-1.0/temp1-1.0.png"/>
+  <file size="427" md5="91cdadbe98b4b449379f77b93e856eae" name="lib/temp1-1.0/temp1-1.0.props"/>
+  <file size="95" md5="27791246621547637ae413f03d01be62" name="lib/temp2-1.0/temp2-1.0.js"/>
+  <file size="2960" md5="6a23f55a24e45f22735af3222816546d" name="lib/temp2-1.0/temp2-1.0.jmx"/>
+  <file size="9125" md5="9ee31d298163324a7cfcea441ee52a85" name="lib/temp2-1.0/temp2-1.0.png"/>
+  <file size="428" md5="a385399e4fb43a2f6a403601881ee1d4" name="lib/temp2-1.0/temp2-1.0.props"/>
+  <file size="94" md5="d46b5ce7f8daab92c3c063a4a9806242" name="lib/temp3-1.0/temp3-1.0.js"/>
+  <file size="2471" md5="a83b2ec989f92e8f622533fd9df6240e" name="lib/temp3-1.0/temp3-1.0.jmx"/>
+  <file size="6618" md5="3031d2e2516e96038405fd03ae73220c" name="lib/temp3-1.0/temp3-1.0.png"/>
+  <file size="12" md5="e15186b4100430c8fffd1ead60ba7a00" name="lib/temp3-1.0/temp3-1.0.tr"/>
+  <file size="422" md5="9cf8b50e49479f47f53741072d54750a" name="lib/temp3-1.0/temp3-1.0.props"/>
+  <file size="94" md5="a7dae3c60cdcab6bac882dbba19d3358" name="lib/temp4-1.0/temp4-1.0.js"/>
+  <file size="2479" md5="61156894395e34db339ac211bd82d7e9" name="lib/temp4-1.0/temp4-1.0.jmx"/>
+  <file size="7275" md5="76192f26485c61f11a5d0ef618b39f1d" name="lib/temp4-1.0/temp4-1.0.png"/>
+  <file size="12" md5="e15186b4100430c8fffd1ead60ba7a00" name="lib/temp4-1.0/temp4-1.0.tr"/>
+  <file size="422" md5="41a72ef4d63be2a00f7e4d86e183fa80" name="lib/temp4-1.0/temp4-1.0.props"/>
+  <file size="116" md5="202f4a24c825dab66e18af301a8d2eeb" name="lib/vifteavtrekk-1.0/vifteavtrekk-1.0.js"/>
+  <file size="2780" md5="464f6dcbcd8b29e137be29c0dc996378" name="lib/vifteavtrekk-1.0/vifteavtrekk-1.0.jmx"/>
+  <file size="6923" md5="4cd50915d956ec46278a7507a1275507" name="lib/vifteavtrekk-1.0/vifteavtrekk-1.0.png"/>
+  <file size="925" md5="c948389753dfe975be4c64538d09524b" name="lib/vifteavtrekk-1.0/vifteavtrekk-1.0.props"/>
+  <file size="116" md5="c56eb9916f6dffbfe393b5493876e2ce" name="lib/viftetilluft-1.0/viftetilluft-1.0.js"/>
+  <file size="2520" md5="2fe585ad5ddf5b10f5b4234d944d722f" name="lib/viftetilluft-1.0/viftetilluft-1.0.jmx"/>
+  <file size="6721" md5="78ab426978da0dd75f32087179a62326" name="lib/viftetilluft-1.0/viftetilluft-1.0.png"/>
+  <file size="925" md5="b66640699da907dc422eb8d6bc9a7e8f" name="lib/viftetilluft-1.0/viftetilluft-1.0.props"/>
+  <file size="487" md5="7cdbb19cd30f96509c9e9298b3a8d743" name="props/filter2.props"/>
+  <file size="13844" md5="ed3c7eab429a342454cb105433ca7e98" name="props/filter2.png"/>
   <file size="696904" md5="a098d5c49d19e6782bdf7327cede21f6" name="tahoma.ttf"/>
   <file size="648008" md5="269a3173c2531cfc6b376971a672dac3" name="tahomabd.ttf"/>
   <file size="772440" md5="f260f2763ff6dc41daad8066a122fc00" name="arial.ttf"/>
-  <file size="289" md5="f90b422caeef20efc2064ff6431601c8" name="fonts.xml"/>
+  <file size="293" md5="351bd2b0728ade7f17a567909f9fe68e" name="fonts.xml"/>
  </files>
 </JMFiles>

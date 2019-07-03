@@ -43,6 +43,7 @@
    </pages>
    <templatePages>
     <templatePage class="TemplatePageWgt" type="template" name="MainTemplate" file="maintemplate.jmx"/>
+    <templatePage class="TemplatePageWgt" type="template" name="TemplatePage1" file="templatepage1.jmx"/>
    </templatePages>
    <groups>
     <group name="360_01">

@@ -20,12 +20,11 @@
     <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
    </langs>
    <MLTexts>
+    <MLText L1="" L2="" id="3"/>
     <MLText L1="360.01" L2="" id="0"/>
     <MLText L1="360.01" L2="" id="2"/>
-    <MLText L1="" L2="" id="3"/>
     <MLText L1="Kalender" L2="" id="7"/>
     <MLText L1="360.01" L2="360.01" id="8"/>
-    <MLText L1="" L2="" id="9"/>
     <MLText L1="360.01" L2="360.01" id="10"/>
     <MLText L1="Avtrekk Tilluftsregulering veksles etter utetemp" L2="Avtrekk Tilluftsregulering veksles etter utetemp" id="11"/>
     <MLText L1="Kalender" L2="Kalender" id="12"/>
@@ -158,7 +157,7 @@
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label43" static="true">
     <wgtStyle width="16.36" x="3.64" y="4.08" font-family="Tahoma" cx="8.18" cy="8.17" height="16.83" alignment="center" vert-align="middle" keypad-type="None" font-size="8"/>
     <links>
-     <lang class="MLTextLink" textid="9"/>
+     <lang class="MLTextLink" textid="3"/>
     </links>
    </object>
    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon8" static="true">
@@ -179,7 +178,7 @@
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label9" static="true">
     <wgtStyle width="16.36" x="3.64" y="4.08" font-family="Tahoma" cx="8.18" cy="8.17" height="16.83" alignment="center" vert-align="middle" keypad-type="None" font-size="8"/>
     <links>
-     <lang class="MLTextLink" textid="9"/>
+     <lang class="MLTextLink" textid="3"/>
     </links>
    </object>
    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon2" static="true">
@@ -339,19 +338,19 @@
     <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect; hmi-type:bkgd" id="BtnSimple8.frmImg" static="true">
-    <wgtStyle width="85.56" imagePath="images/frame_rrect_chrome.svg" enableCache="true" x="-8.56" y="-5" visibility="false" bdrImageSize="68.00,59.00" cx="41.89" cy="26.21" bdrSize="0.25,0.24,0.22,0.22" height="55" mtx="1,0,0,0,1,0,0,0,1" bdrEdges="0.10,0.10,0.13,0.10"/>
+    <wgtStyle width="85.56" imagePath="images/frame_rrect_chrome.svg" enableCache="true" x="-8.56" y="-5" visibility="false" bdrImageSize="68.00,59.00" cx="41.89" cy="26.21" bdrSize="0.25,0.24,0.22,0.22" height="55" bdrEdges="0.10,0.10,0.13,0.10"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rrect; hmi-type:btn; type:btn" id="BtnSimple8.btn">
-    <wgtStyle width="66" x="0" y="0" bdrImageSize="52.00,47.00" fill="rgb(153,200,140)" cx="33" form="standard" cy="21.53" bdrSize="0.22,0.21,0.21,0.15" height="44" releasePath="images\bu_smooth_rrect_1.svg" needlePath="images\bu_smooth_rrect_2_rev2.svg" mtx="1,0,0,0,1,0,0,0,1" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+    <wgtStyle width="66" x="0" y="0" bdrImageSize="52.00,47.00" fill="rgb(153,200,140)" cx="33" form="standard" cy="21.53" bdrSize="0.22,0.21,0.21,0.15" height="44" releasePath="images\bu_smooth_rrect_1.svg" needlePath="images\bu_smooth_rrect_2_rev2.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
    </object>
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnSimple8.lbl" static="true">
-    <wgtStyle width="66" x="1.22" y="0" font-family="Tahoma" wrapping="true" cx="33" cy="19.66" height="41" alignment="center" vert-align="middle" mtx="1,0,0,0,1,0,0,0,1" keypad-type="None" font-size="10"/>
+    <wgtStyle width="66" x="1.22" y="0" font-family="Tahoma" wrapping="true" cx="33" cy="19.66" height="41" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
     <links>
      <lang class="MLTextLink" textid="3"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="BtnSimple8.icoImg" static="true">
-    <wgtStyle width="41.56" enableCache="true" x="12.22" y="9" cx="20.31" cy="11.23" height="23" mtx="1,0,0,0,1,0,0,0,1"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="BtnSimple8.icoImg" static="true">
+    <wgtStyle width="41.56" enableCache="true" x="12.22" y="9" cx="20.31" cy="11.23" height="23"/>
    </object>
   </object>
   <object class="GroupWgt" id="BtnSimple1" customType="Button">
@@ -360,19 +359,19 @@
     <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnSimple1.frmImg" static="true">
-    <wgtStyle width="87.81" imagePath="images/frame_rect_chrome.svg" enableCache="true" x="-11.71" y="-9" visibility="false" bdrImageSize="71.00,58.00" cx="43.39" cy="31.12" bdrSize="0.19,0.18,0.17,0.17" height="62" mtx="1,0,0,0,1,0,0,0,1" bdrEdges="0.14,0.16,0.14,0.14"/>
+    <wgtStyle width="87.81" imagePath="images/frame_rect_chrome.svg" enableCache="true" x="-11.71" y="-9" visibility="false" bdrImageSize="71.00,58.00" cx="43.39" cy="31.12" bdrSize="0.19,0.18,0.17,0.17" height="62" bdrEdges="0.14,0.16,0.14,0.14"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:oldwin; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnSimple1.btn">
-    <wgtStyle width="63.22" x="0" y="0" bdrImageSize="51.00,41.00" fill="rgb(255,255,255)" cx="30.99" form="standard" cy="21.46" height="44" releasePath="images\bu_oldwin_rect_1_rev1.svg" needlePath="images\bu_oldwin_rect_2_rev2.svg" mtx="1,0,0,0,1,0,0,0,1" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+    <wgtStyle width="63.22" x="0" y="0" bdrImageSize="51.00,41.00" fill="rgb(255,255,255)" cx="30.99" form="standard" cy="21.46" height="44" releasePath="images\bu_oldwin_rect_1_rev1.svg" needlePath="images\bu_oldwin_rect_2_rev2.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
    </object>
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnSimple1.lbl">
-    <wgtStyle width="56.20" x="2.34" forcePaint="3" y="-1" font-family="Tahoma" wrapping="true" cx="28.51" cy="21.46" height="42" alignment="center" vert-align="middle" mtx="1,0,0,0,1,0,0,0,1" keypad-type="None" font-size="10"/>
+    <wgtStyle width="56.20" x="2.34" forcePaint="3" y="-1" font-family="Tahoma" wrapping="true" cx="28.51" cy="21.46" height="42" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
     <links>
      <lang class="MLTextLink" textid="2"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="BtnSimple1.icoImg" static="true">
-    <wgtStyle width="33.95" enableCache="true" x="12.88" y="8" cx="17.35" cy="12.88" height="26" mtx="1,0,0,0,1,0,0,0,1"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="BtnSimple1.icoImg" static="true">
+    <wgtStyle width="33.95" enableCache="true" x="12.88" y="8" cx="17.35" cy="12.88" height="26"/>
    </object>
   </object>
   <object class="GroupWgt" id="BtnSimple2" customType="Button">
@@ -389,10 +388,10 @@
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnSimple2.lbl" static="true">
     <wgtStyle width="56.20" x="2.34" y="-1" font-family="Tahoma" wrapping="true" cx="28.51" cy="21.46" height="42" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
     <links>
-     <lang class="MLTextLink" textid="9"/>
+     <lang class="MLTextLink" textid="3"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="BtnSimple2.icoImg" static="true">
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="BtnSimple2.icoImg" static="true">
     <wgtStyle width="33.95" enableCache="true" x="12.88" y="8" cx="17.35" cy="12.88" height="26"/>
    </object>
   </object>
@@ -410,10 +409,10 @@
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnSimple3.lbl" static="true">
     <wgtStyle width="56.20" x="2.34" y="-1" font-family="Tahoma" wrapping="true" cx="28.51" cy="21.46" height="42" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
     <links>
-     <lang class="MLTextLink" textid="9"/>
+     <lang class="MLTextLink" textid="3"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="BtnSimple3.icoImg" static="true">
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="BtnSimple3.icoImg" static="true">
     <wgtStyle width="33.95" enableCache="true" x="12.88" y="8" cx="17.35" cy="12.88" height="26"/>
    </object>
   </object>
@@ -431,10 +430,10 @@
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnSimple4.lbl" static="true">
     <wgtStyle width="56.20" x="2.34" y="-1" font-family="Tahoma" wrapping="true" cx="28.51" cy="21.46" height="42" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
     <links>
-     <lang class="MLTextLink" textid="9"/>
+     <lang class="MLTextLink" textid="3"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="BtnSimple4.icoImg" static="true">
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="BtnSimple4.icoImg" static="true">
     <wgtStyle width="33.95" enableCache="true" x="12.88" y="8" cx="17.35" cy="12.88" height="26"/>
    </object>
   </object>
@@ -455,7 +454,7 @@
      <lang class="MLTextLink" textid="0"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="BtnSimple7.icoImg" static="true">
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="BtnSimple7.icoImg" static="true">
     <wgtStyle width="31" enableCache="true" x="9" y="9" cx="15" cy="12" height="25"/>
    </object>
   </object>
@@ -476,7 +475,7 @@
      <lang class="MLTextLink" textid="7"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="BtnSimple5.icoImg" static="true">
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="BtnSimple5.icoImg" static="true">
     <wgtStyle width="31" enableCache="true" x="9" y="9" cx="15" cy="12" height="25"/>
    </object>
   </object>
@@ -497,7 +496,7 @@
      <lang class="MLTextLink" textid="0"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="BtnSimple6.icoImg" static="true">
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="BtnSimple6.icoImg" static="true">
     <wgtStyle width="31" enableCache="true" x="9" y="9" cx="15" cy="12" height="25"/>
    </object>
   </object>

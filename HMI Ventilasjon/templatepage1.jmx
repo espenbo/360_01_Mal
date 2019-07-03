@@ -1,0 +1,186 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="TemplatePage1" pageType="template" pageSize="800,480" class="TemplatePageWgt" dataWndSize="0,70" downloadPrepDone="true" usedFonts="Tahoma,Arial" id="TemplatePage1" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020800363" color="none" v="02.08.00.363"/>
+  <object class="PageMLTextMgrWgt" id="_TemplatePageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+    <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="Hovedside" L2="360.01" id="38"/>
+    <MLText L1="Service" L2="360.01" id="39"/>
+    <MLText L1="Drift" L2="360.01" id="40"/>
+    <MLText L1="Instillinger" L2="360.01" id="41"/>
+    <MLText L1="Status" L2="360.01" id="43"/>
+    <MLText L1="Alarmer" L2="360.01" id="44"/>
+    <MLText L1="Trend" L2="360.01" id="45"/>
+    <MLText L1="Kalender" L2="360.01" id="46"/>
+    <MLText L1=">>" L2="360.01" id="57"/>
+    <MLText L1="&lt;&lt;" L2="360.01" id="58"/>
+   </MLTexts>
+  </object>
+  <object class="ShapeWgt" id="rect1" static="true">
+   <wgtStyle width="800" x="1" y="451" fill="rgb(192,192,192)" cx="387.10" cy="15" height="30" nodeName="rect"/>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="hotspotbtn5">
+   <wgtStyle width="42" x="0.55" y="452" fill="rgb(160,160,164)" dx="1" cx="20.68" form="hotspot" dy="-1" cy="14.22" height="29" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action class="PrevPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label13">
+   <wgtStyle width="74" font-color="rgb(0,13,6)" x="61" forcePaint="2" y="456.50" font-family="Tahoma" cx="199" cy="9.50" height="19" vert-align="top" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="38"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label1">
+   <wgtStyle width="51" font-color="rgb(0,13,6)" x="492" forcePaint="2" y="456" font-family="Tahoma" cx="199" cy="9.50" height="19" vert-align="top" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="39"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label2">
+   <wgtStyle width="51" font-color="rgb(0,13,6)" x="164" forcePaint="2" y="456.50" font-family="Tahoma" cx="199" cy="9.50" height="19" alignment="center" vert-align="top" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="40"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label3">
+   <wgtStyle width="76" font-color="rgb(0,13,6)" x="580" forcePaint="2" y="456" font-family="Tahoma" cx="199" cy="9.50" height="19" vert-align="top" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="41"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label4">
+   <wgtStyle width="62" font-color="rgb(0,13,6)" x="388" forcePaint="2" y="456.50" font-family="Tahoma" cx="199" cy="9.50" height="19" vert-align="top" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="46"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label5">
+   <wgtStyle width="51" font-color="rgb(0,13,6)" x="240" forcePaint="2" y="456.50" font-family="Tahoma" cx="199" cy="9.50" height="19" vert-align="top" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="43"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label6">
+   <wgtStyle width="56" font-color="rgb(0,13,6)" x="681" forcePaint="2" y="456.50" font-family="Tahoma" cx="199" cy="9.50" height="19" vert-align="top" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="44"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label7">
+   <wgtStyle width="51" font-color="rgb(0,13,6)" x="312" forcePaint="2" y="456.50" font-family="Tahoma" cx="199" cy="9.50" height="19" vert-align="top" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="45"/>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="TemplatePage1@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="hotspotbtn1">
+   <wgtStyle width="106" x="44" forcePaint="1" y="453" fill="rgb(160,160,164)" dx="1" cx="52.18" form="hotspot" dy="-1" cy="13.73" height="28" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="main.jmx" class="LoadPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label9">
+   <wgtStyle width="51" font-color="rgb(0,13,6)" x="770" forcePaint="2" y="456" font-family="Tahoma" cx="199" cy="9.50" height="19" vert-align="top" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="57"/>
+   </links>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="hotspotbtn2">
+   <wgtStyle width="43" x="758" forcePaint="1" y="452" fill="rgb(160,160,164)" dx="1" cx="21.17" form="hotspot" dy="-1" cy="13.73" height="28" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action class="NextPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="LineWgt" id="line">
+   <wgtStyle width="1" x="150" forcePaint="1" y="451" cx="0.50" cy="15.50" height="30" anchorIdx="1"/>
+  </object>
+  <object class="LabelWgt" id="label10">
+   <wgtStyle width="28" font-color="rgb(0,13,6)" x="7.50" forcePaint="3" y="457" font-family="Tahoma" cx="109.25" cy="11.50" height="23" vert-align="top" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="58"/>
+   </links>
+  </object>
+  <object class="ImageWgt" id="image2" static="true">
+   <wgtStyle width="81" imagePath="images/storm elektro avd automasjon logo liten.jpg" x="5" y="5" cx="30" cy="18" height="66"/>
+  </object>
+  <object class="NumericWgt" id="timedate2">
+   <wgtStyle forcePaint="8" font-family="Arial" cx="32" cy="9" step="1" timeSpec="local" x="726" y="9" vert-align="top" text="-1" max="4096" usingFormat="hh:mm:ss" value="-1" keypad-type="None" min="0" width="64" numberFormat="0" height="18" form="date-time" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="value" tag="System Time" class="SysPropMgrWgt" widgetType="Project" sourceType="System" dataSource="_SysPropMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LineWgt" id="line2">
+   <wgtStyle width="1" x="43" forcePaint="1" y="452" cx="0.50" cy="15.50" height="30" anchorIdx="1"/>
+  </object>
+  <object class="LineWgt" id="line3">
+   <wgtStyle width="1" x="757.50" forcePaint="1" y="451" cx="0.50" cy="15.50" height="30" anchorIdx="1"/>
+  </object>
+  <object class="LineWgt" id="line4" static="true">
+   <wgtStyle width="1" x="222" y="451" cx="0.50" cy="15.50" height="30" anchorIdx="1"/>
+  </object>
+  <object class="LineWgt" id="line5" static="true">
+   <wgtStyle width="1" x="298" y="451" cx="0.50" cy="15.50" height="30" anchorIdx="1"/>
+  </object>
+  <object class="LineWgt" id="line6" static="true">
+   <wgtStyle width="1" x="368" y="451" cx="0.50" cy="15.50" height="30" anchorIdx="1"/>
+  </object>
+  <object class="LineWgt" id="line7" static="true">
+   <wgtStyle width="1" x="667" y="451" cx="0.50" cy="15.50" height="30" anchorIdx="1"/>
+  </object>
+  <object class="LineWgt" id="line8" static="true">
+   <wgtStyle width="1" x="565" y="451" cx="0.50" cy="15.50" height="30" anchorIdx="1"/>
+  </object>
+  <object class="LineWgt" id="line9" static="true">
+   <wgtStyle width="1" x="471" y="451" cx="0.50" cy="15.50" height="30" anchorIdx="1"/>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="hotspotbtn3">
+   <wgtStyle width="70" x="152" forcePaint="1" y="453" fill="rgb(160,160,164)" dx="1" cx="34.46" form="hotspot" dy="-1" cy="13.73" height="28" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="drift.jmx" class="LoadPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="hotspotbtn4">
+   <wgtStyle width="74" x="224" forcePaint="1" y="452" fill="rgb(160,160,164)" dx="1" cx="36.43" form="hotspot" dy="-1" cy="13.73" height="28" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="status.jmx" class="LoadPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="hotspotbtn6">
+   <wgtStyle width="68" x="299" forcePaint="1" y="452" fill="rgb(160,160,164)" dx="1" cx="33.48" form="hotspot" dy="-1" cy="13.73" height="28" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="trendtemp.jmx" class="LoadPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="hotspotbtn7">
+   <wgtStyle width="104" x="368" forcePaint="1" y="452" fill="rgb(160,160,164)" dx="1" cx="51.20" form="hotspot" dy="-1" cy="13.73" height="28" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="kalende360_01.jmx" class="LoadPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="hotspotbtn8">
+   <wgtStyle width="92" x="473" forcePaint="1" y="452" fill="rgb(160,160,164)" dx="1" cx="45.29" form="hotspot" dy="-1" cy="13.73" height="28" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="service.jmx" class="LoadPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="hotspotbtn9">
+   <wgtStyle width="101.90" x="566" forcePaint="1" y="452" fill="rgb(160,160,164)" dx="1" cx="50.16" form="hotspot" dy="-1" cy="13.73" height="28" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="instillinger.jmx" class="LoadPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="hotspotbtn10">
+   <wgtStyle width="88" x="668.40" forcePaint="1" y="452" fill="rgb(160,160,164)" dx="1" cx="43.32" form="hotspot" dy="-1" cy="13.73" height="28" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="alarmer.jmx" class="LoadPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+ </object>
+</wgtPage>

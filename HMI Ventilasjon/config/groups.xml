@@ -123,6 +123,10 @@
  <group Type="Auto">
   <name>ManSpjeld@$GroupSubscrWgt@$0</name>
   <active>false</active>
+  <tag>10239/"/BY2209_360_20_KA400_MAN"</tag>
+  <tag>10239/"/BY2209_360_20_KA400_MAN_CMD"</tag>
+  <tag>10239/"/BY2209_360_20_KA500_MAN"</tag>
+  <tag>10239/"/BY2209_360_20_KA500_MAN_CMD"</tag>
   <tag>iIndex_Tag</tag>
  </group>
  <group Type="Auto">
@@ -286,6 +290,7 @@
  <group Type="Auto">
   <name>Service@$GroupSubscrWgt@$0</name>
   <active>false</active>
+  <tag>10239/"/BY2209_360_20_TEST"</tag>
   <tag>iIndex_Tag</tag>
  </group>
  <group Type="Auto">
@@ -370,12 +375,12 @@
  <group Type="Auto">
   <name>Signaler S5@IndexedTagSet_Globale@1</name>
   <active>false</active>
-  <tag>10239/"/BY2209_360_20_QT500_PV"</tag>
-  <tag>10239/"/BY2209_360_20_QT501_PV"</tag>
-  <tag>10239/"/BY2209_360_20_RT400_PV"</tag>
   <tag>10239/"/BY2209_360_20_RT401_PV"</tag>
-  <tag>10239/"/BY2209_360_20_RT500_PV"</tag>
+  <tag>10239/"/BY2209_360_20_RT402_PV"</tag>
+  <tag>10239/"/BY2209_360_20_RT403_PV"</tag>
   <tag>10239/"/BY2209_360_20_RT501_PV"</tag>
+  <tag>10239/"/BY2209_360_20_RT502_PV"</tag>
+  <tag>10239/"/BY2209_360_20_RT503_PV"</tag>
   <tag>10239/"/BY2209_360_20_RT901_PV"</tag>
   <tag>sVentilasjon_360_20</tag>
  </group>
@@ -462,6 +467,11 @@
   <tag>System UpTime</tag>
  </group>
  <group Type="Auto">
+  <name>TemplatePage1@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>System Time</tag>
+ </group>
+ <group Type="Auto">
   <name>TestMain@$GroupSubscrWgt@$0</name>
   <active>false</active>
   <tag>iIndex_Tag</tag>
@@ -518,11 +528,11 @@
  <group Type="Auto">
   <name>TrendTemp@IndexedTagSet_Globale@1</name>
   <active>false</active>
-  <tag>10239/"/BY2209_360_20_QT501_PV"</tag>
-  <tag>10239/"/BY2209_360_20_RT400_PV"</tag>
   <tag>10239/"/BY2209_360_20_RT401_PV"</tag>
-  <tag>10239/"/BY2209_360_20_RT500_PV"</tag>
+  <tag>10239/"/BY2209_360_20_RT402_PV"</tag>
   <tag>10239/"/BY2209_360_20_RT501_PV"</tag>
+  <tag>10239/"/BY2209_360_20_RT502_PV"</tag>
+  <tag>10239/"/BY2209_360_20_RT503_PV"</tag>
  </group>
  <group Type="Auto">
   <name>TrendTemp@IndexedTagSet_Globale@2</name>
@@ -586,13 +596,13 @@
   <tag>10239/"/BY2209_360_20_JV500_STATUS"</tag>
   <tag>10239/"/BY2209_360_20_JV500_V"</tag>
   <tag>10239/"/BY2209_360_20_LX400_OP"</tag>
-  <tag>10239/"/BY2209_360_20_QT500_PV"</tag>
-  <tag>10239/"/BY2209_360_20_QT501_PV"</tag>
   <tag>10239/"/BY2209_360_20_RP400_AL"</tag>
   <tag>10239/"/BY2209_360_20_RP500_AL"</tag>
-  <tag>10239/"/BY2209_360_20_RT400_PV"</tag>
   <tag>10239/"/BY2209_360_20_RT401_PV"</tag>
-  <tag>10239/"/BY2209_360_20_RT500_PV"</tag>
+  <tag>10239/"/BY2209_360_20_RT402_PV"</tag>
+  <tag>10239/"/BY2209_360_20_RT403_PV"</tag>
+  <tag>10239/"/BY2209_360_20_RT501_PV"</tag>
+  <tag>10239/"/BY2209_360_20_RT503_PV"</tag>
   <tag>10239/"/BY2209_360_20_SB400_K_OP"</tag>
   <tag>10239/"/BY2209_360_20_SB400_V_OP"</tag>
   <tag>10239/"/BY2209_360_20_SYS_AL"</tag>

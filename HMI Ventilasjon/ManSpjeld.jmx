@@ -17,7 +17,6 @@
     <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
    </langs>
    <MLTexts>
-    <MLText L1="" L2="" id="69"/>
     <MLText L1="-KA400" L2="-KA40" id="1"/>
     <MLText L1="OK" L2="OK" id="4"/>
     <MLText L1="On " L2="On " id="6"/>
@@ -68,6 +67,7 @@
     <MLText L1="Error Humidifier " L2="Error Humidifier " id="66"/>
     <MLText L1="Error limit switch" L2="Error limit switch" id="67"/>
     <MLText L1="Synchronisation " L2="Synchronisation " id="68"/>
+    <MLText L1="" L2="" id="69"/>
     <MLText L1="Inntakspjeld åpent" L2="Inntakspjeld" id="80"/>
     <MLText L1="Inntakspjeld lukket" L2="Inntakspjeld" id="81"/>
     <MLText L1="-KA500" L2="-KA40" id="82"/>
@@ -570,6 +570,110 @@
    <links>
     <lang class="MLTextLink" textid="85"/>
    </links>
+  </object>
+  <object class="GroupWgt" id="BtnStd7" customType="Button">
+   <wgtStyle width="116" x="53" y="288" cx="57.37" cy="16.51" height="34"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrectbar; hmi-type:bkgd" id="image12" static="true">
+    <wgtStyle width="117.24" imagePath="images/frame_rrectbar_chrome.svg" x="0" y="-0.97" cx="58.89" cy="18" height="35.94"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rrectbar; hmi-type:btn; type:btn" id="buttonStd7">
+    <wgtStyle width="107.27" x="4.99" forcePaint="136" y="3.89" fill="rgb(192,192,192)" dx="1" cx="53.85" form="standard" dy="-1" cy="13.17" height="26.23" releasePath="images\btn_plastic_rrectbar_1.svg" needlePath="images\btn_plastic_rrectbar_2.svg" type="maintained" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="10239/&quot;/BY2209_360_20_KA400_MAN&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     <dataLink readWrite="R/W" attribute="fill" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.xSpjeld_inntak_MAN" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#c0c0c0;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label12">
+    <wgtStyle width="101.03" font-color="rgb(40,40,40)" x="6.24" forcePaint="3" y="1.94" font-family="Tahoma" wrapping="true" cx="50.97" cy="13.50" height="26.23" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="58"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image15" static="true">
+    <wgtStyle width="36.18" x="37.42" y="7.77" cx="18.46" cy="7.99" height="15.54"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd9" customType="Button">
+   <wgtStyle width="116" x="53" y="334" cx="57.37" cy="16.51" height="34"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrectbar; hmi-type:bkgd" id="image18" static="true">
+    <wgtStyle width="117.24" imagePath="images/frame_rrectbar_chrome.svg" x="0" y="-0.97" cx="58.89" cy="18" height="35.94"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rrectbar; hmi-type:btn; type:btn" id="buttonStd9">
+    <wgtStyle width="107.27" x="4.99" forcePaint="136" y="3.89" fill="rgb(192,192,192)" dx="1" cx="53.85" form="standard" dy="-1" cy="13.17" height="26.23" releasePath="images\btn_plastic_rrectbar_1.svg" needlePath="images\btn_plastic_rrectbar_2.svg" type="maintained" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="10239/&quot;/BY2209_360_20_KA400_MAN_CMD&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     <dataLink readWrite="R" attribute="fill" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.xSpjeld_inntak_MAN_CMD" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#c0c0c0;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label14">
+    <wgtStyle width="101.03" font-color="rgb(40,40,40)" x="6.24" forcePaint="3" y="1.94" font-family="Tahoma" wrapping="true" cx="50.97" cy="13.50" height="26.23" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="55"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image19" static="true">
+    <wgtStyle width="36.18" x="37.42" y="7.77" cx="18.46" cy="7.99" height="15.54"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd10" customType="Button">
+   <wgtStyle width="116" x="436" y="285" cx="57.37" cy="16.51" height="34"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrectbar; hmi-type:bkgd" id="image20" static="true">
+    <wgtStyle width="117.24" imagePath="images/frame_rrectbar_chrome.svg" x="0" y="-0.97" cx="58.89" cy="18" height="35.94"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rrectbar; hmi-type:btn; type:btn" id="buttonStd10">
+    <wgtStyle width="107.27" x="4.99" forcePaint="136" y="3.89" fill="rgb(192,192,192)" dx="1" cx="53.85" form="standard" dy="-1" cy="13.17" height="26.23" releasePath="images\btn_plastic_rrectbar_1.svg" needlePath="images\btn_plastic_rrectbar_2.svg" type="maintained" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="10239/&quot;/BY2209_360_20_KA500_MAN&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     <dataLink readWrite="R/W" attribute="fill" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.xSpjeld_avkast_MAN" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#c0c0c0;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label16">
+    <wgtStyle width="101.03" font-color="rgb(40,40,40)" x="6.24" forcePaint="3" y="1.94" font-family="Tahoma" wrapping="true" cx="50.97" cy="13.50" height="26.23" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="58"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image21" static="true">
+    <wgtStyle width="36.18" x="37.42" y="7.77" cx="18.46" cy="7.99" height="15.54"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd11" customType="Button">
+   <wgtStyle width="116" x="436" y="331" cx="57.37" cy="16.51" height="34"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrectbar; hmi-type:bkgd" id="image22" static="true">
+    <wgtStyle width="117.24" imagePath="images/frame_rrectbar_chrome.svg" x="0" y="-0.97" cx="58.89" cy="18" height="35.94"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rrectbar; hmi-type:btn; type:btn" id="buttonStd11">
+    <wgtStyle width="107.27" x="4.99" forcePaint="136" y="3.89" fill="rgb(192,192,192)" dx="1" cx="53.85" form="standard" dy="-1" cy="13.17" height="26.23" releasePath="images\btn_plastic_rrectbar_1.svg" needlePath="images\btn_plastic_rrectbar_2.svg" type="maintained" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="10239/&quot;/BY2209_360_20_KA500_MAN_CMD&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     <dataLink readWrite="R" attribute="fill" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.xSpjeld_avkast_MAN_CMD" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#c0c0c0;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label17">
+    <wgtStyle width="101.03" font-color="rgb(40,40,40)" x="6.24" forcePaint="3" y="1.94" font-family="Tahoma" wrapping="true" cx="50.97" cy="13.50" height="26.23" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="55"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image23" static="true">
+    <wgtStyle width="36.18" x="37.42" y="7.77" cx="18.46" cy="7.99" height="15.54"/>
+   </object>
   </object>
  </object>
 </wgtPage>
