@@ -24,7 +24,7 @@
   <object class="NumericWgt" id="field8">
    <wgtStyle forcePaint="8" font-family="Arial" cx="38.85" cy="11" step="1" timeSpec="local" alignment="right" x="203.74" y="19.69" vert-align="top" text="50" max="3.40282e+038" usingFormat="#" value="50" keypad-type="Numeric" min="-3.40282e+038" width="80" numberFormat="6" readWrite="true" height="23" form="Numeric" font-size="16"/>
    <dataLinks>
-    <dataLink readWrite="R/W" attribute="value" tag="IndexedTagSet_Globale_Retaind.rAvtrekksvifte_StartDelay" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="10239/&quot;/BY2209_360_20_JV500_StartDelay&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
    </dataLinks>
   </object>
   <object class="LabelWgt" id="label1">
@@ -39,7 +39,7 @@
   <object class="NumericWgt" id="field1">
    <wgtStyle forcePaint="8" font-family="Arial" cx="38.85" cy="11" step="1" timeSpec="local" alignment="right" x="203.43" y="56.63" vert-align="top" text="50" max="3.40282e+038" usingFormat="#" value="50" keypad-type="Numeric" min="-3.40282e+038" width="80" numberFormat="6" readWrite="true" height="23" form="Numeric" font-size="16"/>
    <dataLinks>
-    <dataLink readWrite="R/W" attribute="value" tag="IndexedTagSet_Globale_Retaind.rTilluftsvifte_StartUpPeriod" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="10239/&quot;/BY2209_360_20_JV500_StartUpPeriod&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
    </dataLinks>
   </object>
   <object class="GroupWgt" id="GroupWgt1" customType="Button">

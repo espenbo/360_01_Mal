@@ -266,7 +266,8 @@
     </msgtxt>
    </wgtStyle>
    <dataLinks>
-    <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.wSpjeld_inntak_Status" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    <dataLink readWrite="R" tagType="float" attribute="value" tag="10239/&quot;/BY2209_360_20_KA400_STATUS&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    <dataLink readWrite="R" tagType="float" attribute="messages" tag="10239/&quot;/BY2209_360_20_KA400_STATUS&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
    </dataLinks>
    <links>
     <lang class="MLMsgLink:messages:">
@@ -429,7 +430,7 @@
    </object>
   </object>
   <object class="MsgTextWgt" id="msgtext1">
-   <wgtStyle marker="true" forcePaint="10" font-family="Tahoma" font-sizepx="10" cx="56.53" cy="7.70" x="493" y="157" viewindex="false" vert-align="top" text="" max="47" value="42" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="142" continous="true" height="12" font-size="8">
+   <wgtStyle marker="true" forcePaint="10" font-family="Tahoma" font-sizepx="10" cx="56.53" cy="7.70" x="493" y="157" viewindex="true" vert-align="top" text="" max="47" value="42" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="142" continous="true" height="12" font-size="8">
     <msgtxt>
      <msg index="0"/>
      <msg index="1"/>
@@ -483,6 +484,7 @@
    </wgtStyle>
    <dataLinks>
     <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.wSpjeld_avkast_Status" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    <dataLink readWrite="R" attribute="messages" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.wSpjeld_avkast_Status" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
    </dataLinks>
    <links>
     <lang class="MLMsgLink:messages:">
@@ -563,9 +565,9 @@
    </object>
   </object>
   <object class="LabelWgt" id="label9">
-   <wgtStyle width="158" x="565" forcePaint="11" y="227" font-family="Tahoma" cx="79" cy="10" height="20" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <wgtStyle width="158" x="565" forcePaint="11" y="228" font-family="Tahoma" cx="79" cy="10" height="20" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
    <dataLinks>
-    <dataLink readWrite="R" attribute="visibility" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.xSpjeld_avkast_Closed_V" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    <dataLink readWrite="R" attribute="visibility" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.xSpjeld_avkast_Open_V" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
    </dataLinks>
    <links>
     <lang class="MLTextLink" textid="85"/>

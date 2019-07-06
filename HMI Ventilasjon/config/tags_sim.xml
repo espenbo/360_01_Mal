@@ -40,7 +40,7 @@
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <comment>&quot;System status, Se hjelpe tekst&quot;</comment>
+    <comment>&quot;Frost alarm&quot;</comment>
     <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_AFW_STATUS&quot;?float</resourceLocator>
     <enableScaling>false</enableScaling>
     <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_AFW_STATUS&quot;</TAGLOCATOR>
@@ -52,7 +52,7 @@
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <comment>&quot;Anleggsinfo i beskrivelse&quot;</comment>
+    <comment>&quot;360.20&quot;</comment>
     <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_Anlegg&quot;?boolean</resourceLocator>
     <enableScaling>false</enableScaling>
     <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_Anlegg&quot;</TAGLOCATOR>
@@ -148,7 +148,7 @@
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <comment>&quot;AntifreezeWater Flush OK&quot;</comment>
+    <comment>&quot;Kjoling aktiv&quot;</comment>
     <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_Cooling_Active&quot;?boolean</resourceLocator>
     <enableScaling>false</enableScaling>
     <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_Cooling_Active&quot;</TAGLOCATOR>
@@ -196,7 +196,7 @@
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <comment>&quot;AntifreezeWater Flush OK&quot;</comment>
+    <comment>&quot;Frostalarm luft&quot;</comment>
     <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_Frost_AL_Air&quot;?boolean</resourceLocator>
     <enableScaling>false</enableScaling>
     <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_Frost_AL_Air&quot;</TAGLOCATOR>
@@ -232,7 +232,7 @@
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <comment>&quot;AntifreezeWater Flush OK&quot;</comment>
+    <comment>&quot;Varmegjenvinner aktiv&quot;</comment>
     <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_HeatExchange_Active&quot;?boolean</resourceLocator>
     <enableScaling>false</enableScaling>
     <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_HeatExchange_Active&quot;</TAGLOCATOR>
@@ -244,7 +244,7 @@
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <comment>&quot;AntifreezeWater Flush OK&quot;</comment>
+    <comment>&quot;Varmebatteri aktiv&quot;</comment>
     <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_Heating_Active&quot;?boolean</resourceLocator>
     <enableScaling>false</enableScaling>
     <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_Heating_Active&quot;</TAGLOCATOR>
@@ -352,6 +352,7 @@
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
+    <comment>&quot;Pumpe stopper av temp&quot;</comment>
     <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_JP400_StoppedByTemp&quot;?boolean</resourceLocator>
     <enableScaling>false</enableScaling>
     <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_JP400_StoppedByTemp&quot;</TAGLOCATOR>
@@ -395,11 +396,23 @@
     <max>Y</max>
 </tag>
 <tag>
+    <name>10239/&quot;/BY2209_360_20_JP401_V&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Drift sirk.pumpe&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_JP401_V&quot;?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_JP401_V&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
     <name>10239/&quot;/BY2209_360_20_JV400_DT&quot;</name>
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <comment>&quot;Driftstid Avtrekksvifte&quot;</comment>
+    <comment>&quot;Driftstid Tilluftsvifte&quot;</comment>
     <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_JV400_DT&quot;?float</resourceLocator>
     <enableScaling>false</enableScaling>
     <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_JV400_DT&quot;</TAGLOCATOR>
@@ -411,7 +424,7 @@
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <comment>&quot;Avtrekksvifte feil&quot;</comment>
+    <comment>&quot;Tilluftsvifte feil&quot;</comment>
     <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_JV400_ERROR&quot;?boolean</resourceLocator>
     <enableScaling>false</enableScaling>
     <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_JV400_ERROR&quot;</TAGLOCATOR>
@@ -479,14 +492,50 @@
     <max>Y</max>
 </tag>
 <tag>
+    <name>10239/&quot;/BY2209_360_20_JV400_StartDelay&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Oppstarts forsinkelse Tilluftsvifte&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_JV400_StartDelay&quot;?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_JV400_StartDelay&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
+    <name>10239/&quot;/BY2209_360_20_JV400_StartUpPeriod&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Oppstarts periode Tilluftsvifte&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_JV400_StartUpPeriod&quot;?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_JV400_StartUpPeriod&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
     <name>10239/&quot;/BY2209_360_20_JV400_STATUS&quot;</name>
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <comment>&quot;System status, Se hjelpe tekst&quot;</comment>
+    <comment>&quot;Ok&quot;</comment>
     <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_JV400_STATUS&quot;?float</resourceLocator>
     <enableScaling>false</enableScaling>
     <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_JV400_STATUS&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
+    <name>10239/&quot;/BY2209_360_20_JV400_StBypassDelay&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Oppstarts bypass delay Tilluftsvifte&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_JV400_StBypassDelay&quot;?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_JV400_StBypassDelay&quot;</TAGLOCATOR>
     <enableAudit subT="1" eventT="18">false</enableAudit>
     <max>Y</max>
 </tag>
@@ -599,14 +648,50 @@
     <max>Y</max>
 </tag>
 <tag>
+    <name>10239/&quot;/BY2209_360_20_JV500_StartDelay&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Oppstarts forsinkelse Avtrekksvifte&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_JV500_StartDelay&quot;?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_JV500_StartDelay&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
+    <name>10239/&quot;/BY2209_360_20_JV500_StartUpPeriod&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Oppstarts periode Avtrekksvifte&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_JV500_StartUpPeriod&quot;?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_JV500_StartUpPeriod&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
     <name>10239/&quot;/BY2209_360_20_JV500_STATUS&quot;</name>
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <comment>&quot;System status, Se hjelpe tekst&quot;</comment>
+    <comment>&quot;Ok&quot;</comment>
     <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_JV500_STATUS&quot;?float</resourceLocator>
     <enableScaling>false</enableScaling>
     <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_JV500_STATUS&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
+    <name>10239/&quot;/BY2209_360_20_JV500_StBypassDelay&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Oppstarts bypass delay Avtrekksvifte&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_JV500_StBypassDelay&quot;?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_JV500_StBypassDelay&quot;</TAGLOCATOR>
     <enableAudit subT="1" eventT="18">false</enableAudit>
     <max>Y</max>
 </tag>
@@ -723,7 +808,7 @@
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <comment>&quot;System status, Se hjelpe tekst&quot;</comment>
+    <comment>&quot;Closed&quot;</comment>
     <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_KA400_STATUS&quot;?float</resourceLocator>
     <enableScaling>false</enableScaling>
     <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_KA400_STATUS&quot;</TAGLOCATOR>
@@ -843,7 +928,7 @@
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <comment>&quot;System status, Se hjelpe tekst&quot;</comment>
+    <comment>&quot;Closed&quot;</comment>
     <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_KA500_STATUS&quot;?float</resourceLocator>
     <enableScaling>false</enableScaling>
     <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_KA500_STATUS&quot;</TAGLOCATOR>
@@ -1055,11 +1140,23 @@
     <max>Y</max>
 </tag>
 <tag>
+    <name>10239/&quot;/BY2209_360_20_LX400_ROT_AL&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Rotasjons vakt alarm&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_LX400_ROT_AL&quot;?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_LX400_ROT_AL&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
     <name>10239/&quot;/BY2209_360_20_LX400_STATUS&quot;</name>
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <comment>&quot;System status, Se hjelpe tekst&quot;</comment>
+    <comment>&quot;Off&quot;</comment>
     <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_LX400_STATUS&quot;?float</resourceLocator>
     <enableScaling>false</enableScaling>
     <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_LX400_STATUS&quot;</TAGLOCATOR>
@@ -1259,26 +1356,14 @@
     <max>Y</max>
 </tag>
 <tag>
-    <name>10239/&quot;/BY2209_360_20_QT500_PV&quot;</name>
+    <name>10239/&quot;/BY2209_360_20_QT550_AL&quot;</name>
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <comment>&quot;Temp turvann vvb&quot;</comment>
-    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_QT500_PV&quot;?float</resourceLocator>
+    <comment>&quot;Frostalarm&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_QT550_AL&quot;?boolean</resourceLocator>
     <enableScaling>false</enableScaling>
-    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_QT500_PV&quot;</TAGLOCATOR>
-    <enableAudit subT="1" eventT="18">false</enableAudit>
-    <max>Y</max>
-</tag>
-<tag>
-    <name>10239/&quot;/BY2209_360_20_QT501_PV&quot;</name>
-    <refreshTime>500</refreshTime>
-    <accessMode>READ-WRITE</accessMode>
-    <active>false</active>
-    <comment>&quot;Temp returvann vvb&quot;</comment>
-    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_QT501_PV&quot;?float</resourceLocator>
-    <enableScaling>false</enableScaling>
-    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_QT501_PV&quot;</TAGLOCATOR>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_QT550_AL&quot;</TAGLOCATOR>
     <enableAudit subT="1" eventT="18">false</enableAudit>
     <max>Y</max>
 </tag>
@@ -1403,23 +1488,11 @@
     <max>Y</max>
 </tag>
 <tag>
-    <name>10239/&quot;/BY2209_360_20_RT400_PV&quot;</name>
-    <refreshTime>500</refreshTime>
-    <accessMode>READ-WRITE</accessMode>
-    <active>false</active>
-    <comment>&quot;Tempføler inntak&quot;</comment>
-    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_RT400_PV&quot;?float</resourceLocator>
-    <enableScaling>false</enableScaling>
-    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_RT400_PV&quot;</TAGLOCATOR>
-    <enableAudit subT="1" eventT="18">false</enableAudit>
-    <max>Y</max>
-</tag>
-<tag>
     <name>10239/&quot;/BY2209_360_20_RT401_PV&quot;</name>
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <comment>&quot;Tempføler avkast&quot;</comment>
+    <comment>&quot;Tempføler inntak&quot;</comment>
     <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_RT401_PV&quot;?float</resourceLocator>
     <enableScaling>false</enableScaling>
     <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_RT401_PV&quot;</TAGLOCATOR>
@@ -1427,14 +1500,26 @@
     <max>Y</max>
 </tag>
 <tag>
-    <name>10239/&quot;/BY2209_360_20_RT500_PV&quot;</name>
+    <name>10239/&quot;/BY2209_360_20_RT402_PV&quot;</name>
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
     <comment>&quot;Tempføler tilluft&quot;</comment>
-    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_RT500_PV&quot;?float</resourceLocator>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_RT402_PV&quot;?float</resourceLocator>
     <enableScaling>false</enableScaling>
-    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_RT500_PV&quot;</TAGLOCATOR>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_RT402_PV&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
+    <name>10239/&quot;/BY2209_360_20_RT403_PV&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Temp turvann vvb&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_RT403_PV&quot;?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_RT403_PV&quot;</TAGLOCATOR>
     <enableAudit subT="1" eventT="18">false</enableAudit>
     <max>Y</max>
 </tag>
@@ -1443,10 +1528,34 @@
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <comment>&quot;Tempføler avtrekkk&quot;</comment>
+    <comment>&quot;Tempføler avkast&quot;</comment>
     <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_RT501_PV&quot;?float</resourceLocator>
     <enableScaling>false</enableScaling>
     <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_RT501_PV&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
+    <name>10239/&quot;/BY2209_360_20_RT502_PV&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Tempføler avtrekkk&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_RT502_PV&quot;?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_RT502_PV&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
+    <name>10239/&quot;/BY2209_360_20_RT503_PV&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Temp returvann vvb&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_RT503_PV&quot;?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_RT503_PV&quot;</TAGLOCATOR>
     <enableAudit subT="1" eventT="18">false</enableAudit>
     <max>Y</max>
 </tag>
@@ -1863,7 +1972,7 @@
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <comment>&quot;CollectivMalfunction status&quot;</comment>
+    <comment>&quot;Ok&quot;</comment>
     <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_SYSTEM_STATUS&quot;?float</resourceLocator>
     <enableScaling>false</enableScaling>
     <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_SYSTEM_STATUS&quot;</TAGLOCATOR>
@@ -1963,6 +2072,66 @@
     <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_VIFTER_NATT_SP&quot;?float</resourceLocator>
     <enableScaling>false</enableScaling>
     <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_VIFTER_NATT_SP&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
+    <name>10239/&quot;/BY2209_360_20_XS001_V&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Sikkerhetsbryter tilluft&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_XS001_V&quot;?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_XS001_V&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
+    <name>10239/&quot;/BY2209_360_20_XS002_V&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Sikkerhetsbryter avtrekk&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_XS002_V&quot;?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_XS002_V&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
+    <name>10239/&quot;/BY2209_360_20_XS003_V&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Sikkerhetsbryter pumpe&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_XS003_V&quot;?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_XS003_V&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
+    <name>10239/&quot;/BY2209_360_20_XS004_V&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Sikkerhetsbryter gjenvinner&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_XS004_V&quot;?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_XS004_V&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
+    <name>10239/&quot;/BY2209_360_20_TEST&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Test utstyr&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_TEST&quot;?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_TEST&quot;</TAGLOCATOR>
     <enableAudit subT="1" eventT="18">false</enableAudit>
     <max>Y</max>
 </tag>

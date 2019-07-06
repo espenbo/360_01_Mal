@@ -12,36 +12,36 @@
   </MLTexts>
  </object>
  <object class="LabelWgt" id="*.TagReturTemp1">
-  <wgtStyle width="48.47" x="3.88" forcePaint="16" y="30" font-family="Tahoma" cx="24.01" cy="7.70" wgtStaticOpt="dynamic" height="15" vert-align="top" mtx="1,0,0,0,1,0,0,0,1" marker="true" keypad-type="None" font-size="8"/>
+  <wgtStyle width="48.47" x="3.88" forcePaint="16" y="58" font-family="Tahoma" cx="24.01" cy="7.70" wgtStaticOpt="dynamic" height="15" vert-align="top" marker="true" keypad-type="None" font-size="8"/>
   <links>
    <lang class="MLTextLink" textid="3"/>
   </links>
  </object>
  <object class="GroupWgt" id="*.GroupWgt2">
-  <wgtStyle width="49.16" x="2.84" forcePaint="16" y="0" cx="24.58" cy="10.25" wgtStaticOpt="dynamic" height="20.50" mtx="1,0,0,0,1,0,0,0,1"/>
+  <wgtStyle width="57.16" x="7" forcePaint="16" y="27" cx="28.58" cy="10.25" wgtStaticOpt="dynamic" height="20.50"/>
   <object class="NumericWgt" id="field2">
-   <wgtStyle forcePaint="16" font-family="Arial" cx="11.70" cy="9.33" step="1" timeSpec="local" alignment="right" x="0" y="0" wgtStaticOpt="dynamic" vert-align="top" text="10.1" max="3.40282e+038" usingFormat="#.#" value="10.1" keypad-type="None" min="-3.40282e+038" mtx="1,0,0,0,1,0,0,0,1" width="24.11" numberFormat="6" readWrite="true" height="19.50" form="Numeric" font-size="10"/>
+   <wgtStyle forcePaint="16" font-family="Arial" cx="13.60" cy="9.33" step="1" timeSpec="local" alignment="right" x="0" y="0" wgtStaticOpt="dynamic" vert-align="top" text="10.1" max="3.40282e+038" usingFormat="#.#" value="10.1" keypad-type="None" min="-3.40282e+038" mtx="1,0,0,0,1,0,0,0,1" width="28.03" numberFormat="6" readWrite="true" height="19.50" form="Numeric" font-size="10"/>
   </object>
   <object class="LabelWgt" id="label3">
-   <wgtStyle width="24.58" x="24.58" forcePaint="16" y="0.50" font-family="Tahoma" cx="12.29" cy="10" wgtStaticOpt="dynamic" height="20" vert-align="top" mtx="1,0,0,0,1,0,0,0,1" marker="true" keypad-type="None" font-size="10"/>
+   <wgtStyle width="28.58" x="28.58" forcePaint="16" y="0.50" font-family="Tahoma" cx="14.29" cy="10" wgtStaticOpt="dynamic" height="20" vert-align="top" mtx="1,0,0,0,1,0,0,0,1" marker="true" keypad-type="None" font-size="10"/>
    <links>
     <lang class="MLTextLink" textid="4"/>
    </links>
   </object>
  </object>
  <object class="GroupWgt" id="*.TempTur">
-  <wgtStyle width="27.42" x="0" forcePaint="16" y="15" cx="13.71" cy="7.50" wgtStaticOpt="dynamic" height="15" mtx="1,0,0,0,1,0,0,0,1"/>
+  <wgtStyle width="27.42" x="0" forcePaint="16" y="43" cx="13.71" cy="7.50" wgtStaticOpt="dynamic" height="15"/>
   <object class="ShapeWgt" id="*.TempTur.circle">
-   <wgtStyle width="14.18" x="13.24" forcePaint="16" y="0" fill="rgb(255,255,224)" cx="7.09" cy="7.50" wgtStaticOpt="dynamic" rx="22" height="15" nodeName="ellipse" ry="19" mtx="1,0,0,0,1,0,0,0,1"/>
+   <wgtStyle width="14.18" x="13.24" forcePaint="16" y="0" fill="rgb(255,255,224)" cx="7.09" cy="7.50" wgtStaticOpt="dynamic" rx="22" height="15" nodeName="ellipse" ry="19"/>
   </object>
   <object class="LabelWgt" id="*.TempTur.label">
-   <wgtStyle width="5.67" x="17.02" forcePaint="16" y="1" font-family="Tahoma" cx="2.84" cy="7" wgtStaticOpt="dynamic" height="14" vert-align="top" mtx="1,0,0,0,1,0,0,0,1" keypad-type="None" font-size="8"/>
+   <wgtStyle width="5.67" x="17.02" forcePaint="16" y="1" font-family="Tahoma" cx="2.84" cy="7" wgtStaticOpt="dynamic" height="14" vert-align="top" keypad-type="None" font-size="8"/>
    <links>
     <lang class="MLTextLink" textid="5"/>
    </links>
   </object>
   <object class="LineWgt" id="*.TempTur.line">
-   <wgtStyle width="13.24" x="0" forcePaint="16" y="7" cx="6.62" cy="0" wgtStaticOpt="dynamic" height="0" mtx="1,0,0,0,1,0,0,0,1"/>
+   <wgtStyle width="13.24" x="0" forcePaint="16" y="7" cx="6.62" cy="0" wgtStaticOpt="dynamic" height="0"/>
   </object>
  </object>
 </customWgt>

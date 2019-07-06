@@ -572,7 +572,7 @@
             <object_instance>12</object_instance>
             <object_property>85</object_property>
             <supports_cov>false</supports_cov>
-            <comment>&quot;System status, Se hjelpe tekst&quot;</comment>
+            <comment>&quot;Frost alarm&quot;</comment>
             <rw>R</rw>
             <default></default>
             <min></min>
@@ -587,7 +587,7 @@
             <object_instance>71</object_instance>
             <object_property>85</object_property>
             <supports_cov>false</supports_cov>
-            <comment>&quot;Anleggsinfo i beskrivelse&quot;</comment>
+            <comment>&quot;360.20&quot;</comment>
             <rw>R</rw>
             <default></default>
             <min></min>
@@ -707,7 +707,7 @@
             <object_instance>25</object_instance>
             <object_property>85</object_property>
             <supports_cov>false</supports_cov>
-            <comment>&quot;AntifreezeWater Flush OK&quot;</comment>
+            <comment>&quot;Kjoling aktiv&quot;</comment>
             <rw>R</rw>
             <default></default>
             <min></min>
@@ -767,7 +767,7 @@
             <object_instance>24</object_instance>
             <object_property>85</object_property>
             <supports_cov>false</supports_cov>
-            <comment>&quot;AntifreezeWater Flush OK&quot;</comment>
+            <comment>&quot;Frostalarm luft&quot;</comment>
             <rw>R</rw>
             <default></default>
             <min></min>
@@ -812,7 +812,7 @@
             <object_instance>26</object_instance>
             <object_property>85</object_property>
             <supports_cov>false</supports_cov>
-            <comment>&quot;AntifreezeWater Flush OK&quot;</comment>
+            <comment>&quot;Varmegjenvinner aktiv&quot;</comment>
             <rw>R</rw>
             <default></default>
             <min></min>
@@ -827,7 +827,7 @@
             <object_instance>27</object_instance>
             <object_property>85</object_property>
             <supports_cov>false</supports_cov>
-            <comment>&quot;AntifreezeWater Flush OK&quot;</comment>
+            <comment>&quot;Varmebatteri aktiv&quot;</comment>
             <rw>R</rw>
             <default></default>
             <min></min>
@@ -962,7 +962,7 @@
             <object_instance>52</object_instance>
             <object_property>85</object_property>
             <supports_cov>false</supports_cov>
-            <comment></comment>
+            <comment>&quot;Pumpe stopper av temp&quot;</comment>
             <rw>R</rw>
             <default></default>
             <min></min>
@@ -1016,13 +1016,28 @@
             <datatype>boolean</datatype>
         </tag>
         <tag>
+            <tagname>10239/&quot;/BY2209_360_20_JP401_V&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>BV</object_type>
+            <object_instance>80</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;Drift sirk.pumpe&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>boolean</datatype>
+        </tag>
+        <tag>
             <tagname>10239/&quot;/BY2209_360_20_JV400_DT&quot;</tagname>
             <device_id>10239</device_id>
             <object_type>AV</object_type>
             <object_instance>22</object_instance>
             <object_property>85</object_property>
             <supports_cov>false</supports_cov>
-            <comment>&quot;Driftstid Avtrekksvifte&quot;</comment>
+            <comment>&quot;Driftstid Tilluftsvifte&quot;</comment>
             <rw>R</rw>
             <default></default>
             <min></min>
@@ -1037,7 +1052,7 @@
             <object_instance>38</object_instance>
             <object_property>85</object_property>
             <supports_cov>false</supports_cov>
-            <comment>&quot;Avtrekksvifte feil&quot;</comment>
+            <comment>&quot;Tilluftsvifte feil&quot;</comment>
             <rw>R</rw>
             <default></default>
             <min></min>
@@ -1121,13 +1136,58 @@
             <datatype>float</datatype>
         </tag>
         <tag>
+            <tagname>10239/&quot;/BY2209_360_20_JV400_StartDelay&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>AV</object_type>
+            <object_instance>85</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;Oppstarts forsinkelse Tilluftsvifte&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>float</datatype>
+        </tag>
+        <tag>
+            <tagname>10239/&quot;/BY2209_360_20_JV400_StartUpPeriod&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>AV</object_type>
+            <object_instance>86</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;Oppstarts periode Tilluftsvifte&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>float</datatype>
+        </tag>
+        <tag>
             <tagname>10239/&quot;/BY2209_360_20_JV400_STATUS&quot;</tagname>
             <device_id>10239</device_id>
             <object_type>AV</object_type>
             <object_instance>26</object_instance>
             <object_property>85</object_property>
             <supports_cov>false</supports_cov>
-            <comment>&quot;System status, Se hjelpe tekst&quot;</comment>
+            <comment>&quot;Ok&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>float</datatype>
+        </tag>
+        <tag>
+            <tagname>10239/&quot;/BY2209_360_20_JV400_StBypassDelay&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>AV</object_type>
+            <object_instance>87</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;Oppstarts bypass delay Tilluftsvifte&quot;</comment>
             <rw>R</rw>
             <default></default>
             <min></min>
@@ -1271,13 +1331,58 @@
             <datatype>float</datatype>
         </tag>
         <tag>
+            <tagname>10239/&quot;/BY2209_360_20_JV500_StartDelay&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>AV</object_type>
+            <object_instance>88</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;Oppstarts forsinkelse Avtrekksvifte&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>float</datatype>
+        </tag>
+        <tag>
+            <tagname>10239/&quot;/BY2209_360_20_JV500_StartUpPeriod&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>AV</object_type>
+            <object_instance>89</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;Oppstarts periode Avtrekksvifte&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>float</datatype>
+        </tag>
+        <tag>
             <tagname>10239/&quot;/BY2209_360_20_JV500_STATUS&quot;</tagname>
             <device_id>10239</device_id>
             <object_type>AV</object_type>
             <object_instance>31</object_instance>
             <object_property>85</object_property>
             <supports_cov>false</supports_cov>
-            <comment>&quot;System status, Se hjelpe tekst&quot;</comment>
+            <comment>&quot;Ok&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>float</datatype>
+        </tag>
+        <tag>
+            <tagname>10239/&quot;/BY2209_360_20_JV500_StBypassDelay&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>AV</object_type>
+            <object_instance>90</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;Oppstarts bypass delay Avtrekksvifte&quot;</comment>
             <rw>R</rw>
             <default></default>
             <min></min>
@@ -1427,7 +1532,7 @@
             <object_instance>14</object_instance>
             <object_property>85</object_property>
             <supports_cov>false</supports_cov>
-            <comment>&quot;System status, Se hjelpe tekst&quot;</comment>
+            <comment>&quot;Closed&quot;</comment>
             <rw>R</rw>
             <default></default>
             <min></min>
@@ -1577,7 +1682,7 @@
             <object_instance>18</object_instance>
             <object_property>85</object_property>
             <supports_cov>false</supports_cov>
-            <comment>&quot;System status, Se hjelpe tekst&quot;</comment>
+            <comment>&quot;Closed&quot;</comment>
             <rw>R</rw>
             <default></default>
             <min></min>
@@ -1841,13 +1946,28 @@
             <datatype>float</datatype>
         </tag>
         <tag>
+            <tagname>10239/&quot;/BY2209_360_20_LX400_ROT_AL&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>BV</object_type>
+            <object_instance>82</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;Rotasjons vakt alarm&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>boolean</datatype>
+        </tag>
+        <tag>
             <tagname>10239/&quot;/BY2209_360_20_LX400_STATUS&quot;</tagname>
             <device_id>10239</device_id>
             <object_type>AV</object_type>
             <object_instance>34</object_instance>
             <object_property>85</object_property>
             <supports_cov>false</supports_cov>
-            <comment>&quot;System status, Se hjelpe tekst&quot;</comment>
+            <comment>&quot;Off&quot;</comment>
             <rw>R</rw>
             <default></default>
             <min></min>
@@ -2096,34 +2216,19 @@
             <datatype>float</datatype>
         </tag>
         <tag>
-            <tagname>10239/&quot;/BY2209_360_20_QT500_PV&quot;</tagname>
+            <tagname>10239/&quot;/BY2209_360_20_QT550_AL&quot;</tagname>
             <device_id>10239</device_id>
-            <object_type>AV</object_type>
-            <object_instance>6</object_instance>
+            <object_type>BV</object_type>
+            <object_instance>81</object_instance>
             <object_property>85</object_property>
             <supports_cov>false</supports_cov>
-            <comment>&quot;Temp turvann vvb&quot;</comment>
+            <comment>&quot;Frostalarm&quot;</comment>
             <rw>R</rw>
             <default></default>
             <min></min>
             <max>Y</max>
             <states></states>
-            <datatype>float</datatype>
-        </tag>
-        <tag>
-            <tagname>10239/&quot;/BY2209_360_20_QT501_PV&quot;</tagname>
-            <device_id>10239</device_id>
-            <object_type>AV</object_type>
-            <object_instance>7</object_instance>
-            <object_property>85</object_property>
-            <supports_cov>false</supports_cov>
-            <comment>&quot;Temp returvann vvb&quot;</comment>
-            <rw>R</rw>
-            <default></default>
-            <min></min>
-            <max>Y</max>
-            <states></states>
-            <datatype>float</datatype>
+            <datatype>boolean</datatype>
         </tag>
         <tag>
             <tagname>10239/&quot;/BY2209_360_20_RefTempReturn&quot;</tagname>
@@ -2276,10 +2381,10 @@
             <datatype>float</datatype>
         </tag>
         <tag>
-            <tagname>10239/&quot;/BY2209_360_20_RT400_PV&quot;</tagname>
+            <tagname>10239/&quot;/BY2209_360_20_RT401_PV&quot;</tagname>
             <device_id>10239</device_id>
             <object_type>AV</object_type>
-            <object_instance>2</object_instance>
+            <object_instance>3</object_instance>
             <object_property>85</object_property>
             <supports_cov>false</supports_cov>
             <comment>&quot;Tempføler inntak&quot;</comment>
@@ -2291,13 +2396,13 @@
             <datatype>float</datatype>
         </tag>
         <tag>
-            <tagname>10239/&quot;/BY2209_360_20_RT401_PV&quot;</tagname>
+            <tagname>10239/&quot;/BY2209_360_20_RT402_PV&quot;</tagname>
             <device_id>10239</device_id>
             <object_type>AV</object_type>
-            <object_instance>3</object_instance>
+            <object_instance>2</object_instance>
             <object_property>85</object_property>
             <supports_cov>false</supports_cov>
-            <comment>&quot;Tempføler avkast&quot;</comment>
+            <comment>&quot;Tempføler tilluft&quot;</comment>
             <rw>R</rw>
             <default></default>
             <min></min>
@@ -2306,13 +2411,13 @@
             <datatype>float</datatype>
         </tag>
         <tag>
-            <tagname>10239/&quot;/BY2209_360_20_RT500_PV&quot;</tagname>
+            <tagname>10239/&quot;/BY2209_360_20_RT403_PV&quot;</tagname>
             <device_id>10239</device_id>
             <object_type>AV</object_type>
-            <object_instance>4</object_instance>
+            <object_instance>6</object_instance>
             <object_property>85</object_property>
             <supports_cov>false</supports_cov>
-            <comment>&quot;Tempføler tilluft&quot;</comment>
+            <comment>&quot;Temp turvann vvb&quot;</comment>
             <rw>R</rw>
             <default></default>
             <min></min>
@@ -2327,7 +2432,37 @@
             <object_instance>5</object_instance>
             <object_property>85</object_property>
             <supports_cov>false</supports_cov>
+            <comment>&quot;Tempføler avkast&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>float</datatype>
+        </tag>
+        <tag>
+            <tagname>10239/&quot;/BY2209_360_20_RT502_PV&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>AV</object_type>
+            <object_instance>4</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
             <comment>&quot;Tempføler avtrekkk&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>float</datatype>
+        </tag>
+        <tag>
+            <tagname>10239/&quot;/BY2209_360_20_RT503_PV&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>AV</object_type>
+            <object_instance>7</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;Temp returvann vvb&quot;</comment>
             <rw>R</rw>
             <default></default>
             <min></min>
@@ -2852,7 +2987,7 @@
             <object_instance>0</object_instance>
             <object_property>85</object_property>
             <supports_cov>false</supports_cov>
-            <comment>&quot;CollectivMalfunction status&quot;</comment>
+            <comment>&quot;Ok&quot;</comment>
             <rw>R</rw>
             <default></default>
             <min></min>
@@ -2883,6 +3018,21 @@
             <object_property>85</object_property>
             <supports_cov>false</supports_cov>
             <comment>&quot;Automatisk tilluft/avtrekk regulering aktiv&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>boolean</datatype>
+        </tag>
+        <tag>
+            <tagname>10239/&quot;/BY2209_360_20_TEST&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>BV</object_type>
+            <object_instance>83</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;Test utstyr&quot;</comment>
             <rw>R</rw>
             <default></default>
             <min></min>
@@ -2979,6 +3129,66 @@
             <max>Y</max>
             <states></states>
             <datatype>float</datatype>
+        </tag>
+        <tag>
+            <tagname>10239/&quot;/BY2209_360_20_XS001_V&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>BV</object_type>
+            <object_instance>76</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;Sikkerhetsbryter tilluft&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>boolean</datatype>
+        </tag>
+        <tag>
+            <tagname>10239/&quot;/BY2209_360_20_XS002_V&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>BV</object_type>
+            <object_instance>77</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;Sikkerhetsbryter avtrekk&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>boolean</datatype>
+        </tag>
+        <tag>
+            <tagname>10239/&quot;/BY2209_360_20_XS003_V&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>BV</object_type>
+            <object_instance>78</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;Sikkerhetsbryter pumpe&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>boolean</datatype>
+        </tag>
+        <tag>
+            <tagname>10239/&quot;/BY2209_360_20_XS004_V&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>BV</object_type>
+            <object_instance>79</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;Sikkerhetsbryter gjenvinner&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>boolean</datatype>
         </tag>
     </tags>
 </tag_dictionary>
