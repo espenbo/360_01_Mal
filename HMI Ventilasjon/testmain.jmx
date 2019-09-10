@@ -126,7 +126,7 @@
    </object>
   </object>
   <object class="MsgTextWgt" id="msgtext1">
-   <wgtStyle font-bold="true" marker="true" forcePaint="2" font-family="Tahoma" cx="67.16" cy="21.50" alignment="center" x="330.50" y="60" viewindex="false" vert-align="middle" text="" max="1" value="0" keypad-type="None" font-color="rgb(102,102,102)" min="0" width="137" continous="true" lineSeparator="" height="43" font-size="24">
+   <wgtStyle font-bold="true" marker="true" forcePaint="3" font-family="Tahoma" cx="67.16" cy="21.50" alignment="center" x="330.50" y="60" viewindex="false" vert-align="middle" text="" max="1" value="0" keypad-type="None" font-color="rgb(102,102,102)" min="0" width="137" continous="true" lineSeparator="" height="43" font-size="24">
     <msgtxt>
      <msg index="0"/>
      <msg index="1"/>
@@ -141,15 +141,15 @@
    </links>
   </object>
   <object class="GroupWgt" id="LightsStd9" customType="Light">
-   <wgtStyle width="25" x="491.50" y="69" cx="12.27" cy="12.25" height="25"/>
+   <wgtStyle width="25" x="491.50" forcePaint="1" y="69" cx="12.27" cy="12.25" height="25"/>
    <links>
     <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
-   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image16" static="true">
-    <wgtStyle width="25" imagePath="images/frame_round_chrome.svg" x="0" y="0" cx="12.27" cy="12.25" height="25"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image16">
+    <wgtStyle width="25" imagePath="images/frame_round_chrome.svg" x="0" forcePaint="1" y="0" cx="12.27" cy="12.25" height="25"/>
    </object>
    <object class="IndicatorWgt" hmiStyle="hmi-name:pointy; hmi-shape:round; hmi-type:light; type:light" id="light_ind8">
-    <wgtStyle width="18.64" imagePath="images/li_round_pointy1.svg" x="3.18" forcePaint="8" y="3.07" cx="11.82" cy="7.65" bkgColor="rgb(192,192,192);rgb(0,255,0)" height="18.88" stroke="rgb(255,251,240)"/>
+    <wgtStyle width="18.64" imagePath="images/li_round_pointy1.svg" x="3.18" forcePaint="9" y="3.07" cx="11.82" cy="7.65" bkgColor="rgb(192,192,192);rgb(0,255,0)" height="18.88" stroke="rgb(255,251,240)"/>
     <dataLinks>
      <dataLink readWrite="R" attribute="frame" tag="IndexedTagSet_Globale.xSpjeld_avkast_US" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
     </dataLinks>
@@ -165,15 +165,15 @@
    </object>
   </object>
   <object class="GroupWgt" id="LightsStd2" customType="Light">
-   <wgtStyle width="25" x="540" y="69" cx="12.27" cy="12.25" height="25"/>
+   <wgtStyle width="25" x="540" forcePaint="1" y="69" cx="12.27" cy="12.25" height="25"/>
    <links>
     <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
-   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image19" static="true">
-    <wgtStyle width="25" imagePath="images/frame_round_chrome.svg" x="0" y="0" cx="12.27" cy="12.25" height="25"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image19">
+    <wgtStyle width="25" imagePath="images/frame_round_chrome.svg" x="0" forcePaint="1" y="0" cx="12.27" cy="12.25" height="25"/>
    </object>
    <object class="IndicatorWgt" hmiStyle="hmi-name:pointy; hmi-shape:round; hmi-type:light; type:light" id="light_ind2">
-    <wgtStyle width="18.64" imagePath="images/li_round_pointy1.svg" x="3.18" y="3.07" cx="11.82" cy="7.65" bkgColor="rgb(192,192,192);rgb(255,0,0)" height="18.88" stroke="rgb(255,251,240)"/>
+    <wgtStyle width="18.64" imagePath="images/li_round_pointy1.svg" x="3.18" forcePaint="1" y="3.07" cx="11.82" cy="7.65" bkgColor="rgb(192,192,192);rgb(255,0,0)" height="18.88" stroke="rgb(255,251,240)"/>
    </object>
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label9" static="true">
     <wgtStyle width="16.36" x="3.64" y="4.08" font-family="Tahoma" cx="8.18" cy="8.17" height="16.83" alignment="center" vert-align="middle" keypad-type="None" font-size="8"/>

@@ -1,8 +1,8 @@
 <wgtPage rev="1" projectType="HMI Project">
  <object pageName="Oppstart" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="maintemplate.jmx" usedFonts="Tahoma,Arial" staticFile="opt/oppstart.png" id="Oppstart" staticOptEnable="true">
   <wgtStyle width="800" x="0" y="0" height="480" ver="020800363" v="02.08.00.363"/>
-  <object class="ShapeWgt" id="roundrect11" static="true">
-   <wgtStyle width="230" x="90.34" y="61.73" fill="rgb(192,192,192)" cx="115.01" cy="185.01" rx="20" height="370" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
+  <object class="ShapeWgt" id="roundrect11">
+   <wgtStyle width="230" x="90.34" forcePaint="1" y="61.73" fill="rgb(192,192,192)" cx="115.01" cy="185.01" rx="20" height="370" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
   </object>
   <object class="ShapeWgt" id="roundrect1">
    <wgtStyle width="230" x="496" forcePaint="1" y="61" fill="rgb(192,192,192)" cx="115.01" cy="196.51" rx="20" height="393" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
@@ -49,26 +49,26 @@
    </MLTexts>
   </object>
   <object class="LabelWgt" id="label15">
-   <wgtStyle width="99" x="102.34" forcePaint="2" y="82.73" font-family="Tahoma" cx="48.17" cy="11.17" height="19" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <wgtStyle width="99" x="102.34" forcePaint="3" y="82.73" font-family="Tahoma" cx="48.17" cy="11.17" height="19" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
    <links>
     <lang class="MLTextLink" textid="59"/>
    </links>
   </object>
   <object class="GroupWgt" id="GroupWgt43">
-   <wgtStyle width="100.67" x="204.34" y="79.73" cx="50.33" cy="14.34" height="28.67"/>
-   <object class="ShapeWgt" id="roundrect29" static="true">
-    <wgtStyle width="94" x="0" y="0" fill="rgb(255,255,224)" cx="47" cy="14.33" rx="20" height="28.67" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
+   <wgtStyle width="100.67" x="204.34" forcePaint="1" y="79.73" cx="50.33" cy="14.34" height="28.67"/>
+   <object class="ShapeWgt" id="roundrect29">
+    <wgtStyle width="94" x="0" forcePaint="1" y="0" fill="rgb(255,255,224)" cx="47" cy="14.33" rx="20" height="28.67" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
    </object>
    <object class="GroupWgt" id="GroupWgt44">
-    <wgtStyle width="98" x="2.67" y="1" cx="49" cy="12.34" height="24.67"/>
+    <wgtStyle width="98" x="2.67" forcePaint="1" y="1" cx="49" cy="12.34" height="24.67"/>
     <object class="NumericWgt" id="field7">
-     <wgtStyle forcePaint="8" font-family="Arial" cx="25.74" cy="11" step="1" timeSpec="local" alignment="right" x="0" y="1.67" vert-align="top" text="50" max="3.40282e+038" usingFormat="#" value="50" keypad-type="Numeric" min="-3.40282e+038" width="53" numberFormat="6" readWrite="true" height="23" form="Numeric" font-size="16"/>
+     <wgtStyle forcePaint="9" font-family="Arial" cx="25.74" cy="11" step="1" timeSpec="local" alignment="right" x="0" y="1.67" vert-align="top" text="50" max="3.40282e+038" usingFormat="#" value="50" keypad-type="Numeric" min="-3.40282e+038" width="53" numberFormat="6" readWrite="true" height="23" form="Numeric" font-size="16"/>
      <dataLinks>
       <dataLink readWrite="R/W" attribute="value" tag="IndexedTagSet_Globale_Retaind.rLimOutsideTempFlush" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
      </dataLinks>
     </object>
     <object class="LabelWgt" id="label52">
-     <wgtStyle width="44" x="54" forcePaint="2" y="0" font-family="Tahoma" cx="22" cy="12" height="24" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+     <wgtStyle width="44" x="54" forcePaint="3" y="0" font-family="Tahoma" cx="22" cy="12" height="24" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
      <links>
       <lang class="MLTextLink" textid="97"/>
      </links>
@@ -76,26 +76,26 @@
    </object>
   </object>
   <object class="LabelWgt" id="label54">
-   <wgtStyle width="96.34" x="105.34" forcePaint="2" y="150.73" font-family="Tahoma" cx="48.17" cy="11.17" height="22.33" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <wgtStyle width="96.34" x="105.34" forcePaint="3" y="150.73" font-family="Tahoma" cx="48.17" cy="11.17" height="22.33" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
    <links>
     <lang class="MLTextLink" textid="60"/>
    </links>
   </object>
   <object class="GroupWgt" id="GroupWgt45">
-   <wgtStyle width="100.67" x="204.34" y="158.73" cx="50.33" cy="14.34" height="28.67"/>
-   <object class="ShapeWgt" id="roundrect30" static="true">
-    <wgtStyle width="94" x="0" y="0" fill="rgb(255,255,224)" cx="47" cy="14.33" rx="20" height="28.67" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
+   <wgtStyle width="100.67" x="204.34" forcePaint="1" y="158.73" cx="50.33" cy="14.34" height="28.67"/>
+   <object class="ShapeWgt" id="roundrect30">
+    <wgtStyle width="94" x="0" forcePaint="1" y="0" fill="rgb(255,255,224)" cx="47" cy="14.33" rx="20" height="28.67" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
    </object>
    <object class="GroupWgt" id="GroupWgt46">
-    <wgtStyle width="98" x="2.67" y="1" cx="49" cy="12.34" height="24.67"/>
+    <wgtStyle width="98" x="2.67" forcePaint="1" y="1" cx="49" cy="12.34" height="24.67"/>
     <object class="NumericWgt" id="field26">
-     <wgtStyle forcePaint="8" font-family="Arial" cx="25.74" cy="11" step="1" timeSpec="local" alignment="right" x="0" y="1.67" vert-align="top" text="50" max="3.40282e+038" usingFormat="#" value="50" keypad-type="Numeric" min="-3.40282e+038" width="53" numberFormat="6" readWrite="true" height="23" form="Numeric" font-size="16"/>
+     <wgtStyle forcePaint="9" font-family="Arial" cx="25.74" cy="11" step="1" timeSpec="local" alignment="right" x="0" y="1.67" vert-align="top" text="50" max="3.40282e+038" usingFormat="#" value="50" keypad-type="Numeric" min="-3.40282e+038" width="53" numberFormat="6" readWrite="true" height="23" form="Numeric" font-size="16"/>
      <dataLinks>
       <dataLink readWrite="R/W" attribute="value" tag="IndexedTagSet_Globale_Retaind.rLimFrostAlarm" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
      </dataLinks>
     </object>
     <object class="LabelWgt" id="label55">
-     <wgtStyle width="44" x="54" forcePaint="2" y="0" font-family="Tahoma" cx="22" cy="12" height="24" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+     <wgtStyle width="44" x="54" forcePaint="3" y="0" font-family="Tahoma" cx="22" cy="12" height="24" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
      <links>
       <lang class="MLTextLink" textid="98"/>
      </links>
@@ -385,26 +385,26 @@
    </links>
   </object>
   <object class="LabelWgt" id="label31">
-   <wgtStyle width="99" x="102.34" forcePaint="2" y="240.73" font-family="Tahoma" cx="48.17" cy="11.17" height="19" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <wgtStyle width="99" x="102.34" forcePaint="3" y="240.73" font-family="Tahoma" cx="48.17" cy="11.17" height="19" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
    <links>
     <lang class="MLTextLink" textid="62"/>
    </links>
   </object>
   <object class="GroupWgt" id="GroupWgt17">
-   <wgtStyle width="100.67" x="204.34" y="236.73" cx="50.33" cy="14.34" height="28.67"/>
-   <object class="ShapeWgt" id="roundrect10" static="true">
-    <wgtStyle width="94" x="0" y="0" fill="rgb(255,255,224)" cx="47" cy="14.33" rx="20" height="28.67" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
+   <wgtStyle width="100.67" x="204.34" forcePaint="1" y="236.73" cx="50.33" cy="14.34" height="28.67"/>
+   <object class="ShapeWgt" id="roundrect10">
+    <wgtStyle width="94" x="0" forcePaint="1" y="0" fill="rgb(255,255,224)" cx="47" cy="14.33" rx="20" height="28.67" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
    </object>
    <object class="GroupWgt" id="GroupWgt18">
-    <wgtStyle width="98" x="2.67" y="1" cx="49" cy="12.34" height="24.67"/>
+    <wgtStyle width="98" x="2.67" forcePaint="1" y="1" cx="49" cy="12.34" height="24.67"/>
     <object class="NumericWgt" id="field10">
-     <wgtStyle forcePaint="8" font-family="Arial" cx="25.74" cy="11" step="1" timeSpec="local" alignment="right" x="0" y="1.67" vert-align="top" text="50" max="3.40282e+038" usingFormat="#" value="50" keypad-type="Numeric" min="-3.40282e+038" width="53" numberFormat="6" readWrite="true" height="23" form="Numeric" font-size="16"/>
+     <wgtStyle forcePaint="9" font-family="Arial" cx="25.74" cy="11" step="1" timeSpec="local" alignment="right" x="0" y="1.67" vert-align="top" text="50" max="3.40282e+038" usingFormat="#" value="50" keypad-type="Numeric" min="-3.40282e+038" width="53" numberFormat="6" readWrite="true" height="23" form="Numeric" font-size="16"/>
      <dataLinks>
       <dataLink readWrite="R/W" attribute="value" tag="IndexedTagSet_Globale_Retaind.rMaxFlushPeriod" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
      </dataLinks>
     </object>
     <object class="LabelWgt" id="label32">
-     <wgtStyle width="44" x="54" forcePaint="2" y="0" font-family="Tahoma" cx="22" cy="12" height="24" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+     <wgtStyle width="44" x="54" forcePaint="3" y="0" font-family="Tahoma" cx="22" cy="12" height="24" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
      <links>
       <lang class="MLTextLink" textid="96"/>
      </links>
@@ -412,26 +412,26 @@
    </object>
   </object>
   <object class="LabelWgt" id="label5">
-   <wgtStyle width="99" x="102.34" forcePaint="2" y="280.73" font-family="Tahoma" cx="48.17" cy="11.17" height="19" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <wgtStyle width="99" x="102.34" forcePaint="3" y="280.73" font-family="Tahoma" cx="48.17" cy="11.17" height="19" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
    <links>
     <lang class="MLTextLink" textid="64"/>
    </links>
   </object>
   <object class="GroupWgt" id="GroupWgt19">
-   <wgtStyle width="100.67" x="204.34" y="277.73" cx="50.33" cy="14.34" height="28.67"/>
-   <object class="ShapeWgt" id="roundrect12" static="true">
-    <wgtStyle width="94" x="0" y="0" fill="rgb(255,255,224)" cx="47" cy="14.33" rx="20" height="28.67" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
+   <wgtStyle width="100.67" x="204.34" forcePaint="1" y="277.73" cx="50.33" cy="14.34" height="28.67"/>
+   <object class="ShapeWgt" id="roundrect12">
+    <wgtStyle width="94" x="0" forcePaint="1" y="0" fill="rgb(255,255,224)" cx="47" cy="14.33" rx="20" height="28.67" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
    </object>
    <object class="GroupWgt" id="GroupWgt20">
-    <wgtStyle width="98" x="2.67" y="1" cx="49" cy="12.34" height="24.67"/>
+    <wgtStyle width="98" x="2.67" forcePaint="1" y="1" cx="49" cy="12.34" height="24.67"/>
     <object class="NumericWgt" id="field11">
-     <wgtStyle forcePaint="8" font-family="Arial" cx="25.74" cy="11" step="1" timeSpec="local" alignment="right" x="0" y="1.67" vert-align="top" text="50" max="3.40282e+038" usingFormat="#" value="50" keypad-type="Numeric" min="-3.40282e+038" width="53" numberFormat="6" readWrite="true" height="23" form="Numeric" font-size="16"/>
+     <wgtStyle forcePaint="9" font-family="Arial" cx="25.74" cy="11" step="1" timeSpec="local" alignment="right" x="0" y="1.67" vert-align="top" text="50" max="3.40282e+038" usingFormat="#" value="50" keypad-type="Numeric" min="-3.40282e+038" width="53" numberFormat="6" readWrite="true" height="23" form="Numeric" font-size="16"/>
      <dataLinks>
       <dataLink readWrite="R/W" attribute="value" tag="IndexedTagSet_Globale_Retaind.rLimWaterStartUp" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
      </dataLinks>
     </object>
     <object class="LabelWgt" id="label34">
-     <wgtStyle width="44" x="54" forcePaint="2" y="0" font-family="Tahoma" cx="22" cy="12" height="24" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+     <wgtStyle width="44" x="54" forcePaint="3" y="0" font-family="Tahoma" cx="22" cy="12" height="24" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
      <links>
       <lang class="MLTextLink" textid="100"/>
      </links>
@@ -439,26 +439,26 @@
    </object>
   </object>
   <object class="LabelWgt" id="label30">
-   <wgtStyle width="110" x="91.34" forcePaint="2" y="320.73" font-family="Tahoma" cx="53.52" cy="9.99" height="17" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <wgtStyle width="110" x="91.34" forcePaint="3" y="320.73" font-family="Tahoma" cx="53.52" cy="9.99" height="17" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
    <links>
     <lang class="MLTextLink" textid="5"/>
    </links>
   </object>
   <object class="GroupWgt" id="GroupWgt21">
-   <wgtStyle width="100.67" x="204.34" y="317.73" cx="50.33" cy="14.34" height="28.67"/>
-   <object class="ShapeWgt" id="roundrect13" static="true">
-    <wgtStyle width="94" x="0" y="0" fill="rgb(255,255,224)" cx="47" cy="14.33" rx="20" height="28.67" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
+   <wgtStyle width="100.67" x="204.34" forcePaint="1" y="317.73" cx="50.33" cy="14.34" height="28.67"/>
+   <object class="ShapeWgt" id="roundrect13">
+    <wgtStyle width="94" x="0" forcePaint="1" y="0" fill="rgb(255,255,224)" cx="47" cy="14.33" rx="20" height="28.67" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
    </object>
    <object class="GroupWgt" id="GroupWgt22">
-    <wgtStyle width="98" x="2.67" y="1" cx="49" cy="12.34" height="24.67"/>
+    <wgtStyle width="98" x="2.67" forcePaint="1" y="1" cx="49" cy="12.34" height="24.67"/>
     <object class="NumericWgt" id="field12">
-     <wgtStyle forcePaint="8" font-family="Arial" cx="25.74" cy="11" step="1" timeSpec="local" alignment="right" x="0" y="1.67" vert-align="top" text="50" max="3.40282e+038" usingFormat="#" value="50" keypad-type="Numeric" min="-3.40282e+038" width="53" numberFormat="6" readWrite="true" height="23" form="Numeric" font-size="16"/>
+     <wgtStyle forcePaint="9" font-family="Arial" cx="25.74" cy="11" step="1" timeSpec="local" alignment="right" x="0" y="1.67" vert-align="top" text="50" max="3.40282e+038" usingFormat="#" value="50" keypad-type="Numeric" min="-3.40282e+038" width="53" numberFormat="6" readWrite="true" height="23" form="Numeric" font-size="16"/>
      <dataLinks>
       <dataLink readWrite="R/W" attribute="value" tag="IndexedTagSet_Globale_Retaind.rRefTempReturn" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
      </dataLinks>
     </object>
     <object class="LabelWgt" id="label33">
-     <wgtStyle width="44" x="54" forcePaint="2" y="0" font-family="Tahoma" cx="22" cy="12" height="24" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+     <wgtStyle width="44" x="54" forcePaint="3" y="0" font-family="Tahoma" cx="22" cy="12" height="24" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
      <links>
       <lang class="MLTextLink" textid="0"/>
      </links>
@@ -466,15 +466,15 @@
    </object>
   </object>
   <object class="GroupWgt" id="LightsStd9" customType="Light">
-   <wgtStyle width="45" x="240.34" y="361.73" cx="22.50" cy="18.11" height="37" groupStyle="xform-scaling"/>
+   <wgtStyle width="45" x="240.34" forcePaint="1" y="361.73" cx="22.50" cy="18.11" height="37" groupStyle="xform-scaling"/>
    <links>
     <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
-   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect; hmi-type:bkgd" id="image19" static="true">
-    <wgtStyle width="45" imagePath="images/frame_rrect_chrome.svg" x="0" y="0" bdrImageSize="50.00,47.00" cx="21.60" cy="18.11" bdrSize="0.26,0.21,0.20,0.18" height="37" bdrEdges="0.12,0.13,0.12,0.13"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect; hmi-type:bkgd" id="image19">
+    <wgtStyle width="45" imagePath="images/frame_rrect_chrome.svg" x="0" forcePaint="1" y="0" bdrImageSize="50.00,47.00" cx="21.60" cy="18.11" bdrSize="0.26,0.21,0.20,0.18" height="37" bdrEdges="0.12,0.13,0.12,0.13"/>
    </object>
    <object class="IndicatorWgt" hmiStyle="hmi-name:pointy; hmi-shape:rrect; hmi-type:light; type:light" id="light_ind11">
-    <wgtStyle width="34.20" imagePath="images/li_rrect_pointy1.svg" x="5.40" forcePaint="8" y="4.72" cx="17.10" cy="13.78" bdrSize="0.19,0.18,0.19,0.15" bkgColor="rgb(192,192,192);rgb(0,255,0)" height="27.55" frame="1" stroke="rgb(255,251,240)"/>
+    <wgtStyle width="34.20" imagePath="images/li_rrect_pointy1.svg" x="5.40" forcePaint="9" y="4.72" cx="17.10" cy="13.78" bdrSize="0.19,0.18,0.19,0.15" bkgColor="rgb(192,192,192);rgb(0,255,0)" height="27.55" frame="1" stroke="rgb(255,251,240)"/>
     <dataLinks>
      <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.xFlush_OK" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
     </dataLinks>
@@ -508,20 +508,20 @@
    </links>
   </object>
   <object class="GroupWgt" id="GroupWgt23">
-   <wgtStyle width="100.67" x="204.34" y="197.73" cx="50.33" cy="14.34" height="28.67"/>
-   <object class="ShapeWgt" id="roundrect14" static="true">
-    <wgtStyle width="94" x="0" y="0" fill="rgb(255,255,224)" cx="47" cy="14.33" rx="20" height="28.67" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
+   <wgtStyle width="100.67" x="204.34" forcePaint="1" y="197.73" cx="50.33" cy="14.34" height="28.67"/>
+   <object class="ShapeWgt" id="roundrect14">
+    <wgtStyle width="94" x="0" forcePaint="1" y="0" fill="rgb(255,255,224)" cx="47" cy="14.33" rx="20" height="28.67" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
    </object>
    <object class="GroupWgt" id="GroupWgt24">
-    <wgtStyle width="98" x="2.67" y="1" cx="49" cy="12.34" height="24.67"/>
+    <wgtStyle width="98" x="2.67" forcePaint="1" y="1" cx="49" cy="12.34" height="24.67"/>
     <object class="NumericWgt" id="field13">
-     <wgtStyle forcePaint="8" font-family="Arial" cx="25.74" cy="11" step="1" timeSpec="local" alignment="right" x="0" y="1.67" vert-align="top" text="50" max="3.40282e+038" usingFormat="#" value="50" keypad-type="Numeric" min="-3.40282e+038" width="53" numberFormat="6" readWrite="true" height="23" form="Numeric" font-size="16"/>
+     <wgtStyle forcePaint="9" font-family="Arial" cx="25.74" cy="11" step="1" timeSpec="local" alignment="right" x="0" y="1.67" vert-align="top" text="50" max="3.40282e+038" usingFormat="#" value="50" keypad-type="Numeric" min="-3.40282e+038" width="53" numberFormat="6" readWrite="true" height="23" form="Numeric" font-size="16"/>
      <dataLinks>
       <dataLink readWrite="R/W" attribute="value" tag="IndexedTagSet_Globale_Retaind.rStopTemp_SupAir" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
      </dataLinks>
     </object>
     <object class="LabelWgt" id="label39">
-     <wgtStyle width="44" x="54" forcePaint="2" y="0" font-family="Tahoma" cx="22" cy="12" height="24" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+     <wgtStyle width="44" x="54" forcePaint="3" y="0" font-family="Tahoma" cx="22" cy="12" height="24" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
      <links>
       <lang class="MLTextLink" textid="99"/>
      </links>

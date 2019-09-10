@@ -8,7 +8,9 @@
     <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
    </langs>
    <MLTexts>
+    <MLText L1="" L2="" id="1"/>
     <MLText L1="Storm Elektro AS  TLF:69360040  www.stormelektro.no" L2="Storm Elektro AS  TLF:69360040  www.stormelektro.no" id="2"/>
+    <MLText L1="Brannanlegg utløst, høy hastighet på anlegget" L2="-JV40" id="140"/>
    </MLTexts>
   </object>
   <object class="ImageWgt" id="image1" static="true">
@@ -28,6 +30,42 @@
   </object>
   <object class="GroupSubscribeWgt" id="MainTemplate@$GroupSubscrWgt@$0">
    <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="GroupWgt" id="LgtStd2" customType="Light">
+   <wgtStyle width="25" x="33" forcePaint="8" y="93.25" cx="12.50" cy="12.50" height="25"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="10239/&quot;/BY2209_360_20_BRANN_ANLEGG_AL&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtStd2.img">
+    <wgtStyle width="25" imagePath="images/frame_round_chrome.svg" x="0" forcePaint="9" y="0" cx="12.27" cy="12.25" height="25"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="LgtStd2.ind">
+    <wgtStyle width="18.27" imagePath="images/li_round_shiney1_rev2.svg" x="3.37" forcePaint="9" y="2.88" cx="11.82" cy="7.65" bkgColor="rgb(120,120,120);rgb(255,0,0)" height="18.75" frame="1" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="10239/&quot;/BY2209_360_20_BRANN_ANLEGG_AL&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtStd2.lbl" static="true">
+    <wgtStyle width="16.35" x="4.33" y="4.33" font-family="Tahoma" cx="8.18" cy="8.16" height="16.83" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtStd2.img1" static="true">
+    <wgtStyle width="7.21" enableCache="true" x="8.65" y="9.13" cx="3.63" cy="3.57" height="7.21"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label14">
+   <wgtStyle width="490" x="73" forcePaint="10" font-sizepx="24" y="91.25" font-family="Tahoma" cx="100.01" cy="15.99" height="29" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="18"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="10239/&quot;/BY2209_360_20_BRANN_ANLEGG_AL&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="140"/>
+   </links>
   </object>
  </object>
 </wgtPage>

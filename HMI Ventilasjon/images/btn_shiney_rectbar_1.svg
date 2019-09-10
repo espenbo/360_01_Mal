@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="119.31" width="479.17" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <defs>
+  <linearGradient id="linearGradient6043" y2="78.02" gradientUnits="userSpaceOnUse" x2="255.58" gradientTransform="translate(123.43 267.22)" y1=".77834" x1="255.58">
+   <stop stop-color="#FFF" offset="0"/>
+   <stop stop-opacity="0" stop-color="#FFF" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient6035" y2="88.086" gradientUnits="userSpaceOnUse" x2="265.41" gradientTransform="translate(123.43 267.22)" y1="132.19" x1="265.41">
+   <stop stop-opacity=".47059" stop-color="#323232" offset="0"/>
+   <stop stop-opacity=".23529" stop-color="#191919" offset=".5"/>
+   <stop stop-opacity="0" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g transform="translate(-131.85 -275.51)">
+  <path id="bgColor00" fill="#003380" d="m131.85 275.51v119.29h479.17v-119.29h-479.17z"/>
+  <path opacity=".25" d="m131.85 275.51v119.31h479.16v-119.31h-479.16zm2.8125 2.8125h473.56v113.69h-473.56v-113.69z" fill="#4d4d4d"/>
+  <path opacity=".6" d="m133.25 348.12v45.279h476.36v-45.279h-476.36z" fill="url(#linearGradient6035)"/>
+  <polygon opacity=".25" transform="matrix(1.4028 0 0 1.4028 123.43 267.1)" points="6 6 6 91.039 10.831 86.617 10.889 10.768"/>
+  <polygon opacity=".25" transform="matrix(1.4028 0 0 1.4028 125.43 267.1)" points="346.16 91.039 341.33 86.617 341.27 10.768 346.16 6"/>
+  <path fill="url(#linearGradient6043)" d="m133.25 276.92v58h476.36v-58h-476.36z"/>
+ </g>
+</svg>

@@ -7,7 +7,7 @@
     <Alias tag="10239/&quot;/BY2209_360_20_MAN&quot;"/>
     <Alias tag="10239/&quot;/BY2209_360_20_OFF&quot;"/>
     <Alias tag="10239/&quot;/BY2209_360_20_MOD_V&quot;"/>
-    <Alias tag="10239/&quot;/BY2209_360_20_US&quot;"/>
+    <Alias tag="10239/&quot;/BY2209_360_20_US&quot;.[-1]"/>
     <Alias tag="10239/&quot;/BY2209_360_20_RES&quot;"/>
     <Alias tag="10239/&quot;/BY2209_360_20_CMD&quot;"/>
     <Alias tag="10239/&quot;/BY2209_360_20_Ext_Start&quot;"/>
@@ -66,7 +66,7 @@
     <Alias tag="10239/&quot;/BY2209_360_20_JP400_DT&quot;"/>
     <Alias tag="10239/&quot;/BY2209_360_20_JP400_StoppedByTemp&quot;.[-1]"/>
     <Alias tag="10239/&quot;/BY2209_360_20_LX400_OFF&quot;"/>
-    <Alias tag="10239/&quot;/BY2209_360_20_LX400_AUT&quot;"/>
+    <Alias tag="10239/&quot;/BY2209_360_20_LX400_AUT&quot;.[-1]"/>
     <Alias tag="10239/&quot;/BY2209_360_20_JP400_OFF&quot;"/>
     <Alias tag="10239/&quot;/BY2209_360_20_JP400_AUT&quot;"/>
     <Alias tag="10239/&quot;/BY2209_360_20_JV400_V&quot;"/>

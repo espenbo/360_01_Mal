@@ -131,7 +131,7 @@
    </links>
   </object>
   <object class="LabelWgt" id="label13">
-   <wgtStyle width="270" x="44" forcePaint="2" font-sizepx="24" y="106" font-family="Tahoma" cx="100.01" cy="15.99" height="29" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="18"/>
+   <wgtStyle width="270" x="44" forcePaint="3" font-sizepx="24" y="106" font-family="Tahoma" cx="100.01" cy="15.99" height="29" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="18"/>
    <links>
     <lang class="MLTextLink" textid="1"/>
    </links>
@@ -372,7 +372,7 @@
    </links>
   </object>
   <object class="LabelWgt" id="label5">
-   <wgtStyle width="270" x="429" forcePaint="2" font-sizepx="24" y="106" font-family="Tahoma" cx="100.01" cy="15.99" height="29" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="18"/>
+   <wgtStyle width="270" x="429" forcePaint="3" font-sizepx="24" y="106" font-family="Tahoma" cx="100.01" cy="15.99" height="29" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="18"/>
    <links>
     <lang class="MLTextLink" textid="82"/>
    </links>

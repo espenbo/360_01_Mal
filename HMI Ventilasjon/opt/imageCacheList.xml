@@ -5,25 +5,34 @@
  <file fill="rgb(0,128,0)" imgSize="18,19" stroke="rgb(255,251,240)" numUses="4" isSvgFile="true" dynamic="true" file="images/li_round_shiney1_rev2.svg" numSizes="1"/>
  <file fill="rgb(255,128,64)" imgSize="18,19" stroke="rgb(255,251,240)" numUses="1" isSvgFile="true" dynamic="true" file="images/li_round_shiney1_rev2.svg" numSizes="1"/>
  <file fill="rgb(255,255,0)" imgSize="18,19" stroke="rgb(255,251,240)" numUses="4" isSvgFile="true" dynamic="true" file="images/li_round_shiney1_rev2.svg" numSizes="1"/>
- <file fill="rgb(255,0,0)" imgSize="18,19" stroke="rgb(255,251,240)" numUses="6" isSvgFile="true" dynamic="true" file="images/li_round_shiney1_rev2.svg" numSizes="1"/>
+ <file fill="rgb(50,205,50)" imgSize="79,27" stroke="none" numUses="5" isSvgFile="true" dynamic="true" file="images/btn_plastic_rrectbar_2.svg" numSizes="3"/>
+ <file fill="rgb(50,205,50)" imgSize="79,27" stroke="none" numUses="5" isSvgFile="true" dynamic="true" file="images/btn_plastic_rrectbar_1.svg" numSizes="3"/>
  <file fill="rgb(0,255,0)" imgSize="34,28" stroke="rgb(255,251,240)" numUses="1" isSvgFile="true" dynamic="true" file="images/li_rrect_pointy1.svg" numSizes="1"/>
- <file fill="rgb(192,192,192)" imgSize="79,27" stroke="none" numUses="19" isSvgFile="true" dynamic="true" file="images/btn_plastic_rrectbar_2.svg" numSizes="16"/>
- <file fill="rgb(192,192,192)" imgSize="79,27" stroke="none" numUses="19" isSvgFile="true" dynamic="true" file="images/btn_plastic_rrectbar_1.svg" numSizes="16"/>
+ <file fill="rgb(192,192,192)" imgSize="79,27" stroke="none" numUses="22" isSvgFile="true" dynamic="true" file="images/btn_plastic_rrectbar_2.svg" numSizes="18"/>
+ <file fill="rgb(192,192,192)" imgSize="79,27" stroke="none" numUses="22" isSvgFile="true" dynamic="true" file="images/btn_plastic_rrectbar_1.svg" numSizes="18"/>
+ <file fill="rgb(120,120,120)" imgSize="91,25" stroke="none" numUses="1" isSvgFile="true" dynamic="true" file="images/btn_shiney_rectbar_2.svg" numSizes="1"/>
+ <file fill="rgb(120,120,120)" imgSize="91,25" stroke="none" numUses="1" isSvgFile="true" dynamic="true" file="images/btn_shiney_rectbar_1.svg" numSizes="1"/>
+ <file fill="rgb(192,192,192)" imgSize="40,14" stroke="none" numUses="4" isSvgFile="true" dynamic="true" file="images/li_shape_rect.svg" numSizes="1"/>
+ <file fill="rgb(255,0,0)" imgSize="79,27" stroke="none" numUses="4" isSvgFile="true" dynamic="true" file="images/btn_plastic_rrectbar_2.svg" numSizes="1"/>
+ <file fill="rgb(255,0,0)" imgSize="79,27" stroke="none" numUses="4" isSvgFile="true" dynamic="true" file="images/btn_plastic_rrectbar_1.svg" numSizes="1"/>
  <file fill="rgb(192,192,192)" imgSize="34,28" stroke="rgb(255,251,240)" numUses="11" isSvgFile="true" dynamic="true" file="images/li_rrect_pointy1.svg" numSizes="1"/>
  <file fill="rgb(192,192,192)" imgSize="19,19" stroke="rgb(255,251,240)" numUses="4" isSvgFile="true" dynamic="true" file="images/li_round_pointy1.svg" numSizes="1"/>
- <file fill="rgb(192,192,192)" imgSize="137,37" stroke="none" numUses="80" isSvgFile="true" dynamic="true" file="images/btn_plastic_rect45bar_2.svg" numSizes="72"/>
- <file fill="rgb(192,192,192)" imgSize="137,37" stroke="none" numUses="80" isSvgFile="true" dynamic="true" file="images/btn_plastic_rect45bar_1.svg" numSizes="72"/>
+ <file fill="rgb(192,192,192)" imgSize="137,37" stroke="none" numUses="81" isSvgFile="true" dynamic="true" file="images/btn_plastic_rect45bar_2.svg" numSizes="74"/>
+ <file fill="rgb(192,192,192)" imgSize="137,37" stroke="none" numUses="81" isSvgFile="true" dynamic="true" file="images/btn_plastic_rect45bar_1.svg" numSizes="74"/>
  <file fill="rgb(180,180,180)" imgSize="20,20" stroke="none" numUses="4" isSvgFile="true" dynamic="true" file="images/li_shape_rrect.svg" numSizes="1"/>
  <file fill="rgb(0,255,0)" imgSize="10,11" stroke="rgb(255,251,240)" numUses="3" isSvgFile="true" dynamic="true" file="lib/filter-1.0/images/li_round_pointy1.svg" numSizes="1"/>
- <file fill="rgb(0,255,0)" imgSize="13,15" stroke="rgb(255,251,240)" numUses="5" isSvgFile="true" dynamic="true" file="images/li_round_pointy1.svg" numSizes="2"/>
  <file fill="rgb(0,255,0)" imgSize="13,15" stroke="rgb(255,251,240)" numUses="2" isSvgFile="true" dynamic="true" file="lib/filter1-1.0/images/li_round_pointy1.svg" numSizes="1"/>
+ <file fill="rgb(0,255,0)" imgSize="13,15" stroke="rgb(255,251,240)" numUses="7" isSvgFile="true" dynamic="true" file="images/li_round_pointy1.svg" numSizes="2"/>
+ <file fill="rgb(255,0,0)" imgSize="18,19" stroke="rgb(255,251,240)" numUses="10" isSvgFile="true" dynamic="true" file="images/li_round_shiney1_rev2.svg" numSizes="1"/>
  <file fill="rgb(246,246,246)" imgSize="43,40" stroke="none" numUses="76" isSvgFile="true" file="images/btn_kbdwht_std_2_rev1.svg" numSizes="36" prePath="keypads"/>
  <file fill="rgb(246,246,246)" imgSize="43,40" stroke="none" numUses="76" isSvgFile="true" file="images/btn_kbdwht_std_1_rev1.svg" numSizes="36" prePath="keypads"/>
  <file fill="rgb(0,115,170)" imgSize="30,30" stroke="none" numUses="28" isSvgFile="true" file="images/btn_shiney_rrect_2_rev2.svg" numSizes="1"/>
  <file fill="rgb(0,115,170)" imgSize="30,30" stroke="none" numUses="28" isSvgFile="true" file="images/btn_shiney_rrect_1.svg" numSizes="1"/>
- <file fill="rgb(0,0,0)" imgSize="120,55" stroke="none" numUses="13" isSvgFile="true" file="images/frame_rect45bar_chrome.svg" numSizes="4"/>
- <file fill="rgb(160,160,164)" imgSize="65,28" stroke="none" numUses="9" isSvgFile="true" file="images/win-like-press.svg" numSizes="2"/>
- <file fill="rgb(160,160,164)" imgSize="65,28" stroke="none" numUses="9" isSvgFile="true" file="images/win-like.svg" numSizes="2"/>
+ <file fill="rgb(0,0,0)" imgSize="120,55" stroke="none" numUses="17" isSvgFile="true" file="images/frame_rect45bar_chrome.svg" numSizes="8"/>
+ <file fill="rgb(0,0,0)" imgSize="25,25" stroke="none" numUses="12" isSvgFile="true" file="images/frame_round_chrome.svg" numSizes="5"/>
+ <file fill="rgb(160,160,164)" imgSize="65,28" stroke="none" numUses="10" isSvgFile="true" file="images/win-like-press.svg" numSizes="2"/>
+ <file fill="rgb(160,160,164)" imgSize="65,28" stroke="none" numUses="10" isSvgFile="true" file="images/win-like.svg" numSizes="2"/>
+ <file fill="rgb(0,0,0)" imgSize="86,37" stroke="none" numUses="9" isSvgFile="true" file="images/frame_rrectbar_chrome.svg" numSizes="1"/>
  <file fill="rgb(255,255,255)" imgSize="105,39" stroke="none" numUses="7" isSvgFile="true" file="images/btn_kbdwht_long_2_rev1.svg" numSizes="7"/>
  <file fill="rgb(255,255,255)" imgSize="105,39" stroke="none" numUses="7" isSvgFile="true" file="images/btn_kbdwht_long_1_rev1.svg" numSizes="7"/>
  <file fill="rgb(246,246,246)" imgSize="80,40" stroke="none" numUses="5" isSvgFile="true" file="images/btn_kbdwht_wide_2_rev1.svg" numSizes="5" prePath="keypads"/>
@@ -38,18 +47,13 @@
  <file fill="rgb(255,255,255)" imgSize="63,44" stroke="none" numUses="4" isSvgFile="true" file="images/bu_oldwin_rect_1_rev1.svg" numSizes="1"/>
  <file fill="rgb(255,255,255)" imgSize="15,12" stroke="none" numUses="4" isSvgFile="true" file="images/ic_pl1_039.svg" numSizes="1"/>
  <file fill="rgb(255,255,255)" imgSize="15,12" stroke="none" numUses="4" isSvgFile="true" file="images/ic_pl1_038.svg" numSizes="1"/>
- <file fill="rgb(0,0,0)" imgSize="17,19" stroke="none" numUses="4" isSvgFile="true" file="images/frame_round_chrome.svg" numSizes="3"/>
  <file fill="none" imgSize="45,41" stroke="none" numUses="4" isSvgFile="true" file="images/btn_kbdwht_long_2_rev1.svg" numSizes="4" prePath="keypads"/>
  <file fill="none" imgSize="45,41" stroke="none" numUses="4" isSvgFile="true" file="images/btn_kbdwht_long_1_rev1.svg" numSizes="4" prePath="keypads"/>
- <file fill="rgb(0,0,0)" imgSize="86,37" stroke="none" numUses="3" isSvgFile="true" file="images/frame_rrectbar_chrome.svg" numSizes="1"/>
- <file fill="rgb(50,205,50)" imgSize="79,27" stroke="none" numUses="3" isSvgFile="true" file="images/btn_plastic_rrectbar_2.svg" numSizes="1"/>
- <file fill="rgb(50,205,50)" imgSize="79,27" stroke="none" numUses="3" isSvgFile="true" file="images/btn_plastic_rrectbar_1.svg" numSizes="1"/>
  <file fill="rgb(255,255,255)" imgSize="54,44" stroke="none" numUses="3" isSvgFile="true" file="images/bu_oldwin_rrect_2_rev2.svg" numSizes="1"/>
  <file fill="rgb(255,255,255)" imgSize="54,44" stroke="none" numUses="3" isSvgFile="true" file="images/bu_oldwin_rrect_1_rev1.svg" numSizes="1"/>
  <file fill="rgb(0,0,0)" imgSize="14,15" stroke="none" numUses="3" isSvgFile="true" file="lib/filter-1.0/images/frame_round_chrome.svg" numSizes="1"/>
  <file fill="rgb(23,30,40)" imgSize="41,35" stroke="none" numUses="3" isSvgFile="true" file="images/ic_cn2_03.svg" numSizes="3" prePath="keypads"/>
- <file fill="rgb(255,0,0)" imgSize="79,27" stroke="none" numUses="2" isSvgFile="true" file="images/btn_plastic_rrectbar_2.svg" numSizes="1"/>
- <file fill="rgb(255,0,0)" imgSize="79,27" stroke="none" numUses="2" isSvgFile="true" file="images/btn_plastic_rrectbar_1.svg" numSizes="1"/>
+ <file fill="rgb(0,0,0)" imgSize="45,37" stroke="none" numUses="2" isSvgFile="true" file="images/frame_rrect_chrome.svg" numSizes="1"/>
  <file fill="rgb(255,255,255)" imgSize="15,12" stroke="none" numUses="2" isSvgFile="true" file="images/ic_pl1_022.svg" numSizes="1"/>
  <file fill="rgb(255,255,255)" imgSize="15,12" stroke="none" numUses="2" isSvgFile="true" file="images/ic_pl1_019.svg" numSizes="1"/>
  <file fill="rgb(255,255,255)" imgSize="15,12" stroke="none" numUses="2" isSvgFile="true" file="images/ic_pl1_032.svg" numSizes="1"/>
@@ -70,6 +74,7 @@
  <file fill="rgb(23,30,40)" imgSize="58,54" stroke="none" numUses="1" isSvgFile="true" file="images/backspace_small.svg" numSizes="1" prePath="keypads"/>
  <file fill="rgb(23,30,40)" imgSize="58,54" stroke="none" numUses="1" isSvgFile="true" file="images/ic_pl2_117.svg" numSizes="1" prePath="keypads"/>
  <file fill="rgb(23,30,40)" imgSize="58,54" stroke="none" numUses="1" isSvgFile="true" file="images/ic_pl2_116_rev1.svg" numSizes="1" prePath="keypads"/>
+ <file fill="rgb(0,0,0)" imgSize="100,35" stroke="none" numUses="1" isSvgFile="true" file="images/frame_rectbar_chrome.svg" numSizes="1"/>
  <file fill="rgb(153,200,140)" imgSize="66,44" stroke="none" numUses="1" isSvgFile="true" file="images/bu_smooth_rrect_2_rev2.svg" numSizes="1"/>
  <file fill="rgb(153,200,140)" imgSize="66,44" stroke="none" numUses="1" isSvgFile="true" file="images/bu_smooth_rrect_1.svg" numSizes="1"/>
  <file imgSize="800,480" numUses="1" file="opt/ventanlegg.png" numSizes="1"/>

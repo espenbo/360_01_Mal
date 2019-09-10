@@ -6,10 +6,36 @@
   <tag>Force Logoff Time</tag>
  </group>
  <group Type="Auto">
+  <name>Alarmer@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>iIndex_Tag</tag>
+ </group>
+ <group Type="Auto">
+  <name>Alarmer@IndexedTagSet_Globale@1</name>
+  <active>false</active>
+  <tag>10239/"/BY2209_360_20_RES"</tag>
+ </group>
+ <group Type="Auto">
+  <name>Alarmer@IndexedTagSet_Globale@2</name>
+  <active>false</active>
+  <tag></tag>
+ </group>
+ <group Type="Auto">
   <name>Avtrekksvifte@$GroupSubscrWgt@$0</name>
   <active>false</active>
   <tag>10239/"/BY2209_360_20_JV500_StartDelay"</tag>
   <tag>10239/"/BY2209_360_20_JV500_StartUpPeriod"</tag>
+  <tag>iIndex_Tag</tag>
+ </group>
+ <group Type="Auto">
+  <name>Avtrekksvifte@IndexedTagSet_Globale@1</name>
+  <active>false</active>
+  <tag>10239/"/BY2209_360_20_JV500_SP"</tag>
+ </group>
+ <group Type="Auto">
+  <name>Avtrekksvifte@IndexedTagSet_Globale@2</name>
+  <active>false</active>
+  <tag></tag>
  </group>
  <group Type="Auto">
   <name>Calendar@$GroupSubscrWgt@$0</name>
@@ -36,6 +62,7 @@
   <tag>10239/"/BY2209_360_20_AUT"</tag>
   <tag>10239/"/BY2209_360_20_MAN"</tag>
   <tag>10239/"/BY2209_360_20_OFF"</tag>
+  <tag>10239/"/BY2209_360_20_RES"</tag>
   <tag>10239/"/BY2209_360_20_US"</tag>
   <tag>sVentilasjon_360_20</tag>
  </group>
@@ -58,6 +85,35 @@
  </group>
  <group Type="Auto">
   <name>Driftstider@IndexedTagSet_Globale@2</name>
+  <active>false</active>
+  <tag></tag>
+ </group>
+ <group Type="Auto">
+  <name>Filter@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>iIndex_Tag</tag>
+ </group>
+ <group Type="Auto">
+  <name>Filter@IndexedTagSet_Globale@1</name>
+  <active>false</active>
+  <tag>10239/"/BY2209_360_20_RP400_AL"</tag>
+  <tag>10239/"/BY2209_360_20_RP400_PV"</tag>
+  <tag>10239/"/BY2209_360_20_RP500_AL"</tag>
+  <tag>10239/"/BY2209_360_20_RP500_PV"</tag>
+ </group>
+ <group Type="Auto">
+  <name>Filter@IndexedTagSet_Globale@2</name>
+  <active>false</active>
+  <tag></tag>
+ </group>
+ <group Type="Auto">
+  <name>Filter@IndexedTagSet_Globale_Retaind@1</name>
+  <active>false</active>
+  <tag>10239/"/BY2209_360_20_RP401_AL_SP"</tag>
+  <tag>10239/"/BY2209_360_20_RP500_AL_SP"</tag>
+ </group>
+ <group Type="Auto">
+  <name>Filter@IndexedTagSet_Globale_Retaind@2</name>
   <active>false</active>
   <tag></tag>
  </group>
@@ -92,6 +148,12 @@
   <tag></tag>
  </group>
  <group Type="Auto">
+  <name>Kalende360_01@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>10239/"/BY2209_360_20_Kalender_Enable"</tag>
+  <tag>10239/"/BY2209_360_20_SD_Kalender_Enable"</tag>
+ </group>
+ <group Type="Auto">
   <name>Main@$GroupSubscrWgt@$0</name>
   <active>false</active>
   <tag>iIndex_Tag</tag>
@@ -100,6 +162,7 @@
   <name>Main@IndexedTagSet_Globale@1</name>
   <active>false</active>
   <tag>10239/"/BY2209_360_20_KA500_US"</tag>
+  <tag>10239/"/BY2209_360_20_US"</tag>
  </group>
  <group Type="Auto">
   <name>Main@IndexedTagSet_Globale@2</name>
@@ -109,6 +172,7 @@
  <group Type="Auto">
   <name>MainTemplate@$GroupSubscrWgt@$0</name>
   <active>false</active>
+  <tag>10239/"/BY2209_360_20_BRANN_ANLEGG_AL"</tag>
   <tag>System Time</tag>
  </group>
  <group Type="Auto">
@@ -150,6 +214,7 @@
   <name>ManStyring@IndexedTagSet_Globale@1</name>
   <active>false</active>
   <tag></tag>
+  <tag>10239/"/BY2209_360_20_JP400_AUT"</tag>
   <tag>10239/"/BY2209_360_20_JP400_DT"</tag>
   <tag>10239/"/BY2209_360_20_JP400_MAN"</tag>
   <tag>10239/"/BY2209_360_20_JP400_MAN_CMD"</tag>
@@ -164,6 +229,7 @@
   <tag>10239/"/BY2209_360_20_JV500_MAN"</tag>
   <tag>10239/"/BY2209_360_20_JV500_MAN_CMD"</tag>
   <tag>10239/"/BY2209_360_20_JV500_V"</tag>
+  <tag>10239/"/BY2209_360_20_LX400_AUT"</tag>
   <tag>10239/"/BY2209_360_20_LX400_OP"</tag>
  </group>
  <group Type="Auto">
@@ -458,6 +524,7 @@
  <group Type="Auto">
   <name>TemplatePage1@$GroupSubscrWgt@$0</name>
   <active>false</active>
+  <tag>10239/"/BY2209_360_20_BRANN_ANLEGG_AL"</tag>
   <tag>System Time</tag>
  </group>
  <group Type="Auto">
@@ -480,6 +547,17 @@
   <active>false</active>
   <tag>10239/"/BY2209_360_20_JV400_StartDelay"</tag>
   <tag>10239/"/BY2209_360_20_JV400_StartUpPeriod"</tag>
+  <tag>iIndex_Tag</tag>
+ </group>
+ <group Type="Auto">
+  <name>Tilluftsvifte@IndexedTagSet_Globale@1</name>
+  <active>false</active>
+  <tag>10239/"/BY2209_360_20_JV400_SP"</tag>
+ </group>
+ <group Type="Auto">
+  <name>Tilluftsvifte@IndexedTagSet_Globale@2</name>
+  <active>false</active>
+  <tag></tag>
  </group>
  <group Type="Auto">
   <name>TrendPaadrag@$GroupSubscrWgt@$0</name>
@@ -556,13 +634,21 @@
   <name>VentAnlegg@$GroupSubscrWgt@$0</name>
   <active>false</active>
   <tag>10239/"/BY2209_360_20_Flush_OK"</tag>
+  <tag>10239/"/BY2209_360_20_JV400_ERROR"</tag>
+  <tag>10239/"/BY2209_360_20_JV400_V"</tag>
+  <tag>10239/"/BY2209_360_20_JV500_ERROR"</tag>
+  <tag>10239/"/BY2209_360_20_JV500_V"</tag>
   <tag>10239/"/BY2209_360_20_KA400_Closed_V"</tag>
   <tag>10239/"/BY2209_360_20_KA400_ERROR"</tag>
   <tag>10239/"/BY2209_360_20_KA400_Open_V"</tag>
   <tag>10239/"/BY2209_360_20_KA500_Closed_V"</tag>
   <tag>10239/"/BY2209_360_20_KA500_ERROR"</tag>
   <tag>10239/"/BY2209_360_20_KA500_Open_V"</tag>
+  <tag>10239/"/BY2209_360_20_OppstartStatus"</tag>
+  <tag>10239/"/BY2209_360_20_QT550_AL"</tag>
   <tag>10239/"/BY2209_360_20_SPU_PV"</tag>
+  <tag>10239/"/BY2209_360_20_XS001_V"</tag>
+  <tag>10239/"/BY2209_360_20_XS002_V"</tag>
   <tag>iIndex_Tag</tag>
  </group>
  <group Type="Auto">
@@ -575,24 +661,20 @@
   <tag>10239/"/BY2209_360_20_Heating_Active"</tag>
   <tag>10239/"/BY2209_360_20_JP400_AL"</tag>
   <tag>10239/"/BY2209_360_20_JP400_V"</tag>
-  <tag>10239/"/BY2209_360_20_JV400_ERROR"</tag>
-  <tag>10239/"/BY2209_360_20_JV400_STATUS"</tag>
-  <tag>10239/"/BY2209_360_20_JV400_V"</tag>
-  <tag>10239/"/BY2209_360_20_JV500_ERROR"</tag>
-  <tag>10239/"/BY2209_360_20_JV500_STATUS"</tag>
-  <tag>10239/"/BY2209_360_20_JV500_V"</tag>
+  <tag>10239/"/BY2209_360_20_JV400_OP"</tag>
   <tag>10239/"/BY2209_360_20_LX400_OP"</tag>
   <tag>10239/"/BY2209_360_20_RP400_AL"</tag>
   <tag>10239/"/BY2209_360_20_RP500_AL"</tag>
+  <tag>10239/"/BY2209_360_20_RP500_PV"</tag>
   <tag>10239/"/BY2209_360_20_RT401_PV"</tag>
   <tag>10239/"/BY2209_360_20_RT402_PV"</tag>
+  <tag>10239/"/BY2209_360_20_RT403_PV"</tag>
   <tag>10239/"/BY2209_360_20_RT501_PV"</tag>
   <tag>10239/"/BY2209_360_20_RT502_PV"</tag>
   <tag>10239/"/BY2209_360_20_RT503_PV"</tag>
   <tag>10239/"/BY2209_360_20_SB400_K_OP"</tag>
   <tag>10239/"/BY2209_360_20_SB400_V_OP"</tag>
   <tag>10239/"/BY2209_360_20_SYS_AL"</tag>
-  <tag>10239/"/BY2209_360_20_US"</tag>
  </group>
  <group Type="Auto">
   <name>VentAnlegg@IndexedTagSet_Globale@2</name>
@@ -622,13 +704,19 @@
  <group Type="Auto">
   <name>Ventil@$GroupSubscrWgt@$0</name>
   <active>false</active>
+  <tag>10239/"/BY2209_360_20_SB400_AH"</tag>
+  <tag>10239/"/BY2209_360_20_SB400_COM_ERROR"</tag>
+  <tag>10239/"/BY2209_360_20_SB400_CRI"</tag>
+  <tag>10239/"/BY2209_360_20_SB400_MAN"</tag>
+  <tag>10239/"/BY2209_360_20_SB400_MAN_SP"</tag>
+  <tag>10239/"/BY2209_360_20_SB400_MOL"</tag>
+  <tag>10239/"/BY2209_360_20_SB400_POS"</tag>
+  <tag>10239/"/BY2209_360_20_SB400_RES"</tag>
   <tag>iIndex_Tag</tag>
  </group>
  <group Type="Auto">
   <name>Ventil@IndexedTagSet_Globale@1</name>
   <active>false</active>
-  <tag>10239/"/BY2209_360_20_Cooling_Active"</tag>
-  <tag>10239/"/BY2209_360_20_Heating_Active"</tag>
   <tag>10239/"/BY2209_360_20_SB400_K_OP"</tag>
   <tag>10239/"/BY2209_360_20_SB400_V_OP"</tag>
   <tag>sVentilasjon_360_20</tag>

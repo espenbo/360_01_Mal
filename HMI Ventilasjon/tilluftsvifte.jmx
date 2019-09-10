@@ -8,6 +8,7 @@
     <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
    </langs>
    <MLTexts>
+    <MLText L1="Vifte hastighet" L2="Oppstart forsinkelse" id="2"/>
     <MLText L1="Oppstarts periode" L2="Oppstart forsinkelse" id="67"/>
     <MLText L1="Oppstarts forsinkelse" L2="Oppstart forsinkelse" id="68"/>
    </MLTexts>
@@ -62,6 +63,21 @@
   </object>
   <object class="GroupSubscribeWgt" id="Tilluftsvifte@$GroupSubscrWgt@$0">
    <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="LabelWgt" id="label2">
+   <wgtStyle width="141" x="45" forcePaint="2" y="100.23" font-family="Tahoma" cx="79" cy="10" height="19" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="2"/>
+   </links>
+  </object>
+  <object class="ShapeWgt" id="roundrect2" static="true">
+   <wgtStyle width="94" x="202" y="97" fill="rgb(255,255,224)" cx="47" cy="14.33" rx="20" height="28.67" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
+  </object>
+  <object class="NumericWgt" id="field2">
+   <wgtStyle forcePaint="8" font-family="Arial" cx="38.85" cy="11" step="1" timeSpec="local" alignment="right" x="204.67" y="99" vert-align="top" text="50" max="3.40282e+038" usingFormat="#" value="50" keypad-type="Numeric" min="-3.40282e+038" width="80" numberFormat="6" readWrite="true" height="23" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" attribute="value" tag="IndexedTagSet_Globale.rTilluftsvifte_SP" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
   </object>
  </object>
 </wgtPage>

@@ -11,6 +11,7 @@
     <MLText L1="" L2="" id="21"/>
     <MLText L1="Enable" L2="Enable" id="1"/>
     <MLText L1="Historiske Alarmer" L2="Historiske Alarmer" id="2"/>
+    <MLText L1="Reset Feil" L2="Stopp" id="9"/>
     <MLText L1="Tilbake" L2="Tilbake" id="18"/>
     <MLText L1="Time" L2="Time" id="19"/>
     <MLText L1="Select" L2="Select" id="20"/>
@@ -95,9 +96,9 @@
    <wgtStyle width="0" x="0" y="0" height="0"/>
   </object>
   <object class="GroupWgt" id="ActiveAlarmsTable" customType="ActiveAlarmsTable">
-   <wgtStyle width="785" x="5" y="28.51" cx="392.50" cy="202" height="404"/>
+   <wgtStyle width="785" x="5" forcePaint="1" y="28.51" cx="392.50" cy="202" height="404"/>
    <object class="ComboBoxWgt" id="ActiveAlarmsTable.Filter">
-    <wgtStyle width="246.88" listData="^((Not Triggered Acked|Not Triggered Not Acked|Triggered).*$)," x="1.55" forcePaint="2" font-sizepx="10" y="363.78" font-family="Tahoma" cx="29.72" cy="17.62" height="37.95" alignment="center" vert-align="top" index="0" text="" keypad-type="None" list="Hide Not Triggered,Show All" font-size="12"/>
+    <wgtStyle width="246.88" listData="^((Not Triggered Acked|Not Triggered Not Acked|Triggered).*$)," x="1.55" forcePaint="3" font-sizepx="10" y="363.78" font-family="Tahoma" cx="29.72" cy="17.62" height="37.95" alignment="center" vert-align="top" index="0" text="" keypad-type="None" list="Hide Not Triggered,Show All" font-size="12"/>
     <links>
      <lang class="MLComboBoxLink:list:">
       <MLFontFamily L1="Tahoma" L2="Tahoma"/>
@@ -154,11 +155,11 @@
      </lang>
     </links>
    </object>
-   <object class="LabelWgt" id="ActiveAlarmsTable.Title" static="true">
-    <wgtStyle width="773.95" font-color="rgb(23,30,40)" x="5.79" font-sizepx="16" y="0" font-family="Tahoma" wrapping="true" cx="386.97" cy="12.39" height="26.17" alignment="center" vert-align="top" text="Aktive Alarmer" keypad-type="None" font-size="12"/>
+   <object class="LabelWgt" id="ActiveAlarmsTable.Title">
+    <wgtStyle width="773.95" font-color="rgb(23,30,40)" x="5.79" forcePaint="1" font-sizepx="16" y="0" font-family="Tahoma" wrapping="true" cx="386.97" cy="12.39" height="26.17" alignment="center" vert-align="top" text="Aktive Alarmer" keypad-type="None" font-size="12"/>
    </object>
    <object class="GroupWgt" id="ActiveAlarmsTable.Buttons">
-    <wgtStyle width="536.53" x="248.47" forcePaint="16" y="364.75" cx="268.26" cy="19.63" wgtStaticOpt="dynamic" height="39.25">
+    <wgtStyle width="536.53" x="248.47" forcePaint="17" y="364.75" cx="268.26" cy="19.63" wgtStaticOpt="dynamic" height="39.25">
      <gridGroupLayout gridVerUnderFlow="2" gridGlobalStrokeMode="1" gridScrollAutohide="0" gridGlobalStrokeCollapsed="1" gridNRows="1" gridScrollBgColor="none" gridGlobalStrokeWidth="0" gridScrollImage="" gridVerOverFlow="2" gridNCols="4" gridHorOverFlow="2" gridGlobalStrokeColor="rgb(0,0,0)" gridScrollColor="rgb(153,153,153)" gridScrollSize="5" gridScrollOffset="2" gridHorUnderFlow="2">
       <colProperties>
        <colProperty rightStrokeColor="rgb(0,0,0)" leftMargin="3" rightMargin="0" minWidth="80" stretch="2" leftStroke="0" maxWidth="10000" rightStroke="0" leftStrokeColor="rgb(0,0,0)"/>
@@ -453,6 +454,34 @@
       <lang class="MLTextLink" textid="1"/>
      </links>
     </object>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd4" customType="Button">
+   <wgtStyle width="85" x="112.50" y="442.11" cx="42.04" cy="17" height="35"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrectbar; hmi-type:bkgd" id="image8" static="true">
+    <wgtStyle width="85.91" imagePath="images/frame_rrectbar_chrome.svg" x="0" y="-1" cx="43.15" cy="18.53" height="37"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rrectbar; hmi-type:btn; type:btn" id="buttonStd4">
+    <wgtStyle width="78.60" x="3.66" forcePaint="8" y="4" fill="rgb(255,0,0)" dx="1" cx="39.46" form="standard" dy="-1" cy="13.56" height="27" releasePath="images\btn_plastic_rrectbar_1.svg" needlePath="images\btn_plastic_rrectbar_2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" attribute="value" tag="IndexedTagSet_Globale.xRES" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" attribute="tagSrc" tag="IndexedTagSet_Globale.xEnable_Ventilasjon" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label5">
+    <wgtStyle width="74.03" font-color="rgb(40,40,40)" x="4.57" forcePaint="3" y="2" font-family="Tahoma" wrapping="true" cx="37.35" cy="13.90" height="27" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="9"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image9" static="true">
+    <wgtStyle width="26.51" x="27.42" y="8" cx="13.53" cy="8.23" height="16"/>
    </object>
   </object>
  </object>

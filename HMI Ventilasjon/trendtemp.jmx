@@ -126,7 +126,7 @@
     <MLText L1="" L2="" id="19"/>
     <MLText L1="I" L2="" id="0"/>
     <MLText L1="Tag&#xa;Value" L2="" id="1"/>
-    <MLText L1="Tilbake" L2="" id="2"/>
+    <MLText L1="Hovedside" L2="" id="3"/>
     <MLText L1="Trend temperaturer VP" L2="" id="4"/>
     <MLText L1="1 uke" L2="" id="5"/>
     <MLText L1="1 time" L2="" id="6"/>
@@ -559,13 +559,13 @@
    <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd1">
     <wgtStyle width="85" x="4" y="4" fill="rgb(192,192,192)" dx="1" cx="42.54" form="standard" cy="12.91" height="25" releasePath="images\btn_plastic_rect45bar_1.svg" needlePath="images\btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
     <links>
-     <action class="LastVisitedPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+     <action pageName="main.jmx" class="LoadPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
     </links>
    </object>
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label3">
     <wgtStyle width="74" font-color="rgb(40,40,40)" x="7" forcePaint="3" font-sizepx="13" y="5" font-family="Tahoma" font-bold="true" wrapping="true" cx="37.10" cy="12.64" height="25" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
     <links>
-     <lang class="MLTextLink" textid="2"/>
+     <lang class="MLTextLink" textid="3"/>
     </links>
    </object>
    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image32" static="true">

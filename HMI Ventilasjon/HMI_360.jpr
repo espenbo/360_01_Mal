@@ -41,6 +41,7 @@
     <page class="DialogWgt" size="350,300" exportType="255" type="dialog" precache="false" name="Tilluftsvifte" file="tilluftsvifte.jmx"/>
     <page class="DialogWgt" size="350,300" exportType="255" type="dialog" precache="false" name="Avtrekksvifte" file="avtrekksvifte.jmx"/>
     <page class="DialogWgt" size="350,100" exportType="255" type="dialog" precache="false" name="Alarm" file="alarm.jmx"/>
+    <page class="DialogWgt" size="350,300" exportType="255" type="dialog" precache="false" name="Filter" file="filter.jmx"/>
    </pages>
    <templatePages>
     <templatePage class="TemplatePageWgt" type="template" name="MainTemplate" file="maintemplate.jmx"/>

@@ -273,7 +273,7 @@
    </links>
   </object>
   <object class="GroupWgt" id="Temp1" customType="Temp3-1.0:1.0">
-   <wgtStyle width="86.47" x="124" forcePaint="24" y="112" cx="43.24" cy="28.84" wgtStaticOpt="dynamic" height="57.69" mtx="1,0,0,0,1,0,0,0,1"/>
+   <wgtStyle width="86.47" x="124" forcePaint="25" y="112" cx="43.24" cy="28.84" wgtStaticOpt="dynamic" height="57.69" mtx="1,0,0,0,1,0,0,0,1"/>
    <dataLinks>
     <dataLink readWrite="R" attribute="*.Temp.value" tag="IndexedTagSet_Globale.rTempAvkast" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
    </dataLinks>

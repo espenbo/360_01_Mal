@@ -3,7 +3,7 @@
 <CoDeSysSymbolTable>
 	<SymbolHeader>
 		<Version>-1</Version>
-		<ProjectId>106090</ProjectId>
+		<ProjectId>2866817</ProjectId>
 		<WorkbenchVersion>2.3.9.53</WorkbenchVersion>
 		<CompilerVersion>2.3.9.52</CompilerVersion>
 	</SymbolHeader>
@@ -12,246 +12,265 @@
 		<TypeSimple TypeId="1" Size="4">DINT</TypeSimple>
 		<TypeUserdef TypeId="2" Size="8">
 			<Name>BACNETOBJECTIDENTIFIER</Name>
-			<Var Type="0" Flags="268435715" Access="114" RefId="275" Offset="0">BACnetObjectType</Var>
-			<Var Type="1" Flags="259" Access="114" RefId="275" Offset="4">Instance</Var>
+			<Var Type="0" Flags="1342177539" Access="114" RefId="275" Offset="0">BACnetObjectType</Var>
+			<Var Type="1" Flags="1073742083" Access="114" RefId="275" Offset="4">Instance</Var>
 		</TypeUserdef>
 		<TypeString TypeId="3" Size="51"/>
 		<TypeSimple TypeId="4" Size="1">BYTE</TypeSimple>
 		<TypeSimple TypeId="5" Size="4">DWORD</TypeSimple>
 		<TypeUserdef TypeId="6" Size="8">
 			<Name>BACNETPRIORITYVALUE</Name>
-			<Var Type="4" Flags="259" Access="114" RefId="326" Offset="0">CHOICE</Var>
-			<Var Type="5" Flags="259" Access="114" RefId="326" Offset="4">VALUE</Var>
+			<Var Type="4" Flags="1073742083" Access="114" RefId="326" Offset="0">CHOICE</Var>
+			<Var Type="5" Flags="1073742083" Access="114" RefId="326" Offset="4">VALUE</Var>
 		</TypeUserdef>
 		<TypeArray TypeId="7" Size="128">
 			<Dimension Lower="1" Upper="16"/>
 			<BaseType>
 				<TypeUserdef Size="8">
 					<Name>BACNETPRIORITYVALUE</Name>
-					<Var Type="4" Flags="259" Access="114" RefId="326" Offset="0">CHOICE</Var>
-					<Var Type="5" Flags="259" Access="114" RefId="326" Offset="4">VALUE</Var>
+					<Var Type="4" Flags="1073742083" Access="114" RefId="326" Offset="0">CHOICE</Var>
+					<Var Type="5" Flags="1073742083" Access="114" RefId="326" Offset="4">VALUE</Var>
 				</TypeUserdef>
 			</BaseType>
 		</TypeArray>
 		<TypeUserdef TypeId="8" Size="128">
 			<Name>BACNETPRIORITYARRAY</Name>
-			<Var Type="7" Flags="268435715" Access="114" RefId="327" Offset="0">PriorityArray</Var>
+			<Var Type="7" Flags="1342177539" Access="114" RefId="327" Offset="0">PriorityArray</Var>
 		</TypeUserdef>
 		<TypeSimple TypeId="9" Size="1">BOOL</TypeSimple>
 		<TypeUserdef TypeId="10" Size="360">
 			<Name>BACNET_BINARY_VALUE</Name>
-			<Var Type="2" Flags="268435715" Access="114" RefId="335" Offset="0">Object_Identifier</Var>
-			<Var Type="3" Flags="259" Access="114" RefId="335" Offset="8">Object_Name</Var>
-			<Var Type="0" Flags="268435715" Access="114" RefId="335" Offset="60">Object_Type</Var>
-			<Var Type="0" Flags="268435715" Access="114" RefId="335" Offset="62">Present_Value</Var>
-			<Var Type="8" Flags="268435715" Access="114" RefId="335" Offset="64">Priority_Array</Var>
-			<Var Type="9" Flags="259" Access="114" RefId="335" Offset="192">Out_Of_Service</Var>
-			<Var Type="0" Flags="268435715" Access="114" RefId="335" Offset="194">Relinquish_Default</Var>
-			<Var Type="3" Flags="259" Access="114" RefId="335" Offset="196">Description</Var>
-			<Var Type="3" Flags="259" Access="114" RefId="335" Offset="247">Inactive_Text</Var>
-			<Var Type="3" Flags="259" Access="114" RefId="335" Offset="298">Active_Text</Var>
-			<Var Type="5" Flags="259" Access="114" RefId="335" Offset="352">Notification_Class</Var>
-			<Var Type="0" Flags="268435715" Access="114" RefId="335" Offset="356">Alarm_Value</Var>
-			<Var Type="0" Flags="268435715" Access="114" RefId="335" Offset="358">Notify_Type</Var>
+			<Var Type="2" Flags="1342177539" Access="114" RefId="335" Offset="0">Object_Identifier</Var>
+			<Var Type="3" Flags="1073742083" Access="114" RefId="335" Offset="8">Object_Name</Var>
+			<Var Type="0" Flags="1342177539" Access="114" RefId="335" Offset="60">Object_Type</Var>
+			<Var Type="0" Flags="1342177539" Access="114" RefId="335" Offset="62">Present_Value</Var>
+			<Var Type="8" Flags="1073742083" Access="114" RefId="335" Offset="64">Priority_Array</Var>
+			<Var Type="9" Flags="1073742083" Access="114" RefId="335" Offset="192">Out_Of_Service</Var>
+			<Var Type="0" Flags="1342177539" Access="114" RefId="335" Offset="194">Relinquish_Default</Var>
+			<Var Type="3" Flags="1073742083" Access="114" RefId="335" Offset="196">Description</Var>
+			<Var Type="3" Flags="1073742083" Access="114" RefId="335" Offset="247">Inactive_Text</Var>
+			<Var Type="3" Flags="1073742083" Access="114" RefId="335" Offset="298">Active_Text</Var>
+			<Var Type="5" Flags="1073742083" Access="114" RefId="335" Offset="352">Notification_Class</Var>
+			<Var Type="0" Flags="1342177539" Access="114" RefId="335" Offset="356">Alarm_Value</Var>
+			<Var Type="0" Flags="1342177539" Access="114" RefId="335" Offset="358">Notify_Type</Var>
 		</TypeUserdef>
 		<TypeSimple TypeId="11" Size="4">REAL</TypeSimple>
 		<TypeUserdef TypeId="12" Size="4">
 			<Name>BACNETSTATUSFLAGS</Name>
-			<Var Type="9" Flags="259" Access="114" RefId="328" Offset="0">in_alarm</Var>
-			<Var Type="9" Flags="259" Access="114" RefId="328" Offset="1">fault</Var>
-			<Var Type="9" Flags="259" Access="114" RefId="328" Offset="2">overridden_StatusFlage</Var>
-			<Var Type="9" Flags="259" Access="114" RefId="328" Offset="3">out_of_service</Var>
+			<Var Type="9" Flags="1073742083" Access="114" RefId="328" Offset="0">in_alarm</Var>
+			<Var Type="9" Flags="1073742083" Access="114" RefId="328" Offset="1">fault</Var>
+			<Var Type="9" Flags="1073742083" Access="114" RefId="328" Offset="2">overridden_StatusFlage</Var>
+			<Var Type="9" Flags="1073742083" Access="114" RefId="328" Offset="3">out_of_service</Var>
 		</TypeUserdef>
 		<TypeUserdef TypeId="13" Size="4">
 			<Name>BACNETLIMITENABLE</Name>
-			<Var Type="9" Flags="259" Access="114" RefId="329" Offset="0">lowLimitEnable</Var>
-			<Var Type="9" Flags="259" Access="114" RefId="329" Offset="1">highLimitEnable</Var>
+			<Var Type="9" Flags="1073742083" Access="114" RefId="329" Offset="0">lowLimitEnable</Var>
+			<Var Type="9" Flags="1073742083" Access="114" RefId="329" Offset="1">highLimitEnable</Var>
 		</TypeUserdef>
 		<TypeUserdef TypeId="14" Size="268">
 			<Name>BACNET_ANALOG_VALUE</Name>
-			<Var Type="2" Flags="268435715" Access="114" RefId="332" Offset="0">Object_Identifier</Var>
-			<Var Type="3" Flags="259" Access="114" RefId="332" Offset="8">Object_Name</Var>
-			<Var Type="0" Flags="268435715" Access="114" RefId="332" Offset="60">Object_Type</Var>
-			<Var Type="11" Flags="259" Access="114" RefId="332" Offset="64">Present_Value</Var>
-			<Var Type="8" Flags="268435715" Access="114" RefId="332" Offset="68">Priority_Array</Var>
-			<Var Type="12" Flags="268435715" Access="114" RefId="332" Offset="196">Status_Flags</Var>
-			<Var Type="9" Flags="259" Access="114" RefId="332" Offset="200">Out_Of_Service</Var>
-			<Var Type="3" Flags="259" Access="114" RefId="332" Offset="201">Description</Var>
-			<Var Type="11" Flags="259" Access="114" RefId="332" Offset="252">High_Limit</Var>
-			<Var Type="11" Flags="259" Access="114" RefId="332" Offset="256">Low_Limit</Var>
-			<Var Type="13" Flags="268435715" Access="114" RefId="332" Offset="260">Limit_Enable</Var>
-			<Var Type="0" Flags="268435715" Access="114" RefId="332" Offset="264">Notify_Type</Var>
-			<Var Type="0" Flags="268435715" Access="114" RefId="332" Offset="266">Units</Var>
+			<Var Type="2" Flags="1342177539" Access="114" RefId="332" Offset="0">Object_Identifier</Var>
+			<Var Type="3" Flags="1073742083" Access="114" RefId="332" Offset="8">Object_Name</Var>
+			<Var Type="0" Flags="1342177539" Access="114" RefId="332" Offset="60">Object_Type</Var>
+			<Var Type="11" Flags="1073742083" Access="114" RefId="332" Offset="64">Present_Value</Var>
+			<Var Type="8" Flags="1073742083" Access="114" RefId="332" Offset="68">Priority_Array</Var>
+			<Var Type="12" Flags="1073742083" Access="114" RefId="332" Offset="196">Status_Flags</Var>
+			<Var Type="9" Flags="1073742083" Access="114" RefId="332" Offset="200">Out_Of_Service</Var>
+			<Var Type="3" Flags="1073742083" Access="114" RefId="332" Offset="201">Description</Var>
+			<Var Type="11" Flags="1073742083" Access="114" RefId="332" Offset="252">High_Limit</Var>
+			<Var Type="11" Flags="1073742083" Access="114" RefId="332" Offset="256">Low_Limit</Var>
+			<Var Type="13" Flags="1073742083" Access="114" RefId="332" Offset="260">Limit_Enable</Var>
+			<Var Type="0" Flags="1342177539" Access="114" RefId="332" Offset="264">Notify_Type</Var>
+			<Var Type="0" Flags="1342177539" Access="114" RefId="332" Offset="266">Units</Var>
 		</TypeUserdef>
 	</SymbolTypeList>
 	<SymbolVarList>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="94504" TopLevelType="14">.BY2209_360_20_AFW_STATUS</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="120820" TopLevelType="10">.BY2209_360_20_Anlegg</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="82648" TopLevelType="10">.BY2209_360_20_AUT</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="91624" TopLevelType="10">.BY2209_360_20_AvtrekkReg_Aktiv</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="127712" TopLevelType="14">.BY2209_360_20_AvtrekkReg_ChangeoverTemp</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="93064" TopLevelType="10">.BY2209_360_20_AvtrekkReg_Fra_Temp</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="127980" TopLevelType="14">.BY2209_360_20_AvtrekkReg_SP</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="116416" TopLevelType="10">.BY2209_360_20_BRANN_AL</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="84808" TopLevelType="10">.BY2209_360_20_CMD</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="95400" TopLevelType="10">.BY2209_360_20_Cooling_Active</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="92704" TopLevelType="10">.BY2209_360_20_Cooling_Enable_Aktiv</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="85168" TopLevelType="10">.BY2209_360_20_Ext_Start</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="93424" TopLevelType="10">.BY2209_360_20_Flush_OK</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="95040" TopLevelType="10">.BY2209_360_20_Frost_AL_Air</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="117136" TopLevelType="10">.BY2209_360_20_FROST_US</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="93784" TopLevelType="10">.BY2209_360_20_Frost_Water_AL</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="95760" TopLevelType="10">.BY2209_360_20_HeatExchange_Active</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="96120" TopLevelType="10">.BY2209_360_20_Heating_Active</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="110388" TopLevelType="10">.BY2209_360_20_JP400_AL</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="112456" TopLevelType="10">.BY2209_360_20_JP400_AUT</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="110748" TopLevelType="14">.BY2209_360_20_JP400_DT</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="109668" TopLevelType="10">.BY2209_360_20_JP400_MAN</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="110028" TopLevelType="10">.BY2209_360_20_JP400_MAN_CMD</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="112096" TopLevelType="10">.BY2209_360_20_JP400_OFF</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="134144" TopLevelType="14">.BY2209_360_20_JP400_OutsideTempStart</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="134412" TopLevelType="14">.BY2209_360_20_JP400_StoppDelay</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="111016" TopLevelType="10">.BY2209_360_20_JP400_StoppedByTemp</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="134680" TopLevelType="14">.BY2209_360_20_JP400_TempDemand</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="118576" TopLevelType="10">.BY2209_360_20_JP400_US</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="113536" TopLevelType="10">.BY2209_360_20_JP400_V</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="115696" TopLevelType="10">.BY2209_360_20_JP401_V</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="102224" TopLevelType="14">.BY2209_360_20_JV400_DT</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="102492" TopLevelType="10">.BY2209_360_20_JV400_ERROR</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="103388" TopLevelType="10">.BY2209_360_20_JV400_MAN</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="103748" TopLevelType="10">.BY2209_360_20_JV400_MAN_CMD</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="104108" TopLevelType="14">.BY2209_360_20_JV400_MAN_SP</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="103120" TopLevelType="14">.BY2209_360_20_JV400_OP</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="102852" TopLevelType="14">.BY2209_360_20_JV400_SP</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="104376" TopLevelType="14">.BY2209_360_20_JV400_STATUS</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="119296" TopLevelType="10">.BY2209_360_20_JV400_US</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="112816" TopLevelType="10">.BY2209_360_20_JV400_V</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="104644" TopLevelType="14">.BY2209_360_20_JV500_DT</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="104912" TopLevelType="10">.BY2209_360_20_JV500_ERROR</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="105808" TopLevelType="10">.BY2209_360_20_JV500_MAN</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="106168" TopLevelType="10">.BY2209_360_20_JV500_MAN_CMD</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="106528" TopLevelType="14">.BY2209_360_20_JV500_MAN_SP</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="105540" TopLevelType="14">.BY2209_360_20_JV500_OP</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="105272" TopLevelType="14">.BY2209_360_20_JV500_SP</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="106796" TopLevelType="14">.BY2209_360_20_JV500_STATUS</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="119656" TopLevelType="10">.BY2209_360_20_JV500_US</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="113176" TopLevelType="10">.BY2209_360_20_JV500_V</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="96840" TopLevelType="10">.BY2209_360_20_KA400_Closed_V</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="97200" TopLevelType="10">.BY2209_360_20_KA400_ERROR</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="97560" TopLevelType="10">.BY2209_360_20_KA400_MAN</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="97920" TopLevelType="10">.BY2209_360_20_KA400_MAN_CMD</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="99084" TopLevelType="14">.BY2209_360_20_KA400_MAN_SP</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="98548" TopLevelType="14">.BY2209_360_20_KA400_OP</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="96480" TopLevelType="10">.BY2209_360_20_KA400_Open_V</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="98280" TopLevelType="14">.BY2209_360_20_KA400_STATUS</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="117496" TopLevelType="10">.BY2209_360_20_KA400_US</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="98816" TopLevelType="14">.BY2209_360_20_KA400_VP</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="99712" TopLevelType="10">.BY2209_360_20_KA500_Closed_V</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="100072" TopLevelType="10">.BY2209_360_20_KA500_ERROR</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="100432" TopLevelType="10">.BY2209_360_20_KA500_MAN</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="100792" TopLevelType="10">.BY2209_360_20_KA500_MAN_CMD</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="101956" TopLevelType="14">.BY2209_360_20_KA500_MAN_SP</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="101420" TopLevelType="14">.BY2209_360_20_KA500_OP</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="99352" TopLevelType="10">.BY2209_360_20_KA500_Open_V</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="101152" TopLevelType="14">.BY2209_360_20_KA500_STATUS</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="117856" TopLevelType="10">.BY2209_360_20_KA500_US</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="101688" TopLevelType="14">.BY2209_360_20_KA500_VP</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="85528" TopLevelType="10">.BY2209_360_20_Kalender_Enable</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="123416" TopLevelType="14">.BY2209_360_20_LimFrostAlarm</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="122612" TopLevelType="14">.BY2209_360_20_LimitOutsideTempStandby</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="122344" TopLevelType="14">.BY2209_360_20_LimOutsideTempFlush</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="123952" TopLevelType="14">.BY2209_360_20_LimWaterStartUp</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="108320" TopLevelType="10">.BY2209_360_20_LX400_AL</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="111736" TopLevelType="10">.BY2209_360_20_LX400_AUT</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="108052" TopLevelType="14">.BY2209_360_20_LX400_DT</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="109040" TopLevelType="10">.BY2209_360_20_LX400_En_SelfClean</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="107064" TopLevelType="10">.BY2209_360_20_LX400_MAN</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="107424" TopLevelType="10">.BY2209_360_20_LX400_MAN_CMD</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="107784" TopLevelType="14">.BY2209_360_20_LX400_MAN_SP</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="133876" TopLevelType="14">.BY2209_360_20_LX400_MinStartValue</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="111376" TopLevelType="10">.BY2209_360_20_LX400_OFF</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="120016" TopLevelType="14">.BY2209_360_20_LX400_OP</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="109400" TopLevelType="14">.BY2209_360_20_LX400_STATUS</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="118216" TopLevelType="10">.BY2209_360_20_LX400_US</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="113896" TopLevelType="10">.BY2209_360_20_LX400_V</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="108680" TopLevelType="10">.BY2209_360_20_LX400_Warning</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="83008" TopLevelType="10">.BY2209_360_20_MAN</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="123684" TopLevelType="14">.BY2209_360_20_MaxFlushPeriod</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="132536" TopLevelType="14">.BY2209_360_20_MinTempCooling_KP</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="133072" TopLevelType="14">.BY2209_360_20_MinTempCooling_TD</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="132804" TopLevelType="14">.BY2209_360_20_MinTempCooling_TN</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="132000" TopLevelType="14">.BY2209_360_20_MinTempSupply_SP</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="83728" TopLevelType="10">.BY2209_360_20_MOD_V</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="85888" TopLevelType="10">.BY2209_360_20_NATT_US</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="121180" TopLevelType="10">.BY2209_360_20_NATT_VENT_CMD</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="121808" TopLevelType="14">.BY2209_360_20_NATT_VENT_REF_TEMP</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="121540" TopLevelType="14">.BY2209_360_20_NATT_VENT_SP</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="83368" TopLevelType="10">.BY2209_360_20_OFF</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="123148" TopLevelType="14">.BY2209_360_20_PercentAfterStartUp</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="88936" TopLevelType="14">.BY2209_360_20_QT500_PV</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="89204" TopLevelType="14">.BY2209_360_20_QT501_PV</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="116056" TopLevelType="10">.BY2209_360_20_QT550_AL</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="124220" TopLevelType="14">.BY2209_360_20_RefTempReturn</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="84448" TopLevelType="10">.BY2209_360_20_RES</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="90008" TopLevelType="10">.BY2209_360_20_RP400_AL</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="89472" TopLevelType="14">.BY2209_360_20_RP400_PV</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="133340" TopLevelType="14">.BY2209_360_20_RP401_AL_SP</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="90728" TopLevelType="14">.BY2209_360_20_RP401_PV</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="90368" TopLevelType="10">.BY2209_360_20_RP500_AL</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="133608" TopLevelType="14">.BY2209_360_20_RP500_AL_SP</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="89740" TopLevelType="14">.BY2209_360_20_RP500_PV</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="90996" TopLevelType="14">.BY2209_360_20_RP501_PV</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="87864" TopLevelType="14">.BY2209_360_20_RT400_PV</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="88132" TopLevelType="14">.BY2209_360_20_RT401_PV</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="88400" TopLevelType="14">.BY2209_360_20_RT500_PV</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="88668" TopLevelType="14">.BY2209_360_20_RT501_PV</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="87596" TopLevelType="14">.BY2209_360_20_RT901_PV</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="122880" TopLevelType="14">.BY2209_360_20_rY_Standby</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="120552" TopLevelType="14">.BY2209_360_20_SB400_K_OP</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="120284" TopLevelType="14">.BY2209_360_20_SB400_V_OP</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="130392" TopLevelType="14">.BY2209_360_20_Sequence_Cooling_X1</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="130660" TopLevelType="14">.BY2209_360_20_Sequence_Cooling_X2</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="130928" TopLevelType="14">.BY2209_360_20_Sequence_EnergyRecovery_X1</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="131196" TopLevelType="14">.BY2209_360_20_Sequence_EnergyRecovery_X2</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="131464" TopLevelType="14">.BY2209_360_20_Sequence_Heat_X1</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="131732" TopLevelType="14">.BY2209_360_20_Sequence_Heat_X2</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="128248" TopLevelType="14">.BY2209_360_20_SequenceController_DeadZone</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="130124" TopLevelType="14">.BY2209_360_20_SequenceController_Deviation</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="128516" TopLevelType="14">.BY2209_360_20_SequenceController_KP1</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="128784" TopLevelType="14">.BY2209_360_20_SequenceController_KP2</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="129588" TopLevelType="14">.BY2209_360_20_SequenceController_TD1</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="129856" TopLevelType="14">.BY2209_360_20_SequenceController_TD2</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="129052" TopLevelType="14">.BY2209_360_20_SequenceController_TN1</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="129320" TopLevelType="14">.BY2209_360_20_SequenceController_TN2</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="118936" TopLevelType="10">.BY2209_360_20_SOMMER_US</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="94772" TopLevelType="14">.BY2209_360_20_SPU_PV</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="124488" TopLevelType="14">.BY2209_360_20_SPU_X1</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="125024" TopLevelType="14">.BY2209_360_20_SPU_X2</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="125560" TopLevelType="14">.BY2209_360_20_SPU_X3</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="126096" TopLevelType="14">.BY2209_360_20_SPU_X4</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="124756" TopLevelType="14">.BY2209_360_20_SPU_Y1</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="125292" TopLevelType="14">.BY2209_360_20_SPU_Y2</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="125828" TopLevelType="14">.BY2209_360_20_SPU_Y3</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="126364" TopLevelType="14">.BY2209_360_20_SPU_Y4</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="116776" TopLevelType="10">.BY2209_360_20_START_US</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="94144" TopLevelType="10">.BY2209_360_20_StartUp_AL</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="132268" TopLevelType="14">.BY2209_360_20_StopTemp_SupAir</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="87236" TopLevelType="10">.BY2209_360_20_SYS_AL</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="86516" TopLevelType="10">.BY2209_360_20_SYS_AL_HORN</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="86876" TopLevelType="10">.BY2209_360_20_SYS_AL_LAMP</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="86248" TopLevelType="14">.BY2209_360_20_SYSTEM_STATUS</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="91264" TopLevelType="10">.BY2209_360_20_TEMP_AL</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="92344" TopLevelType="10">.BY2209_360_20_TempRegAuto_Aktiv</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="91984" TopLevelType="10">.BY2209_360_20_TilluftReg_Aktiv</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="84088" TopLevelType="10">.BY2209_360_20_US</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="126632" TopLevelType="10">.BY2209_360_20_Velg_AvtrekkReg</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="127352" TopLevelType="10">.BY2209_360_20_Velg_TempRegAuto</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="126992" TopLevelType="10">.BY2209_360_20_Velg_TilluftReg</Var>
-		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="122076" TopLevelType="14">.BY2209_360_20_VIFTER_NATT_SP</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="114256" TopLevelType="10">.BY2209_360_20_XS001_V</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="114616" TopLevelType="10">.BY2209_360_20_XS002_V</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="114976" TopLevelType="10">.BY2209_360_20_XS003_V</Var>
-		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="115336" TopLevelType="10">.BY2209_360_20_XS004_V</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="116112" TopLevelType="14">.BY2209_360_20_AFW_STATUS</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="144396" TopLevelType="10">.BY2209_360_20_Anlegg</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="104256" TopLevelType="10">.BY2209_360_20_AUT</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="113232" TopLevelType="10">.BY2209_360_20_AvtrekkReg_Aktiv</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="151288" TopLevelType="14">.BY2209_360_20_AvtrekkReg_ChangeoverTemp</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="114672" TopLevelType="10">.BY2209_360_20_AvtrekkReg_Fra_Temp</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="151556" TopLevelType="14">.BY2209_360_20_AvtrekkReg_SP</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="138384" TopLevelType="10">.BY2209_360_20_BRANN_AL</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="200880" TopLevelType="10">.BY2209_360_20_BRANN_ANLEGG_AL</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="106416" TopLevelType="10">.BY2209_360_20_CMD</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="117008" TopLevelType="10">.BY2209_360_20_Cooling_Active</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="114312" TopLevelType="10">.BY2209_360_20_Cooling_Enable_Aktiv</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="106776" TopLevelType="10">.BY2209_360_20_Ext_Start</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="115032" TopLevelType="10">.BY2209_360_20_Flush_OK</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="116648" TopLevelType="10">.BY2209_360_20_Frost_AL_Air</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="139104" TopLevelType="10">.BY2209_360_20_FROST_US</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="115392" TopLevelType="10">.BY2209_360_20_Frost_Water_AL</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="117368" TopLevelType="10">.BY2209_360_20_HeatExchange_Active</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="117728" TopLevelType="10">.BY2209_360_20_Heating_Active</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="132356" TopLevelType="10">.BY2209_360_20_JP400_AL</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="134424" TopLevelType="10">.BY2209_360_20_JP400_AUT</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="132716" TopLevelType="14">.BY2209_360_20_JP400_DT</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="131636" TopLevelType="10">.BY2209_360_20_JP400_MAN</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="131996" TopLevelType="10">.BY2209_360_20_JP400_MAN_CMD</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="134064" TopLevelType="10">.BY2209_360_20_JP400_OFF</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="157720" TopLevelType="14">.BY2209_360_20_JP400_OutsideTempStart</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="157988" TopLevelType="14">.BY2209_360_20_JP400_StoppDelay</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="132984" TopLevelType="10">.BY2209_360_20_JP400_StoppedByTemp</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="158256" TopLevelType="14">.BY2209_360_20_JP400_TempDemand</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="140544" TopLevelType="10">.BY2209_360_20_JP400_US</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="135504" TopLevelType="10">.BY2209_360_20_JP400_V</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="123832" TopLevelType="14">.BY2209_360_20_JV400_DT</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="124100" TopLevelType="10">.BY2209_360_20_JV400_ERROR</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="124996" TopLevelType="10">.BY2209_360_20_JV400_MAN</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="125356" TopLevelType="10">.BY2209_360_20_JV400_MAN_CMD</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="125716" TopLevelType="14">.BY2209_360_20_JV400_MAN_SP</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="124728" TopLevelType="14">.BY2209_360_20_JV400_OP</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="124460" TopLevelType="14">.BY2209_360_20_JV400_SP</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="142788" TopLevelType="14">.BY2209_360_20_JV400_StartDelay</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="143056" TopLevelType="14">.BY2209_360_20_JV400_StartUpPeriod</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="125984" TopLevelType="14">.BY2209_360_20_JV400_STATUS</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="143324" TopLevelType="14">.BY2209_360_20_JV400_StBypassDelay</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="141264" TopLevelType="10">.BY2209_360_20_JV400_US</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="134784" TopLevelType="10">.BY2209_360_20_JV400_V</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="126252" TopLevelType="14">.BY2209_360_20_JV500_DT</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="126520" TopLevelType="10">.BY2209_360_20_JV500_ERROR</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="127416" TopLevelType="10">.BY2209_360_20_JV500_MAN</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="127776" TopLevelType="10">.BY2209_360_20_JV500_MAN_CMD</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="128136" TopLevelType="14">.BY2209_360_20_JV500_MAN_SP</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="127148" TopLevelType="14">.BY2209_360_20_JV500_OP</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="126880" TopLevelType="14">.BY2209_360_20_JV500_SP</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="143592" TopLevelType="14">.BY2209_360_20_JV500_StartDelay</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="143860" TopLevelType="14">.BY2209_360_20_JV500_StartUpPeriod</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="128404" TopLevelType="14">.BY2209_360_20_JV500_STATUS</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="144128" TopLevelType="14">.BY2209_360_20_JV500_StBypassDelay</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="141624" TopLevelType="10">.BY2209_360_20_JV500_US</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="135144" TopLevelType="10">.BY2209_360_20_JV500_V</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="118448" TopLevelType="10">.BY2209_360_20_KA400_Closed_V</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="118808" TopLevelType="10">.BY2209_360_20_KA400_ERROR</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="119168" TopLevelType="10">.BY2209_360_20_KA400_MAN</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="119528" TopLevelType="10">.BY2209_360_20_KA400_MAN_CMD</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="120692" TopLevelType="14">.BY2209_360_20_KA400_MAN_SP</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="120156" TopLevelType="14">.BY2209_360_20_KA400_OP</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="118088" TopLevelType="10">.BY2209_360_20_KA400_Open_V</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="119888" TopLevelType="14">.BY2209_360_20_KA400_STATUS</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="139464" TopLevelType="10">.BY2209_360_20_KA400_US</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="120424" TopLevelType="14">.BY2209_360_20_KA400_VP</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="121320" TopLevelType="10">.BY2209_360_20_KA500_Closed_V</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="121680" TopLevelType="10">.BY2209_360_20_KA500_ERROR</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="122040" TopLevelType="10">.BY2209_360_20_KA500_MAN</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="122400" TopLevelType="10">.BY2209_360_20_KA500_MAN_CMD</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="123564" TopLevelType="14">.BY2209_360_20_KA500_MAN_SP</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="123028" TopLevelType="14">.BY2209_360_20_KA500_OP</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="120960" TopLevelType="10">.BY2209_360_20_KA500_Open_V</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="122760" TopLevelType="14">.BY2209_360_20_KA500_STATUS</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="139824" TopLevelType="10">.BY2209_360_20_KA500_US</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="123296" TopLevelType="14">.BY2209_360_20_KA500_VP</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="107136" TopLevelType="10">.BY2209_360_20_Kalender_Enable</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="146992" TopLevelType="14">.BY2209_360_20_LimFrostAlarm</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="146188" TopLevelType="14">.BY2209_360_20_LimitOutsideTempStandby</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="145920" TopLevelType="14">.BY2209_360_20_LimOutsideTempFlush</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="147528" TopLevelType="14">.BY2209_360_20_LimWaterStartUp</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="129928" TopLevelType="10">.BY2209_360_20_LX400_AL</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="133704" TopLevelType="10">.BY2209_360_20_LX400_AUT</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="129660" TopLevelType="14">.BY2209_360_20_LX400_DT</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="130648" TopLevelType="10">.BY2209_360_20_LX400_En_SelfClean</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="128672" TopLevelType="10">.BY2209_360_20_LX400_MAN</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="129032" TopLevelType="10">.BY2209_360_20_LX400_MAN_CMD</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="129392" TopLevelType="14">.BY2209_360_20_LX400_MAN_SP</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="157452" TopLevelType="14">.BY2209_360_20_LX400_MinStartValue</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="133344" TopLevelType="10">.BY2209_360_20_LX400_OFF</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="141984" TopLevelType="14">.BY2209_360_20_LX400_OP</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="131276" TopLevelType="10">.BY2209_360_20_LX400_ROT_AL</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="131008" TopLevelType="14">.BY2209_360_20_LX400_STATUS</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="140184" TopLevelType="10">.BY2209_360_20_LX400_US</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="135864" TopLevelType="10">.BY2209_360_20_LX400_V</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="130288" TopLevelType="10">.BY2209_360_20_LX400_Warning</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="104616" TopLevelType="10">.BY2209_360_20_MAN</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="147260" TopLevelType="14">.BY2209_360_20_MaxFlushPeriod</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="156112" TopLevelType="14">.BY2209_360_20_MinTempCooling_KP</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="156648" TopLevelType="14">.BY2209_360_20_MinTempCooling_TD</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="156380" TopLevelType="14">.BY2209_360_20_MinTempCooling_TN</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="155576" TopLevelType="14">.BY2209_360_20_MinTempSupply_SP</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="105336" TopLevelType="10">.BY2209_360_20_MOD_V</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="107496" TopLevelType="10">.BY2209_360_20_NATT_US</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="144756" TopLevelType="10">.BY2209_360_20_NATT_VENT_CMD</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="145384" TopLevelType="14">.BY2209_360_20_NATT_VENT_REF_TEMP</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="145116" TopLevelType="14">.BY2209_360_20_NATT_VENT_SP</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="104976" TopLevelType="10">.BY2209_360_20_OFF</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="137668" TopLevelType="14">.BY2209_360_20_OppstartStatus</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="146724" TopLevelType="14">.BY2209_360_20_PercentAfterStartUp</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="138024" TopLevelType="10">.BY2209_360_20_QT550_AL</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="147796" TopLevelType="14">.BY2209_360_20_RefTempReturn</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="106056" TopLevelType="10">.BY2209_360_20_RES</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="111616" TopLevelType="10">.BY2209_360_20_RP400_AL</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="111080" TopLevelType="14">.BY2209_360_20_RP400_PV</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="156916" TopLevelType="14">.BY2209_360_20_RP401_AL_SP</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="112336" TopLevelType="14">.BY2209_360_20_RP401_PV</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="111976" TopLevelType="10">.BY2209_360_20_RP500_AL</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="157184" TopLevelType="14">.BY2209_360_20_RP500_AL_SP</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="111348" TopLevelType="14">.BY2209_360_20_RP500_PV</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="112604" TopLevelType="14">.BY2209_360_20_RP501_PV</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="109472" TopLevelType="14">.BY2209_360_20_RT401_PV</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="110008" TopLevelType="14">.BY2209_360_20_RT402_PV</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="110544" TopLevelType="14">.BY2209_360_20_RT403_PV</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="109740" TopLevelType="14">.BY2209_360_20_RT501_PV</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="110276" TopLevelType="14">.BY2209_360_20_RT502_PV</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="110812" TopLevelType="14">.BY2209_360_20_RT503_PV</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="109204" TopLevelType="14">.BY2209_360_20_RT901_PV</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="146456" TopLevelType="14">.BY2209_360_20_rY_Standby</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="200100" TopLevelType="10">.BY2209_360_20_SB400_AH</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="200460" TopLevelType="10">.BY2209_360_20_SB400_COM_ERROR</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="199380" TopLevelType="10">.BY2209_360_20_SB400_CRI</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="142520" TopLevelType="14">.BY2209_360_20_SB400_K_OP</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="197856" TopLevelType="10">.BY2209_360_20_SB400_MAN</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="198844" TopLevelType="14">.BY2209_360_20_SB400_MAN_SP</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="199740" TopLevelType="10">.BY2209_360_20_SB400_MOL</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="198576" TopLevelType="14">.BY2209_360_20_SB400_OP</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="199112" TopLevelType="14">.BY2209_360_20_SB400_POS</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="198216" TopLevelType="10">.BY2209_360_20_SB400_RES</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="142252" TopLevelType="14">.BY2209_360_20_SB400_V_OP</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="201240" TopLevelType="10">.BY2209_360_20_SD_Kalender_Enable</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="153968" TopLevelType="14">.BY2209_360_20_Sequence_Cooling_X1</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="154236" TopLevelType="14">.BY2209_360_20_Sequence_Cooling_X2</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="154504" TopLevelType="14">.BY2209_360_20_Sequence_EnergyRecovery_X1</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="154772" TopLevelType="14">.BY2209_360_20_Sequence_EnergyRecovery_X2</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="155040" TopLevelType="14">.BY2209_360_20_Sequence_Heat_X1</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="155308" TopLevelType="14">.BY2209_360_20_Sequence_Heat_X2</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="151824" TopLevelType="14">.BY2209_360_20_SequenceController_DeadZone</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="153700" TopLevelType="14">.BY2209_360_20_SequenceController_Deviation</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="152092" TopLevelType="14">.BY2209_360_20_SequenceController_KP1</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="152360" TopLevelType="14">.BY2209_360_20_SequenceController_KP2</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="153164" TopLevelType="14">.BY2209_360_20_SequenceController_TD1</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="153432" TopLevelType="14">.BY2209_360_20_SequenceController_TD2</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="152628" TopLevelType="14">.BY2209_360_20_SequenceController_TN1</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="152896" TopLevelType="14">.BY2209_360_20_SequenceController_TN2</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="140904" TopLevelType="10">.BY2209_360_20_SOMMER_US</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="116380" TopLevelType="14">.BY2209_360_20_SPU_PV</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="148064" TopLevelType="14">.BY2209_360_20_SPU_X1</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="148600" TopLevelType="14">.BY2209_360_20_SPU_X2</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="149136" TopLevelType="14">.BY2209_360_20_SPU_X3</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="149672" TopLevelType="14">.BY2209_360_20_SPU_X4</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="148332" TopLevelType="14">.BY2209_360_20_SPU_Y1</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="148868" TopLevelType="14">.BY2209_360_20_SPU_Y2</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="149404" TopLevelType="14">.BY2209_360_20_SPU_Y3</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="149940" TopLevelType="14">.BY2209_360_20_SPU_Y4</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="138744" TopLevelType="10">.BY2209_360_20_START_US</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="115752" TopLevelType="10">.BY2209_360_20_StartUp_AL</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="155844" TopLevelType="14">.BY2209_360_20_StopTemp_SupAir</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="108844" TopLevelType="10">.BY2209_360_20_SYS_AL</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="108124" TopLevelType="10">.BY2209_360_20_SYS_AL_HORN</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="108484" TopLevelType="10">.BY2209_360_20_SYS_AL_LAMP</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="107856" TopLevelType="14">.BY2209_360_20_SYSTEM_STATUS</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="112872" TopLevelType="10">.BY2209_360_20_TEMP_AL</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="113952" TopLevelType="10">.BY2209_360_20_TempRegAuto_Aktiv</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="103896" TopLevelType="10">.BY2209_360_20_TEST</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="113592" TopLevelType="10">.BY2209_360_20_TilluftReg_Aktiv</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="105696" TopLevelType="10">.BY2209_360_20_US</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="150208" TopLevelType="10">.BY2209_360_20_Velg_AvtrekkReg</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="150928" TopLevelType="10">.BY2209_360_20_Velg_TempRegAuto</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="150568" TopLevelType="10">.BY2209_360_20_Velg_TilluftReg</Var>
+		<Var Type="14" Flags="33554496" Access="114" RefId="4" Offset="145652" TopLevelType="14">.BY2209_360_20_VIFTER_NATT_SP</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="136224" TopLevelType="10">.BY2209_360_20_XS001_V</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="136584" TopLevelType="10">.BY2209_360_20_XS002_V</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="136944" TopLevelType="10">.BY2209_360_20_XS003_V</Var>
+		<Var Type="10" Flags="33554496" Access="114" RefId="4" Offset="137304" TopLevelType="10">.BY2209_360_20_XS004_V</Var>
 	</SymbolVarList>
 	<SymbolTaskList>
 		<Task Priority="11" Interval="50" Event="" POUIndex="687" ProgramName="MbRtuMaster();">MB_RTU_MASTER_TASK</Task>

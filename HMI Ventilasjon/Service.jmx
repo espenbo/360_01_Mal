@@ -28,7 +28,7 @@
    <wgtStyle width="0" x="0" forcePaint="4" y="0" height="0"/>
   </object>
   <object class="GroupWgt" id="BtnStd1" customType="Button">
-   <wgtStyle width="120" x="187.36" forcePaint="4" y="95.91" cx="59.35" cy="27.50" height="55"/>
+   <wgtStyle width="120" x="187.36" forcePaint="5" y="95.91" cx="59.35" cy="27.50" height="55"/>
    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image2">
     <wgtStyle width="120" imagePath="images/frame_rect45bar_chrome.svg" x="0" forcePaint="5" y="0" cx="60" cy="27.99" height="55"/>
    </object>
@@ -211,7 +211,7 @@
    </links>
   </object>
   <object class="GroupWgt" id="BtnStd2" customType="Button">
-   <wgtStyle width="120" x="53.11" forcePaint="4" y="95.91" cx="59.36" cy="27.50" height="55"/>
+   <wgtStyle width="120" x="53.11" forcePaint="5" y="95.91" cx="59.36" cy="27.50" height="55"/>
    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image4">
     <wgtStyle width="120" imagePath="images/frame_rect45bar_chrome.svg" x="0" forcePaint="5" y="0" cx="60" cy="27.98" height="55"/>
    </object>
@@ -274,7 +274,7 @@
    </object>
   </object>
   <object class="GroupWgt" id="BtnStd12" customType="Button">
-   <wgtStyle width="120" x="340" forcePaint="4" y="95.91" cx="60" cy="27.50" height="55"/>
+   <wgtStyle width="120" x="340" forcePaint="5" y="95.91" cx="60" cy="27.50" height="55"/>
    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image24">
     <wgtStyle width="120" imagePath="images/frame_rect45bar_chrome.svg" x="0" forcePaint="5" y="0" cx="60" cy="27.99" height="55"/>
    </object>

@@ -1,4 +1,28 @@
 <datatransfers syncEnable="true" ver="1.1">
- <opt/>
- <init/>
+ <dt trigger="" direction="1" enable="true" highLimit="0" transferMode="0" syncOnInit="true" lowLimit="0" sourceA="10239/&quot;/BY2209_360_20_Ext_Start&quot;" type="1" sourceB="xExtStart" r="0" name="data1"/>
+ <dt trigger="" direction="0" enable="true" highLimit="0" transferMode="0" syncOnInit="true" lowLimit="0" sourceA="10239/&quot;/BY2209_360_20_Kalender_Enable&quot;" type="1" sourceB="xLokalKalender" r="1" name="data2"/>
+ <opt>
+  <dtu tr="xExtStart">
+   <dtp>
+    <t d="10239/&quot;/BY2209_360_20_Ext_Start&quot;"/>
+   </dtp>
+  </dtu>
+  <dtu tr="10239/&quot;/BY2209_360_20_Kalender_Enable&quot;">
+   <dtp>
+    <t d="xLokalKalender"/>
+   </dtp>
+  </dtu>
+ </opt>
+ <init>
+  <dtu tr="10239/&quot;/BY2209_360_20_Kalender_Enable&quot;">
+   <dtp>
+    <t d="xLokalKalender"/>
+   </dtp>
+  </dtu>
+  <dtu tr="xExtStart">
+   <dtp>
+    <t d="10239/&quot;/BY2209_360_20_Ext_Start&quot;"/>
+   </dtp>
+  </dtu>
+ </init>
 </datatransfers>

@@ -8,6 +8,7 @@
     <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
    </langs>
    <MLTexts>
+    <MLText L1="Lokal Kalender" L2="Start" id="1"/>
     <MLText L1="Enable" L2="Enable" id="2"/>
     <MLText L1="Condition" L2="Condition" id="3"/>
     <MLText L1="Occurence" L2="Occurence" id="4"/>
@@ -15,21 +16,23 @@
     <MLText L1="Mode" L2="Mode" id="6"/>
     <MLText L1="Type" L2="Type" id="7"/>
     <MLText L1="Name" L2="Name" id="8"/>
+    <MLText L1="SD Kalender" L2="Start" id="10"/>
     <MLText L1="Kalender" L2="Kalender" id="12"/>
+    <MLText L1="Tilbake" L2="Tilbake" id="32"/>
     <MLText L1="Hovedside" L2="Hovedside" id="42"/>
    </MLTexts>
   </object>
   <object class="GroupWgt" id="Scheduler" customType="Scheduler">
-   <wgtStyle width="775" x="14" y="98" cx="386.79" cy="105" height="210"/>
+   <wgtStyle width="790" x="4" forcePaint="1" y="91" cx="395" cy="120.50" height="241"/>
    <object class="IdalScheduleWgt" id="IdalSchedule3">
     <wgtStyle width="0" x="0" y="0" height="0"/>
    </object>
-   <object class="ScheduleWgtEx" schedule="360-01 Start Ukedager;360-01 Stopp Ukedager;360-01 Start Helgedager;360-01 Stopp Helgedager;360-01 Start Natt;360-01 Stopp Natt" id="schedulewgtEx1">
-    <wgtStyle width="775" x="0" forcePaint="10" y="0" gridlineColor="rgb(127,127,127)" cx="387.52" cy="105" hfont-style="normal" height="210" hTextColor="rgb(0,0,0)" cBGColor1="rgb(255,255,255)" cBGColor2="rgb(230,230,250)" borderSize="1" timeSpec="local" hFont="Tahoma"/>
+   <object class="ScheduleWgtEx" schedule="Start ukedager;Stopp ukedager;Start helgedager;Stopp helgedager;Start natt;Stopp natt;" id="schedulewgtEx1">
+    <wgtStyle width="790" x="0" forcePaint="11" y="0" gridlineColor="rgb(127,127,127)" cx="395.02" cy="120.50" hfont-style="normal" height="241" hTextColor="rgb(0,0,0)" cBGColor1="rgb(255,255,255)" cBGColor2="rgb(230,230,250)" borderSize="1" timeSpec="local" hFont="Tahoma"/>
     <dataLinks>
      <dataLink readWrite="W" attribute="WriteSource" sourceType="Data" dataSource="IdalSchedule3"/>
     </dataLinks>
-    <table cols="7" rows="6">
+    <table cols="7" rows="7">
      <colInfo>
       <col width="170" visibility="false" headerLabel="Name">
        <links>
@@ -97,6 +100,93 @@
     </links>
    </object>
    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image17" static="true">
+    <wgtStyle width="27" x="31" y="8" cx="13.82" cy="8.75" height="17"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd2" customType="Button">
+   <wgtStyle width="158.68" x="9.50" y="365" cx="79.34" cy="17.97" height="35.94"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrectbar; hmi-type:bkgd" id="image6" static="true">
+    <wgtStyle width="158.68" imagePath="images/frame_rrectbar_chrome.svg" x="0" y="0" cx="79.70" cy="18" height="35.94"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rrectbar; hmi-type:btn; type:btn" id="buttonStd2">
+    <wgtStyle width="145.18" x="6.76" forcePaint="136" y="4.86" fill="rgb(50,205,50)" dx="1" cx="72.88" form="standard" dy="-1" cy="13.17" height="26.23" releasePath="images\btn_plastic_rrectbar_1.svg" needlePath="images\btn_plastic_rrectbar_2.svg" type="maintained" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="10239/&quot;/BY2209_360_20_Kalender_Enable&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     <dataLink readWrite="R" tagType="boolean" attribute="fill" tag="10239/&quot;/BY2209_360_20_Kalender_Enable&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#c0c0c0;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action class="WriteTagAction" attribute="onMouseRelease" event="onMouseUp" actionID="0" TagValue="0" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="10239/&quot;/BY2209_360_20_SD_Kalender_Enable&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label6">
+    <wgtStyle width="136.74" font-color="rgb(40,40,40)" x="8.44" forcePaint="3" y="2.91" font-family="Tahoma" wrapping="true" cx="68.99" cy="13.50" height="26.23" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image7" static="true">
+    <wgtStyle width="48.97" x="50.65" y="8.74" cx="24.99" cy="7.99" height="15.54"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd1" customType="Button">
+   <wgtStyle width="158.68" x="212" y="365" cx="79.34" cy="17.97" height="35.94"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrectbar; hmi-type:bkgd" id="image2" static="true">
+    <wgtStyle width="158.68" imagePath="images/frame_rrectbar_chrome.svg" x="0" y="0" cx="79.70" cy="18" height="35.94"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rrectbar; hmi-type:btn; type:btn" id="buttonStd1">
+    <wgtStyle width="145.18" x="6.76" forcePaint="136" y="4.86" fill="rgb(50,205,50)" dx="1" cx="72.88" form="standard" dy="-1" cy="13.17" height="26.23" releasePath="images\btn_plastic_rrectbar_1.svg" needlePath="images\btn_plastic_rrectbar_2.svg" type="maintained" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="10239/&quot;/BY2209_360_20_SD_Kalender_Enable&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     <dataLink readWrite="R" tagType="boolean" attribute="fill" tag="10239/&quot;/BY2209_360_20_SD_Kalender_Enable&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#c0c0c0;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action class="WriteTagAction" attribute="onMouseRelease" event="onMouseUp" actionID="0" TagValue="0" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" attribute="tagSrc" tag="IndexedTagSet_Globale.xKalender_Enable" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label2">
+    <wgtStyle width="136.74" font-color="rgb(40,40,40)" x="8.44" forcePaint="3" y="2.91" font-family="Tahoma" wrapping="true" cx="68.99" cy="13.50" height="26.23" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="10"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image3" static="true">
+    <wgtStyle width="48.97" x="50.65" y="8.74" cx="24.99" cy="7.99" height="15.54"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd3" customType="Button">
+   <wgtStyle width="93" x="102.34" y="442.61" cx="46" cy="17" height="34"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image4" static="true">
+    <wgtStyle width="93" imagePath="images/frame_rect45bar_chrome.svg" x="0" y="0" cx="46.50" cy="17.30" height="34"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd3">
+    <wgtStyle width="85" x="4" y="4" fill="rgb(192,192,192)" dx="1" cx="42.54" form="standard" cy="12.91" height="25" releasePath="images/btn_plastic_rect45bar_1.svg" needlePath="images/btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="LastVisitedPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label4">
+    <wgtStyle width="74" font-color="rgb(40,40,40)" x="7" forcePaint="3" y="5" font-family="Tahoma" font-bold="true" wrapping="true" cx="37.10" cy="12.64" height="25" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="32"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image5" static="true">
     <wgtStyle width="27" x="31" y="8" cx="13.82" cy="8.75" height="17"/>
    </object>
   </object>
