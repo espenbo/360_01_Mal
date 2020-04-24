@@ -1,8 +1,8 @@
 <wgtPage rev="1" projectType="HMI Project">
  <object pageName="System" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="maintemplate.jmx" usedFonts="Tahoma,Arial" staticFile="opt/system.png" id="System" staticOptEnable="true">
   <wgtStyle width="800" x="0" y="0" height="480" ver="020800363" v="02.08.00.363"/>
-  <object class="ShapeWgt" id="roundrect5" static="true">
-   <wgtStyle width="150.66" x="127.67" y="80.67" fill="rgb(192,192,192)" cx="75.33" cy="108" rx="20" height="216" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
+  <object class="ShapeWgt" id="roundrect5">
+   <wgtStyle width="150.66" x="127.67" forcePaint="1" y="80.67" fill="rgb(192,192,192)" cx="75.33" cy="108" rx="20" height="216" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
   </object>
   <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
    <wgtStyle width="0" x="0" y="0" height="0"/>
@@ -20,12 +20,12 @@
    </MLTexts>
   </object>
   <object class="GroupWgt" id="BtnStd2" customType="Button">
-   <wgtStyle width="93" x="510.67" y="99.67" cx="46" cy="17" height="34"/>
-   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image4" static="true">
-    <wgtStyle width="93" imagePath="images/frame_rect45bar_chrome.svg" x="0" y="0" cx="46.50" cy="17.30" height="34"/>
+   <wgtStyle width="93" x="510.67" forcePaint="1" y="99.67" cx="46" cy="17" height="34"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image4">
+    <wgtStyle width="93" imagePath="images/frame_rect45bar_chrome.svg" x="0" forcePaint="1" y="0" cx="46.50" cy="17.30" height="34"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd2">
-    <wgtStyle width="85" x="4" y="4" fill="rgb(192,192,192)" dx="1" cx="42.54" form="standard" cy="12.91" height="25" releasePath="images/btn_plastic_rect45bar_1.svg" needlePath="images/btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
+    <wgtStyle width="85" x="4" forcePaint="1" y="4" fill="rgb(192,192,192)" dx="1" cx="42.54" form="standard" cy="12.91" height="25" releasePath="images/btn_plastic_rect45bar_1.svg" needlePath="images/btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
     <links>
      <action DeviceName="USBMemory" class="SafelyRemoveMediaAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" DeviceType="0" actionWgt="_IdalMgr"/>
     </links>
@@ -44,12 +44,12 @@
    <wgtStyle width="0" x="0" y="0" height="0"/>
   </object>
   <object class="GroupWgt" id="BtnStd1" customType="Button">
-   <wgtStyle width="100" x="154" y="99.67" cx="49.46" cy="25" height="50"/>
-   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image2" static="true">
-    <wgtStyle width="100" imagePath="images/frame_rect45bar_chrome.svg" x="0" y="0" cx="50" cy="25.44" height="50"/>
+   <wgtStyle width="100" x="154" forcePaint="1" y="99.67" cx="49.46" cy="25" height="50"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image2">
+    <wgtStyle width="100" imagePath="images/frame_rect45bar_chrome.svg" x="0" forcePaint="1" y="0" cx="50" cy="25.44" height="50"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd1">
-    <wgtStyle width="91.40" x="4.30" y="5.88" fill="rgb(192,192,192)" dx="1" cx="45.74" form="standard" cy="18.99" height="36.76" releasePath="images/btn_plastic_rect45bar_1.svg" needlePath="images/btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
+    <wgtStyle width="91.40" x="4.30" forcePaint="1" y="5.88" fill="rgb(192,192,192)" dx="1" cx="45.74" form="standard" cy="18.99" height="36.76" releasePath="images/btn_plastic_rect45bar_1.svg" needlePath="images/btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
     <links>
      <action appName="ctlpnl.exe" singleInstance="true" class="LaunchApplicationAction" attribute="onMouseRelease" flushRuntimeCache="false" event="onMouseUp" path="\windows" actionID="1" arguments="cplmain.cpl,13" actionWgt="_PageMgr"/>
     </links>
@@ -65,12 +65,12 @@
    </object>
   </object>
   <object class="GroupWgt" id="BtnStd3" customType="Button">
-   <wgtStyle width="100" x="154.67" y="166" cx="49.46" cy="25" height="50"/>
-   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image6" static="true">
-    <wgtStyle width="100" imagePath="images/frame_rect45bar_chrome.svg" x="0" y="0" cx="50" cy="25.44" height="50"/>
+   <wgtStyle width="100" x="154.67" forcePaint="1" y="166" cx="49.46" cy="25" height="50"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image6">
+    <wgtStyle width="100" imagePath="images/frame_rect45bar_chrome.svg" x="0" forcePaint="1" y="0" cx="50" cy="25.44" height="50"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd3">
-    <wgtStyle width="91.40" x="4.30" y="5.88" fill="rgb(192,192,192)" dx="1" cx="45.74" form="standard" cy="18.99" height="36.76" releasePath="images/btn_plastic_rect45bar_1.svg" needlePath="images/btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
+    <wgtStyle width="91.40" x="4.30" forcePaint="1" y="5.88" fill="rgb(192,192,192)" dx="1" cx="45.74" form="standard" cy="18.99" height="36.76" releasePath="images/btn_plastic_rect45bar_1.svg" needlePath="images/btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
     <links>
      <action appName="ctlpnl.exe" singleInstance="true" class="LaunchApplicationAction" attribute="onMouseRelease" flushRuntimeCache="false" event="onMouseUp" path="\windows" actionID="1" arguments="intll.cpl,0" actionWgt="_PageMgr"/>
     </links>
@@ -86,12 +86,12 @@
    </object>
   </object>
   <object class="GroupWgt" id="BtnStd4" customType="Button">
-   <wgtStyle width="93" x="157.34" y="244" cx="46" cy="17" height="34"/>
-   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image8" static="true">
-    <wgtStyle width="93" imagePath="images/frame_rect45bar_chrome.svg" x="0" y="0" cx="46.50" cy="17.30" height="34"/>
+   <wgtStyle width="93" x="157.34" forcePaint="1" y="244" cx="46" cy="17" height="34"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image8">
+    <wgtStyle width="93" imagePath="images/frame_rect45bar_chrome.svg" x="0" forcePaint="1" y="0" cx="46.50" cy="17.30" height="34"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd4">
-    <wgtStyle width="85" x="4" y="4" fill="rgb(192,192,192)" dx="1" cx="42.54" form="standard" cy="12.91" height="25" releasePath="images/btn_plastic_rect45bar_1.svg" needlePath="images/btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
+    <wgtStyle width="85" x="4" forcePaint="1" y="4" fill="rgb(192,192,192)" dx="1" cx="42.54" form="standard" cy="12.91" height="25" releasePath="images/btn_plastic_rect45bar_1.svg" needlePath="images/btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
     <links>
      <action appName="regsave.exe" singleInstance="true" class="LaunchApplicationAction" attribute="onMouseRelease" flushRuntimeCache="false" event="onMouseUp" path="\windows" actionID="1" arguments="" actionWgt="_PageMgr"/>
     </links>

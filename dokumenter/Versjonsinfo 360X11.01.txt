@@ -1,6 +1,0 @@
-Ver. 360X11.00
-Ventilasjonsaggregat med trykkstyring, Optimizer, Volumstyring og ekstern volumstyrings funksjoner for anlegg med 1 vifte og glycol krets med shunt på primærside.
-
-Ver. 360X11.01
-Endret måleprinsipp for skifte mellom avtrekk og tilluft.
-Min måling mellom utetemp og inntak.

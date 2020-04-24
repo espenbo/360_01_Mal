@@ -18,6 +18,7 @@
     <MLText L1="Start" L2="Start" id="4"/>
     <MLText L1="Auto" L2="Start" id="5"/>
     <MLText L1="=360.20" L2="=360.01" id="6"/>
+    <MLText L1="Reset Feil" L2="Stopp" id="8"/>
     <MLText L1="Tilbake" L2="Tilbake" id="11"/>
     <MLText L1="Stopp" L2="Stopp" id="13"/>
     <MLText L1="Start" L2="Start" id="14"/>
@@ -119,6 +120,9 @@
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd8">
     <wgtStyle width="85" x="4" y="4" fill="rgb(192,192,192)" dx="1" cx="42.54" form="standard" cy="12.91" height="25" releasePath="images/btn_plastic_rect45bar_1.svg" needlePath="images/btn_plastic_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="ventanlegg.jmx" class="LoadPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="0" actionWgt="_PageMgr"/>
+    </links>
    </object>
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label20">
     <wgtStyle width="74" font-color="rgb(40,40,40)" x="7" forcePaint="3" y="5" font-family="Tahoma" font-bold="true" wrapping="true" cx="37.10" cy="12.64" height="25" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
@@ -161,7 +165,7 @@
    </links>
   </object>
   <object class="ShapeWgt" id="roundrect1">
-   <wgtStyle width="383" x="213.63" forcePaint="1" y="125.45" fill="rgb(192,192,192)" cx="191.50" cy="54" rx="20" height="108" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
+   <wgtStyle width="383" x="213.63" forcePaint="1" y="125.66" fill="rgb(192,192,192)" cx="191.50" cy="79" rx="20" height="158" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
   </object>
   <object class="GroupWgt" id="BtnStd2" customType="Button">
    <wgtStyle width="85" x="239" forcePaint="1" y="172.78" cx="42.04" cy="17" height="35"/>
@@ -169,12 +173,17 @@
     <wgtStyle width="85.91" imagePath="images/frame_rrectbar_chrome.svg" x="0" forcePaint="1" y="-1" cx="43.15" cy="18.53" height="37"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rrectbar; hmi-type:btn; type:btn" id="buttonStd2">
-    <wgtStyle width="78.60" x="3.66" forcePaint="9" y="4" fill="rgb(50,205,50)" dx="1" cx="39.46" form="standard" dy="-1" cy="13.56" height="27" releasePath="images\btn_plastic_rrectbar_1.svg" needlePath="images\btn_plastic_rrectbar_2.svg" type="maintained" value="0"/>
+    <wgtStyle width="78.60" x="3.66" forcePaint="137" y="4" fill="rgb(50,205,50)" dx="1" cx="39.46" form="standard" dy="-1" cy="13.56" height="27" releasePath="images\btn_plastic_rrectbar_1.svg" needlePath="images\btn_plastic_rrectbar_2.svg" type="maintained" value="0"/>
     <dataLinks>
      <dataLink readWrite="R/W" attribute="value" tag="IndexedTagSet_Globale.xVent_man" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+     <dataLink readWrite="R/W" attribute="fill" tag="IndexedTagSet_Globale.xVent_man" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#c0c0c0;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
     </dataLinks>
     <links>
-     <action BitIndex="1" class="SetBitAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_TagMgr">
+     <action class="WriteTagAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" TagValue="1" actionWgt="_TagMgr">
       <dataLinks>
        <dataLink readWrite="R" attribute="tagSrc" tag="IndexedTagSet_Globale.xEnable_Ventilasjon" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
       </dataLinks>
@@ -197,9 +206,14 @@
     <wgtStyle width="85.91" imagePath="images/frame_rrectbar_chrome.svg" x="0" forcePaint="1" y="-1" cx="43.15" cy="18.53" height="37"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rrectbar; hmi-type:btn; type:btn" id="buttonStd6">
-    <wgtStyle width="78.60" x="3.66" forcePaint="9" y="4" fill="rgb(255,0,0)" dx="1" cx="39.46" form="standard" dy="-1" cy="13.56" height="27" releasePath="images\btn_plastic_rrectbar_1.svg" needlePath="images\btn_plastic_rrectbar_2.svg" type="maintained" value="0"/>
+    <wgtStyle width="78.60" x="3.66" forcePaint="137" y="4" fill="rgb(255,0,0)" dx="1" cx="39.46" form="standard" dy="-1" cy="13.56" height="27" releasePath="images\btn_plastic_rrectbar_1.svg" needlePath="images\btn_plastic_rrectbar_2.svg" type="maintained" value="0"/>
     <dataLinks>
      <dataLink readWrite="R/W" attribute="value" tag="IndexedTagSet_Globale.xVent_av" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+     <dataLink readWrite="R/W" attribute="fill" tag="IndexedTagSet_Globale.xVent_av" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#c0c0c0;#ff0000" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
     </dataLinks>
     <links>
      <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_TagMgr">
@@ -231,12 +245,17 @@
     <wgtStyle width="85.91" imagePath="images/frame_rrectbar_chrome.svg" x="0" forcePaint="1" y="-1" cx="43.15" cy="18.53" height="37"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rrectbar; hmi-type:btn; type:btn" id="buttonStd1">
-    <wgtStyle width="78.60" x="3.66" forcePaint="9" y="4" fill="rgb(50,205,50)" dx="1" cx="39.46" form="standard" dy="-1" cy="13.56" height="27" releasePath="images\btn_plastic_rrectbar_1.svg" needlePath="images\btn_plastic_rrectbar_2.svg" type="maintained" value="0"/>
+    <wgtStyle width="78.60" x="3.66" forcePaint="137" y="4" fill="rgb(50,205,50)" dx="1" cx="39.46" form="standard" dy="-1" cy="13.56" height="27" releasePath="images\btn_plastic_rrectbar_1.svg" needlePath="images\btn_plastic_rrectbar_2.svg" type="maintained" value="0"/>
     <dataLinks>
      <dataLink readWrite="R/W" attribute="value" tag="IndexedTagSet_Globale.xVent_auto" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+     <dataLink readWrite="R/W" attribute="fill" tag="IndexedTagSet_Globale.xVent_auto" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#c0c0c0;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
     </dataLinks>
     <links>
-     <action BitIndex="1" class="SetBitAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_TagMgr">
+     <action class="WriteTagAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" TagValue="1" actionWgt="_TagMgr">
       <dataLinks>
        <dataLink readWrite="R" attribute="tagSrc" tag="IndexedTagSet_Globale.xEnable_Ventilasjon" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
       </dataLinks>
@@ -262,7 +281,7 @@
     <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" forcePaint="1" y="0" cx="25.53" cy="25.47" height="52"/>
    </object>
    <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="LgtStd1.ind">
-    <wgtStyle width="38" imagePath="images/li_round_shiney1_rev2.svg" x="7" forcePaint="9" y="6" cx="24.58" cy="15.92" bkgColor="rgb(120,120,120);rgb(255,0,0)" height="39" stroke="rgb(255,251,240)"/>
+    <wgtStyle width="38" imagePath="images/li_round_shiney1_rev2.svg" x="7" forcePaint="9" y="6" cx="24.58" cy="15.92" bkgColor="rgb(120,120,120);rgb(0,128,0)" height="39" stroke="rgb(255,251,240)"/>
     <dataLinks>
      <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.xVentilasjon_US" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
     </dataLinks>
@@ -275,6 +294,39 @@
    </object>
    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtStd1.img1" static="true">
     <wgtStyle width="15" enableCache="true" x="18" y="19" cx="7.56" cy="7.43" height="15"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd4" customType="Button">
+   <wgtStyle width="85" x="357.50" forcePaint="1" y="243" cx="42.04" cy="17" height="35"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrectbar; hmi-type:bkgd" id="image8">
+    <wgtStyle width="85.91" imagePath="images/frame_rrectbar_chrome.svg" x="0" forcePaint="1" y="-1" cx="43.15" cy="18.53" height="37"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rrectbar; hmi-type:btn; type:btn" id="buttonStd4">
+    <wgtStyle width="78.60" x="3.66" forcePaint="137" y="4" fill="rgb(255,0,0)" dx="1" cx="39.46" form="standard" dy="-1" cy="13.56" height="27" releasePath="images\btn_plastic_rrectbar_1.svg" needlePath="images\btn_plastic_rrectbar_2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" attribute="value" tag="IndexedTagSet_Globale.xRES" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+     <dataLink readWrite="R/W" attribute="fill" tag="IndexedTagSet_Globale.xRES" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#c0c0c0;#ff0000" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" attribute="tagSrc" tag="IndexedTagSet_Globale.xEnable_Ventilasjon" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label5">
+    <wgtStyle width="74.03" font-color="rgb(40,40,40)" x="4.57" forcePaint="3" y="2" font-family="Tahoma" wrapping="true" cx="37.35" cy="13.90" height="27" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image9" static="true">
+    <wgtStyle width="26.51" x="27.42" y="8" cx="13.53" cy="8.23" height="16"/>
    </object>
   </object>
  </object>

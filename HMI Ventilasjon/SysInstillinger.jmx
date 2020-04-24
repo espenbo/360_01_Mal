@@ -17,12 +17,12 @@
    </MLTexts>
   </object>
   <object class="GroupWgt" id="BtnStd3" customType="Button">
-   <wgtStyle width="85" x="106.97" y="118.47" cx="42.04" cy="17" height="35"/>
-   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrectbar; hmi-type:bkgd" id="image6" static="true">
-    <wgtStyle width="85.91" imagePath="images/frame_rrectbar_chrome.svg" x="0" y="-1" cx="43.15" cy="18.53" height="37"/>
+   <wgtStyle width="85" x="106.97" forcePaint="1" y="118.47" cx="42.04" cy="17" height="35"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrectbar; hmi-type:bkgd" id="image6">
+    <wgtStyle width="85.91" imagePath="images/frame_rrectbar_chrome.svg" x="0" forcePaint="1" y="-1" cx="43.15" cy="18.53" height="37"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rrectbar; hmi-type:btn; type:btn" id="buttonStd3">
-    <wgtStyle width="78.60" x="3.66" forcePaint="8" y="4" fill="rgb(192,192,192)" dx="1" cx="39.46" form="standard" dy="-1" cy="13.56" height="27" releasePath="images\btn_plastic_rrectbar_1.svg" needlePath="images\btn_plastic_rrectbar_2.svg" type="maintained" value="0"/>
+    <wgtStyle width="78.60" x="3.66" forcePaint="9" y="4" fill="rgb(192,192,192)" dx="1" cx="39.46" form="standard" dy="-1" cy="13.56" height="27" releasePath="images\btn_plastic_rrectbar_1.svg" needlePath="images\btn_plastic_rrectbar_2.svg" type="maintained" value="0"/>
     <dataLinks>
      <dataLink readWrite="R/W" attribute="value" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.rGjennvinner_En_SelfClean" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
     </dataLinks>
@@ -38,7 +38,7 @@
    </object>
   </object>
   <object class="LabelWgt" id="label45">
-   <wgtStyle width="144" x="77.97" forcePaint="2" y="95.47" font-family="Tahoma" cx="48.17" cy="11.17" height="19" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <wgtStyle width="144" x="77.97" forcePaint="3" y="95.47" font-family="Tahoma" cx="48.17" cy="11.17" height="19" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
    <links>
     <lang class="MLTextLink" textid="10"/>
    </links>

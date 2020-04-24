@@ -7,7 +7,7 @@
     <dataLink readWrite="R" attribute="*.Temp.value" tag="IndexedTagSet_Globale.rTempTilluft" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
    </dataLinks>
    <links>
-    <attr attrName="*.Tag.text" alias="*.Tag.text" ml="1">{"1": "-RT500","2": "-RT511"}</attr>
+    <attr attrName="*.Tag.text" alias="*.Tag.text" ml="1">{"1": "-RT402","2": "-RT511"}</attr>
    </links>
   </object>
   <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
@@ -17,6 +17,7 @@
     <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
    </langs>
    <MLTexts>
+<<<<<<< HEAD
     <MLText L1="-RT501" L2="-RT501" id="1"/>
     <MLText L1="-RT401" L2="-RT401" id="4"/>
     <MLText L1="-RT400" L2="-RT400" id="7"/>
@@ -30,6 +31,33 @@
     <MLText L1="System OK" L2="" id="39"/>
     <MLText L1="=360.20 Ventilasjon" L2="" id="45"/>
     <MLText L1="-QD400" L2="" id="136"/>
+=======
+    <MLText L1="-RP500" L2="-RP500" id="2"/>
+    <MLText L1="-RT502" L2="-RT501" id="7"/>
+    <MLText L1="-RT501" L2="-RT401" id="10"/>
+    <MLText L1="-RT401" L2="-RT400" id="13"/>
+    <MLText L1="-KA401" L2="-KA400" id="16"/>
+    <MLText L1="-SB400" L2="-SB400" id="18"/>
+    <MLText L1="-RT503" L2="-RT503" id="22"/>
+    <MLText L1="" L2="" id="21"/>
+    <MLText L1="-RT402" L2="-RT511" id="26"/>
+    <MLText L1="T" L2="Label" id="0"/>
+    <MLText L1="°C" L2="°C" id="1"/>
+    <MLText L1="-KA501" L2="-RT400" id="3"/>
+    <MLText L1="-RP400" L2="" id="19"/>
+    <MLText L1="Pa" L2="°C" id="24"/>
+    <MLText L1="Feilalarm:" L2="" id="27"/>
+    <MLText L1="System OK:" L2="" id="28"/>
+    <MLText L1="%" L2="" id="33"/>
+    <MLText L1="°C" L2="" id="34"/>
+    <MLText L1="" L2="-RT401" id="38"/>
+    <MLText L1="-RT403" L2="-QT500" id="39"/>
+    <MLText L1="Mekanisk frostvakt utløst, resettes på -QT550" L2="-JV40" id="41"/>
+    <MLText L1="-JV400" L2="-JV500" id="44"/>
+    <MLText L1="=360.20 Ventilasjon" L2="" id="45"/>
+    <MLText L1="-JV500" L2="Label" id="46"/>
+    <MLText L1="-LX400" L2="-RT400" id="49"/>
+>>>>>>> master
     <MLText L1="P" L2="" id="137"/>
    </MLTexts>
   </object>
@@ -66,20 +94,6 @@
     <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.rGjennvinner_OP" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
    </dataLinks>
   </object>
-  <object class="GroupWgt" id="Avtrekksvifte" customType="VifteAvtrekk-1.0:1.0">
-   <wgtStyle width="150" x="241" forcePaint="89" y="127" cx="75" cy="36.50" wgtStaticOpt="dynamic" height="73"/>
-   <dataLinks>
-    <dataLink readWrite="R" attribute="*.RodTriangel.visibility" tag="IndexedTagSet_Globale.xAvtrekksvifte_ERROR" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
-    <dataLink readWrite="R" attribute="*.GronnTriangel.visibility" tag="IndexedTagSet_Globale.xAvtrekksvifte_Drift" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
-    <dataLink readWrite="R" attribute="*.GulTriangel.visibility" tag="IndexedTagSet_Globale.xSB_Avtrekk" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
-    <dataLink readWrite="R" attribute="*.TagStatus.text" tag="IndexedTagSet_Globale.wAvtrekksvifte_Status" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
-   </dataLinks>
-   <links>
-    <attr attrName="*.RodTriangel.visibility" alias="*.RodTriangel.visibility">"true"</attr>
-    <attr attrName="*.GulTriangel.visibility" alias="*.GulTriangel.visibility">"true"</attr>
-    <attr attrName="*.Tag.text" alias="*.Tag.text" ml="1">{"2": "-JV500"}</attr>
-   </links>
-  </object>
   <object class="GroupWgt" id="LightsStd4" customType="Light">
    <wgtStyle width="17.40" x="357" forcePaint="1" y="139" cx="8.54" cy="9.44" height="19.27"/>
    <links>
@@ -103,19 +117,6 @@
    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon4" static="true">
     <wgtStyle width="5.06" enableCache="true" x="6.01" y="6.29" cx="2.53" cy="2.75" height="5.90" fill-opacity="0.5"/>
    </object>
-  </object>
-  <object class="MsgTextWgt" id="msgtext1">
-   <wgtStyle marker="true" forcePaint="8" font-family="Tahoma" font-sizepx="32" cx="72.55" cy="20" alignment="center" x="356" y="51.50" viewindex="false" vert-align="top" text="" max="3" value="1" keypad-type="None" font-color="rgb(102,102,102)" min="0" width="109" continous="true" height="38" frame="true" font-size="24">
-    <msgtxt>
-     <msg index="0" text="Stoppet"/>
-     <msg index="1" text="I Drift"/>
-     <msg index="2" text=""/>
-     <msg index="3" text=""/>
-    </msgtxt>
-   </wgtStyle>
-   <dataLinks>
-    <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.xVentilasjon_US" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
-   </dataLinks>
   </object>
   <object class="NumericWgt" id="field8">
    <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="15.38" cy="11.98" step="1" timeSpec="local" alignment="right" x="341" y="330" vert-align="top" text="10.1" max="3.40282e+038" usingFormat="#.#" value="10.1" keypad-type="None" min="-3.40282e+038" width="31.69" numberFormat="6" height="25.05" form="Numeric" font-size="10"/>
@@ -156,7 +157,7 @@
   <object class="LabelWgt" id="GroupWgt4.label14">
    <wgtStyle width="91" x="582" forcePaint="2" font-sizepx="16" y="30" font-family="Tahoma" cx="103.01" cy="12.52" height="21" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
    <links>
-    <lang class="MLTextLink" textid="32"/>
+    <lang class="MLTextLink" textid="27"/>
    </links>
   </object>
   <object class="GroupWgt" id="GroupWgt7.LgtSmp4" customType="Light">
@@ -186,7 +187,7 @@
   <object class="LabelWgt" id="GroupWgt7.label14">
    <wgtStyle width="91" x="582" forcePaint="2" font-sizepx="16" y="56" font-family="Tahoma" cx="103.01" cy="12.52" height="21" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
    <links>
-    <lang class="MLTextLink" textid="39"/>
+    <lang class="MLTextLink" textid="28"/>
    </links>
   </object>
   <object class="GroupSubscribeWgt" id="VentAnlegg@$GroupSubscrWgt@$0">
@@ -204,12 +205,18 @@
    <dataLinks>
     <dataLink readWrite="R" attribute="*..value" tag="IndexedTagSet_Globale.rTempreturvann" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
    </dataLinks>
+<<<<<<< HEAD
   </object>
   <object class="GroupWgt" id="TurTemp" customType="Temp2-1.0:1.0">
    <wgtStyle width="52" x="637" forcePaint="25" y="316" cx="26" cy="21.50" wgtStaticOpt="dynamic" height="43" mtx="1,0,0,0,1,0,0,0,1"/>
    <dataLinks>
     <dataLink readWrite="R" attribute="*..value" tag="IndexedTagSet_Globale.rTempTurvann" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
    </dataLinks>
+=======
+   <links>
+    <attr attrName="*.TagReturTemp.text" alias="*.TagReturTemp.text" ml="1">{"1": "-RT503","2": "-RT503"}</attr>
+   </links>
+>>>>>>> master
   </object>
   <object class="GroupWgt" id="Ventil" customType="BlandeVentil-1.0:1.0">
    <wgtStyle width="112" x="622" forcePaint="25" y="382" cx="56" cy="34.62" wgtStaticOpt="dynamic" height="69.24" mtx="1,0,0,0,1,0,0,0,1"/>
@@ -231,39 +238,19 @@
     <dataLink readWrite="R" attribute="*.Pumpe.GronnTriangel.visibility" tag="IndexedTagSet_Globale.xSirkpumpe_Drift" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
    </dataLinks>
   </object>
-  <object class="GroupWgt" id="Tilluftsvifte" customType="VifteTilluft-1.0:1.0">
-   <wgtStyle width="150" x="440" forcePaint="89" y="246" cx="75" cy="36.50" wgtStaticOpt="dynamic" height="73"/>
-   <dataLinks>
-    <dataLink readWrite="R" attribute="*.GronnTriangel.visibility" tag="IndexedTagSet_Globale.xTilluftsvifte_Drift" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
-    <dataLink readWrite="R" attribute="*.RodTriangel.visibility" tag="IndexedTagSet_Globale.xTilluftsvifte_ERROR" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
-    <dataLink readWrite="R" attribute="*.TagStatus.text" tag="IndexedTagSet_Globale.wTilluftsvifte_Status" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
-    <dataLink readWrite="R" attribute="*.GulTriangel.visibility" tag="IndexedTagSet_Globale.xSB_Tilluft" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
-   </dataLinks>
-   <links>
-    <attr attrName="*.GronnTriangel.visibility" alias="*.GronnTriangel.visibility">"true"</attr>
-    <attr attrName="*.RodTriangel.visibility" alias="*.RodTriangel.visibility">"true"</attr>
-    <attr attrName="*.TagStatus.visibility" alias="*.TagStatus.visibility">"true"</attr>
-    <attr attrName="*.GulTriangel.visibility" alias="*.GulTriangel.visibility">"true"</attr>
-   </links>
-  </object>
   <object class="GroupWgt" id="Spjeld" customType="Filter-1.0:1.0">
    <wgtStyle width="40" x="65" forcePaint="25" y="257" cx="20" cy="37.17" wgtStaticOpt="dynamic" height="74.33"/>
    <dataLinks>
-    <dataLink readWrite="R" attribute="*.Stengt.visibility" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.xSpjeld_inntak_Closed_V" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
-    <dataLink readWrite="R" attribute="*.AApen.visibility" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.xSpjeld_inntak_Open_V" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    <dataLink readWrite="R" tagType="boolean" attribute="*.Stengt.visibility" tag="10239/&quot;/BY2209_360_20_KA400_Closed_V&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    <dataLink readWrite="R" tagType="boolean" attribute="*.AApen.visibility" tag="10239/&quot;/BY2209_360_20_KA400_Open_V&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    <dataLink readWrite="R" tagType="boolean" attribute="*.nd6.frame" tag="10239/&quot;/BY2209_360_20_KA400_ERROR&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
    </dataLinks>
    <links>
     <attr attrName="*.Stengt.visibility" alias="*.Stengt.visibility">"true"</attr>
-   </links>
-  </object>
-  <object class="GroupWgt" id="Spjeld1" customType="Filter-1.0:1.0">
-   <wgtStyle width="40" x="65" forcePaint="24" y="139.47" cx="20" cy="37.17" wgtStaticOpt="dynamic" height="74.33"/>
-   <dataLinks>
-    <dataLink readWrite="R" attribute="*.Stengt.visibility" tag="IndexedTagSet_Globale.xSpjeld_Closed_V" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
-    <dataLink readWrite="R" attribute="*.AApen.visibility" tag="IndexedTagSet_Globale.xSpjeld_Open_V" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
-   </dataLinks>
-   <links>
-    <attr attrName="*.Stengt.visibility" alias="*.Stengt.visibility">"true"</attr>
+<<<<<<< HEAD
+=======
+    <attr attrName="*.Tag.text" alias="*.Tag.text" ml="1">{"1": "-KA401","2": "-KA400"}</attr>
+>>>>>>> master
    </links>
   </object>
   <object class="GroupWgt" id="Temp3" customType="Temp3-1.0:1.0">
@@ -272,16 +259,16 @@
     <dataLink readWrite="R" attribute="*.Temp.value" tag="IndexedTagSet_Globale.rTempInntak" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
    </dataLinks>
    <links>
-    <attr attrName="*.Tag.text" alias="*.Tag.text" ml="1">{"1": "-RT400","2": "-RT400"}</attr>
+    <attr attrName="*.Tag.text" alias="*.Tag.text" ml="1">{"1": "-RT401","2": "-RT400"}</attr>
    </links>
   </object>
   <object class="GroupWgt" id="Temp1" customType="Temp3-1.0:1.0">
-   <wgtStyle width="86.47" x="124" forcePaint="24" y="112" cx="43.24" cy="28.84" wgtStaticOpt="dynamic" height="57.69" mtx="1,0,0,0,1,0,0,0,1"/>
+   <wgtStyle width="86.47" x="124" forcePaint="25" y="112" cx="43.24" cy="28.84" wgtStaticOpt="dynamic" height="57.69" mtx="1,0,0,0,1,0,0,0,1"/>
    <dataLinks>
     <dataLink readWrite="R" attribute="*.Temp.value" tag="IndexedTagSet_Globale.rTempAvkast" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
    </dataLinks>
    <links>
-    <attr attrName="*.Tag.text" alias="*.Tag.text" ml="1">{"1": "-RT401","2": "-RT401"}</attr>
+    <attr attrName="*.Tag.text" alias="*.Tag.text" ml="1">{"1": "-RT501","2": "-RT401"}</attr>
    </links>
   </object>
   <object class="GroupWgt" id="GroupWgt1">
@@ -300,9 +287,12 @@
    </object>
   </object>
   <object class="GroupWgt" id="Temp2" customType="Temp3-1.0:1.0">
-   <wgtStyle width="86.47" x="692" forcePaint="16" y="111" cx="43.24" cy="28.84" wgtStaticOpt="dynamic" height="57.69" mtx="1,0,0,0,1,0,0,0,1"/>
+   <wgtStyle width="86.47" x="692" forcePaint="24" y="111" cx="43.24" cy="28.84" wgtStaticOpt="dynamic" height="57.69" mtx="1,0,0,0,1,0,0,0,1"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="*.Temp.value" tag="IndexedTagSet_Globale.rTempAvtrekk" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
    <links>
-    <attr attrName="*.Tag.text" alias="*.Tag.text" ml="1">{"1": "-RT501","2": "-RT501"}</attr>
+    <attr attrName="*.Tag.text" alias="*.Tag.text" ml="1">{"1": "-RT502","2": "-RT501"}</attr>
    </links>
   </object>
   <object class="GroupWgt" id="GroupWgt2">
@@ -379,7 +369,7 @@
    <object class="LabelWgt" id="Filter2.Tag">
     <wgtStyle width="50" font-color="rgb(23,30,40)" x="8.28" forcePaint="2" font-sizepx="13" y="64" font-family="Tahoma" wrapping="true" cx="25" cy="9.47" height="20" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="10"/>
     <links>
-     <lang class="MLTextLink" textid="136"/>
+     <lang class="MLTextLink" textid="19"/>
     </links>
    </object>
   </object>
@@ -388,6 +378,9 @@
    <dataLinks>
     <dataLink readWrite="R" attribute="*.d1.frame" tag="IndexedTagSet_Globale.xAvtrekksFiltet_AL" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
    </dataLinks>
+   <links>
+    <attr attrName="*.Tag.text" alias="*.Tag.text" ml="1">{"1": "-RP500","2": "-RP500"}</attr>
+   </links>
   </object>
   <object class="GroupWgt" id="GroupWgt3">
    <wgtStyle width="63" x="720" forcePaint="65" y="143" cx="31.50" cy="10.25" height="20.50"/>
@@ -406,6 +399,230 @@
      <lang class="MLTextLink" textid="34"/>
     </links>
    </object>
+  </object>
+  <object class="LabelWgt" id="TurTemp.TagReturTemp1">
+   <wgtStyle width="47.97" x="644" forcePaint="18" y="347" font-family="Tahoma" cx="23.76" cy="7.20" wgtStaticOpt="dynamic" height="14.02" vert-align="top" marker="true" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="39"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="ReturTemp1">
+   <wgtStyle width="29.50" x="637" forcePaint="1" y="327" cx="14.75" cy="10.30" height="20.61"/>
+   <object class="ShapeWgt" id="ReturTemp1.TempRetur.circle">
+    <wgtStyle width="15" x="14.50" forcePaint="17" y="0.60" fill="rgb(255,255,224)" cx="7.50" cy="7.50" wgtStaticOpt="dynamic" rx="22" height="15" nodeName="ellipse" ry="19"/>
+   </object>
+   <object class="LabelWgt" id="ReturTemp1.label8">
+    <wgtStyle width="14.50" font-color="rgb(23,30,40)" x="15" forcePaint="3" font-sizepx="13" y="0" font-family="Tahoma" wrapping="true" cx="7.25" cy="9.76" height="20.61" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="0"/>
+    </links>
+   </object>
+   <object class="LineWgt" id="ReturTemp1.TempRetur.line">
+    <wgtStyle width="14" x="0" forcePaint="17" y="7.60" cx="7" cy="0" wgtStaticOpt="dynamic" height="0"/>
+   </object>
+  </object>
+  <object class="NumericWgt" id="field2">
+   <wgtStyle forcePaint="24" font-family="Arial" cx="13.46" cy="8.72" step="1" timeSpec="local" alignment="right" x="647" y="310" wgtStaticOpt="dynamic" vert-align="top" text="990.1" max="3.40282e+038" usingFormat="#.#" value="990.1" keypad-type="None" min="-3.40282e+038" width="37" numberFormat="6" height="16" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.rTempTurvann" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label3">
+   <wgtStyle width="28.29" x="683" forcePaint="83" y="309" font-family="Tahoma" cx="14.14" cy="9.35" wgtStaticOpt="dynamic" height="18.70" vert-align="top" marker="true" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="1"/>
+   </links>
+  </object>
+  <object class="ShapeWgt" id="Spjeld1.Firkant">
+   <wgtStyle width="40" x="64" forcePaint="16" y="155.47" fill="rgb(192,192,192)" cx="20" cy="20" wgtStaticOpt="dynamic" height="40" nodeName="rect" stroke="rgb(127,127,127)"/>
+  </object>
+  <object class="ShapeWgt" id="Spjeld1.Sirkel">
+   <wgtStyle width="10" x="79" forcePaint="17" y="170.47" cx="5" cy="5" wgtStaticOpt="dynamic" rx="22" height="10" nodeName="ellipse" ry="19"/>
+  </object>
+  <object class="LineWgt" id="Spjeld1.Stengt">
+   <wgtStyle width="0.20" x="84.07" forcePaint="25" y="155.80" cx="0.10" cy="19.50" wgtStaticOpt="dynamic" height="39"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="10239/&quot;/BY2209_360_20_KA500_Closed_V&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LineWgt" id="Spjeld1.AApen">
+   <wgtStyle width="38.20" x="65.27" forcePaint="25" y="175.40" cx="19.10" cy="0" wgtStaticOpt="dynamic" height="0"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="10239/&quot;/BY2209_360_20_KA500_Open_V&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="Spjeld1.FeilLampe" customType="Light">
+   <wgtStyle width="14" x="90" forcePaint="16" y="138.47" cx="6.87" cy="7.35" wgtStaticOpt="dynamic" height="15"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image1">
+    <wgtStyle width="14" imagePath="images/frame_round_chrome.svg" x="0" forcePaint="17" y="0" cx="6.87" cy="7.35" wgtStaticOpt="dynamic" height="15"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:pointy; hmi-shape:round; hmi-type:light; type:light" id="light_ind2">
+    <wgtStyle width="10.44" imagePath="images/li_round_pointy1.svg" x="1.78" forcePaint="25" y="1.84" cx="6.62" cy="4.59" wgtStaticOpt="dynamic" bkgColor="rgb(0,255,0);rgb(255,0,0)" height="11.33" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="frame" tag="IndexedTagSet_Globale.xSpjeld_ERROR" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="10239/&quot;/BY2209_360_20_KA500_ERROR&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label8">
+    <wgtStyle width="9.16" x="2.04" forcePaint="18" font-sizepx="10" y="2.45" font-family="Tahoma" cx="4.58" cy="4.90" wgtStaticOpt="dynamic" height="10.10" alignment="center" vert-align="middle" keypad-type="None" font-size="8"/>
+    <links>
+     <lang class="MLTextLink" textid="38"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon2">
+    <wgtStyle width="4.07" enableCache="true" x="4.84" forcePaint="16" y="4.90" cx="2.04" cy="2.14" wgtStaticOpt="dynamic" height="4.59" fill-opacity="0.5"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="Spjeld1.Tag">
+   <wgtStyle width="36.67" x="64.67" forcePaint="18" font-sizepx="10" y="199.47" font-family="Tahoma" cx="18.33" cy="6.67" wgtStaticOpt="dynamic" height="13.33" vert-align="top" marker="true" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="3"/>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext2">
+   <wgtStyle marker="true" forcePaint="9" font-family="Tahoma" font-sizepx="18" cx="142.53" cy="10.26" alignment="center" x="306.45" y="77" viewindex="false" vert-align="top" text="" max="6" value="1" keypad-type="None" font-color="rgb(102,102,102)" min="0" width="215.10" continous="true" height="19" frame="true" font-size="14">
+    <msgtxt>
+     <msg index="0" text="Anlegget er stoppet"/>
+     <msg index="1" text="Flush starter"/>
+     <msg index="2" text="Flush OK"/>
+     <msg index="3" text="Flush OK, spjeld er åpne"/>
+     <msg index="4" text="Vifter starter"/>
+     <msg index="5" text="Anlegge er i drift"/>
+     <msg index="6" text=""/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="float" attribute="value" tag="10239/&quot;/BY2209_360_20_OppstartStatus&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="Tilluftsvifte1.Sirkel">
+   <wgtStyle width="45" x="431" forcePaint="17" y="273" fill="rgb(255,255,255)" cx="22.64" cy="22.78" wgtStaticOpt="dynamic" rx="22" height="45" nodeName="ellipse" ry="19" stroke="rgb(0,13,6)"/>
+  </object>
+  <object class="ShapeWgt" id="Tilluftsvifte1.SortTriangle">
+   <wgtStyle width="36" x="443" forcePaint="17" y="277" fill="rgb(0,13,6)" points="76,122 95,88 114,122 " cx="17" cy="18" wgtStaticOpt="dynamic" height="33" nodeName="polygon" mtx="0,1,0,-1,0,0,33,0,1"/>
+  </object>
+  <object class="ShapeWgt" id="Tilluftsvifte1.GronnTriangel">
+   <wgtStyle width="36" x="443" forcePaint="25" y="277" fill="rgb(0,147,0)" points="76,122 95,88 114,122 " cx="17" cy="18" wgtStaticOpt="dynamic" height="33" nodeName="polygon" stroke="rgb(0,147,0)" mtx="0,1,0,-1,0,0,33,0,1"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="10239/&quot;/BY2209_360_20_JV400_V&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="Tilluftsvifte1.RodTriangel">
+   <wgtStyle width="36" x="444" forcePaint="25" y="277" fill="rgb(255,0,0)" points="76,122 95,88 114,122 " cx="17" cy="18" wgtStaticOpt="dynamic" height="33" nodeName="polygon" stroke="rgb(255,0,0)" mtx="0,1,0,-1,0,0,33,0,1"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="10239/&quot;/BY2209_360_20_JV400_ERROR&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="Tilluftsvifte1.GulTriangel">
+   <wgtStyle width="36" x="444" forcePaint="25" y="277" fill="rgb(255,255,0)" points="76,122 95,88 114,122 " cx="17" cy="18" wgtStaticOpt="dynamic" height="33" nodeName="polygon" stroke="rgb(255,255,0)" mtx="0,1,0,-1,0,0,33,0,1"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="10239/&quot;/BY2209_360_20_XS001_V&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="Tilluftsvifte1.Tag">
+   <wgtStyle width="36.67" x="437.83" forcePaint="18" font-sizepx="10" y="257.76" font-family="Tahoma" cx="18.33" cy="6.67" wgtStaticOpt="dynamic" height="13.33" vert-align="top" marker="true" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="44"/>
+   </links>
+  </object>
+  <object class="ShapeWgt" id="Avtrekksvifte1.Sirkel">
+   <wgtStyle width="45" x="242" forcePaint="16" y="155" fill="rgb(255,255,255)" cx="22.64" cy="22.78" wgtStaticOpt="dynamic" rx="22" height="45" nodeName="ellipse" ry="19" stroke="rgb(0,13,6)"/>
+  </object>
+  <object class="ShapeWgt" id="Avtrekksvifte1.SortTriangle">
+   <wgtStyle width="36" x="243" forcePaint="17" y="159" fill="rgb(0,13,6)" points="76,122 95,88 114,122 " cx="16" cy="18" wgtStaticOpt="dynamic" height="33" nodeName="polygon" mtx="0,-1,0,1,0,0,0,36,1"/>
+  </object>
+  <object class="ShapeWgt" id="Avtrekksvifte1.GronnTriangel">
+   <wgtStyle width="36" x="243" forcePaint="25" y="159" fill="rgb(0,147,0)" points="76,122 95,88 114,122 " cx="16" cy="18" wgtStaticOpt="dynamic" height="33" nodeName="polygon" stroke="rgb(0,147,0)" mtx="0,-1,0,1,0,0,0,36,1"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="10239/&quot;/BY2209_360_20_JV500_V&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="Avtrekksvifte1.RodTriangel">
+   <wgtStyle width="36" x="242" forcePaint="25" y="159" fill="rgb(255,0,0)" points="76,122 95,88 114,122 " cx="16" cy="18" wgtStaticOpt="dynamic" height="33" nodeName="polygon" stroke="rgb(255,0,0)" mtx="0,-1,0,1,0,0,0,36,1"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="10239/&quot;/BY2209_360_20_JV500_ERROR&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="Avtrekksvifte1.GulTriangel">
+   <wgtStyle width="36" x="242" forcePaint="25" y="159" fill="rgb(255,255,0)" points="76,122 95,88 114,122 " cx="16" cy="18" wgtStaticOpt="dynamic" height="33" nodeName="polygon" stroke="rgb(255,255,0)" mtx="0,-1,0,1,0,0,0,36,1"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="10239/&quot;/BY2209_360_20_XS002_V&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="Avtrekksvifte1.Tag">
+   <wgtStyle width="36.67" x="248.83" forcePaint="18" font-sizepx="10" y="139.76" font-family="Tahoma" cx="18.33" cy="6.67" wgtStaticOpt="dynamic" height="13.33" vert-align="top" marker="true" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="46"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="Spjeld1.Tag1">
+   <wgtStyle width="36.67" x="348" forcePaint="18" font-sizepx="10" y="120.33" font-family="Tahoma" cx="18.33" cy="6.67" wgtStaticOpt="dynamic" height="13.33" vert-align="top" marker="true" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="49"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field1">
+   <wgtStyle forcePaint="25" font-family="Arial" cx="13.46" cy="8.72" step="1" timeSpec="local" alignment="right" x="237" y="353" wgtStaticOpt="dynamic" vert-align="top" text="990.1" max="3.40282e+038" usingFormat="#" value="990.1" keypad-type="None" min="-3.40282e+038" width="37" numberFormat="6" height="16" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.rTilluftsvifte_rY" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label11">
+   <wgtStyle width="28.29" x="276" forcePaint="19" y="352" font-family="Tahoma" cx="14.14" cy="9.35" wgtStaticOpt="dynamic" height="18.70" vert-align="top" marker="true" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="24"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field4">
+   <wgtStyle forcePaint="24" font-family="Arial" cx="13.46" cy="8.72" step="1" timeSpec="local" alignment="right" x="434" y="136" wgtStaticOpt="dynamic" vert-align="top" text="990.1" max="3.40282e+038" usingFormat="#" value="990.1" keypad-type="None" min="-3.40282e+038" width="37" numberFormat="6" height="16" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.rAvtrekksFilter" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label12">
+   <wgtStyle width="28.29" x="473" forcePaint="18" y="135" font-family="Tahoma" cx="14.14" cy="9.35" wgtStaticOpt="dynamic" height="18.70" vert-align="top" marker="true" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="24"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="LgtStd1" customType="Light">
+   <wgtStyle width="25" x="17" forcePaint="8" y="392.25" cx="12.50" cy="12.50" height="25"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="10239/&quot;/BY2209_360_20_QT550_AL&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtStd1.img">
+    <wgtStyle width="25" imagePath="images/frame_round_chrome.svg" x="0" forcePaint="9" y="0" cx="12.27" cy="12.25" height="25"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="LgtStd1.ind">
+    <wgtStyle width="18.27" imagePath="images/li_round_shiney1_rev2.svg" x="3.37" forcePaint="9" y="2.88" cx="11.82" cy="7.65" bkgColor="rgb(120,120,120);rgb(255,0,0)" height="18.75" frame="1" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="10239/&quot;/BY2209_360_20_QT550_AL&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtStd1.lbl" static="true">
+    <wgtStyle width="16.35" x="4.33" y="4.33" font-family="Tahoma" cx="8.18" cy="8.16" height="16.83" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="21"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtStd1.img1" static="true">
+    <wgtStyle width="7.21" enableCache="true" x="8.65" y="9.13" cx="3.63" cy="3.57" height="7.21"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label15">
+   <wgtStyle width="490" x="57" forcePaint="10" font-sizepx="24" y="390.25" font-family="Tahoma" cx="100.01" cy="15.99" height="29" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="18"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="10239/&quot;/BY2209_360_20_QT550_AL&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="41"/>
+   </links>
   </object>
  </object>
 </wgtPage>

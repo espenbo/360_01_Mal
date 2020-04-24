@@ -1,0 +1,200 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Filter" singleInstance="true" pageType="modal" pageSize="350,300" class="DialogWgt" dataWndSize="0,70" downloadPrepDone="true" px="0" usedFonts="Tahoma,Arial" py="0" titlebar="true" staticFile="opt/filter.png" dynPosition="false" id="Filter" titleName="" staticOptEnable="true">
+  <wgtStyle width="350" x="0" y="0" height="300" ver="020800363" v="02.08.00.363"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+    <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" L2="" id="73"/>
+    <MLText L1="Tillufts filter erverdi:" L2="Oppstart forsinkelse" id="75"/>
+    <MLText L1="Tillufts filter alarm SP:" L2="Oppstart forsinkelse" id="76"/>
+    <MLText L1="Pa" L2="%" id="102"/>
+    <MLText L1="Pa" L2="%" id="103"/>
+    <MLText L1="Pa" L2="%" id="104"/>
+    <MLText L1="Pa" L2="%" id="105"/>
+   </MLTexts>
+  </object>
+  <object class="LabelWgt" id="label30">
+   <wgtStyle width="153" x="44.07" forcePaint="2" y="48" font-family="Tahoma" cx="79" cy="10" height="19" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="76"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1" customType="Button">
+   <wgtStyle width="65" x="149.22" y="265" cx="32" cy="14" height="29"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="WinBtn1-pushbutton1">
+    <wgtStyle width="65" x="1" y="0" fill="rgb(160,160,164)" dx="1" form="standard" dy="-1" height="28" releasePath="images\win-like.svg" needlePath="images\win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+    <links>
+     <action pageName="" class="CloseDialogAction" attribute="onMouseRelease" event="onMouseUp" actionID="0" closeParam="Selected" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="WinBtn1-text1">
+    <wgtStyle width="36.12" font-color="rgb(255,255,255)" x="15" forcePaint="1" y="7" font-family="Tahoma" cx="14" cy="8" height="13.92" alignment="center" vert-align="middle" text="OK" keypad-type="None" font-size="10"/>
+   </object>
+  </object>
+  <object class="ShapeWgt" id="rect1" static="true">
+   <wgtStyle width="352" x="0" y="256" fill="rgb(127,127,127)" cx="176" cy="0.50" height="1" nodeName="rect" stroke="rgb(102,102,102)"/>
+  </object>
+  <object class="GroupWgt" id="GroupWgt9">
+   <wgtStyle width="100.67" x="237.35" y="48" cx="50.33" cy="14.34" height="28.67"/>
+   <object class="ShapeWgt" id="roundrect5" static="true">
+    <wgtStyle width="94" x="0" y="0" fill="rgb(255,255,224)" cx="47" cy="14.33" rx="20" height="28.67" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
+   </object>
+   <object class="GroupWgt" id="GroupWgt10">
+    <wgtStyle width="98" x="2.67" y="1" cx="49" cy="12.34" height="24.67"/>
+    <object class="NumericWgt" id="field5">
+     <wgtStyle forcePaint="8" font-family="Arial" cx="25.74" cy="11" step="1" timeSpec="local" alignment="right" x="0" y="1.67" vert-align="top" text="50" max="600" usingFormat="#" value="50" keypad-type="Numeric" min="0" width="53" numberFormat="6" readWrite="true" height="23" form="Numeric" font-size="16"/>
+     <dataLinks>
+      <dataLink readWrite="R/W" attribute="value" tag="IndexedTagSet_Globale_Retaind.rTilluftFilter_SP" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="label11">
+     <wgtStyle width="44" x="54" forcePaint="2" y="0" font-family="Tahoma" cx="22" cy="12" height="24" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+     <links>
+      <lang class="MLTextLink" textid="104"/>
+     </links>
+    </object>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt11">
+   <wgtStyle width="100.67" x="237.35" y="12.16" cx="50.33" cy="14.34" height="28.67"/>
+   <object class="ShapeWgt" id="roundrect7" static="true">
+    <wgtStyle width="94" x="0" y="0" fill="rgb(255,255,255)" cx="47" cy="14.33" rx="20" height="28.67" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
+   </object>
+   <object class="GroupWgt" id="GroupWgt12">
+    <wgtStyle width="98" x="2.67" y="1" cx="49" cy="12.34" height="24.67"/>
+    <object class="NumericWgt" id="field6">
+     <wgtStyle forcePaint="8" font-family="Arial" cx="25.74" cy="11" step="1" timeSpec="local" alignment="right" x="0" y="1.67" vert-align="top" text="50" max="3.40282e+038" usingFormat="#" value="50" keypad-type="Numeric" min="-3.40282e+038" width="53" numberFormat="6" height="23" form="Numeric" font-size="16"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.rTilluftFilter" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="label12">
+     <wgtStyle width="44" x="54" forcePaint="2" y="0" font-family="Tahoma" cx="22" cy="12" height="24" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+     <links>
+      <lang class="MLTextLink" textid="105"/>
+     </links>
+    </object>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label3">
+   <wgtStyle width="153" x="44.07" forcePaint="2" y="17" font-family="Tahoma" cx="79" cy="10" height="19" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="75"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label1">
+   <wgtStyle width="153" x="41" forcePaint="2" y="177.84" font-family="Tahoma" cx="79" cy="10" height="19" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="76"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="GroupWgt2">
+   <wgtStyle width="100.67" x="234.28" y="177.84" cx="50.33" cy="14.34" height="28.67"/>
+   <object class="ShapeWgt" id="roundrect1" static="true">
+    <wgtStyle width="94" x="0" y="0" fill="rgb(255,255,224)" cx="47" cy="14.33" rx="20" height="28.67" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
+   </object>
+   <object class="GroupWgt" id="GroupWgt3">
+    <wgtStyle width="98" x="2.67" y="1" cx="49" cy="12.34" height="24.67"/>
+    <object class="NumericWgt" id="field1">
+     <wgtStyle forcePaint="8" font-family="Arial" cx="25.74" cy="11" step="1" timeSpec="local" alignment="right" x="0" y="1.67" vert-align="top" text="50" max="600" usingFormat="#" value="50" keypad-type="Numeric" min="0" width="53" numberFormat="6" readWrite="true" height="23" form="Numeric" font-size="16"/>
+     <dataLinks>
+      <dataLink readWrite="R/W" attribute="value" tag="IndexedTagSet_Globale_Retaind.rAvtrekksFilter_SP" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="label2">
+     <wgtStyle width="44" x="54" forcePaint="2" y="0" font-family="Tahoma" cx="22" cy="12" height="24" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+     <links>
+      <lang class="MLTextLink" textid="102"/>
+     </links>
+    </object>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt4">
+   <wgtStyle width="100.67" x="234.28" y="142" cx="50.33" cy="14.34" height="28.67"/>
+   <object class="ShapeWgt" id="roundrect2" static="true">
+    <wgtStyle width="94" x="0" y="0" fill="rgb(255,255,255)" cx="47" cy="14.33" rx="20" height="28.67" nodeName="rect" ry="20" stroke="rgb(127,127,127)"/>
+   </object>
+   <object class="GroupWgt" id="GroupWgt5">
+    <wgtStyle width="98" x="2.67" y="1" cx="49" cy="12.34" height="24.67"/>
+    <object class="NumericWgt" id="field2">
+     <wgtStyle forcePaint="8" font-family="Arial" cx="25.74" cy="11" step="1" timeSpec="local" alignment="right" x="0" y="1.67" vert-align="top" text="50" max="3.40282e+038" usingFormat="#" value="50" keypad-type="Numeric" min="-3.40282e+038" width="53" numberFormat="6" height="23" form="Numeric" font-size="16"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.rAvtrekksFilter" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="label4">
+     <wgtStyle width="44" x="54" forcePaint="2" y="0" font-family="Tahoma" cx="22" cy="12" height="24" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+     <links>
+      <lang class="MLTextLink" textid="103"/>
+     </links>
+    </object>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label5">
+   <wgtStyle width="153" x="41" forcePaint="2" y="146.84" font-family="Tahoma" cx="79" cy="10" height="19" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="75"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="Filter2.FilterAlarm" customType="Light">
+   <wgtStyle width="17.40" x="209" y="16.86" cx="8.54" cy="9.44" height="19.27"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image18" static="true">
+    <wgtStyle width="17.40" imagePath="images/frame_round_chrome.svg" x="0" y="0" cx="8.54" cy="9.44" height="19.27"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:pointy; hmi-shape:round; hmi-type:light; type:light" id="light_ind10">
+    <wgtStyle width="12.97" imagePath="images/li_round_pointy1.svg" x="2.21" forcePaint="8" y="2.36" cx="8.23" cy="5.90" bkgColor="rgb(0,255,0);rgb(255,0,0)" height="14.55" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="frame" tag="IndexedTagSet_Globale.xTilluftFiltet_AL" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+     <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.xTilluftFiltet_AL" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label18" static="true">
+    <wgtStyle width="11.38" x="2.53" font-sizepx="10" y="3.15" font-family="Tahoma" cx="5.69" cy="6.29" height="12.97" alignment="center" vert-align="middle" keypad-type="None" font-size="8"/>
+    <links>
+     <lang class="MLTextLink" textid="73"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="icon18" static="true">
+    <wgtStyle width="5.06" enableCache="true" x="6.01" y="6.29" cx="2.53" cy="2.75" height="5.90" fill-opacity="0.5"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="Filter2.FilterAlarm1" customType="Light">
+   <wgtStyle width="17.40" x="205.52" y="146.70" cx="8.54" cy="9.44" height="19.27"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image1" static="true">
+    <wgtStyle width="17.40" imagePath="images/frame_round_chrome.svg" x="0" y="0" cx="8.54" cy="9.44" height="19.27"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:pointy; hmi-shape:round; hmi-type:light; type:light" id="light_ind1">
+    <wgtStyle width="12.97" imagePath="images/li_round_pointy1.svg" x="2.21" forcePaint="8" y="2.36" cx="8.23" cy="5.90" bkgColor="rgb(0,255,0);rgb(255,0,0)" height="14.55" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="frame" tag="IndexedTagSet_Globale.xTilluftFiltet_AL" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+     <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.xAvtrekksFiltet_AL" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label6" static="true">
+    <wgtStyle width="11.38" x="2.53" font-sizepx="10" y="3.15" font-family="Tahoma" cx="5.69" cy="6.29" height="12.97" alignment="center" vert-align="middle" keypad-type="None" font-size="8"/>
+    <links>
+     <lang class="MLTextLink" textid="73"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="icon1" static="true">
+    <wgtStyle width="5.06" enableCache="true" x="6.01" y="6.29" cx="2.53" cy="2.75" height="5.90" fill-opacity="0.5"/>
+   </object>
+  </object>
+  <object class="GroupSubscribeWgt" id="Filter@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+ </object>
+</wgtPage>

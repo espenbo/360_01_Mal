@@ -572,7 +572,11 @@
             <object_instance>12</object_instance>
             <object_property>85</object_property>
             <supports_cov>false</supports_cov>
+<<<<<<< HEAD
             <comment>&quot;Frost alarm&quot;</comment>
+=======
+            <comment>&quot;Ok&quot;</comment>
+>>>>>>> master
             <rw>R</rw>
             <default></default>
             <min></min>
@@ -678,6 +682,21 @@
             <object_property>85</object_property>
             <supports_cov>false</supports_cov>
             <comment>&quot;Brann alarm utlost&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>boolean</datatype>
+        </tag>
+        <tag>
+            <tagname>10239/&quot;/BY2209_360_20_BRANN_ANLEGG_AL&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>BV</object_type>
+            <object_instance>89</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;Brannanlegg utløst&quot;</comment>
             <rw>R</rw>
             <default></default>
             <min></min>
@@ -1007,7 +1026,7 @@
             <object_instance>59</object_instance>
             <object_property>85</object_property>
             <supports_cov>false</supports_cov>
-            <comment>&quot;Sirkulasjons pumpe drift&quot;</comment>
+            <comment>&quot;Drift sirk.pumpe&quot;</comment>
             <rw>R</rw>
             <default></default>
             <min></min>
@@ -2201,6 +2220,25 @@
             <datatype>boolean</datatype>
         </tag>
         <tag>
+            <tagname>10239/&quot;/BY2209_360_20_OppstartStatus&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>AV</object_type>
+            <object_instance>91</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;Oppstarts status&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>float</datatype>
+        </tag>
+        <tag>
+<<<<<<< HEAD
+            <tagname>10239/&quot;/BY2209_360_20_QT550_AL&quot;</tagname>
+            <device_id>10239</device_id>
+=======
             <tagname>10239/&quot;/BY2209_360_20_PercentAfterStartUp&quot;</tagname>
             <device_id>10239</device_id>
             <object_type>AV</object_type>
@@ -2218,6 +2256,7 @@
         <tag>
             <tagname>10239/&quot;/BY2209_360_20_QT550_AL&quot;</tagname>
             <device_id>10239</device_id>
+>>>>>>> master
             <object_type>BV</object_type>
             <object_instance>81</object_instance>
             <object_property>85</object_property>
@@ -2501,6 +2540,51 @@
             <datatype>float</datatype>
         </tag>
         <tag>
+            <tagname>10239/&quot;/BY2209_360_20_SB400_AH&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>BV</object_type>
+            <object_instance>87</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;Feilmelding aktuator jager&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>boolean</datatype>
+        </tag>
+        <tag>
+            <tagname>10239/&quot;/BY2209_360_20_SB400_COM_ERROR&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>BV</object_type>
+            <object_instance>88</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;Kommunikasjons feil&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>boolean</datatype>
+        </tag>
+        <tag>
+            <tagname>10239/&quot;/BY2209_360_20_SB400_CRI&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>BV</object_type>
+            <object_instance>85</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;Feilmelding kontroll lengde overskredet&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>boolean</datatype>
+        </tag>
+        <tag>
             <tagname>10239/&quot;/BY2209_360_20_SB400_K_OP&quot;</tagname>
             <device_id>10239</device_id>
             <object_type>AV</object_type>
@@ -2516,6 +2600,96 @@
             <datatype>float</datatype>
         </tag>
         <tag>
+            <tagname>10239/&quot;/BY2209_360_20_SB400_MAN&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>BV</object_type>
+            <object_instance>80</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;Manuel styring&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>boolean</datatype>
+        </tag>
+        <tag>
+            <tagname>10239/&quot;/BY2209_360_20_SB400_MAN_SP&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>AV</object_type>
+            <object_instance>93</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;Manuel kontroll input 0-100%&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>float</datatype>
+        </tag>
+        <tag>
+            <tagname>10239/&quot;/BY2209_360_20_SB400_MOL&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>BV</object_type>
+            <object_instance>86</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;Feilmelding mekanisk feil&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>boolean</datatype>
+        </tag>
+        <tag>
+            <tagname>10239/&quot;/BY2209_360_20_SB400_OP&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>AV</object_type>
+            <object_instance>92</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;Sendt paadrag&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>float</datatype>
+        </tag>
+        <tag>
+            <tagname>10239/&quot;/BY2209_360_20_SB400_POS&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>AV</object_type>
+            <object_instance>94</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;Erverdi posisjon[%]&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>float</datatype>
+        </tag>
+        <tag>
+            <tagname>10239/&quot;/BY2209_360_20_SB400_RES&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>BV</object_type>
+            <object_instance>84</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;Resete feilmeldinger fra MP-Bus&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>boolean</datatype>
+        </tag>
+        <tag>
             <tagname>10239/&quot;/BY2209_360_20_SB400_V_OP&quot;</tagname>
             <device_id>10239</device_id>
             <object_type>AV</object_type>
@@ -2529,6 +2703,21 @@
             <max>Y</max>
             <states></states>
             <datatype>float</datatype>
+        </tag>
+        <tag>
+            <tagname>10239/&quot;/BY2209_360_20_SD_Kalender_Enable&quot;</tagname>
+            <device_id>10239</device_id>
+            <object_type>BV</object_type>
+            <object_instance>90</object_instance>
+            <object_property>85</object_property>
+            <supports_cov>false</supports_cov>
+            <comment>&quot;SD Kalender er endable&quot;</comment>
+            <rw>R</rw>
+            <default></default>
+            <min></min>
+            <max>Y</max>
+            <states></states>
+            <datatype>boolean</datatype>
         </tag>
         <tag>
             <tagname>10239/&quot;/BY2209_360_20_Sequence_Cooling_X1&quot;</tagname>

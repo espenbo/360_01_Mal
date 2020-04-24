@@ -1,0 +1,411 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Ventilasjon2" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="templatepage1.jmx" usedFonts="Tahoma,Arial" staticFile="opt/ventilasjon2.png" id="Ventilasjon2" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020800363" v="02.08.00.363"/>
+  <object class="GroupWgt" id="Temp4" customType="Temp4-1.0:1.0">
+   <wgtStyle width="80.44" x="699" forcePaint="24" y="301" cx="40.22" cy="31" wgtStaticOpt="dynamic" height="62"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="*.Temp.value" tag="IndexedTagSet_Globale.rTempTilluft" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+   <links>
+    <attr attrName="*.Tag.text" alias="*.Tag.text" ml="1">{"1": "-RT500","2": "-RT511"}</attr>
+   </links>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+    <lang removable="false" langCode="nb-NO" langId="L2" writingsystem="Any" name="Lang2" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="-RT501" L2="-RT501" id="1"/>
+    <MLText L1="-RT401" L2="-RT401" id="4"/>
+    <MLText L1="-RT400" L2="-RT400" id="7"/>
+    <MLText L1="-SB400" L2="-SB400" id="10"/>
+    <MLText L1="" L2="-JV500" id="13"/>
+    <MLText L1="" L2="" id="21"/>
+    <MLText L1="-RT500" L2="-RT511" id="16"/>
+    <MLText L1="Fellealarm" L2="" id="32"/>
+    <MLText L1="%" L2="" id="33"/>
+    <MLText L1="°C" L2="" id="34"/>
+    <MLText L1="System OK" L2="" id="39"/>
+    <MLText L1="=360.20 Ventilasjon" L2="" id="45"/>
+    <MLText L1="-QD400" L2="" id="136"/>
+    <MLText L1="P" L2="" id="137"/>
+   </MLTexts>
+  </object>
+  <object class="LabelWgt" id="label9">
+   <wgtStyle width="300" x="278" forcePaint="2" font-sizepx="24" y="10" font-family="Tahoma" cx="86.51" cy="15.49" height="29" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="45"/>
+   </links>
+  </object>
+  <object class="ShapeWgt" id="rect1" static="true">
+   <wgtStyle width="650" x="78" y="169" fill="rgb(192,192,192)" cx="324.99" cy="7.50" height="15" nodeName="rect" stroke="rgb(127,127,127)"/>
+  </object>
+  <object class="ShapeWgt" id="rect2">
+   <wgtStyle width="650" x="78" forcePaint="1" y="286" fill="rgb(192,192,192)" cx="324.99" cy="7.50" height="15" nodeName="rect" stroke="rgb(127,127,127)"/>
+  </object>
+  <object class="ShapeWgt" id="rect3">
+   <wgtStyle width="38.52" x="348" forcePaint="1" y="135" fill="rgb(192,192,192)" cx="19.26" cy="96.33" height="192.67" nodeName="rect" stroke="rgb(127,127,127)"/>
+  </object>
+  <object class="ImageWgt" id="multistate1" static="true">
+   <wgtStyle width="37.28" imagePath="images/decreasingarrow.svg" x="16" y="283" cx="18.64" cy="8.99" height="19.27"/>
+  </object>
+  <object class="ImageWgt" id="multistate2">
+   <wgtStyle width="37.28" imagePath="images/acceleratingarrow.svg" x="732" forcePaint="1" y="284" cx="18.64" cy="8.99" height="19.27"/>
+  </object>
+  <object class="ImageWgt" id="multistate3" static="true">
+   <wgtStyle width="37.28" imagePath="images/acceleratingarrow.svg" x="736" y="166" cx="18.64" cy="10.28" height="19.27" mtx="-1,0,0,0,-1,0,37.28,19.27,1"/>
+  </object>
+  <object class="ImageWgt" id="multistate4" static="true">
+   <wgtStyle width="37.28" imagePath="images/decreasingarrow.svg" x="15" y="167" cx="18.64" cy="10.28" height="19.27" mtx="-1,0,0,0,-1,0,37.28,19.27,1"/>
+  </object>
+  <object class="BargraphWgt" hmiStyle="hmi-type:*barv" id="BargraphSeg1">
+   <wgtStyle width="27.34" imagePath="images/barseg_vert_flat.svg" reverseScale="false" x="353" forcePaint="9" y="165" fill="rgb(255,255,0)" cx="13.67" form="segments" cy="74.50" height="148.99" value="100" nodeCount="10" max="100"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.rGjennvinner_OP" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="Avtrekksvifte" customType="VifteAvtrekk-1.0:1.0">
+   <wgtStyle width="150" x="241" forcePaint="89" y="127" cx="75" cy="36.50" wgtStaticOpt="dynamic" height="73"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="*.RodTriangel.visibility" tag="IndexedTagSet_Globale.xAvtrekksvifte_ERROR" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    <dataLink readWrite="R" attribute="*.GronnTriangel.visibility" tag="IndexedTagSet_Globale.xAvtrekksvifte_Drift" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    <dataLink readWrite="R" attribute="*.GulTriangel.visibility" tag="IndexedTagSet_Globale.xSB_Avtrekk" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    <dataLink readWrite="R" attribute="*.TagStatus.text" tag="IndexedTagSet_Globale.wAvtrekksvifte_Status" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+   <links>
+    <attr attrName="*.RodTriangel.visibility" alias="*.RodTriangel.visibility">"true"</attr>
+    <attr attrName="*.GulTriangel.visibility" alias="*.GulTriangel.visibility">"true"</attr>
+    <attr attrName="*.Tag.text" alias="*.Tag.text" ml="1">{"2": "-JV500"}</attr>
+   </links>
+  </object>
+  <object class="GroupWgt" id="LightsStd4" customType="Light">
+   <wgtStyle width="17.40" x="357" forcePaint="1" y="139" cx="8.54" cy="9.44" height="19.27"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image7">
+    <wgtStyle width="17.40" imagePath="images/frame_round_chrome.svg" x="0" forcePaint="1" y="0" cx="8.54" cy="9.44" height="19.27"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:pointy; hmi-shape:round; hmi-type:light; type:light" id="light_ind4">
+    <wgtStyle width="12.97" imagePath="images/li_round_pointy1.svg" x="2.21" forcePaint="9" y="2.36" cx="8.23" cy="5.90" bkgColor="rgb(0,255,0);rgb(255,0,0)" height="14.55" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.xGjennvinner_ERROR" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label10" static="true">
+    <wgtStyle width="11.38" x="2.53" font-sizepx="10" y="3.15" font-family="Tahoma" cx="5.69" cy="6.29" height="12.97" alignment="center" vert-align="middle" keypad-type="None" font-size="8"/>
+    <links>
+     <lang class="MLTextLink" textid="21"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon4" static="true">
+    <wgtStyle width="5.06" enableCache="true" x="6.01" y="6.29" cx="2.53" cy="2.75" height="5.90" fill-opacity="0.5"/>
+   </object>
+  </object>
+  <object class="MsgTextWgt" id="msgtext1">
+   <wgtStyle marker="true" forcePaint="8" font-family="Tahoma" font-sizepx="32" cx="72.55" cy="20" alignment="center" x="356" y="51.50" viewindex="false" vert-align="top" text="" max="3" value="1" keypad-type="None" font-color="rgb(102,102,102)" min="0" width="109" continous="true" height="38" frame="true" font-size="24">
+    <msgtxt>
+     <msg index="0" text="Stoppet"/>
+     <msg index="1" text="I Drift"/>
+     <msg index="2" text=""/>
+     <msg index="3" text=""/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.xVentilasjon_US" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field8">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="15.38" cy="11.98" step="1" timeSpec="local" alignment="right" x="341" y="330" vert-align="top" text="10.1" max="3.40282e+038" usingFormat="#.#" value="10.1" keypad-type="None" min="-3.40282e+038" width="31.69" numberFormat="6" height="25.05" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.rGjennvinner_OP" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label25">
+   <wgtStyle width="32.31" x="373" forcePaint="2" font-sizepx="13" y="329" font-family="Tahoma" cx="16.15" cy="12.84" height="25.69" vert-align="top" marker="true" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="33"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="GroupWgt4.LgtSmp4" customType="Light">
+   <wgtStyle width="20" x="674" y="32" cx="10" cy="10" height="20"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="GroupWgt4.LgtSmp4.img" static="true">
+    <wgtStyle width="26.92" imagePath="images/frame_rrect_chrome.svg" enableCache="true" x="-3.85" y="-3.48" visibility="false" bdrImageSize="60.00,49.00" cx="13.63" cy="13.33" bdrSize="0.23,0.24,0.19,0.19" height="26.96" bdrEdges="0.15,0.14,0.12,0.12"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="GroupWgt4.LgtSmp4.ind">
+    <wgtStyle width="20" imagePath="images/li_shape_rrect.svg" x="0" forcePaint="8" y="0" cx="10" cy="9.44" bkgColor="rgb(180,180,180);rgb(255,0,0)" height="20" stroke="none"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.xSystemError_Malfunction" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="GroupWgt4.LgtSmp4.lbl" static="true">
+    <wgtStyle width="18.08" x="0.77" font-sizepx="13" y="0.43" font-family="Tahoma" cx="9.17" cy="9.39" height="18.26" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="21"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="GroupWgt4.LgtSmp4.img1" static="true">
+    <wgtStyle width="6.92" enableCache="true" x="6.54" y="5.22" cx="3.63" cy="4.44" height="8.70" fill-opacity="0.5"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="GroupWgt4.label14">
+   <wgtStyle width="91" x="582" forcePaint="2" font-sizepx="16" y="30" font-family="Tahoma" cx="103.01" cy="12.52" height="21" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="32"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="GroupWgt7.LgtSmp4" customType="Light">
+   <wgtStyle width="20" x="674" y="58" cx="10" cy="10" height="20"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="GroupWgt7.LgtSmp4.img" static="true">
+    <wgtStyle width="26.92" imagePath="images/frame_rrect_chrome.svg" enableCache="true" x="-3.85" y="-3.48" visibility="false" bdrImageSize="60.00,49.00" cx="13.63" cy="13.33" bdrSize="0.23,0.24,0.19,0.19" height="26.96" bdrEdges="0.15,0.14,0.12,0.12"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="GroupWgt7.LgtSmp4.ind">
+    <wgtStyle width="20" imagePath="images/li_shape_rrect.svg" x="0" forcePaint="8" y="0" cx="10" cy="9.44" bkgColor="rgb(180,180,180);rgb(0,255,0)" height="20" stroke="none"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="10239/&quot;/BY2209_360_20_Flush_OK&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="GroupWgt7.LgtSmp4.lbl" static="true">
+    <wgtStyle width="18.08" x="0.77" font-sizepx="13" y="0.43" font-family="Tahoma" cx="9.17" cy="9.39" height="18.26" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="21"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="GroupWgt7.LgtSmp4.img1" static="true">
+    <wgtStyle width="6.92" enableCache="true" x="6.54" y="5.22" cx="3.63" cy="4.44" height="8.70" fill-opacity="0.5"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="GroupWgt7.label14">
+   <wgtStyle width="91" x="582" forcePaint="2" font-sizepx="16" y="56" font-family="Tahoma" cx="103.01" cy="12.52" height="21" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="39"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="VarmeKjoleBatteri1.GroupWgt2" customType="batteri-1.0:1.0">
+   <wgtStyle width="44" x="595" forcePaint="25" y="253" cx="22" cy="98.69" wgtStaticOpt="dynamic" height="197.38"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="*.Varme.visibility" tag="IndexedTagSet_Globale.xHeating_Active" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    <dataLink readWrite="R" attribute="*.Kjoling.visibility" tag="IndexedTagSet_Globale.xCooling_Active" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="ReturTemp" customType="Temp1-1.0:1.0">
+   <wgtStyle width="56" x="544" forcePaint="25" y="308" cx="28" cy="24" wgtStaticOpt="dynamic" height="48"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="*..value" tag="IndexedTagSet_Globale.rTempreturvann" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="TurTemp" customType="Temp2-1.0:1.0">
+   <wgtStyle width="52" x="637" forcePaint="25" y="316" cx="26" cy="21.50" wgtStaticOpt="dynamic" height="43" mtx="1,0,0,0,1,0,0,0,1"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="*..value" tag="IndexedTagSet_Globale.rTempTurvann" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="Ventil" customType="BlandeVentil-1.0:1.0">
+   <wgtStyle width="112" x="622" forcePaint="25" y="382" cx="56" cy="34.62" wgtStaticOpt="dynamic" height="69.24" mtx="1,0,0,0,1,0,0,0,1"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="*.PaadragVarme.PaadragValue.value" tag="IndexedTagSet_Globale.rVentilVarme_OP" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    <dataLink readWrite="R" attribute="*.PaadragKjoling.PaadragValue.value" tag="IndexedTagSet_Globale.rVentilKjoling_OP" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    <dataLink readWrite="R" attribute="*.PaadragKjoling.visibility" tag="IndexedTagSet_Globale.xCooling_Active" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    <dataLink readWrite="R" attribute="*.PaadragVarme.visibility" tag="IndexedTagSet_Globale.xHeating_Active" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+   <links>
+    <attr attrName="*.Tag.text" alias="*.Tag.text" ml="1">{"1": "-SB400","2": "-SB400"}</attr>
+   </links>
+  </object>
+  <object class="GroupWgt" id="Pumpe" customType="SirkPumpe-1.0:1.0">
+   <wgtStyle width="67.70" x="622" forcePaint="25" y="364" cx="33.85" cy="13.50" wgtStaticOpt="dynamic" height="27" mtx="1,0,0,0,1,0,0,0,1"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="*.Pumpe.RodTriangel.visibility" tag="IndexedTagSet_Globale.xSirkpumpe_ERROR" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    <dataLink readWrite="R" attribute="*.Pumpe.GulTriangel.visibility" tag="IndexedTagSet_Globale.xSB_Pumpe" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    <dataLink readWrite="R" attribute="*.Pumpe.GronnTriangel.visibility" tag="IndexedTagSet_Globale.xSirkpumpe_Drift" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="Tilluftsvifte" customType="VifteTilluft-1.0:1.0">
+   <wgtStyle width="150" x="440" forcePaint="89" y="246" cx="75" cy="36.50" wgtStaticOpt="dynamic" height="73"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="*.GronnTriangel.visibility" tag="IndexedTagSet_Globale.xTilluftsvifte_Drift" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    <dataLink readWrite="R" attribute="*.RodTriangel.visibility" tag="IndexedTagSet_Globale.xTilluftsvifte_ERROR" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    <dataLink readWrite="R" attribute="*.TagStatus.text" tag="IndexedTagSet_Globale.wTilluftsvifte_Status" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    <dataLink readWrite="R" attribute="*.GulTriangel.visibility" tag="IndexedTagSet_Globale.xSB_Tilluft" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+   <links>
+    <attr attrName="*.GronnTriangel.visibility" alias="*.GronnTriangel.visibility">"true"</attr>
+    <attr attrName="*.RodTriangel.visibility" alias="*.RodTriangel.visibility">"true"</attr>
+    <attr attrName="*.TagStatus.visibility" alias="*.TagStatus.visibility">"true"</attr>
+    <attr attrName="*.GulTriangel.visibility" alias="*.GulTriangel.visibility">"true"</attr>
+   </links>
+  </object>
+  <object class="GroupWgt" id="Spjeld" customType="Filter-1.0:1.0">
+   <wgtStyle width="40" x="65" forcePaint="25" y="257" cx="20" cy="37.17" wgtStaticOpt="dynamic" height="74.33"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="*.Stengt.visibility" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.xSpjeld_inntak_Closed_V" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    <dataLink readWrite="R" attribute="*.AApen.visibility" tag="IndexedTagSet_Spjeld_Gjenvinner_MPBUS.xSpjeld_inntak_Open_V" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+   <links>
+    <attr attrName="*.Stengt.visibility" alias="*.Stengt.visibility">"true"</attr>
+   </links>
+  </object>
+  <object class="GroupWgt" id="Spjeld1" customType="Filter-1.0:1.0">
+   <wgtStyle width="40" x="65" forcePaint="24" y="139.47" cx="20" cy="37.17" wgtStaticOpt="dynamic" height="74.33"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="*.Stengt.visibility" tag="IndexedTagSet_Globale.xSpjeld_Closed_V" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    <dataLink readWrite="R" attribute="*.AApen.visibility" tag="IndexedTagSet_Globale.xSpjeld_Open_V" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+   <links>
+    <attr attrName="*.Stengt.visibility" alias="*.Stengt.visibility">"true"</attr>
+   </links>
+  </object>
+  <object class="GroupWgt" id="Temp3" customType="Temp3-1.0:1.0">
+   <wgtStyle width="86.47" x="124" forcePaint="25" y="229" cx="43.24" cy="28.84" wgtStaticOpt="dynamic" height="57.69" mtx="1,0,0,0,1,0,0,0,1"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="*.Temp.value" tag="IndexedTagSet_Globale.rTempInntak" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+   <links>
+    <attr attrName="*.Tag.text" alias="*.Tag.text" ml="1">{"1": "-RT400","2": "-RT400"}</attr>
+   </links>
+  </object>
+  <object class="GroupWgt" id="Temp1" customType="Temp3-1.0:1.0">
+   <wgtStyle width="86.47" x="124" forcePaint="25" y="112" cx="43.24" cy="28.84" wgtStaticOpt="dynamic" height="57.69" mtx="1,0,0,0,1,0,0,0,1"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="*.Temp.value" tag="IndexedTagSet_Globale.rTempAvkast" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+   <links>
+    <attr attrName="*.Tag.text" alias="*.Tag.text" ml="1">{"1": "-RT401","2": "-RT401"}</attr>
+   </links>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1">
+   <wgtStyle width="63" x="721" forcePaint="65" y="309.75" cx="31.50" cy="10.25" height="20.50"/>
+   <object class="NumericWgt" id="GroupWgt1.field20">
+    <wgtStyle forcePaint="73" font-family="Arial" font-sizepx="13" cx="12.38" cy="9.33" step="1" timeSpec="local" alignment="right" x="0" y="0" vert-align="top" text="999.1" max="3.40282e+038" usingFormat="#.#" value="999.1" keypad-type="None" font-color="rgb(0,0,255)" min="-3.40282e+038" width="37" numberFormat="6" height="16" form="Numeric" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="float" attribute="value" tag="10239/&quot;/BY2209_360_20_SPU_PV&quot;" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="GroupWgt1.label34">
+    <wgtStyle width="26" x="37" forcePaint="3" font-sizepx="13" y="0.50" font-family="Tahoma" cx="13" cy="10" height="20" vert-align="top" marker="true" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="34"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="Temp2" customType="Temp3-1.0:1.0">
+   <wgtStyle width="86.47" x="692" forcePaint="16" y="111" cx="43.24" cy="28.84" wgtStaticOpt="dynamic" height="57.69" mtx="1,0,0,0,1,0,0,0,1"/>
+   <links>
+    <attr attrName="*.Tag.text" alias="*.Tag.text" ml="1">{"1": "-RT501","2": "-RT501"}</attr>
+   </links>
+  </object>
+  <object class="GroupWgt" id="GroupWgt2">
+   <wgtStyle width="63" x="720" forcePaint="1" y="143" cx="31.50" cy="10.25" height="20.50"/>
+   <object class="NumericWgt" id="GroupWgt2.field20">
+    <wgtStyle forcePaint="9" font-family="Arial" font-sizepx="13" cx="12.38" cy="9.33" step="1" timeSpec="local" alignment="right" x="0" y="0" vert-align="top" text="999.1" max="3.40282e+038" usingFormat="#.#" value="999.1" keypad-type="None" font-color="rgb(0,0,255)" min="-3.40282e+038" width="37" numberFormat="6" height="16" form="Numeric" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale_Retaind.rAvtrekkReg_SP" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="GroupWgt2.label34">
+    <wgtStyle width="26" x="37" forcePaint="11" font-sizepx="13" y="0.50" font-family="Tahoma" cx="13" cy="10" height="20" vert-align="top" marker="true" keypad-type="None" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="visibility" tag="IndexedTagSet_Globale.xAvtrekkReg_Aktiv_Fra_Temp" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="34"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="Filter2" customType="Filter2">
+   <wgtStyle width="71" x="231" forcePaint="33" y="271" cx="35.50" cy="42" height="84" staticFile="opt/Ventilasjon2Filter2.png"/>
+   <object class="ShapeWgt" id="Filter2.Firkant" static="true">
+    <wgtStyle width="60.89" x="6" y="0" fill="rgb(192,192,192)" cx="30.44" cy="22.48" height="44.96" nodeName="rect" stroke="rgb(127,127,127)"/>
+   </object>
+   <object class="ShapeWgt" id="Filter2.Trekant" static="true">
+    <wgtStyle width="39.65" x="0" y="0" fill="rgb(255,255,255)" cx="33.28" cy="-8" height="39.65" nodeName="path" stroke="rgb(127,127,127)" mtx="-0.839298,-0.543671,0,0.839298,-0.543671,0,33.2782,43.1131,1" stroke-width="1.00006" d="M19.0933 137.952l40.9595 37.7014 -40.9595 0 0 -37.7014zm20.4797 18.8507m0 18.8507m-20.4797 -18.8507"/>
+   </object>
+   <object class="GroupWgt" id="Filter2.FilterAlarm" customType="Light">
+    <wgtStyle width="17.40" x="7" y="2" cx="8.54" cy="9.44" height="19.27"/>
+    <links>
+     <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+    </links>
+    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image18" static="true">
+     <wgtStyle width="17.40" imagePath="images/frame_round_chrome.svg" x="0" y="0" cx="8.54" cy="9.44" height="19.27"/>
+    </object>
+    <object class="IndicatorWgt" hmiStyle="hmi-name:pointy; hmi-shape:round; hmi-type:light; type:light" id="light_ind10">
+     <wgtStyle width="12.97" imagePath="images/li_round_pointy1.svg" x="2.21" forcePaint="8" y="2.36" cx="8.23" cy="5.90" bkgColor="rgb(0,255,0);rgb(255,0,0)" height="14.55" stroke="rgb(255,251,240)"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="frame" tag="IndexedTagSet_Globale.xTilluftFiltet_AL" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label18" static="true">
+     <wgtStyle width="11.38" x="2.53" font-sizepx="10" y="3.15" font-family="Tahoma" cx="5.69" cy="6.29" height="12.97" alignment="center" vert-align="middle" keypad-type="None" font-size="8"/>
+     <links>
+      <lang class="MLTextLink" textid="21"/>
+     </links>
+    </object>
+    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon18" static="true">
+     <wgtStyle width="5.06" enableCache="true" x="6.01" y="6.29" cx="2.53" cy="2.75" height="5.90" fill-opacity="0.5"/>
+    </object>
+   </object>
+   <object class="ShapeWgt" id="Filter2.circle" static="true">
+    <wgtStyle width="15" x="28" y="49" fill="rgb(255,255,224)" cx="7.50" cy="7.50" rx="22" height="15" nodeName="ellipse" ry="19"/>
+   </object>
+   <object class="LabelWgt" id="Filter2.P">
+    <wgtStyle width="6" x="32" forcePaint="2" font-sizepx="10" y="50" font-family="Tahoma" cx="3" cy="7" height="14" vert-align="top" keypad-type="None" font-size="8"/>
+    <links>
+     <lang class="MLTextLink" textid="137"/>
+    </links>
+   </object>
+   <object class="LineWgt" id="Filter2.line4" static="true">
+    <wgtStyle width="26" x="71" y="30" cx="0" cy="13" height="0" mtx="0,1,0,-1,0,0,0,0,1"/>
+   </object>
+   <object class="LineWgt" id="Filter2.line3" static="true">
+    <wgtStyle width="27" x="43" y="56" cx="13.50" cy="0" height="0"/>
+   </object>
+   <object class="LineWgt" id="Filter2.line2" static="true">
+    <wgtStyle width="27" x="1" y="56" cx="13.50" cy="0" height="0"/>
+   </object>
+   <object class="LineWgt" id="Filter2.line1" static="true">
+    <wgtStyle width="26" x="1" y="30" cx="0" cy="13" height="0" mtx="0,1,0,-1,0,0,0,0,1"/>
+   </object>
+   <object class="LabelWgt" id="Filter2.Tag">
+    <wgtStyle width="50" font-color="rgb(23,30,40)" x="8.28" forcePaint="2" font-sizepx="13" y="64" font-family="Tahoma" wrapping="true" cx="25" cy="9.47" height="20" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="136"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="Filter1" customType="Filter1-1.0:1.0">
+   <wgtStyle width="72.56" x="429" forcePaint="24" y="154" cx="36.28" cy="42" wgtStaticOpt="dynamic" height="84" mtx="1,0,0,0,1,0,0,0,1"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="*.d1.frame" tag="IndexedTagSet_Globale.xAvtrekksFiltet_AL" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="GroupWgt3">
+   <wgtStyle width="63" x="720" forcePaint="65" y="143" cx="31.50" cy="10.25" height="20.50"/>
+   <object class="NumericWgt" id="GroupWgt3.field20">
+    <wgtStyle forcePaint="73" font-family="Arial" font-sizepx="13" cx="12.38" cy="9.33" step="1" timeSpec="local" alignment="right" x="0" y="0" vert-align="top" text="999.1" max="3.40282e+038" usingFormat="#.#" value="999.1" keypad-type="None" font-color="rgb(0,0,255)" min="-3.40282e+038" width="37" numberFormat="6" height="16" form="Numeric" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale_Retaind.rAvtrekkReg_SP" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="GroupWgt3.label34">
+    <wgtStyle width="26" x="37" forcePaint="11" font-sizepx="13" y="0.50" font-family="Tahoma" cx="13" cy="10" height="20" vert-align="top" marker="true" keypad-type="None" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="visibility" tag="IndexedTagSet_Globale.xAvtrekkReg_Aktiv" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="34"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupSubscribeWgt" id="Ventilasjon2@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+ </object>
+</wgtPage>

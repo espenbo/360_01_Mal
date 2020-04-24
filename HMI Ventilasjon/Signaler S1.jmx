@@ -70,15 +70,15 @@
    </object>
   </object>
   <object class="GroupWgt" id="LightsStd9" customType="Light">
-   <wgtStyle width="45" x="197.24" y="100.23" cx="22.50" cy="18.11" height="37" groupStyle="xform-scaling"/>
+   <wgtStyle width="45" x="197.24" forcePaint="1" y="100.23" cx="22.50" cy="18.11" height="37" groupStyle="xform-scaling"/>
    <links>
     <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
-   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect; hmi-type:bkgd" id="image19" static="true">
-    <wgtStyle width="45" imagePath="images/frame_rrect_chrome.svg" x="0" y="0" bdrImageSize="50.00,47.00" cx="21.60" cy="18.11" bdrSize="0.26,0.21,0.20,0.18" height="37" bdrEdges="0.12,0.13,0.12,0.13"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect; hmi-type:bkgd" id="image19">
+    <wgtStyle width="45" imagePath="images/frame_rrect_chrome.svg" x="0" forcePaint="1" y="0" bdrImageSize="50.00,47.00" cx="21.60" cy="18.11" bdrSize="0.26,0.21,0.20,0.18" height="37" bdrEdges="0.12,0.13,0.12,0.13"/>
    </object>
    <object class="IndicatorWgt" hmiStyle="hmi-name:pointy; hmi-shape:rrect; hmi-type:light; type:light" id="light_ind11">
-    <wgtStyle width="34.20" imagePath="images/li_rrect_pointy1.svg" x="5.40" forcePaint="8" y="4.72" cx="17.10" cy="13.78" bdrSize="0.19,0.18,0.19,0.15" bkgColor="rgb(192,192,192);rgb(0,255,0)" height="27.55" stroke="rgb(255,251,240)"/>
+    <wgtStyle width="34.20" imagePath="images/li_rrect_pointy1.svg" x="5.40" forcePaint="9" y="4.72" cx="17.10" cy="13.78" bdrSize="0.19,0.18,0.19,0.15" bkgColor="rgb(192,192,192);rgb(0,255,0)" height="27.55" stroke="rgb(255,251,240)"/>
     <dataLinks>
      <dataLink readWrite="R" attribute="value" tag="IndexedTagSet_Globale.xTilluftsvifte_Drift" class="IndexedTagSetMgrWgt" widgetType="Project" sourceType="Alias" tagIndex="-1" dataSource="_IndexedTagSetMgr"/>
     </dataLinks>
@@ -94,7 +94,7 @@
    </object>
   </object>
   <object class="LabelWgt" id="label18">
-   <wgtStyle width="126" x="251.24" forcePaint="2" y="108.23" font-family="Tahoma" cx="79" cy="10" height="19" alignment="right" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <wgtStyle width="126" x="251.24" forcePaint="3" y="108.23" font-family="Tahoma" cx="79" cy="10" height="19" alignment="right" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
    <links>
     <lang class="MLTextLink" textid="2"/>
    </links>

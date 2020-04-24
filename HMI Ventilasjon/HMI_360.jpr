@@ -33,6 +33,7 @@
     <page class="PageWgt" size="800,480" exportType="255" type="normal" precache="false" name="TestMain" file="testmain.jmx"/>
     <page class="PageWgt" size="800,480" exportType="255" type="normal" precache="false" name="TrendTemp" file="trendtemp.jmx"/>
     <page class="PageWgt" size="800,480" exportType="255" type="normal" precache="false" name="TrendPaadrag" file="trendpaadrag.jmx"/>
+    <page class="PageWgt" size="800,480" exportType="255" type="normal" precache="false" name="Ventilasjon2" file="ventilasjon2.jmx"/>
     <page class="DialogWgt" size="350,300" exportType="255" type="dialog" precache="false" name="SirkpumpInnsillinger" file="sirkpumpinnsillinger.jmx"/>
     <page class="DialogWgt" size="350,300" exportType="255" type="dialog" precache="false" name="SystemInfo" file="systeminfo.jmx"/>
     <page class="DialogWgt" size="500,400" exportType="255" type="dialog" precache="false" name="CommStatus" file="commstatus.jmx"/>
@@ -40,6 +41,7 @@
     <page class="DialogWgt" size="350,300" exportType="255" type="dialog" precache="false" name="Tilluftsvifte" file="tilluftsvifte.jmx"/>
     <page class="DialogWgt" size="350,300" exportType="255" type="dialog" precache="false" name="Avtrekksvifte" file="avtrekksvifte.jmx"/>
     <page class="DialogWgt" size="350,100" exportType="255" type="dialog" precache="false" name="Alarm" file="alarm.jmx"/>
+    <page class="DialogWgt" size="350,300" exportType="255" type="dialog" precache="false" name="Filter" file="filter.jmx"/>
    </pages>
    <templatePages>
     <templatePage class="TemplatePageWgt" type="template" name="MainTemplate" file="maintemplate.jmx"/>

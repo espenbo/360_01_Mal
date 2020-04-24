@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" contentScriptType="text/ecmascript" height="123" width="483" contentStyleType="text/css" version="1.1" zoomAndPan="magnify" preserveAspectRatio="xMidYMid meet" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <defs>
+  <linearGradient id="linearGradient18214">
+   <stop offset="0"/>
+   <stop stop-opacity="0" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient20438" y2="6" xlink:href="#linearGradient18214" gradientUnits="userSpaceOnUse" y1="91.039" x2="8.4445" x1="8.4445"/>
+  <linearGradient id="linearGradient20440" y2="6" gradientUnits="userSpaceOnUse" y1="91.039" x2="343.71" x1="343.71">
+   <stop offset="0"/>
+   <stop stop-opacity="0" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient21318" y2="78.02" xlink:href="#linearGradient18214" gradientUnits="userSpaceOnUse" x2="255.58" gradientTransform="translate(.0015 916.36)" y1="-4.1307" x1="255.58"/>
+  <linearGradient id="linearGradient21323" y2="88.086" xlink:href="#linearGradient18214" gradientUnits="userSpaceOnUse" x2="265.41" gradientTransform="translate(.0015 916.36)" y1="128.2" x1="265.41"/>
+ </defs>
+ <g transform="translate(-6.5 -922.86)">
+  <path id="bgColor00" fill="#003380" d="m8.4166 924.66v119.24h479.17v-119.24h-479.17z"/>
+  <path opacity=".25" d="m8.4166 924.66v119.31h479.16v-119.31h-479.16zm2.8125 2.8125h473.56v113.69h-473.56v-113.69z" fill="#4d4d4d"/>
+  <path opacity=".6" d="m9.8194 997.26v45.279h476.36v-45.24h-476.36z" fill="url(#linearGradient21323)"/>
+  <polygon opacity=".25" transform="matrix(1.6363 0 0 1.4028 -1.4014 916.24)" points="6 6 6 91.039 10.831 86.617 10.889 10.768" fill="url(#linearGradient20438)"/>
+  <polygon opacity=".25" transform="matrix(1.637 0 0 1.4028 -79.073 916.24)" points="341.27 10.768 346.16 6 346.16 91.039 341.33 86.617" fill="url(#linearGradient20440)"/>
+  <path opacity=".59596" d="m9.8194 926.06v58h476.36v-58h-476.36z" fill="url(#linearGradient21318)"/>
+  <path opacity=".4" d="m0 0v123h483v-123h-483zm5.5 5.5h472v112h-472v-112z" fill-rule="evenodd" fill-opacity=".75" transform="translate(6.5 922.86)"/>
+  <path d="m5.0938 4.75v0.0312l2.4687 2.4688h468.1l2.43-2.4375v-0.0625h-473z" fill-opacity=".4" fill-rule="evenodd" transform="translate(6.5 922.86)" fill="#fff"/>
+ </g>
+</svg>

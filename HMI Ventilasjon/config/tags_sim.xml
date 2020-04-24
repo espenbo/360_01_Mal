@@ -36,11 +36,24 @@
     <enableAudit subT="1" eventT="18">false</enableAudit>
 </tag>
 <tag>
+    <name>xLokalKalender</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://xLokalKalender?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
     <name>10239/&quot;/BY2209_360_20_AFW_STATUS&quot;</name>
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
+<<<<<<< HEAD
     <comment>&quot;Frost alarm&quot;</comment>
+=======
+    <comment>&quot;Ok&quot;</comment>
+>>>>>>> master
     <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_AFW_STATUS&quot;?float</resourceLocator>
     <enableScaling>false</enableScaling>
     <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_AFW_STATUS&quot;</TAGLOCATOR>
@@ -128,6 +141,18 @@
     <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_BRANN_AL&quot;?boolean</resourceLocator>
     <enableScaling>false</enableScaling>
     <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_BRANN_AL&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
+    <name>10239/&quot;/BY2209_360_20_BRANN_ANLEGG_AL&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Brannanlegg utløst&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_BRANN_ANLEGG_AL&quot;?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_BRANN_ANLEGG_AL&quot;</TAGLOCATOR>
     <enableAudit subT="1" eventT="18">false</enableAudit>
     <max>Y</max>
 </tag>
@@ -388,7 +413,7 @@
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <comment>&quot;Sirkulasjons pumpe drift&quot;</comment>
+    <comment>&quot;Drift sirk.pumpe&quot;</comment>
     <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_JP400_V&quot;?boolean</resourceLocator>
     <enableScaling>false</enableScaling>
     <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_JP400_V&quot;</TAGLOCATOR>
@@ -1344,6 +1369,20 @@
     <max>Y</max>
 </tag>
 <tag>
+    <name>10239/&quot;/BY2209_360_20_OppstartStatus&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Oppstarts status&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_OppstartStatus&quot;?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_OppstartStatus&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
+<<<<<<< HEAD
+=======
     <name>10239/&quot;/BY2209_360_20_PercentAfterStartUp&quot;</name>
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
@@ -1356,6 +1395,7 @@
     <max>Y</max>
 </tag>
 <tag>
+>>>>>>> master
     <name>10239/&quot;/BY2209_360_20_QT550_AL&quot;</name>
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
@@ -1584,6 +1624,42 @@
     <max>Y</max>
 </tag>
 <tag>
+    <name>10239/&quot;/BY2209_360_20_SB400_AH&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Feilmelding aktuator jager&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_SB400_AH&quot;?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_SB400_AH&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
+    <name>10239/&quot;/BY2209_360_20_SB400_COM_ERROR&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Kommunikasjons feil&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_SB400_COM_ERROR&quot;?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_SB400_COM_ERROR&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
+    <name>10239/&quot;/BY2209_360_20_SB400_CRI&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Feilmelding kontroll lengde overskredet&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_SB400_CRI&quot;?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_SB400_CRI&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
     <name>10239/&quot;/BY2209_360_20_SB400_K_OP&quot;</name>
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
@@ -1596,6 +1672,78 @@
     <max>Y</max>
 </tag>
 <tag>
+    <name>10239/&quot;/BY2209_360_20_SB400_MAN&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Manuel styring&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_SB400_MAN&quot;?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_SB400_MAN&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
+    <name>10239/&quot;/BY2209_360_20_SB400_MAN_SP&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Manuel kontroll input 0-100%&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_SB400_MAN_SP&quot;?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_SB400_MAN_SP&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
+    <name>10239/&quot;/BY2209_360_20_SB400_MOL&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Feilmelding mekanisk feil&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_SB400_MOL&quot;?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_SB400_MOL&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
+    <name>10239/&quot;/BY2209_360_20_SB400_OP&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Sendt paadrag&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_SB400_OP&quot;?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_SB400_OP&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
+    <name>10239/&quot;/BY2209_360_20_SB400_POS&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Erverdi posisjon[%]&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_SB400_POS&quot;?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_SB400_POS&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
+    <name>10239/&quot;/BY2209_360_20_SB400_RES&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Resete feilmeldinger fra MP-Bus&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_SB400_RES&quot;?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_SB400_RES&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
     <name>10239/&quot;/BY2209_360_20_SB400_V_OP&quot;</name>
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
@@ -1604,6 +1752,18 @@
     <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_SB400_V_OP&quot;?float</resourceLocator>
     <enableScaling>false</enableScaling>
     <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_SB400_V_OP&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
+    <name>10239/&quot;/BY2209_360_20_SD_Kalender_Enable&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;SD Kalender er endable&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_SD_Kalender_Enable&quot;?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_SD_Kalender_Enable&quot;</TAGLOCATOR>
     <enableAudit subT="1" eventT="18">false</enableAudit>
     <max>Y</max>
 </tag>
@@ -2004,6 +2164,18 @@
     <max>Y</max>
 </tag>
 <tag>
+    <name>10239/&quot;/BY2209_360_20_TEST&quot;</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <comment>&quot;Test utstyr&quot;</comment>
+    <resourceLocator>VRBL://10239/&quot;/BY2209_360_20_TEST&quot;?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_TEST&quot;</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <max>Y</max>
+</tag>
+<tag>
     <name>10239/&quot;/BY2209_360_20_TilluftReg_Aktiv&quot;</name>
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
@@ -2124,6 +2296,7 @@
     <max>Y</max>
 </tag>
 <tag>
+<<<<<<< HEAD
     <name>10239/&quot;/BY2209_360_20_TEST&quot;</name>
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
@@ -2134,4 +2307,13 @@
     <TAGLOCATOR>BACnet:prot1:uid0:10239/&quot;/BY2209_360_20_TEST&quot;</TAGLOCATOR>
     <enableAudit subT="1" eventT="18">false</enableAudit>
     <max>Y</max>
+=======
+    <name>xExtStart</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://xExtStart?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+>>>>>>> master
 </tag>
